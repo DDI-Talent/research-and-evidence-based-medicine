@@ -1,0 +1,69 @@
+---
+title: "02 · Signal vs the noise"
+subtitle: "Reason from a sample without pretending uncertainty has disappeared."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+Is the pattern we observed likely to reflect a population effect, or could sampling variability reasonably explain it?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Explain the difference between a population, a sample, a parameter, and an estimate.
+- Describe the logic of null-hypothesis significance testing.
+- Interpret p-values and confidence intervals without common overclaims.
+- Explain Type I error, Type II error, power, and the role of assumptions.
+:::
+
+## Samples vary
+
+Repeated samples from the same population do not produce identical estimates. Statistical inference is the structured process of asking what the observed data say about the unknown population while acknowledging that variability.
+
+## A p-value is conditional
+
+A p-value asks: **if the null model and its assumptions were true, how surprising would data at least this incompatible with that model be?**
+
+It is not:
+
+- the probability that the null hypothesis is true;
+- the probability the result occurred “by chance”;
+- a measure of clinical importance;
+- proof that the study is unbiased.
+
+## Confidence intervals carry more information
+
+A confidence interval shows a range of effect sizes compatible with the data and model. Its position helps assess direction; its width shows precision; its relationship to a null value helps connect estimation to testing.
+
+| Decision reality | Test result | Name |
+|---|---|---|
+| No real effect | Declared an effect | Type I error |
+| Real effect | Missed the effect | Type II error |
+
+Power is the probability of detecting an effect of the prespecified size when it exists, under the study assumptions.
+
+## R checkpoint
+
+```r
+#| eval: false
+
+# Inspect a distribution before choosing an inferential procedure.
+analysis_data |>
+  ggplot(aes(x = outcome)) +
+  geom_histogram(bins = 30)
+
+# A future code-along will add assumption checks and inference here.
+```
+
+::: {.clinical-lens}
+**Interpretation habit:** state the estimated effect and confidence interval first. Use the p-value as supporting evidence, never as a binary label for truth.
+:::
+
+## Lab-book prompts
+
+1. What is the target population?
+2. What does the interval say about effect size and precision?
+3. Which assumption is most vulnerable here?
+

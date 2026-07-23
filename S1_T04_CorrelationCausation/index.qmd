@@ -1,0 +1,70 @@
+---
+title: "04 · Correlation and/or causation?"
+subtitle: "Describe relationships carefully; causal claims require more than a coefficient."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+Do two measurements vary together—and what additional evidence would be needed to say one changes the other?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Read scatterplots for direction, form, strength, and unusual observations.
+- Interpret a correlation coefficient and its uncertainty.
+- Explain how confounding can create, hide, or reverse an association.
+- Distinguish association from causation and begin to reason causally.
+- Build layered `ggplot2` visualisations.
+:::
+
+## See the relationship first
+
+A correlation coefficient compresses a relationship into one number. Always inspect a scatterplot for non-linearity, subgroups, range restriction, influential points, and changing variability.
+
+Correlation describes the direction and strength of a particular pattern—usually a linear one. It does not show that:
+
+- the exposure preceded the outcome;
+- alternative explanations were controlled;
+- the relationship would persist under intervention;
+- the result applies beyond the observed range.
+
+## Confounding
+
+A confounder is associated with both the exposure and outcome and can distort their observed relationship. Stratification, study design, and regression can help, but causal control depends on subject knowledge—not merely on which variables are available.
+
+## R checkpoint: the grammar of graphics
+
+```r
+#| eval: false
+
+analysis_data |>
+  ggplot(aes(x = gdp, y = life_expectancy)) +
+  geom_point(alpha = 0.65) +
+  geom_smooth(method = "lm", se = TRUE) +
+  scale_x_log10() +
+  facet_wrap(~ development_status) +
+  labs(
+    x = "GDP per person (log scale)",
+    y = "Life expectancy (years)"
+  ) +
+  theme_minimal()
+
+cor.test(
+  analysis_data$gdp,
+  analysis_data$life_expectancy,
+  method = "pearson"
+)
+```
+
+::: {.clinical-lens}
+**Safe wording:** “Higher exposure was associated with higher outcome in this sample.” A causal sentence needs a defensible design, timing, assumptions, and reasoning about competing explanations.
+:::
+
+## Lab-book prompts
+
+1. What does the scatterplot show that the coefficient hides?
+2. Which common cause could affect both variables?
+3. What study or natural experiment would make the causal claim more credible?
+

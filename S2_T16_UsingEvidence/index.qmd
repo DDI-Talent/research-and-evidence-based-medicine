@@ -1,0 +1,43 @@
+---
+title: "16 · How do I use evidence?"
+subtitle: "Combine trustworthy research, clinical context, and patient priorities in an accountable decision."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+What should change for this patient or in future practice—and what still needs to be learned?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Apply evidence while acknowledging bias, uncertainty, and assumptions.
+- Combine research evidence with clinical expertise and patient values.
+- Define a realistic plan for improving evidence use.
+- Communicate and reflect on a defensible decision.
+:::
+
+## Core ideas
+
+Evidence-based medicine is not automatic rule-following. It is the integration of the best available evidence with clinical expertise, context, feasibility, and informed patient preferences. A good decision is transparent about trade-offs and revisable when circumstances or evidence change.
+
+## A final decision record
+
+1. What decision is being made?
+2. What evidence is most relevant and credible?
+3. How similar is the patient or setting?
+4. What benefits, harms, burdens, and uncertainties matter?
+5. What does the patient prefer?
+6. What will we do, monitor, and revisit?
+
+::: {.clinical-lens}
+**Final reflection:** What assumption carries the most weight in your decision, and how will you know if it was wrong?
+:::
+
+## Lab-book prompts
+
+1. Write a one-paragraph shared-decision explanation.
+2. Define what should change in practice.
+3. Name the next piece of evidence or feedback you need.
+

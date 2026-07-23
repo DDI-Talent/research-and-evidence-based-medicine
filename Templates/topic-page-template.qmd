@@ -1,0 +1,41 @@
+---
+title: "Topic title"
+subtitle: "A one-line clinical framing"
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+What uncertainty are we trying to reduce?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Outcome one
+- Outcome two
+- Outcome three
+:::
+
+## Core ideas
+
+## R checkpoint
+
+```r
+#| eval: false
+
+# Code-along content will be added here.
+```
+
+## Clinical interpretation
+
+::: {.clinical-lens}
+**Ask yourself:** What would this result change for a patient, and what uncertainty remains?
+:::
+
+## Lab-book prompts
+
+1. What did you calculate or compare?
+2. What is your result in plain clinical language?
+3. What assumption or limitation matters most?
+

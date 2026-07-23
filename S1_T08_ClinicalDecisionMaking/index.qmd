@@ -1,0 +1,34 @@
+---
+title: "08 · Clinical decision making"
+subtitle: "Translate estimates into action by weighing consequences, thresholds, and patient values."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+At what point does the expected benefit of acting outweigh its harms and burdens?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Translate statistical results into decision-relevant quantities.
+- Explain thresholds and benefit–harm trade-offs.
+- Incorporate uncertainty without becoming paralysed by it.
+- Link population evidence to an individual decision transparently.
+:::
+
+## Core ideas
+
+Evidence informs action but does not select it alone. Decisions also depend on baseline risk, treatment burden, adverse effects, alternatives, feasibility, and what matters to the patient. A decision threshold is the point at which these considerations favour action.
+
+::: {.clinical-lens}
+**Ask:** What would we do differently if the true effect were near either end of the confidence interval?
+:::
+
+## Lab-book prompts
+
+1. What are the available actions?
+2. Which outcomes matter most, and to whom?
+3. What uncertainty would change the decision?
+

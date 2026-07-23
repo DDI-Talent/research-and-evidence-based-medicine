@@ -1,0 +1,43 @@
+---
+title: "How to use this course notebook"
+description: "The structure, learning outcomes, and a practical weekly workflow."
+---
+
+This site is a **living reference**, not a replacement for discussion, code-alongs, or tutorial work. Use it before teaching to orient yourself, during the week to record connections, and afterwards to consolidate your lab book.
+
+## The four-part weekly pattern
+
+1. **Meet the clinical decision.** Identify the patients, options, outcomes, and why the decision is difficult.
+2. **Build the conceptual tools.** Learn enough statistics and evidence-based medicine to reason about the problem.
+3. **Watch the analysis unfold.** Follow the code-along from loading data through to interpretation.
+4. **Practise and reflect.** Modify the analysis in the lab and write what the result means clinically.
+
+## Course learning outcomes
+
+By the end of the course, you should be able to:
+
+1. Describe and summarise clinical data using appropriate statistical and graphical methods.
+2. Analyse and interpret relationships in clinical data, including group comparisons and regression.
+3. Critically evaluate clinical research evidence in the context of bias, uncertainty, and study design.
+4. Apply statistical and research evidence to inform and justify clinical decision-making.
+5. Work collaboratively and reflect on how evidence is used to inform clinical decisions.
+
+## A note-taking pattern that works
+
+On each topic page, keep four questions in view:
+
+- **Question:** What clinical uncertainty are we trying to reduce?
+- **Method:** What does the method calculate, compare, or assume?
+- **Interpretation:** What can we say in plain clinical language?
+- **Limits:** What would make that interpretation misleading?
+
+::: {.callout-tip}
+## Do not collect numbers without meaning
+
+Every result in your lab book should have a sentence beside it explaining the population, groups, outcome, time period, uncertainty, and the decision it could inform.
+:::
+
+## About the R sections
+
+The current pages include “R checkpoint” areas ready for executable Quarto chunks. As datasets and lab exercises are finalised, those chunks can be added directly and frozen so the published website shows reproducible output without requiring students to run code in the browser.
+

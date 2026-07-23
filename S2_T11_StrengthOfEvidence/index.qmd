@@ -1,0 +1,34 @@
+---
+title: "11 · The strength of evidence"
+subtitle: "Judge evidence by the question, design, validity, and applicability—not hierarchy alone."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+What can this study design legitimately tell us?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Relate study designs to the questions they can answer.
+- Distinguish internal and external validity.
+- Use an evidence hierarchy without treating it as an automatic quality score.
+- Revisit causal versus associational inference.
+:::
+
+## Core ideas
+
+Randomised trials can strengthen causal inference for interventions; cohort and case-control designs are essential for many questions; qualitative research can illuminate experience and implementation. Design sets the potential strength of inference. Conduct determines whether that potential is realised.
+
+::: {.clinical-lens}
+**Ask:** Is the main threat that the result is wrong for the study participants, or that it does not transport to this patient?
+:::
+
+## Lab-book prompts
+
+1. What question was this design intended to answer?
+2. What is the greatest threat to internal validity?
+3. Which feature limits applicability?
+

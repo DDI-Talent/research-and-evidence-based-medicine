@@ -1,0 +1,67 @@
+---
+title: "03 · Comparing groups"
+subtitle: "Choose the comparison from the outcome, groups, design, and assumptions."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+How different are the outcomes between clinically relevant groups, and is that difference both credible and important?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Compare two independent groups using an appropriate estimate and test.
+- Explain what ANOVA assesses when more than two groups are compared.
+- Assess association between categorical variables with a contingency table.
+- Separate effect size, statistical evidence, and clinical importance.
+:::
+
+## Start with the design
+
+Before selecting a method, identify:
+
+1. the outcome type;
+2. the number of groups;
+3. whether observations are independent or paired;
+4. the distribution and influential values;
+5. the effect measure that answers the clinical question.
+
+## Common starting points
+
+| Outcome | Comparison | Typical starting method |
+|---|---|---|
+| Continuous | Two independent groups | Difference in means; independent t-test |
+| Continuous | More than two groups | ANOVA |
+| Categorical | Two or more groups | Difference in proportions; chi-squared test |
+
+ANOVA tests an overall null hypothesis that group means are equal. A small p-value indicates evidence that at least one differs; it does not identify which groups differ or how much.
+
+## R checkpoint
+
+```r
+#| eval: false
+
+analysis_data <- patient_data |>
+  select(outcome, group) |>
+  filter(!is.na(outcome), !is.na(group))
+
+analysis_data |>
+  ggplot(aes(x = group, y = outcome)) +
+  geom_boxplot() +
+  labs(x = NULL, y = "Clinical outcome")
+
+t.test(outcome ~ group, data = analysis_data)
+```
+
+::: {.clinical-lens}
+**Do not stop at “significant”.** Report the groups, estimated difference, confidence interval, direction, units, and whether the magnitude matters clinically.
+:::
+
+## Lab-book prompts
+
+1. Are the groups independent, paired, or clustered?
+2. What effect measure is easiest for a clinician or patient to understand?
+3. Could imbalance or confounding explain the observed difference?
+

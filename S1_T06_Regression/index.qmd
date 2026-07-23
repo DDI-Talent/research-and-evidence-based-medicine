@@ -1,0 +1,43 @@
+---
+title: "06 · Regression for fair comparison"
+subtitle: "Estimate relationships while making adjustment assumptions explicit."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+Does the group difference persist after accounting for credible alternative explanations?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Explain regression as a tool for estimation and adjustment.
+- Distinguish linear regression for continuous outcomes from logistic regression for binary outcomes.
+- Interpret coefficients and odds ratios in clinical language.
+- Explain “holding other variables constant” and why it does not automatically remove bias.
+:::
+
+## Core ideas
+
+Linear regression estimates an average change in a continuous outcome associated with a one-unit change in a predictor. Logistic regression models a binary outcome and commonly reports odds ratios. Adjustment compares patients who have the same values of included covariates—but only for the structure the model represents.
+
+::: {.clinical-lens}
+**Ask:** Why was each variable included? Is it a confounder, mediator, collider, or merely available? A longer model is not necessarily a fairer model.
+:::
+
+## R checkpoint
+
+```r
+#| eval: false
+
+linear_model <- lm(outcome ~ treatment + age + baseline_score, data = analysis_data)
+logistic_model <- glm(event ~ treatment + age, data = analysis_data, family = binomial())
+```
+
+## Lab-book prompts
+
+1. What is the outcome scale?
+2. What does one coefficient compare?
+3. Which important cause is not measured?
+

@@ -1,0 +1,34 @@
+---
+title: "12 · How evidence gets distorted"
+subtitle: "Bias changes estimates systematically; larger samples do not wash it away."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+How could selection, measurement, information, or confounding have moved the result away from the truth?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Recognise common forms of selection and measurement bias.
+- Explain misclassification and information bias.
+- Connect confounding to Semester 1 regression.
+- Reason about the likely direction and magnitude of distortion.
+:::
+
+## Core ideas
+
+Bias is a systematic problem in how participants enter a study, variables are measured, information is recorded, or comparisons are formed. Precision describes random uncertainty; a very precise estimate can still be badly biased.
+
+::: {.clinical-lens}
+**Ask:** Who was missed, what was measured differently, and which common cause remains unaddressed?
+:::
+
+## Lab-book prompts
+
+1. Draw the route by which bias enters the study.
+2. Would it likely exaggerate, reduce, or reverse the effect?
+3. What design choice could have prevented it?
+

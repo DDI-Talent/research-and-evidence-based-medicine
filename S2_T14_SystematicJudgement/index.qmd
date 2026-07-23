@@ -1,0 +1,36 @@
+---
+title: "14 · Systematic judgement"
+subtitle: "Use a repeatable appraisal structure without reducing judgement to tick boxes."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+Are the methods valid, what do the results show, and do they apply here?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Apply a validity–results–applicability appraisal structure.
+- Identify the strengths and limitations that could change a conclusion.
+- Link specific biases to credibility.
+- Make a transparent overall judgement.
+:::
+
+## A practical structure
+
+1. **Validity:** Was the study designed and conducted to minimise important bias?
+2. **Results:** What is the effect estimate, precision, and clinical magnitude?
+3. **Applicability:** Are the patients, setting, interventions, outcomes, and trade-offs sufficiently similar?
+
+::: {.clinical-lens}
+**Ask:** Which single limitation has the greatest capacity to change the decision—and why?
+:::
+
+## Lab-book prompts
+
+1. Write one sentence for validity, results, and applicability.
+2. Rank limitations by impact rather than count.
+3. State your overall confidence and what would raise it.
+

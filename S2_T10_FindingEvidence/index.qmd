@@ -1,0 +1,34 @@
+---
+title: "10 · Finding the “right” evidence"
+subtitle: "Search transparently and distinguish relevance from credibility."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+Where should we look, and how will we know whether we have found the evidence that matters?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Build a search from concepts, synonyms, and transparent inclusion criteria.
+- Distinguish primary studies, systematic reviews, and guidelines.
+- Separate relevance from methodological quality.
+- Explain publication bias and the limits of what a search can recover.
+:::
+
+## Core ideas
+
+A sensitive search retrieves possible evidence; screening then applies explicit relevance criteria. Systematic approaches reduce arbitrary selection, but no database contains everything and unpublished or selectively published findings can distort the available record.
+
+::: {.clinical-lens}
+**Ask:** What kinds of study or result might be missing, and in which direction would that alter our conclusion?
+:::
+
+## Lab-book prompts
+
+1. List the main search concepts and synonyms.
+2. Define inclusion criteria before seeing results.
+3. Record one plausible source of missing evidence.
+

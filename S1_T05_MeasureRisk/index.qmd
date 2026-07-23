@@ -1,0 +1,77 @@
+---
+title: "05 · How do we measure risk?"
+subtitle: "Keep the event, group, time period, baseline risk, and uncertainty visible."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+How likely is a clinical event, how does that likelihood differ between groups, and how should we communicate the difference?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Calculate and interpret absolute risk, risk difference, and relative risk.
+- Distinguish risk from odds and a risk ratio from an odds ratio.
+- Explain when odds ratios are used and why they may look more extreme.
+- Communicate benefits and harms using balanced, comparable formats.
+- Transform individual records into grouped clinical counts in R.
+:::
+
+## A worked example
+
+Imagine 100 patients receive a preventative treatment and 100 receive usual care. Disease develops in 10 treated patients and 20 usual-care patients over one year.
+
+| Measure | Calculation | Interpretation |
+|---|---:|---|
+| Risk with treatment | 10 / 100 = 10% | 10 per 100 treated patients |
+| Risk with usual care | 20 / 100 = 20% | 20 per 100 usual-care patients |
+| Risk difference | 10% − 20% = −10 points | 10 fewer cases per 100 treated |
+| Relative risk | 10% / 20% = 0.50 | Half the risk with treatment |
+| Odds ratio | (10/90) / (20/80) = 0.44 | Lower odds with treatment |
+| Number needed to treat | 1 / 0.10 = 10 | Treat 10 for one additional patient to avoid disease over one year |
+
+## Risk and odds are not interchangeable
+
+Risk compares events with everyone initially at risk. Odds compare events with non-events. When an event is uncommon, the odds ratio approximates the relative risk; as events become common, they diverge.
+
+An odds ratio of 0.44 does **not** mean risk was reduced by 56%. In this example, the relative risk is 0.50 and the absolute reduction is 10 percentage points.
+
+## Communicate the whole comparison
+
+A balanced report includes:
+
+- the outcome and follow-up period;
+- risk in both groups using the same denominator;
+- absolute and relative effects;
+- confidence intervals;
+- benefits and harms in comparable formats;
+- whether the study population resembles the patient.
+
+## R checkpoint
+
+```r
+#| eval: false
+
+risk_counts <- patient_data |>
+  count(treatment, disease, name = "patients")
+
+risk_table <- xtabs(
+  patients ~ treatment + disease,
+  data = risk_counts
+)
+
+risk_table
+```
+
+::: {.clinical-lens}
+**Patient-centred wording:** “Over one year, disease occurred in about 20 per 100 people with usual care and 10 per 100 with treatment—around 10 fewer cases per 100 treated. This is an estimate, and benefits need to be considered alongside harms.”
+:::
+
+## Lab-book prompts
+
+1. Which measure keeps the baseline risk visible?
+2. Are the outcome and follow-up time stated?
+3. Could positive versus negative framing change the decision?
+

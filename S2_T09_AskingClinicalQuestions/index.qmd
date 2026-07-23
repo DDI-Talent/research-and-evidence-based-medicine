@@ -1,0 +1,33 @@
+---
+title: "09 · Asking clinical questions"
+subtitle: "Turn a difficult clinical uncertainty into a question that evidence can answer."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+Exactly which patients, options, and outcomes define the uncertainty?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Frame focused questions using Population, Intervention, Comparator, and Outcome.
+- Distinguish clinical outcomes from surrogate outcomes.
+- Recognise how outcome selection shapes the apparent answer.
+:::
+
+## Core ideas
+
+PICO is a thinking tool, not a bureaucratic form. A useful question is specific enough to guide a search but broad enough to capture relevant evidence. Outcomes should reflect what matters to patients, including benefits, harms, quality of life, and time.
+
+::: {.clinical-lens}
+**Ask:** If the surrogate improves, what evidence shows that patients actually feel better, function better, or live longer?
+:::
+
+## Lab-book prompts
+
+1. Write the uncertainty as one PICO question.
+2. Which outcome is most patient-important?
+3. What follow-up period is clinically meaningful?
+

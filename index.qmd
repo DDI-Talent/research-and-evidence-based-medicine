@@ -1,0 +1,63 @@
+---
+title: "Research & Evidence-Based Medicine"
+page-layout: full
+toc: false
+---
+
+::: {.hero}
+<div class="eyebrow">MBChB · A living course notebook</div>
+
+# Evidence you can use.
+
+Build the habits to analyse clinical data, judge research fairly, and turn uncertain evidence into thoughtful decisions.
+
+<div class="hero-actions">
+  <a href="S1_T01_DescribingData/index.html">Start with Topic 1</a>
+  <a class="secondary" href="course-guide.html">How the course works</a>
+</div>
+:::
+
+## One course, two connected questions
+
+Semester 1 develops a practical statistical language for analysing clinical data. Semester 2 uses that language to ask whether evidence is trustworthy, meaningful, and applicable.
+
+::: {.semester-heading}
+## Semester 1
+<span>How do we analyse data?</span>
+:::
+
+<div class="topic-grid">
+<a class="topic-card" href="S1_T01_DescribingData/index.html"><span class="number">TOPIC 01</span><span class="topic-title">Describing data</span><span class="topic-description">Variables, summaries, visualisation, distributions, and the foundations of R.</span></a>
+<a class="topic-card" href="S1_T02_SignalVsNoise/index.html"><span class="number">TOPIC 02</span><span class="topic-title">Signal vs the noise</span><span class="topic-description">Samples, uncertainty, p-values, confidence intervals, errors, and power.</span></a>
+<a class="topic-card" href="S1_T03_ComparingGroups/index.html"><span class="number">TOPIC 03</span><span class="topic-title">Comparing groups</span><span class="topic-description">Two groups, multiple groups, categorical outcomes, and clinical importance.</span></a>
+<a class="topic-card" href="S1_T04_CorrelationCausation/index.html"><span class="number">TOPIC 04</span><span class="topic-title">Correlation and causation</span><span class="topic-description">Scatterplots, correlation, confounding, and the beginnings of causal thinking.</span></a>
+<a class="topic-card" href="S1_T05_MeasureRisk/index.html"><span class="number">TOPIC 05</span><span class="topic-title">Measuring risk</span><span class="topic-description">Absolute risk, risk difference, relative risk, odds, NNT, and clear communication.</span></a>
+<a class="topic-card placeholder" href="S1_T06_Regression/index.html"><span class="number">TOPIC 06</span><span class="topic-title">Regression for fair comparison</span><span class="topic-description">Adjustment, linear and logistic regression, and “holding other variables constant”.</span></a>
+<a class="topic-card placeholder" href="S1_T07_EstimationPrediction/index.html"><span class="number">TOPIC 07</span><span class="topic-title">Estimation vs prediction</span><span class="topic-description">Explanation, generalisation, overfitting, validation, and clinical risk scores.</span></a>
+<a class="topic-card placeholder" href="S1_T08_ClinicalDecisionMaking/index.html"><span class="number">TOPIC 08</span><span class="topic-title">Clinical decision making</span><span class="topic-description">Thresholds, trade-offs, uncertainty, and moving from evidence to action.</span></a>
+</div>
+
+::: {.semester-heading}
+## Semester 2
+<span>How do we trust—or distrust—evidence?</span>
+:::
+
+<div class="topic-grid">
+<a class="topic-card placeholder" href="S2_T09_AskingClinicalQuestions/index.html"><span class="number">TOPIC 09</span><span class="topic-title">Asking clinical questions</span><span class="topic-description">Turn clinical uncertainty into focused questions using PICO and meaningful outcomes.</span></a>
+<a class="topic-card placeholder" href="S2_T10_FindingEvidence/index.html"><span class="number">TOPIC 10</span><span class="topic-title">Finding the right evidence</span><span class="topic-description">Search strategically, distinguish relevance from quality, and recognise missing evidence.</span></a>
+<a class="topic-card placeholder" href="S2_T11_StrengthOfEvidence/index.html"><span class="number">TOPIC 11</span><span class="topic-title">The strength of evidence</span><span class="topic-description">Study design, validity, evidence hierarchies, and what each design can support.</span></a>
+<a class="topic-card placeholder" href="S2_T12_DistortedEvidence/index.html"><span class="number">TOPIC 12</span><span class="topic-title">How evidence gets distorted</span><span class="topic-description">Selection, measurement, information bias, confounding, and their direction of effect.</span></a>
+<a class="topic-card placeholder" href="S2_T13_BeingMisled/index.html"><span class="number">TOPIC 13</span><span class="topic-title">Are we being misled?</span><span class="topic-description">Selective reporting, outcome bias, cognitive bias, and persuasive presentation.</span></a>
+<a class="topic-card placeholder" href="S2_T14_SystematicJudgement/index.html"><span class="number">TOPIC 14</span><span class="topic-title">Systematic judgement</span><span class="topic-description">Appraise validity, results, and applicability with a repeatable framework.</span></a>
+<a class="topic-card placeholder" href="S2_T15_ResultsMeaning/index.html"><span class="number">TOPIC 15</span><span class="topic-title">What do the results mean?</span><span class="topic-description">Statistical and clinical significance, uncertainty, context, and conflicting evidence.</span></a>
+<a class="topic-card placeholder" href="S2_T16_UsingEvidence/index.html"><span class="number">TOPIC 16</span><span class="topic-title">How do I use evidence?</span><span class="topic-description">Apply evidence to individual patients and define what should change in practice.</span></a>
+</div>
+
+## The weekly rhythm
+
+::: {.fourfold}
+<div><strong>Expert case study</strong>A modern clinical problem grounds the week in a real decision.</div>
+<div><strong>Theory</strong>Short explanations build a consistent conceptual foundation.</div>
+<div><strong>Code-along</strong>Follow an analysis from question to clinically meaningful interpretation.</div>
+<div><strong>Tutorial-lab</strong>Adapt the workflow, make a decision, and add to your lab book.</div>
+:::

@@ -1,0 +1,34 @@
+---
+title: "15 · What do the results mean?"
+subtitle: "Interpret magnitude, uncertainty, context, and consistency together."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+Is the estimated effect large enough, precise enough, and relevant enough to matter?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Distinguish statistical evidence from clinical importance.
+- Communicate uncertainty clearly.
+- Interpret findings in clinical and methodological context.
+- Balance conflicting evidence without simple vote counting.
+:::
+
+## Core ideas
+
+The same p-value can accompany a trivial or important effect. The same point estimate can be precise or deeply uncertain. Interpretation therefore needs the effect scale, confidence interval, baseline risk, outcome importance, study credibility, and consistency with other evidence.
+
+::: {.clinical-lens}
+**Ask:** Which effects remain compatible with the interval, and would decisions differ across that range?
+:::
+
+## Lab-book prompts
+
+1. Express the result in patient-relevant units.
+2. Identify the smallest clinically important effect.
+3. Explain disagreement between studies without counting “positive” papers.
+

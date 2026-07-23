@@ -1,0 +1,83 @@
+---
+title: "01 · Describing data"
+subtitle: "Make the shape and meaning of clinical data visible before you model it."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+Who is represented in these data, what was measured, and what does a typical—or unusual—patient look like?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Distinguish categorical, ordinal, discrete, and continuous variables.
+- Choose and interpret appropriate measures of centre and spread.
+- Match common plots to the variable and question.
+- Recognise skewness, outliers, and the practical importance of distributional shape.
+- Explain why reproducible programming is valuable in health-data analysis.
+:::
+
+## Variables come before statistics
+
+A number may measure an amount, label a category, or encode an order. That distinction determines what summaries and plots are meaningful.
+
+| Variable type | What it represents | Useful first summary |
+|---|---|---|
+| Nominal | Unordered categories | Counts and proportions |
+| Ordinal | Ordered categories | Counts, proportions, median category |
+| Discrete | Countable numerical values | Mean/median and spread |
+| Continuous | Measurements on a scale | Mean/SD or median/IQR |
+
+## Centre and spread belong together
+
+The **mean** uses every value and is sensitive to extremes. The **median** is the middle value and is more robust to skewness. The standard deviation describes typical distance from the mean; the interquartile range describes the width of the middle half of observations.
+
+::: {.callout-important}
+A centre without a measure of spread hides how similar—or varied—patients are.
+:::
+
+## Visualise the distribution
+
+- Use a **bar chart** for counts or proportions of categories.
+- Use a **histogram** to see the distribution of one continuous variable.
+- Use a **boxplot** to compare median and IQR across groups.
+- Use a **violin plot** when the overall shape of each group matters.
+
+For approximately normal data, around 68%, 95%, and 99.7% of values lie within one, two, and three standard deviations of the mean. This is a useful model, not a rule that real clinical measurements must obey.
+
+## R checkpoint
+
+```r
+#| eval: false
+
+library(tidyverse)
+
+patient_data |>
+  summarise(
+    patients = n(),
+    mean_pulse = mean(pulse, na.rm = TRUE),
+    sd_pulse = sd(pulse, na.rm = TRUE),
+    median_pulse = median(pulse, na.rm = TRUE),
+    iqr_pulse = IQR(pulse, na.rm = TRUE)
+  )
+
+patient_data |>
+  ggplot(aes(x = pulse)) +
+  geom_histogram(binwidth = 5) +
+  labs(x = "Pulse (beats per minute)", y = "Patients")
+```
+
+## Clinical interpretation
+
+::: {.clinical-lens}
+**Good reporting:** name the population and variable, give a compatible pair of centre and spread, describe visible skew or unusual values, and avoid labelling a value “abnormal” from distribution alone.
+:::
+
+## Lab-book prompts
+
+1. Which variable type is each field in your dataset?
+2. Which summary is most honest for the observed shape?
+3. What does the visualisation reveal that the summary statistic does not?
+

@@ -1,0 +1,43 @@
+---
+title: "07 · Estimation vs prediction"
+subtitle: "A model that explains an average relationship is not automatically good at predicting a new patient."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+Are we estimating how an exposure relates to an outcome, or predicting what will happen for a new patient?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Distinguish explanatory and predictive modelling goals.
+- Explain training performance, generalisation, and overfitting.
+- Describe the purpose of train/test splits and external validation.
+- Recognise when calibration and discrimination matter for clinical risk scores.
+:::
+
+## Core ideas
+
+Estimation focuses on a parameter and its uncertainty. Prediction focuses on performance for unseen observations. Adding complexity can improve fit to the development data while harming generalisation. Validation should mimic the intended clinical use.
+
+::: {.clinical-lens}
+**Ask:** Who will receive this prediction, at what point in care, what action follows, and was performance assessed in a sufficiently similar population?
+:::
+
+## R checkpoint
+
+```r
+#| eval: false
+
+# Future code-along:
+# split data → fit on training data → predict on test data → assess performance
+```
+
+## Lab-book prompts
+
+1. What is the model’s intended use?
+2. Was evaluation performed on genuinely unseen data?
+3. What kind of error would cause the greater clinical harm?
+

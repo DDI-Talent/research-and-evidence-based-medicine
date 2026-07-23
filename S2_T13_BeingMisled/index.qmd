@@ -1,0 +1,34 @@
+---
+title: "13 · Are we being misled?"
+subtitle: "Interrogate what was chosen, omitted, reframed, and emphasised."
+---
+
+::: {.topic-banner}
+**The clinical question**
+
+Does the reported story faithfully represent the questions, outcomes, analyses, and uncertainty?
+:::
+
+::: {.learning-outcomes}
+### By the end of this topic
+
+- Recognise selective outcome reporting and reporting bias.
+- Explain how outcome choice can alter apparent conclusions.
+- Identify cognitive biases in evidence interpretation.
+- Examine framing, graphics, and language for persuasive distortion.
+:::
+
+## Core ideas
+
+Misleading evidence is not always fabricated. Flexibility in outcomes, time points, analyses, subgroups, and presentation can make chance or selective findings look decisive. Compare reports with protocols and registrations where possible.
+
+::: {.clinical-lens}
+**Ask:** What was planned before the results were known, and what changed afterwards?
+:::
+
+## Lab-book prompts
+
+1. Which outcomes are prominent and which are absent?
+2. Are absolute effects and uncertainty visible?
+3. What result would challenge your preferred conclusion?
+
