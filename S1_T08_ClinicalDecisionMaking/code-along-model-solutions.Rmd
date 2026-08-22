@@ -1,0 +1,76 @@
+---
+title: "Topic 08 model solutions: From population evidence to decisions"
+output: html_document
+---
+
+This fictional dataset represents no real perinatal screening programme, intervention or region.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+theme_set(theme_minimal())
+population <- read_csv("data/topic08_synthetic.csv", show_col_types = FALSE) |>
+  mutate(adverse = adverse_perinatal_outcome == "Yes")
+```
+
+## Access, outcomes and equity
+
+```{r access}
+population |>
+  group_by(region) |>
+  summarise(
+    pregnancies = n(),
+    screened = mean(screening_completed == "Yes"),
+    adverse_risk = mean(adverse),
+    support_received = mean(preventive_support_accepted == "Yes")
+  )
+
+population |>
+  group_by(deprivation_quintile) |>
+  summarise(screened = mean(screening_completed == "Yes"), adverse_risk = mean(adverse))
+```
+
+## Estimate baseline risk for the teaching exercise
+
+The model deliberately omits post-baseline screening and treatment variables.
+
+```{r risk-model}
+risk_model <- glm(adverse ~ maternal_age_years + I((maternal_age_years-30)^2) + factor(deprivation_quintile) + region,
+                  data = population, family = binomial())
+population <- population |> mutate(predicted_baseline_risk = predict(risk_model, type = "response"))
+```
+
+## Threshold analysis
+
+For illustration only, assume relative risk under support is 0.68 and the probability of a treatment burden is 0.11.
+
+```{r thresholds}
+relative_risk <- 0.68
+burden_probability <- 0.11
+
+threshold_results <- map_dfr(c(.05, .10, .15, .20), function(threshold) {
+  selected <- population |> filter(predicted_baseline_risk >= threshold)
+  tibble(
+    threshold = threshold,
+    offered = nrow(selected),
+    proportion_offered = nrow(selected) / nrow(population),
+    expected_events_without_support = sum(selected$predicted_baseline_risk),
+    expected_events_prevented = sum(selected$predicted_baseline_risk * (1-relative_risk)),
+    expected_burdens = nrow(selected) * burden_probability
+  )
+})
+threshold_results
+```
+
+```{r threshold-plot}
+threshold_results |>
+  select(threshold, expected_events_prevented, expected_burdens) |>
+  pivot_longer(-threshold, names_to = "outcome", values_to = "expected_count") |>
+  ggplot(aes(threshold, expected_count, colour = outcome)) +
+  geom_line() + geom_point() +
+  scale_x_continuous(labels = scales::percent) +
+  labs(x = "Decision threshold", y = "Expected count", colour = NULL)
+```
+
+No threshold is selected by evidence alone. The decision depends on how benefits, burdens, resources, missed opportunities and inequalities are valued, and whether conclusions remain stable across plausible treatment effects.
+

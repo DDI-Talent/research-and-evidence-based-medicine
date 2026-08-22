@@ -1,0 +1,52 @@
+---
+title: "Topic 01 model solutions: Describing critical-care data"
+output: html_document
+---
+
+This synthetic teaching dataset contains no real patient records and its results are fictional.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+theme_set(theme_minimal())
+icu <- read_csv("data/topic01_synthetic.csv", show_col_types = FALSE)
+```
+
+## Variable types and completeness
+
+`age_years` and ICU stay are continuous measurements (age has been rounded); `sex` and admission type are nominal; deprivation quintile is ordinal; and counts of comorbidities and organ supports are discrete.
+
+```{r completeness}
+glimpse(icu)
+icu |> count(admission_type) |> mutate(proportion = n / sum(n))
+icu |> summarise(across(everything(), ~sum(is.na(.x))))
+```
+
+## Centre, spread and shape
+
+```{r summaries}
+icu |>
+  summarise(
+    admissions = n(),
+    missing_icu_stay = sum(is.na(icu_length_of_stay_days)),
+    mean_days = mean(icu_length_of_stay_days, na.rm = TRUE),
+    sd_days = sd(icu_length_of_stay_days, na.rm = TRUE),
+    median_days = median(icu_length_of_stay_days, na.rm = TRUE),
+    iqr_days = IQR(icu_length_of_stay_days, na.rm = TRUE)
+  )
+```
+
+```{r plots, fig.width=8, fig.height=4}
+icu |>
+  ggplot(aes(icu_length_of_stay_days)) +
+  geom_histogram(binwidth = 1, boundary = 0, colour = "white") +
+  labs(x = "ICU length of stay (days)", y = "Admissions")
+
+icu |>
+  ggplot(aes(admission_type, icu_length_of_stay_days)) +
+  geom_boxplot() +
+  coord_cartesian(ylim = c(0, 25)) +
+  labs(x = NULL, y = "ICU length of stay (days)")
+```
+
+The mean exceeds the median because a minority of long stays pull it upwards. Median and IQR therefore describe a typical admission more honestly, while the histogram preserves the important long right tail.
+

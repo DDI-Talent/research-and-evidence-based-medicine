@@ -14,14 +14,16 @@ How likely is a clinical event, how does that likelihood differ between groups, 
 
 - Calculate and interpret absolute risk, risk difference, and relative risk.
 - Distinguish risk from odds and a risk ratio from an odds ratio.
-- Explain when odds ratios are used and why they may look more extreme.
+- Explain when odds ratios are used and why they may appear more extreme.
 - Communicate benefits and harms using balanced, comparable formats.
-- Transform individual records into grouped clinical counts in R.
+- Transform individual patient records into grouped clinical counts in R.
 :::
 
-## A worked example
+## 5.1 Measuring and comparing risk
 
-Imagine 100 patients receive a preventative treatment and 100 receive usual care. Disease develops in 10 treated patients and 20 usual-care patients over one year.
+Risk is the proportion of people initially at risk who experience a defined event during a stated period. A risk is incomplete unless the **population**, **outcome**, and **time horizon** are visible.
+
+Imagine a one-year trial in which disease develops in 10 of 100 treated patients and 20 of 100 patients receiving usual care.
 
 | Measure | Calculation | Interpretation |
 |---|---:|---|
@@ -29,32 +31,68 @@ Imagine 100 patients receive a preventative treatment and 100 receive usual care
 | Risk with usual care | 20 / 100 = 20% | 20 per 100 usual-care patients |
 | Risk difference | 10% − 20% = −10 points | 10 fewer cases per 100 treated |
 | Relative risk | 10% / 20% = 0.50 | Half the risk with treatment |
-| Odds ratio | (10/90) / (20/80) = 0.44 | Lower odds with treatment |
-| Number needed to treat | 1 / 0.10 = 10 | Treat 10 for one additional patient to avoid disease over one year |
 
-## Risk and odds are not interchangeable
+The sign of the risk difference depends on the order of subtraction and must be stated. Relative risks are interpreted around 1: values below 1 indicate lower risk in the numerator group, 1 indicates equal risk, and values above 1 indicate higher risk.
 
-Risk compares events with everyone initially at risk. Odds compare events with non-events. When an event is uncommon, the odds ratio approximates the relative risk; as events become common, they diverge.
+Absolute and relative effects answer different questions. The relative risk describes proportional change; the risk difference shows how many people are affected and keeps baseline risk visible. The same relative effect can produce very different absolute benefits in low- and high-risk populations.
 
-An odds ratio of 0.44 does **not** mean risk was reduced by 56%. In this example, the relative risk is 0.50 and the absolute reduction is 10 percentage points.
+## 5.2 Odds and odds ratios
 
-## Communicate the whole comparison
+Risk compares events with everyone initially at risk. **Odds** compare events with non-events.
 
-A balanced report includes:
+In the example:
 
-- the outcome and follow-up period;
+- treatment odds = \(10/90 = 0.11\);
+- usual-care odds = \(20/80 = 0.25\);
+- odds ratio = \(0.11/0.25 = 0.44\).
+
+An odds ratio of 0.44 means that the odds were 56% lower. It does **not** mean that the risk was 56% lower; the relative risk is 0.50 and the absolute reduction is 10 percentage points.
+
+When an outcome is rare, odds and risk are similar and the odds ratio approximates the risk ratio. As an outcome becomes common, they diverge and the odds ratio usually appears further from 1.
+
+Odds ratios arise naturally from logistic regression and are commonly used in case-control studies. In a case-control design, investigators select people according to outcome status, so the study data do not usually provide population risks directly.
+
+::: {.callout-warning}
+Never translate an odds ratio into a percentage change in risk unless a valid conversion using baseline risk has been performed.
+:::
+
+## 5.3 Reporting and communicating risk
+
+Correct numbers can still mislead when framed selectively. A balanced account includes:
+
+- the outcome, groups, and follow-up period;
 - risk in both groups using the same denominator;
 - absolute and relative effects;
 - confidence intervals;
 - benefits and harms in comparable formats;
-- whether the study population resembles the patient.
+- the relevance of the study population to the patient.
 
-## R checkpoint
+A fall from 20% to 10% is a **10 percentage-point absolute reduction** and a **50% relative reduction**. Saying merely “a 10% reduction” is ambiguous.
+
+The number needed to treat is the reciprocal of the absolute risk reduction expressed as a proportion. Here, \(1/0.10 = 10\): about 10 patients would need treatment for one additional patient to avoid disease over one year. NNT must always retain the outcome, comparison, and time period and should be interpreted with its uncertainty.
+
+Positive and negative framing can produce different impressions: “90 per 100 remained disease-free” and “10 per 100 developed disease” describe the same data. Present both where framing could affect a decision. Benefits and harms should use the same denominator and follow-up period.
+
+::: {.clinical-lens}
+**Patient-centred wording:** “Over one year, disease occurred in about 20 per 100 people with usual care and 10 per 100 with treatment—around 10 fewer cases per 100 treated. This is an estimate, and the benefit needs to be considered alongside treatment harms and burdens.”
+:::
+
+## 5.4 Transforming data in R
+
+Individual records can be transformed into the grouped counts needed for risk calculations. `mutate()` creates variables, `group_by()` changes the level at which summaries are calculated, and `count()` creates combinations of categorical outcomes.
 
 ```r
 #| eval: false
 
-risk_counts <- patient_data |>
+library(tidyverse)
+
+prepared_data <- patient_data |>
+  mutate(
+    older_adult = age >= 65,
+    age_group = if_else(age >= 65, "65 years and over", "Under 65 years")
+  )
+
+risk_counts <- prepared_data |>
   count(treatment, disease, name = "patients")
 
 risk_table <- xtabs(
@@ -63,15 +101,25 @@ risk_table <- xtabs(
 )
 
 risk_table
+
+library(epiR)
+
+risk_results <- epi.2by2(
+  dat = risk_table,
+  method = "cohort.count",
+  outcome = "as.columns",
+  units = 100
+)
 ```
 
-::: {.clinical-lens}
-**Patient-centred wording:** “Over one year, disease occurred in about 20 per 100 people with usual care and 10 per 100 with treatment—around 10 fewer cases per 100 treated. This is an estimate, and benefits need to be considered alongside harms.”
-:::
+Always inspect the row and column ordering before interpreting automated output. A reversed reference group or outcome coding can reverse the apparent direction of an effect.
 
-## Lab-book prompts
+## Bringing it together
 
-1. Which measure keeps the baseline risk visible?
-2. Are the outcome and follow-up time stated?
-3. Could positive versus negative framing change the decision?
+### Lab-book prompts
+
+1. Which group, event, and period define each reported risk?
+2. Which measure keeps the baseline risk most visible?
+3. Are benefits and harms expressed using compatible formats?
+4. Could outcome coding, table orientation, or framing change the interpretation?
 

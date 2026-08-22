@@ -12,47 +12,80 @@ Who is represented in these data, what was measured, and what does a typical—o
 ::: {.learning-outcomes}
 ### By the end of this topic
 
-- Distinguish categorical, ordinal, discrete, and continuous variables.
+- Distinguish nominal, ordinal, discrete, and continuous variables.
 - Choose and interpret appropriate measures of centre and spread.
-- Match common plots to the variable and question.
-- Recognise skewness, outliers, and the practical importance of distributional shape.
+- Match frequency tables and plots to the variable and question.
+- Recognise normal, skewed, multimodal, and unusual distributions.
 - Explain why reproducible programming is valuable in health-data analysis.
 :::
 
-## Variables come before statistics
+## 1.1 Variables, measures of centre and spread
 
-A number may measure an amount, label a category, or encode an order. That distinction determines what summaries and plots are meaningful.
+The type of variable determines which summaries are meaningful. A number might measure an amount, label a category, or encode an order; treating these as interchangeable produces misleading analysis.
 
-| Variable type | What it represents | Useful first summary |
-|---|---|---|
-| Nominal | Unordered categories | Counts and proportions |
-| Ordinal | Ordered categories | Counts, proportions, median category |
-| Discrete | Countable numerical values | Mean/median and spread |
-| Continuous | Measurements on a scale | Mean/SD or median/IQR |
+| Variable type | What it represents | Healthcare example | Useful first summary |
+|---|---|---|---|
+| Nominal | Unordered categories | Blood group | Counts and proportions |
+| Ordinal | Ordered categories | Disease severity | Counts, proportions, median category |
+| Discrete | Countable numerical values | Previous admissions | Mean or median and spread |
+| Continuous | A measurement on a scale | Systolic blood pressure | Mean/SD or median/IQR |
 
-## Centre and spread belong together
+### What is a typical value?
 
-The **mean** uses every value and is sensitive to extremes. The **median** is the middle value and is more robust to skewness. The standard deviation describes typical distance from the mean; the interquartile range describes the width of the middle half of observations.
+- The **mean** uses every observation, but is pulled towards extreme values.
+- The **median** is the middle ordered observation and is more robust to skewness.
+- The **mode** is the most frequently occurring value and can also describe categorical data.
+
+Centre must be reported with spread. The **standard deviation (SD)** describes the typical distance of observations from the mean. The **range** uses the two most extreme values. The **interquartile range (IQR)** covers the middle 50% of ordered observations and is less affected by extremes.
 
 ::: {.callout-important}
-A centre without a measure of spread hides how similar—or varied—patients are.
+For a roughly symmetric distribution without influential extremes, the mean and SD often work well. For a skewed distribution or one containing extreme values, the median and IQR are usually more informative.
 :::
 
-## Visualise the distribution
+The sample SD divides the sum of squared deviations by \(n-1\). Estimating the mean from the same sample uses one degree of freedom; the correction prevents the sample variability from being systematically underestimated.
 
-- Use a **bar chart** for counts or proportions of categories.
-- Use a **histogram** to see the distribution of one continuous variable.
-- Use a **boxplot** to compare median and IQR across groups.
-- Use a **violin plot** when the overall shape of each group matters.
+## 1.2 Data visualisation
 
-For approximately normal data, around 68%, 95%, and 99.7% of values lie within one, two, and three standard deviations of the mean. This is a useful model, not a rule that real clinical measurements must obey.
+A summary statistic compresses information. A visualisation helps reveal where the data are concentrated, how they vary, and whether important subgroups or unusual observations are hidden.
 
-## R checkpoint
+| Question | Useful display | What to inspect |
+|---|---|---|
+| How common is each category? | Frequency table or bar chart | Counts, proportions, rare categories |
+| How is one continuous variable distributed? | Histogram | Shape, centre, spread, gaps, extremes |
+| How does a continuous outcome differ by group? | Boxplot | Median, IQR, overlap, possible outliers |
+| Does the full shape differ by group? | Violin plot | Density, asymmetry, multiple peaks |
+
+Histogram bin widths affect what is visible, so they should be chosen deliberately. Boxplots make median and IQR comparisons compact, but hide some distributional detail. Violin plots reveal shape, but exact descriptive summaries should normally accompany them.
+
+::: {.clinical-lens}
+**Describe before judging:** an unusual observation may be a data error, a genuinely unusual patient, or a clinically important subgroup. Investigate it before removing it or calling it “abnormal”.
+:::
+
+## 1.3 Distributional shapes
+
+A **normal distribution** is symmetric and unimodal, with its mean, median, and mode at the same point. It is described by its mean and SD. If a distribution is approximately normal, about 68%, 95%, and 99.7% of values lie within one, two, and three SDs of the mean.
+
+Real clinical data do not have to be normal. Distributions may be:
+
+- right- or left-skewed;
+- multimodal because different patient groups have been combined;
+- truncated by eligibility criteria or measurement limits;
+- affected by selection, missingness, or measurement error.
+
+The normal distribution remains important because many inferential methods concern the distribution of an estimate or of model residuals—not necessarily the raw clinical variable itself.
+
+## 1.4 R foundations and principles
+
+Modern health datasets are too large and complex to analyse reliably by hand. Code makes each analytical instruction visible, repeatable, and easier to check. **R** is the statistical programming language; **RStudio** is an interface for writing and running R code.
+
+Common data formats include `.csv`, `.tsv`, `.xlsx`, and R-specific files such as `.rds` or `.RData`. A reproducible analysis keeps the source data unchanged and stores each derived result under a meaningful object name.
 
 ```r
 #| eval: false
 
 library(tidyverse)
+
+patient_data <- read_csv("patients.csv")
 
 patient_data |>
   summarise(
@@ -69,15 +102,16 @@ patient_data |>
   labs(x = "Pulse (beats per minute)", y = "Patients")
 ```
 
-## Clinical interpretation
+## Bringing it together
 
 ::: {.clinical-lens}
-**Good reporting:** name the population and variable, give a compatible pair of centre and spread, describe visible skew or unusual values, and avoid labelling a value “abnormal” from distribution alone.
+**Good descriptive reporting:** identify the population, define the variable and units, report a compatible pair of centre and spread, describe the distributional shape, and explain any important missing or unusual values.
 :::
 
-## Lab-book prompts
+### Lab-book prompts
 
 1. Which variable type is each field in your dataset?
-2. Which summary is most honest for the observed shape?
+2. Which summary is most honest for the observed shape, and why?
 3. What does the visualisation reveal that the summary statistic does not?
+4. Could the apparent shape reflect mixed subgroups or the way patients entered the dataset?
 

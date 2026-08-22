@@ -13,31 +13,74 @@ Do two measurements vary together—and what additional evidence would be needed
 ### By the end of this topic
 
 - Read scatterplots for direction, form, strength, and unusual observations.
-- Interpret a correlation coefficient and its uncertainty.
-- Explain how confounding can create, hide, or reverse an association.
-- Distinguish association from causation and begin to reason causally.
-- Build layered `ggplot2` visualisations.
+- Interpret Pearson and Spearman correlation coefficients and their uncertainty.
+- Distinguish association from causation using causal structures.
+- Explain confounding, mediation, collider bias, and subgroup effects.
+- Build and annotate layered `ggplot2` visualisations reproducibly.
 :::
 
-## See the relationship first
+## 4.1 Scatterplots and visualisation
 
-A correlation coefficient compresses a relationship into one number. Always inspect a scatterplot for non-linearity, subgroups, range restriction, influential points, and changing variability.
+An association describes how two variables change in relation to one another. It does not, by itself, imply that changing one would change the other.
 
-Correlation describes the direction and strength of a particular pattern—usually a linear one. It does not show that:
+Each point in a scatterplot represents one observation with values on both axes. Before calculating a coefficient, inspect:
 
-- the exposure preceded the outcome;
-- alternative explanations were controlled;
-- the relationship would persist under intervention;
-- the result applies beyond the observed range.
+- **direction**: positive, negative, or absent;
+- **form**: linear, curved, thresholded, or clustered;
+- **strength**: tightly or diffusely arranged;
+- **unusual observations**: points that may be influential or incorrectly recorded;
+- **subgroups**: patterns that differ across clinically meaningful populations.
 
-## Confounding
+A coefficient can conceal non-linearity, limited ranges, heteroscedasticity, and mixtures of populations. The graph and numerical summary answer complementary questions.
 
-A confounder is associated with both the exposure and outcome and can distort their observed relationship. Stratification, study design, and regression can help, but causal control depends on subject knowledge—not merely on which variables are available.
+## 4.2 Correlation testing
 
-## R checkpoint: the grammar of graphics
+The **Pearson correlation coefficient**, \(r\), summarises the direction and strength of a linear association between two continuous variables. It ranges from -1 to +1. A value near zero indicates little linear association, but does not rule out a strong curved relationship.
+
+**Spearman’s rank correlation** is useful for a monotonic relationship when a linear model or Pearson assumptions are not appropriate. The selected measure should follow the shape and scale of the data, not merely which produces the preferred p-value.
+
+A correlation analysis has two components:
+
+- **estimation**: how large and in which direction is the sample association?
+- **testing**: how compatible are the data with a population correlation of zero?
+
+Large samples can make very small correlations statistically significant; small samples may estimate potentially important associations imprecisely. Interpret the coefficient and interval alongside the p-value and context.
+
+::: {.clinical-lens}
+**Safe wording:** “Higher exposure was associated with higher outcome in this sample.” A causal sentence requires a defensible design, temporality, assumptions, and reasoning about competing explanations.
+:::
+
+## 4.3 Thinking causally
+
+Directed acyclic graphs (DAGs) make proposed causal relationships explicit. Nodes represent variables and arrows represent hypothesised causal effects.
+
+### Three important structures
+
+- **Confounder:** \(X \leftarrow C \rightarrow Y\). A common cause can create or distort the observed association between exposure and outcome.
+- **Mediator:** \(X \rightarrow M \rightarrow Y\). The mediator transmits part of the exposure’s effect; adjusting for it changes the causal question.
+- **Collider:** \(X \rightarrow S \leftarrow Y\). Conditioning on their shared consequence can create a spurious association.
+
+Variable selection therefore requires subject knowledge. A variable is not automatically a confounder simply because it is associated with both exposure and outcome in the observed data.
+
+Other reasons an association may mislead include:
+
+- non-linear relationships that a linear coefficient misses;
+- Simpson’s paradox, where pooled and subgroup patterns differ or reverse;
+- selection into the analysed sample;
+- shared temporal trends;
+- chance correlations when many variables are explored;
+- reverse causation or unclear temporal ordering.
+
+Evidence supporting a causal claim may come from randomisation, natural experiments, clear temporality, appropriate adjustment, consistency, negative controls, sensitivity analyses, and biological knowledge. No single checklist item proves causation.
+
+## 4.4 Formalising visualisation skills in R
+
+`ggplot2` builds a visualisation from components: data, aesthetic mappings, geometries, statistical transformations, scales, facets, labels, and a theme.
 
 ```r
 #| eval: false
+
+library(tidyverse)
 
 analysis_data |>
   ggplot(aes(x = gdp, y = life_expectancy)) +
@@ -51,20 +94,26 @@ analysis_data |>
   ) +
   theme_minimal()
 
-cor.test(
+correlation_result <- cor.test(
   analysis_data$gdp,
   analysis_data$life_expectancy,
   method = "pearson"
 )
+
+caption_text <- paste(
+  "Pearson r =",
+  round(correlation_result$estimate, 2)
+)
 ```
 
-::: {.clinical-lens}
-**Safe wording:** “Higher exposure was associated with higher outcome in this sample.” A causal sentence needs a defensible design, timing, assumptions, and reasoning about competing explanations.
-:::
+Saving the result as an object allows the coefficient, interval, and p-value to be retrieved and used in reporting. A caption built from the saved object updates automatically if the data or analysis changes.
 
-## Lab-book prompts
+## Bringing it together
+
+### Lab-book prompts
 
 1. What does the scatterplot show that the coefficient hides?
-2. Which common cause could affect both variables?
-3. What study or natural experiment would make the causal claim more credible?
+2. What causal structure do you believe generated the data?
+3. Which variable is a confounder, mediator, or collider under that structure?
+4. What study design or sensitivity analysis would make the causal claim more credible?
 

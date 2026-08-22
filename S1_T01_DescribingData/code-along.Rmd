@@ -1,0 +1,55 @@
+---
+title: "Topic 01 code-along: Describing critical-care data"
+output: html_document
+---
+
+This code-along uses fictional ICU admissions inspired by critical-care epidemiology. The data contain no real patients and the results are not research findings.
+
+## 1. Set up and import
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+theme_set(theme_minimal())
+```
+
+```{r import}
+icu <- read_csv("data/topic01_synthetic.csv", show_col_types = FALSE)
+glimpse(icu)
+```
+
+## 2. Who is represented?
+
+```{r variable-types}
+# TODO: classify age_years, sex, deprivation_quintile,
+# comorbidity_count and icu_length_of_stay_days.
+
+icu |> count(admission_type)
+```
+
+## 3. Centre and spread
+
+```{r summaries}
+icu |>
+  summarise(
+    admissions = n(),
+    missing_icu_stay = sum(is.na(icu_length_of_stay_days))
+    # TODO: add mean, SD, median and IQR of ICU stay.
+  )
+```
+
+## 4. See the distribution
+
+```{r plots}
+icu |>
+  ggplot(aes(x = icu_length_of_stay_days)) +
+  # TODO: add a histogram with a useful bin width.
+  labs(x = "ICU length of stay (days)", y = "Admissions")
+```
+
+```{r group-plot}
+# TODO: compare ICU stay across admission types with a boxplot.
+```
+
+## 5. Clinical interpretation
+
+Write two sentences reporting the typical ICU stay and its variation. What does the plot reveal that the numerical summary does not?

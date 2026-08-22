@@ -1,0 +1,2501 @@
+"patient_id","age_years","comorbidity_count","baseline_severity_score","healthcare_access","treatment_received","outcome_90_days","synthetic"
+"RWE00001",87,2,40,"Low","Usual care","Survived",TRUE
+"RWE00002",78,3,14,"Moderate","Usual care","Survived",TRUE
+"RWE00003",67,0,75,"High","Treatment","Survived",TRUE
+"RWE00004",55,1,48,"Moderate","Usual care","Survived",TRUE
+"RWE00005",95,5,60,"Moderate","Usual care","Died",TRUE
+"RWE00006",86,3,53,"Moderate","Treatment","Survived",TRUE
+"RWE00007",48,2,69,"High","Treatment","Survived",TRUE
+"RWE00008",84,3,43,"Moderate","Usual care","Survived",TRUE
+"RWE00009",80,1,80,"Low","Treatment","Died",TRUE
+"RWE00010",65,0,30,"High","Usual care","Survived",TRUE
+"RWE00011",75,6,66,"Low","Treatment","Died",TRUE
+"RWE00012",82,3,23,"Moderate","Usual care","Died",TRUE
+"RWE00013",50,0,66,"High","Treatment","Survived",TRUE
+"RWE00014",55,0,34,"High","Usual care","Survived",TRUE
+"RWE00015",79,1,19,"High","Usual care","Survived",TRUE
+"RWE00016",55,1,45,"Moderate","Treatment","Survived",TRUE
+"RWE00017",55,0,49,"Moderate","Usual care","Survived",TRUE
+"RWE00018",72,2,33,"Low","Usual care","Survived",TRUE
+"RWE00019",69,0,66,"High","Usual care","Survived",TRUE
+"RWE00020",70,2,30,"Moderate","Treatment","Survived",TRUE
+"RWE00021",66,2,89,"Low","Usual care","Died",TRUE
+"RWE00022",82,3,51,"High","Usual care","Survived",TRUE
+"RWE00023",84,2,34,"Low","Usual care","Survived",TRUE
+"RWE00024",53,1,35,"High","Usual care","Survived",TRUE
+"RWE00025",88,4,51,"Low","Usual care","Survived",TRUE
+"RWE00026",71,1,41,"Moderate","Usual care","Survived",TRUE
+"RWE00027",66,2,44,"Low","Treatment","Survived",TRUE
+"RWE00028",59,1,44,"Moderate","Usual care","Survived",TRUE
+"RWE00029",69,1,73,"Moderate","Usual care","Survived",TRUE
+"RWE00030",55,0,34,"Moderate","Usual care","Survived",TRUE
+"RWE00031",77,1,73,"Moderate","Treatment","Survived",TRUE
+"RWE00032",80,2,52,"Moderate","Treatment","Survived",TRUE
+"RWE00033",72,1,59,"Moderate","Treatment","Survived",TRUE
+"RWE00034",87,0,21,"Moderate","Usual care","Survived",TRUE
+"RWE00035",67,0,34,"High","Usual care","Survived",TRUE
+"RWE00036",82,1,55,"Moderate","Usual care","Survived",TRUE
+"RWE00037",73,1,57,"Low","Usual care","Survived",TRUE
+"RWE00038",75,3,35,"Low","Usual care","Survived",TRUE
+"RWE00039",81,3,56,"Low","Treatment","Died",TRUE
+"RWE00040",69,3,40,"Moderate","Usual care","Survived",TRUE
+"RWE00041",64,0,42,"Low","Treatment","Survived",TRUE
+"RWE00042",70,0,55,"High","Usual care","Survived",TRUE
+"RWE00043",76,0,58,"Low","Usual care","Died",TRUE
+"RWE00044",56,1,50,"Low","Usual care","Survived",TRUE
+"RWE00045",54,0,41,"High","Usual care","Survived",TRUE
+"RWE00046",59,1,49,"Moderate","Treatment","Survived",TRUE
+"RWE00047",79,3,57,"High","Usual care","Died",TRUE
+"RWE00048",60,3,39,"Moderate","Treatment","Survived",TRUE
+"RWE00049",55,1,40,"Moderate","Usual care","Survived",TRUE
+"RWE00050",57,1,37,"Moderate","Usual care","Survived",TRUE
+"RWE00051",89,1,64,"Low","Treatment","Survived",TRUE
+"RWE00052",64,1,28,"Moderate","Treatment","Survived",TRUE
+"RWE00053",78,4,65,"Low","Usual care","Died",TRUE
+"RWE00054",67,1,44,"Moderate","Usual care","Survived",TRUE
+"RWE00055",83,6,41,"Moderate","Treatment","Died",TRUE
+"RWE00056",55,1,40,"Moderate","Usual care","Survived",TRUE
+"RWE00057",47,0,44,"High","Usual care","Survived",TRUE
+"RWE00058",87,1,33,"High","Usual care","Survived",TRUE
+"RWE00059",37,1,51,"Moderate","Usual care","Survived",TRUE
+"RWE00060",50,2,44,"Moderate","Treatment","Survived",TRUE
+"RWE00061",60,2,33,"High","Treatment","Survived",TRUE
+"RWE00062",50,1,60,"Moderate","Treatment","Died",TRUE
+"RWE00063",66,0,60,"High","Treatment","Survived",TRUE
+"RWE00064",70,3,42,"High","Usual care","Survived",TRUE
+"RWE00065",60,0,58,"High","Treatment","Survived",TRUE
+"RWE00066",66,2,33,"Moderate","Usual care","Survived",TRUE
+"RWE00067",61,2,26,"Moderate","Usual care","Survived",TRUE
+"RWE00068",70,3,25,"Moderate","Usual care","Survived",TRUE
+"RWE00069",93,1,70,"Moderate","Treatment","Survived",TRUE
+"RWE00070",67,1,53,"Moderate","Usual care","Died",TRUE
+"RWE00071",38,0,22,"Moderate","Usual care","Survived",TRUE
+"RWE00072",72,3,49,"Low","Usual care","Survived",TRUE
+"RWE00073",76,1,26,"Moderate","Usual care","Survived",TRUE
+"RWE00074",73,2,30,"Moderate","Usual care","Survived",TRUE
+"RWE00075",79,3,16,"Moderate","Usual care","Survived",TRUE
+"RWE00076",42,0,46,"Moderate","Usual care","Survived",TRUE
+"RWE00077",42,0,36,"Moderate","Treatment","Survived",TRUE
+"RWE00078",46,0,49,"Moderate","Treatment","Died",TRUE
+"RWE00079",61,0,18,"Low","Usual care","Survived",TRUE
+"RWE00080",64,3,42,"Moderate","Treatment","Survived",TRUE
+"RWE00081",95,2,31,"Moderate","Usual care","Survived",TRUE
+"RWE00082",61,4,48,"Moderate","Usual care","Survived",TRUE
+"RWE00083",61,2,51,"High","Usual care","Died",TRUE
+"RWE00084",73,2,46,"Low","Treatment","Died",TRUE
+"RWE00085",70,1,39,"Moderate","Usual care","Died",TRUE
+"RWE00086",81,2,18,"Low","Usual care","Survived",TRUE
+"RWE00087",50,2,8,"High","Usual care","Survived",TRUE
+"RWE00088",90,4,48,"Moderate","Usual care","Survived",TRUE
+"RWE00089",71,0,27,"Moderate","Usual care","Survived",TRUE
+"RWE00090",51,2,62,"High","Usual care","Survived",TRUE
+"RWE00091",64,5,53,"Moderate","Usual care","Survived",TRUE
+"RWE00092",75,2,40,"Low","Usual care","Survived",TRUE
+"RWE00093",63,0,36,"High","Usual care","Survived",TRUE
+"RWE00094",71,2,46,"Moderate","Treatment","Survived",TRUE
+"RWE00095",79,0,84,"Moderate","Treatment","Survived",TRUE
+"RWE00096",44,1,24,"Low","Usual care","Survived",TRUE
+"RWE00097",41,1,22,"High","Usual care","Survived",TRUE
+"RWE00098",59,1,52,"Moderate","Usual care","Survived",TRUE
+"RWE00099",69,1,48,"Low","Treatment","Survived",TRUE
+"RWE00100",86,6,76,"Moderate","Treatment","Died",TRUE
+"RWE00101",53,3,68,"Moderate","Usual care","Died",TRUE
+"RWE00102",82,2,56,"High","Treatment","Died",TRUE
+"RWE00103",52,0,64,"Moderate","Usual care","Survived",TRUE
+"RWE00104",44,1,41,"High","Usual care","Survived",TRUE
+"RWE00105",47,1,52,"Moderate","Treatment","Survived",TRUE
+"RWE00106",90,1,39,"Low","Usual care","Survived",TRUE
+"RWE00107",62,2,70,"Moderate","Treatment","Died",TRUE
+"RWE00108",56,1,51,"Moderate","Usual care","Survived",TRUE
+"RWE00109",75,1,72,"High","Usual care","Died",TRUE
+"RWE00110",48,0,58,"Low","Treatment","Survived",TRUE
+"RWE00111",75,2,37,"Low","Usual care","Survived",TRUE
+"RWE00112",51,0,72,"Moderate","Treatment","Survived",TRUE
+"RWE00113",34,0,38,"Moderate","Usual care","Died",TRUE
+"RWE00114",60,1,61,"Moderate","Usual care","Survived",TRUE
+"RWE00115",63,2,38,"Low","Usual care","Survived",TRUE
+"RWE00116",68,2,45,"Low","Usual care","Died",TRUE
+"RWE00117",67,1,9,"Moderate","Usual care","Survived",TRUE
+"RWE00118",58,1,41,"Moderate","Treatment","Survived",TRUE
+"RWE00119",50,0,67,"Moderate","Treatment","Died",TRUE
+"RWE00120",54,2,47,"High","Usual care","Survived",TRUE
+"RWE00121",53,0,31,"High","Usual care","Survived",TRUE
+"RWE00122",73,0,70,"Moderate","Treatment","Survived",TRUE
+"RWE00123",64,1,36,"High","Treatment","Survived",TRUE
+"RWE00124",85,3,78,"High","Treatment","Survived",TRUE
+"RWE00125",75,1,36,"Moderate","Treatment","Survived",TRUE
+"RWE00126",30,1,63,"Low","Treatment","Survived",TRUE
+"RWE00127",57,4,47,"High","Usual care","Died",TRUE
+"RWE00128",54,1,48,"Moderate","Usual care","Survived",TRUE
+"RWE00129",56,1,55,"Moderate","Usual care","Survived",TRUE
+"RWE00130",83,2,49,"Low","Treatment","Survived",TRUE
+"RWE00131",72,2,48,"Moderate","Usual care","Survived",TRUE
+"RWE00132",81,1,62,"Moderate","Treatment","Died",TRUE
+"RWE00133",59,0,9,"High","Usual care","Survived",TRUE
+"RWE00134",59,2,67,"High","Treatment","Survived",TRUE
+"RWE00135",60,0,27,"Moderate","Usual care","Survived",TRUE
+"RWE00136",36,1,49,"Moderate","Treatment","Survived",TRUE
+"RWE00137",70,2,67,"Moderate","Treatment","Survived",TRUE
+"RWE00138",61,0,31,"Low","Usual care","Survived",TRUE
+"RWE00139",71,1,31,"High","Treatment","Survived",TRUE
+"RWE00140",77,1,44,"High","Treatment","Survived",TRUE
+"RWE00141",75,2,69,"Low","Treatment","Survived",TRUE
+"RWE00142",90,0,56,"Moderate","Treatment","Survived",TRUE
+"RWE00143",84,5,66,"Moderate","Treatment","Died",TRUE
+"RWE00144",76,2,57,"Moderate","Usual care","Survived",TRUE
+"RWE00145",69,1,52,"High","Treatment","Survived",TRUE
+"RWE00146",83,0,55,"High","Treatment","Survived",TRUE
+"RWE00147",87,2,29,"Moderate","Usual care","Survived",TRUE
+"RWE00148",69,1,36,"Low","Treatment","Survived",TRUE
+"RWE00149",45,0,42,"Moderate","Usual care","Survived",TRUE
+"RWE00150",70,0,45,"Low","Usual care","Survived",TRUE
+"RWE00151",54,0,30,"Moderate","Treatment","Survived",TRUE
+"RWE00152",87,4,46,"Moderate","Usual care","Survived",TRUE
+"RWE00153",66,0,59,"Low","Treatment","Survived",TRUE
+"RWE00154",90,3,58,"High","Usual care","Died",TRUE
+"RWE00155",64,0,30,"Moderate","Usual care","Survived",TRUE
+"RWE00156",47,0,67,"Low","Treatment","Survived",TRUE
+"RWE00157",59,1,28,"High","Treatment","Survived",TRUE
+"RWE00158",69,3,35,"High","Usual care","Survived",TRUE
+"RWE00159",40,0,46,"Moderate","Usual care","Survived",TRUE
+"RWE00160",66,2,54,"High","Usual care","Survived",TRUE
+"RWE00161",42,0,70,"Low","Treatment","Died",TRUE
+"RWE00162",53,0,60,"Low","Usual care","Died",TRUE
+"RWE00163",52,1,74,"Moderate","Treatment","Survived",TRUE
+"RWE00164",72,2,27,"High","Usual care","Survived",TRUE
+"RWE00165",79,0,32,"Moderate","Usual care","Survived",TRUE
+"RWE00166",62,3,82,"Moderate","Treatment","Died",TRUE
+"RWE00167",55,1,78,"Moderate","Usual care","Survived",TRUE
+"RWE00168",51,2,45,"High","Usual care","Survived",TRUE
+"RWE00169",62,2,14,"Low","Usual care","Survived",TRUE
+"RWE00170",86,1,5,"Low","Usual care","Survived",TRUE
+"RWE00171",79,4,77,"Low","Treatment","Died",TRUE
+"RWE00172",25,0,72,"Moderate","Usual care","Died",TRUE
+"RWE00173",46,0,55,"High","Usual care","Died",TRUE
+"RWE00174",90,4,44,"High","Usual care","Survived",TRUE
+"RWE00175",65,1,56,"Low","Usual care","Survived",TRUE
+"RWE00176",46,1,36,"High","Usual care","Survived",TRUE
+"RWE00177",38,0,43,"Moderate","Usual care","Survived",TRUE
+"RWE00178",74,3,76,"Moderate","Treatment","Died",TRUE
+"RWE00179",58,0,26,"High","Treatment","Survived",TRUE
+"RWE00180",79,2,42,"Moderate","Usual care","Survived",TRUE
+"RWE00181",75,4,51,"High","Usual care","Died",TRUE
+"RWE00182",59,1,70,"Low","Usual care","Died",TRUE
+"RWE00183",46,1,38,"Moderate","Treatment","Survived",TRUE
+"RWE00184",90,1,64,"Low","Treatment","Survived",TRUE
+"RWE00185",52,2,37,"Low","Usual care","Survived",TRUE
+"RWE00186",74,1,31,"High","Usual care","Survived",TRUE
+"RWE00187",92,2,82,"High","Treatment","Died",TRUE
+"RWE00188",67,0,12,"Low","Usual care","Survived",TRUE
+"RWE00189",75,1,56,"High","Treatment","Died",TRUE
+"RWE00190",79,0,40,"Low","Treatment","Survived",TRUE
+"RWE00191",58,0,59,"Moderate","Treatment","Survived",TRUE
+"RWE00192",56,0,43,"Moderate","Usual care","Survived",TRUE
+"RWE00193",63,2,62,"Low","Treatment","Survived",TRUE
+"RWE00194",71,1,55,"Moderate","Usual care","Survived",TRUE
+"RWE00195",62,1,51,"Moderate","Usual care","Survived",TRUE
+"RWE00196",49,0,32,"Low","Usual care","Survived",TRUE
+"RWE00197",70,2,49,"Moderate","Usual care","Survived",TRUE
+"RWE00198",44,0,53,"High","Usual care","Survived",TRUE
+"RWE00199",69,2,21,"High","Usual care","Survived",TRUE
+"RWE00200",84,5,61,"Moderate","Treatment","Died",TRUE
+"RWE00201",81,2,35,"Moderate","Treatment","Survived",TRUE
+"RWE00202",49,1,56,"Moderate","Treatment","Survived",TRUE
+"RWE00203",61,0,53,"High","Treatment","Survived",TRUE
+"RWE00204",51,1,36,"Moderate","Usual care","Survived",TRUE
+"RWE00205",85,3,70,"Low","Usual care","Survived",TRUE
+"RWE00206",71,2,49,"Moderate","Usual care","Survived",TRUE
+"RWE00207",52,2,26,"Moderate","Usual care","Survived",TRUE
+"RWE00208",78,0,60,"Low","Usual care","Survived",TRUE
+"RWE00209",81,6,53,"High","Usual care","Survived",TRUE
+"RWE00210",49,0,53,"High","Usual care","Survived",TRUE
+"RWE00211",71,0,31,"Moderate","Usual care","Survived",TRUE
+"RWE00212",55,1,33,"High","Usual care","Survived",TRUE
+"RWE00213",56,2,9,"High","Usual care","Survived",TRUE
+"RWE00214",40,0,50,"Moderate","Usual care","Survived",TRUE
+"RWE00215",76,4,20,"High","Usual care","Survived",TRUE
+"RWE00216",58,1,31,"High","Treatment","Survived",TRUE
+"RWE00217",70,1,28,"High","Usual care","Survived",TRUE
+"RWE00218",45,0,52,"Low","Treatment","Survived",TRUE
+"RWE00219",72,1,57,"Moderate","Usual care","Survived",TRUE
+"RWE00220",93,2,43,"Low","Usual care","Survived",TRUE
+"RWE00221",82,4,44,"Moderate","Usual care","Died",TRUE
+"RWE00222",41,0,67,"Moderate","Treatment","Survived",TRUE
+"RWE00223",61,1,40,"High","Usual care","Survived",TRUE
+"RWE00224",67,3,40,"Low","Usual care","Survived",TRUE
+"RWE00225",73,0,21,"High","Usual care","Survived",TRUE
+"RWE00226",51,0,65,"High","Usual care","Died",TRUE
+"RWE00227",95,3,30,"Moderate","Usual care","Survived",TRUE
+"RWE00228",33,0,43,"High","Usual care","Survived",TRUE
+"RWE00229",78,2,24,"High","Usual care","Died",TRUE
+"RWE00230",80,1,79,"Low","Treatment","Died",TRUE
+"RWE00231",61,1,38,"Moderate","Treatment","Survived",TRUE
+"RWE00232",81,2,59,"Low","Usual care","Survived",TRUE
+"RWE00233",64,0,68,"Moderate","Usual care","Survived",TRUE
+"RWE00234",40,1,50,"Moderate","Treatment","Survived",TRUE
+"RWE00235",60,2,49,"High","Usual care","Survived",TRUE
+"RWE00236",30,1,56,"Moderate","Treatment","Survived",TRUE
+"RWE00237",71,5,55,"Low","Usual care","Survived",TRUE
+"RWE00238",64,0,28,"High","Treatment","Survived",TRUE
+"RWE00239",64,0,59,"Low","Treatment","Survived",TRUE
+"RWE00240",78,2,38,"Moderate","Treatment","Died",TRUE
+"RWE00241",58,0,44,"Low","Usual care","Survived",TRUE
+"RWE00242",63,1,48,"Moderate","Usual care","Died",TRUE
+"RWE00243",67,1,8,"Moderate","Usual care","Survived",TRUE
+"RWE00244",46,1,14,"Moderate","Usual care","Died",TRUE
+"RWE00245",52,1,41,"Moderate","Usual care","Survived",TRUE
+"RWE00246",69,0,53,"Moderate","Usual care","Survived",TRUE
+"RWE00247",74,0,36,"High","Usual care","Survived",TRUE
+"RWE00248",83,3,52,"High","Usual care","Died",TRUE
+"RWE00249",54,0,73,"High","Treatment","Survived",TRUE
+"RWE00250",56,2,43,"High","Usual care","Died",TRUE
+"RWE00251",56,1,36,"Moderate","Usual care","Survived",TRUE
+"RWE00252",59,3,43,"Moderate","Usual care","Survived",TRUE
+"RWE00253",95,2,58,"Moderate","Usual care","Survived",TRUE
+"RWE00254",77,2,54,"High","Treatment","Died",TRUE
+"RWE00255",60,2,45,"Moderate","Treatment","Survived",TRUE
+"RWE00256",51,1,38,"Moderate","Usual care","Survived",TRUE
+"RWE00257",54,3,19,"Low","Usual care","Survived",TRUE
+"RWE00258",55,0,41,"Moderate","Usual care","Survived",TRUE
+"RWE00259",78,0,45,"Low","Usual care","Survived",TRUE
+"RWE00260",86,6,28,"High","Usual care","Died",TRUE
+"RWE00261",66,5,36,"High","Usual care","Survived",TRUE
+"RWE00262",79,1,70,"Moderate","Treatment","Survived",TRUE
+"RWE00263",75,0,58,"Moderate","Usual care","Survived",TRUE
+"RWE00264",80,1,69,"High","Treatment","Survived",TRUE
+"RWE00265",71,1,30,"Moderate","Treatment","Survived",TRUE
+"RWE00266",67,4,63,"Moderate","Usual care","Survived",TRUE
+"RWE00267",46,1,56,"Low","Treatment","Survived",TRUE
+"RWE00268",59,2,53,"Moderate","Treatment","Survived",TRUE
+"RWE00269",56,1,42,"High","Usual care","Survived",TRUE
+"RWE00270",72,2,75,"High","Usual care","Died",TRUE
+"RWE00271",74,2,67,"Low","Treatment","Survived",TRUE
+"RWE00272",58,1,43,"High","Treatment","Survived",TRUE
+"RWE00273",62,1,59,"High","Usual care","Survived",TRUE
+"RWE00274",70,1,59,"Low","Treatment","Died",TRUE
+"RWE00275",69,1,52,"High","Treatment","Survived",TRUE
+"RWE00276",79,3,54,"High","Usual care","Died",TRUE
+"RWE00277",73,1,41,"Moderate","Usual care","Survived",TRUE
+"RWE00278",54,2,45,"Moderate","Usual care","Survived",TRUE
+"RWE00279",65,2,62,"Moderate","Usual care","Survived",TRUE
+"RWE00280",83,3,45,"Moderate","Usual care","Survived",TRUE
+"RWE00281",69,3,47,"High","Treatment","Survived",TRUE
+"RWE00282",69,1,80,"Moderate","Usual care","Died",TRUE
+"RWE00283",57,0,83,"High","Usual care","Died",TRUE
+"RWE00284",84,2,74,"Low","Treatment","Survived",TRUE
+"RWE00285",75,2,64,"High","Treatment","Survived",TRUE
+"RWE00286",56,0,55,"High","Treatment","Survived",TRUE
+"RWE00287",64,3,47,"Moderate","Treatment","Survived",TRUE
+"RWE00288",60,1,50,"High","Treatment","Survived",TRUE
+"RWE00289",93,3,51,"Low","Usual care","Died",TRUE
+"RWE00290",85,2,68,"High","Treatment","Died",TRUE
+"RWE00291",68,1,29,"Moderate","Usual care","Survived",TRUE
+"RWE00292",78,2,48,"High","Usual care","Survived",TRUE
+"RWE00293",66,1,47,"Moderate","Treatment","Survived",TRUE
+"RWE00294",38,0,26,"High","Usual care","Survived",TRUE
+"RWE00295",48,0,21,"Moderate","Usual care","Survived",TRUE
+"RWE00296",49,1,46,"Moderate","Treatment","Survived",TRUE
+"RWE00297",64,5,46,"High","Usual care","Died",TRUE
+"RWE00298",52,0,59,"Low","Treatment","Survived",TRUE
+"RWE00299",63,2,39,"High","Usual care","Survived",TRUE
+"RWE00300",93,4,22,"Moderate","Usual care","Survived",TRUE
+"RWE00301",95,2,69,"Moderate","Treatment","Survived",TRUE
+"RWE00302",61,0,48,"High","Usual care","Survived",TRUE
+"RWE00303",51,0,32,"Moderate","Usual care","Survived",TRUE
+"RWE00304",47,0,27,"Moderate","Usual care","Survived",TRUE
+"RWE00305",71,1,31,"High","Treatment","Survived",TRUE
+"RWE00306",75,1,51,"Low","Treatment","Died",TRUE
+"RWE00307",44,0,29,"High","Usual care","Survived",TRUE
+"RWE00308",58,0,43,"High","Treatment","Survived",TRUE
+"RWE00309",59,1,61,"Moderate","Usual care","Survived",TRUE
+"RWE00310",84,2,36,"High","Usual care","Survived",TRUE
+"RWE00311",51,0,38,"Moderate","Treatment","Survived",TRUE
+"RWE00312",45,2,62,"Moderate","Usual care","Survived",TRUE
+"RWE00313",60,1,44,"High","Treatment","Survived",TRUE
+"RWE00314",84,2,31,"Low","Usual care","Survived",TRUE
+"RWE00315",76,3,51,"High","Treatment","Survived",TRUE
+"RWE00316",30,0,30,"Low","Usual care","Survived",TRUE
+"RWE00317",64,1,58,"High","Treatment","Survived",TRUE
+"RWE00318",90,5,40,"Moderate","Usual care","Survived",TRUE
+"RWE00319",67,2,72,"Low","Treatment","Died",TRUE
+"RWE00320",58,1,49,"High","Treatment","Survived",TRUE
+"RWE00321",71,2,50,"Moderate","Usual care","Died",TRUE
+"RWE00322",78,1,40,"Moderate","Treatment","Survived",TRUE
+"RWE00323",74,3,45,"Moderate","Usual care","Survived",TRUE
+"RWE00324",62,3,32,"Moderate","Usual care","Survived",TRUE
+"RWE00325",72,3,36,"Moderate","Usual care","Survived",TRUE
+"RWE00326",84,5,37,"Moderate","Treatment","Survived",TRUE
+"RWE00327",60,1,16,"High","Treatment","Survived",TRUE
+"RWE00328",67,0,42,"Low","Usual care","Survived",TRUE
+"RWE00329",52,0,31,"High","Usual care","Survived",TRUE
+"RWE00330",60,2,40,"High","Usual care","Survived",TRUE
+"RWE00331",54,2,66,"High","Usual care","Survived",TRUE
+"RWE00332",54,2,9,"Moderate","Usual care","Survived",TRUE
+"RWE00333",51,1,53,"Moderate","Usual care","Survived",TRUE
+"RWE00334",75,0,70,"Moderate","Treatment","Died",TRUE
+"RWE00335",76,2,65,"Moderate","Treatment","Died",TRUE
+"RWE00336",72,1,54,"High","Treatment","Survived",TRUE
+"RWE00337",66,2,39,"High","Usual care","Survived",TRUE
+"RWE00338",48,2,62,"High","Treatment","Survived",TRUE
+"RWE00339",93,1,51,"Low","Usual care","Survived",TRUE
+"RWE00340",84,4,22,"Moderate","Usual care","Survived",TRUE
+"RWE00341",58,0,70,"Low","Treatment","Survived",TRUE
+"RWE00342",85,3,32,"High","Usual care","Died",TRUE
+"RWE00343",60,0,58,"Moderate","Treatment","Survived",TRUE
+"RWE00344",56,0,25,"High","Usual care","Survived",TRUE
+"RWE00345",68,3,64,"Low","Treatment","Survived",TRUE
+"RWE00346",60,1,72,"Moderate","Treatment","Died",TRUE
+"RWE00347",80,3,46,"Moderate","Usual care","Died",TRUE
+"RWE00348",65,2,54,"High","Usual care","Died",TRUE
+"RWE00349",66,0,33,"Low","Treatment","Survived",TRUE
+"RWE00350",90,3,57,"High","Usual care","Died",TRUE
+"RWE00351",85,2,61,"Moderate","Usual care","Survived",TRUE
+"RWE00352",65,0,49,"High","Treatment","Died",TRUE
+"RWE00353",75,1,61,"Low","Treatment","Survived",TRUE
+"RWE00354",85,3,48,"Low","Treatment","Survived",TRUE
+"RWE00355",57,2,30,"High","Treatment","Survived",TRUE
+"RWE00356",77,1,56,"Moderate","Treatment","Survived",TRUE
+"RWE00357",59,0,34,"Moderate","Usual care","Survived",TRUE
+"RWE00358",70,1,46,"High","Usual care","Survived",TRUE
+"RWE00359",47,2,37,"Moderate","Usual care","Survived",TRUE
+"RWE00360",33,1,53,"Moderate","Treatment","Survived",TRUE
+"RWE00361",58,3,49,"Moderate","Treatment","Survived",TRUE
+"RWE00362",86,3,48,"High","Usual care","Survived",TRUE
+"RWE00363",58,0,39,"Low","Usual care","Died",TRUE
+"RWE00364",46,0,31,"High","Usual care","Survived",TRUE
+"RWE00365",73,1,56,"Moderate","Treatment","Survived",TRUE
+"RWE00366",70,4,66,"Low","Usual care","Survived",TRUE
+"RWE00367",67,2,55,"Moderate","Usual care","Survived",TRUE
+"RWE00368",72,5,24,"Moderate","Usual care","Survived",TRUE
+"RWE00369",56,1,48,"High","Treatment","Survived",TRUE
+"RWE00370",74,2,91,"Moderate","Treatment","Died",TRUE
+"RWE00371",83,2,48,"Low","Usual care","Survived",TRUE
+"RWE00372",89,1,57,"Moderate","Usual care","Survived",TRUE
+"RWE00373",86,0,46,"High","Treatment","Survived",TRUE
+"RWE00374",79,1,45,"Low","Treatment","Survived",TRUE
+"RWE00375",72,2,37,"Low","Usual care","Survived",TRUE
+"RWE00376",95,4,62,"High","Treatment","Died",TRUE
+"RWE00377",68,2,56,"High","Usual care","Survived",TRUE
+"RWE00378",53,1,46,"High","Treatment","Survived",TRUE
+"RWE00379",81,2,30,"Low","Usual care","Survived",TRUE
+"RWE00380",58,0,61,"Low","Usual care","Survived",TRUE
+"RWE00381",84,3,60,"Moderate","Usual care","Survived",TRUE
+"RWE00382",63,0,47,"High","Treatment","Survived",TRUE
+"RWE00383",43,0,39,"Moderate","Treatment","Survived",TRUE
+"RWE00384",73,3,50,"Moderate","Treatment","Survived",TRUE
+"RWE00385",95,3,57,"High","Usual care","Survived",TRUE
+"RWE00386",71,0,63,"Low","Usual care","Survived",TRUE
+"RWE00387",50,0,70,"High","Treatment","Died",TRUE
+"RWE00388",43,0,23,"Low","Usual care","Survived",TRUE
+"RWE00389",69,2,30,"Moderate","Usual care","Died",TRUE
+"RWE00390",50,2,46,"Moderate","Usual care","Survived",TRUE
+"RWE00391",75,2,52,"Moderate","Usual care","Survived",TRUE
+"RWE00392",88,6,17,"High","Usual care","Survived",TRUE
+"RWE00393",70,4,20,"Low","Usual care","Survived",TRUE
+"RWE00394",92,4,61,"Low","Usual care","Died",TRUE
+"RWE00395",65,1,36,"Low","Usual care","Survived",TRUE
+"RWE00396",72,2,42,"Moderate","Usual care","Survived",TRUE
+"RWE00397",66,1,32,"Moderate","Usual care","Survived",TRUE
+"RWE00398",56,0,40,"Moderate","Treatment","Survived",TRUE
+"RWE00399",47,0,35,"Moderate","Usual care","Survived",TRUE
+"RWE00400",57,3,63,"High","Treatment","Survived",TRUE
+"RWE00401",75,1,7,"High","Usual care","Survived",TRUE
+"RWE00402",60,6,54,"Low","Usual care","Died",TRUE
+"RWE00403",61,1,19,"Moderate","Usual care","Survived",TRUE
+"RWE00404",66,1,6,"Moderate","Usual care","Survived",TRUE
+"RWE00405",83,2,11,"Moderate","Usual care","Survived",TRUE
+"RWE00406",73,4,51,"High","Usual care","Survived",TRUE
+"RWE00407",78,1,56,"Moderate","Treatment","Died",TRUE
+"RWE00408",57,1,75,"Low","Usual care","Survived",TRUE
+"RWE00409",61,3,46,"Moderate","Usual care","Died",TRUE
+"RWE00410",70,0,57,"Moderate","Treatment","Survived",TRUE
+"RWE00411",46,1,59,"Low","Usual care","Survived",TRUE
+"RWE00412",69,3,46,"High","Treatment","Died",TRUE
+"RWE00413",91,3,59,"High","Usual care","Died",TRUE
+"RWE00414",68,1,70,"High","Treatment","Survived",TRUE
+"RWE00415",65,0,32,"Moderate","Usual care","Survived",TRUE
+"RWE00416",64,1,23,"Moderate","Usual care","Survived",TRUE
+"RWE00417",60,2,44,"High","Treatment","Survived",TRUE
+"RWE00418",79,1,54,"Moderate","Usual care","Survived",TRUE
+"RWE00419",37,1,32,"Low","Usual care","Survived",TRUE
+"RWE00420",56,0,40,"High","Treatment","Survived",TRUE
+"RWE00421",62,1,15,"Moderate","Usual care","Survived",TRUE
+"RWE00422",65,0,52,"Moderate","Treatment","Survived",TRUE
+"RWE00423",66,1,33,"High","Usual care","Survived",TRUE
+"RWE00424",59,1,46,"Low","Usual care","Survived",TRUE
+"RWE00425",94,2,95,"Low","Treatment","Died",TRUE
+"RWE00426",85,3,45,"Moderate","Usual care","Survived",TRUE
+"RWE00427",56,0,32,"Low","Usual care","Survived",TRUE
+"RWE00428",64,1,56,"Low","Treatment","Survived",TRUE
+"RWE00429",73,0,32,"Moderate","Usual care","Survived",TRUE
+"RWE00430",92,2,42,"Moderate","Usual care","Survived",TRUE
+"RWE00431",47,1,52,"Moderate","Treatment","Survived",TRUE
+"RWE00432",48,0,47,"Moderate","Usual care","Survived",TRUE
+"RWE00433",60,0,36,"Moderate","Usual care","Survived",TRUE
+"RWE00434",63,1,40,"High","Usual care","Survived",TRUE
+"RWE00435",67,0,44,"Moderate","Usual care","Survived",TRUE
+"RWE00436",39,0,22,"Moderate","Usual care","Survived",TRUE
+"RWE00437",42,0,43,"Low","Treatment","Survived",TRUE
+"RWE00438",48,1,46,"High","Usual care","Survived",TRUE
+"RWE00439",67,2,41,"High","Treatment","Survived",TRUE
+"RWE00440",57,1,34,"Moderate","Usual care","Survived",TRUE
+"RWE00441",63,0,58,"Moderate","Treatment","Survived",TRUE
+"RWE00442",65,1,34,"Low","Treatment","Survived",TRUE
+"RWE00443",50,0,26,"Moderate","Usual care","Died",TRUE
+"RWE00444",53,1,10,"Moderate","Usual care","Died",TRUE
+"RWE00445",50,0,34,"Moderate","Usual care","Survived",TRUE
+"RWE00446",72,0,32,"High","Treatment","Survived",TRUE
+"RWE00447",79,2,53,"High","Usual care","Survived",TRUE
+"RWE00448",85,2,50,"High","Treatment","Survived",TRUE
+"RWE00449",92,0,8,"Moderate","Usual care","Survived",TRUE
+"RWE00450",66,3,62,"High","Treatment","Survived",TRUE
+"RWE00451",52,0,71,"High","Treatment","Survived",TRUE
+"RWE00452",79,2,35,"High","Usual care","Survived",TRUE
+"RWE00453",83,0,52,"Moderate","Treatment","Survived",TRUE
+"RWE00454",68,1,57,"High","Treatment","Survived",TRUE
+"RWE00455",87,2,16,"Low","Usual care","Survived",TRUE
+"RWE00456",81,1,48,"Moderate","Usual care","Survived",TRUE
+"RWE00457",40,1,48,"Low","Treatment","Survived",TRUE
+"RWE00458",52,1,39,"Moderate","Treatment","Survived",TRUE
+"RWE00459",65,3,57,"Moderate","Treatment","Died",TRUE
+"RWE00460",49,2,50,"Moderate","Treatment","Survived",TRUE
+"RWE00461",64,6,82,"High","Usual care","Died",TRUE
+"RWE00462",65,1,44,"Moderate","Treatment","Survived",TRUE
+"RWE00463",59,1,38,"Low","Treatment","Survived",TRUE
+"RWE00464",51,0,31,"Moderate","Usual care","Survived",TRUE
+"RWE00465",87,4,46,"Moderate","Usual care","Survived",TRUE
+"RWE00466",75,0,69,"Low","Treatment","Survived",TRUE
+"RWE00467",86,1,57,"Moderate","Usual care","Survived",TRUE
+"RWE00468",76,3,54,"Moderate","Usual care","Survived",TRUE
+"RWE00469",64,1,22,"Low","Usual care","Survived",TRUE
+"RWE00470",72,2,28,"Moderate","Usual care","Survived",TRUE
+"RWE00471",50,0,63,"High","Treatment","Survived",TRUE
+"RWE00472",57,1,38,"Moderate","Usual care","Survived",TRUE
+"RWE00473",58,1,47,"Low","Treatment","Died",TRUE
+"RWE00474",69,1,47,"Low","Treatment","Survived",TRUE
+"RWE00475",74,0,47,"High","Treatment","Survived",TRUE
+"RWE00476",31,1,53,"High","Usual care","Survived",TRUE
+"RWE00477",63,2,38,"Low","Treatment","Survived",TRUE
+"RWE00478",84,3,52,"High","Treatment","Survived",TRUE
+"RWE00479",73,3,69,"High","Usual care","Died",TRUE
+"RWE00480",51,1,39,"High","Usual care","Survived",TRUE
+"RWE00481",65,2,66,"High","Usual care","Died",TRUE
+"RWE00482",51,1,52,"High","Treatment","Survived",TRUE
+"RWE00483",63,0,28,"Moderate","Usual care","Survived",TRUE
+"RWE00484",72,0,58,"High","Usual care","Survived",TRUE
+"RWE00485",90,5,49,"High","Treatment","Survived",TRUE
+"RWE00486",37,0,37,"High","Treatment","Survived",TRUE
+"RWE00487",72,1,29,"Moderate","Usual care","Survived",TRUE
+"RWE00488",66,5,19,"High","Usual care","Survived",TRUE
+"RWE00489",46,0,47,"Low","Usual care","Survived",TRUE
+"RWE00490",95,3,76,"Moderate","Treatment","Died",TRUE
+"RWE00491",83,7,18,"Moderate","Usual care","Died",TRUE
+"RWE00492",57,0,36,"High","Treatment","Survived",TRUE
+"RWE00493",70,1,41,"Moderate","Usual care","Survived",TRUE
+"RWE00494",52,0,49,"Low","Usual care","Died",TRUE
+"RWE00495",43,0,64,"High","Treatment","Survived",TRUE
+"RWE00496",57,1,43,"Moderate","Usual care","Survived",TRUE
+"RWE00497",78,3,45,"Moderate","Usual care","Survived",TRUE
+"RWE00498",79,1,44,"Low","Usual care","Survived",TRUE
+"RWE00499",61,0,20,"Moderate","Usual care","Survived",TRUE
+"RWE00500",38,2,49,"High","Usual care","Died",TRUE
+"RWE00501",52,0,24,"High","Usual care","Survived",TRUE
+"RWE00502",44,2,61,"High","Treatment","Survived",TRUE
+"RWE00503",68,0,25,"Moderate","Usual care","Survived",TRUE
+"RWE00504",34,1,41,"Moderate","Usual care","Survived",TRUE
+"RWE00505",76,3,45,"High","Usual care","Died",TRUE
+"RWE00506",75,2,41,"Moderate","Usual care","Survived",TRUE
+"RWE00507",63,1,51,"High","Usual care","Survived",TRUE
+"RWE00508",79,1,43,"Moderate","Usual care","Survived",TRUE
+"RWE00509",47,1,53,"High","Usual care","Survived",TRUE
+"RWE00510",45,1,32,"High","Treatment","Survived",TRUE
+"RWE00511",50,0,24,"Moderate","Usual care","Survived",TRUE
+"RWE00512",67,0,49,"Low","Usual care","Survived",TRUE
+"RWE00513",75,4,31,"Moderate","Usual care","Survived",TRUE
+"RWE00514",78,3,39,"Moderate","Usual care","Survived",TRUE
+"RWE00515",74,1,49,"Moderate","Treatment","Survived",TRUE
+"RWE00516",57,0,68,"High","Usual care","Died",TRUE
+"RWE00517",77,3,55,"Moderate","Usual care","Survived",TRUE
+"RWE00518",50,1,41,"Moderate","Usual care","Survived",TRUE
+"RWE00519",58,1,54,"Moderate","Treatment","Survived",TRUE
+"RWE00520",85,2,57,"Moderate","Usual care","Died",TRUE
+"RWE00521",66,1,29,"Moderate","Treatment","Survived",TRUE
+"RWE00522",69,3,48,"Low","Usual care","Survived",TRUE
+"RWE00523",85,2,48,"Moderate","Treatment","Survived",TRUE
+"RWE00524",41,1,45,"Low","Treatment","Survived",TRUE
+"RWE00525",89,0,47,"High","Usual care","Survived",TRUE
+"RWE00526",23,1,36,"Moderate","Treatment","Survived",TRUE
+"RWE00527",76,2,38,"High","Usual care","Survived",TRUE
+"RWE00528",83,3,57,"Low","Usual care","Survived",TRUE
+"RWE00529",80,2,48,"High","Treatment","Survived",TRUE
+"RWE00530",72,5,43,"High","Usual care","Died",TRUE
+"RWE00531",55,0,39,"High","Usual care","Survived",TRUE
+"RWE00532",44,1,29,"Low","Treatment","Survived",TRUE
+"RWE00533",40,2,95,"Moderate","Treatment","Survived",TRUE
+"RWE00534",70,1,38,"Moderate","Usual care","Survived",TRUE
+"RWE00535",90,3,27,"Moderate","Usual care","Survived",TRUE
+"RWE00536",53,2,26,"Moderate","Usual care","Survived",TRUE
+"RWE00537",70,2,38,"High","Usual care","Survived",TRUE
+"RWE00538",84,3,52,"Low","Treatment","Survived",TRUE
+"RWE00539",54,1,34,"Moderate","Treatment","Survived",TRUE
+"RWE00540",71,0,45,"Low","Treatment","Survived",TRUE
+"RWE00541",59,3,49,"Low","Usual care","Survived",TRUE
+"RWE00542",95,3,45,"High","Usual care","Survived",TRUE
+"RWE00543",64,1,54,"Low","Treatment","Survived",TRUE
+"RWE00544",95,1,64,"Low","Treatment","Survived",TRUE
+"RWE00545",33,0,59,"High","Usual care","Survived",TRUE
+"RWE00546",79,2,68,"Moderate","Treatment","Died",TRUE
+"RWE00547",57,1,64,"Moderate","Treatment","Survived",TRUE
+"RWE00548",49,0,64,"High","Treatment","Survived",TRUE
+"RWE00549",49,0,34,"High","Usual care","Survived",TRUE
+"RWE00550",75,4,48,"Moderate","Usual care","Survived",TRUE
+"RWE00551",83,0,69,"Moderate","Usual care","Survived",TRUE
+"RWE00552",80,1,50,"Moderate","Usual care","Died",TRUE
+"RWE00553",52,0,38,"Moderate","Usual care","Survived",TRUE
+"RWE00554",67,3,34,"Moderate","Usual care","Survived",TRUE
+"RWE00555",73,3,51,"Low","Treatment","Survived",TRUE
+"RWE00556",59,1,36,"High","Treatment","Survived",TRUE
+"RWE00557",64,0,14,"High","Usual care","Survived",TRUE
+"RWE00558",72,1,47,"Low","Usual care","Survived",TRUE
+"RWE00559",60,0,49,"High","Treatment","Survived",TRUE
+"RWE00560",82,2,79,"Moderate","Usual care","Died",TRUE
+"RWE00561",70,3,52,"Moderate","Usual care","Died",TRUE
+"RWE00562",65,2,50,"Moderate","Treatment","Survived",TRUE
+"RWE00563",46,1,14,"High","Usual care","Survived",TRUE
+"RWE00564",50,2,29,"High","Usual care","Survived",TRUE
+"RWE00565",74,2,47,"Low","Treatment","Died",TRUE
+"RWE00566",78,1,51,"High","Usual care","Survived",TRUE
+"RWE00567",68,3,41,"High","Treatment","Survived",TRUE
+"RWE00568",59,5,57,"Low","Treatment","Died",TRUE
+"RWE00569",78,2,54,"High","Treatment","Died",TRUE
+"RWE00570",36,0,5,"Moderate","Usual care","Survived",TRUE
+"RWE00571",66,0,41,"High","Usual care","Survived",TRUE
+"RWE00572",53,1,17,"High","Usual care","Survived",TRUE
+"RWE00573",83,2,48,"Low","Usual care","Survived",TRUE
+"RWE00574",79,2,47,"High","Treatment","Died",TRUE
+"RWE00575",60,1,57,"Moderate","Treatment","Survived",TRUE
+"RWE00576",68,0,38,"Low","Usual care","Survived",TRUE
+"RWE00577",77,0,62,"High","Treatment","Survived",TRUE
+"RWE00578",76,0,47,"High","Treatment","Survived",TRUE
+"RWE00579",64,0,15,"High","Usual care","Survived",TRUE
+"RWE00580",67,0,52,"Moderate","Usual care","Survived",TRUE
+"RWE00581",55,0,52,"High","Treatment","Survived",TRUE
+"RWE00582",68,0,28,"Moderate","Treatment","Survived",TRUE
+"RWE00583",87,4,44,"Moderate","Usual care","Survived",TRUE
+"RWE00584",63,0,29,"Moderate","Usual care","Survived",TRUE
+"RWE00585",70,0,34,"High","Usual care","Survived",TRUE
+"RWE00586",50,1,52,"High","Usual care","Survived",TRUE
+"RWE00587",50,1,46,"Low","Usual care","Died",TRUE
+"RWE00588",67,0,42,"Low","Usual care","Survived",TRUE
+"RWE00589",69,1,53,"Low","Treatment","Survived",TRUE
+"RWE00590",63,1,35,"Moderate","Usual care","Survived",TRUE
+"RWE00591",64,1,50,"Moderate","Usual care","Survived",TRUE
+"RWE00592",64,2,21,"Moderate","Treatment","Survived",TRUE
+"RWE00593",56,1,34,"Moderate","Usual care","Survived",TRUE
+"RWE00594",55,0,36,"Moderate","Usual care","Survived",TRUE
+"RWE00595",59,1,78,"Moderate","Treatment","Survived",TRUE
+"RWE00596",54,3,69,"Moderate","Usual care","Died",TRUE
+"RWE00597",79,4,53,"Moderate","Treatment","Survived",TRUE
+"RWE00598",89,3,33,"Moderate","Usual care","Survived",TRUE
+"RWE00599",55,1,20,"Low","Usual care","Survived",TRUE
+"RWE00600",77,1,33,"High","Usual care","Survived",TRUE
+"RWE00601",46,2,69,"High","Treatment","Survived",TRUE
+"RWE00602",87,0,51,"Low","Usual care","Died",TRUE
+"RWE00603",48,0,51,"Moderate","Treatment","Survived",TRUE
+"RWE00604",81,5,60,"Moderate","Usual care","Died",TRUE
+"RWE00605",60,1,29,"Low","Usual care","Survived",TRUE
+"RWE00606",71,1,36,"Moderate","Treatment","Survived",TRUE
+"RWE00607",62,0,40,"High","Usual care","Survived",TRUE
+"RWE00608",68,2,37,"High","Usual care","Survived",TRUE
+"RWE00609",69,2,33,"High","Usual care","Survived",TRUE
+"RWE00610",46,2,57,"High","Usual care","Survived",TRUE
+"RWE00611",72,1,25,"High","Usual care","Survived",TRUE
+"RWE00612",93,3,79,"Moderate","Usual care","Died",TRUE
+"RWE00613",66,1,65,"Moderate","Treatment","Died",TRUE
+"RWE00614",62,0,46,"Moderate","Usual care","Survived",TRUE
+"RWE00615",92,3,8,"Low","Usual care","Survived",TRUE
+"RWE00616",70,1,43,"Low","Usual care","Survived",TRUE
+"RWE00617",55,0,68,"Moderate","Usual care","Survived",TRUE
+"RWE00618",72,2,46,"Moderate","Usual care","Survived",TRUE
+"RWE00619",44,0,52,"High","Usual care","Survived",TRUE
+"RWE00620",51,0,23,"Moderate","Usual care","Survived",TRUE
+"RWE00621",44,2,35,"Moderate","Usual care","Survived",TRUE
+"RWE00622",77,1,32,"High","Treatment","Survived",TRUE
+"RWE00623",63,1,65,"Low","Treatment","Died",TRUE
+"RWE00624",58,1,44,"Low","Usual care","Survived",TRUE
+"RWE00625",63,1,51,"Moderate","Treatment","Survived",TRUE
+"RWE00626",83,2,46,"Moderate","Treatment","Survived",TRUE
+"RWE00627",66,3,21,"High","Usual care","Survived",TRUE
+"RWE00628",60,2,58,"Low","Treatment","Survived",TRUE
+"RWE00629",64,2,60,"Moderate","Treatment","Survived",TRUE
+"RWE00630",78,1,37,"High","Usual care","Died",TRUE
+"RWE00631",60,0,52,"High","Treatment","Died",TRUE
+"RWE00632",57,0,56,"High","Usual care","Died",TRUE
+"RWE00633",64,1,46,"Moderate","Treatment","Died",TRUE
+"RWE00634",36,0,47,"Low","Usual care","Survived",TRUE
+"RWE00635",60,2,52,"Moderate","Usual care","Survived",TRUE
+"RWE00636",62,1,51,"Low","Usual care","Survived",TRUE
+"RWE00637",95,0,45,"High","Treatment","Survived",TRUE
+"RWE00638",27,0,43,"High","Usual care","Survived",TRUE
+"RWE00639",67,3,24,"Moderate","Usual care","Survived",TRUE
+"RWE00640",82,0,18,"High","Usual care","Survived",TRUE
+"RWE00641",65,2,49,"Low","Usual care","Survived",TRUE
+"RWE00642",65,1,50,"Moderate","Treatment","Survived",TRUE
+"RWE00643",66,1,51,"High","Usual care","Died",TRUE
+"RWE00644",48,1,42,"Low","Treatment","Survived",TRUE
+"RWE00645",66,1,15,"Moderate","Usual care","Survived",TRUE
+"RWE00646",60,0,58,"Moderate","Treatment","Survived",TRUE
+"RWE00647",28,0,39,"Moderate","Treatment","Survived",TRUE
+"RWE00648",47,1,29,"High","Usual care","Survived",TRUE
+"RWE00649",66,0,70,"High","Treatment","Survived",TRUE
+"RWE00650",53,0,49,"Moderate","Usual care","Survived",TRUE
+"RWE00651",53,0,54,"Moderate","Treatment","Survived",TRUE
+"RWE00652",72,2,62,"High","Usual care","Survived",TRUE
+"RWE00653",71,2,69,"Low","Treatment","Survived",TRUE
+"RWE00654",84,1,46,"High","Usual care","Survived",TRUE
+"RWE00655",62,0,24,"Low","Usual care","Survived",TRUE
+"RWE00656",74,0,68,"Low","Usual care","Survived",TRUE
+"RWE00657",67,5,13,"Moderate","Usual care","Survived",TRUE
+"RWE00658",62,0,45,"Moderate","Treatment","Survived",TRUE
+"RWE00659",38,0,39,"Moderate","Treatment","Survived",TRUE
+"RWE00660",95,4,51,"Moderate","Usual care","Died",TRUE
+"RWE00661",72,1,38,"Moderate","Usual care","Died",TRUE
+"RWE00662",67,1,44,"High","Treatment","Survived",TRUE
+"RWE00663",37,0,35,"High","Treatment","Survived",TRUE
+"RWE00664",70,2,54,"Low","Treatment","Survived",TRUE
+"RWE00665",65,3,43,"High","Usual care","Died",TRUE
+"RWE00666",68,1,36,"High","Treatment","Survived",TRUE
+"RWE00667",68,1,74,"Moderate","Usual care","Died",TRUE
+"RWE00668",53,0,47,"Moderate","Usual care","Survived",TRUE
+"RWE00669",65,2,81,"Moderate","Usual care","Died",TRUE
+"RWE00670",40,0,35,"Low","Usual care","Survived",TRUE
+"RWE00671",56,3,42,"High","Usual care","Survived",TRUE
+"RWE00672",59,1,62,"Moderate","Treatment","Survived",TRUE
+"RWE00673",86,4,49,"Moderate","Usual care","Survived",TRUE
+"RWE00674",71,1,38,"High","Treatment","Survived",TRUE
+"RWE00675",67,1,48,"Low","Usual care","Survived",TRUE
+"RWE00676",94,2,62,"Moderate","Treatment","Survived",TRUE
+"RWE00677",46,0,38,"Low","Usual care","Survived",TRUE
+"RWE00678",65,0,49,"Moderate","Treatment","Survived",TRUE
+"RWE00679",77,2,62,"Moderate","Usual care","Survived",TRUE
+"RWE00680",40,2,26,"High","Usual care","Survived",TRUE
+"RWE00681",86,3,48,"Moderate","Usual care","Survived",TRUE
+"RWE00682",72,1,11,"Moderate","Usual care","Survived",TRUE
+"RWE00683",62,2,10,"High","Usual care","Survived",TRUE
+"RWE00684",78,0,63,"High","Treatment","Died",TRUE
+"RWE00685",80,5,56,"Moderate","Usual care","Died",TRUE
+"RWE00686",69,2,47,"High","Usual care","Survived",TRUE
+"RWE00687",95,3,33,"High","Usual care","Died",TRUE
+"RWE00688",72,2,16,"Moderate","Usual care","Died",TRUE
+"RWE00689",45,3,41,"High","Usual care","Survived",TRUE
+"RWE00690",49,3,50,"Moderate","Usual care","Died",TRUE
+"RWE00691",80,2,34,"High","Treatment","Survived",TRUE
+"RWE00692",57,2,15,"Low","Usual care","Survived",TRUE
+"RWE00693",49,1,50,"Moderate","Treatment","Survived",TRUE
+"RWE00694",55,2,41,"High","Treatment","Survived",TRUE
+"RWE00695",64,2,28,"High","Usual care","Survived",TRUE
+"RWE00696",86,0,41,"High","Usual care","Died",TRUE
+"RWE00697",64,1,47,"Moderate","Usual care","Survived",TRUE
+"RWE00698",94,0,39,"High","Usual care","Survived",TRUE
+"RWE00699",67,1,39,"Moderate","Usual care","Survived",TRUE
+"RWE00700",41,1,27,"High","Treatment","Survived",TRUE
+"RWE00701",59,0,95,"High","Usual care","Survived",TRUE
+"RWE00702",48,0,31,"Moderate","Usual care","Survived",TRUE
+"RWE00703",66,1,59,"Moderate","Usual care","Survived",TRUE
+"RWE00704",62,1,5,"Low","Treatment","Survived",TRUE
+"RWE00705",69,3,50,"High","Usual care","Survived",TRUE
+"RWE00706",53,0,33,"Moderate","Usual care","Survived",TRUE
+"RWE00707",84,4,75,"High","Treatment","Died",TRUE
+"RWE00708",92,5,78,"Low","Usual care","Died",TRUE
+"RWE00709",74,1,36,"High","Usual care","Survived",TRUE
+"RWE00710",70,3,30,"Low","Treatment","Survived",TRUE
+"RWE00711",45,2,60,"High","Treatment","Survived",TRUE
+"RWE00712",56,0,50,"High","Treatment","Survived",TRUE
+"RWE00713",85,2,25,"Low","Treatment","Survived",TRUE
+"RWE00714",32,0,34,"High","Usual care","Survived",TRUE
+"RWE00715",77,2,60,"Low","Treatment","Died",TRUE
+"RWE00716",78,4,69,"Moderate","Usual care","Died",TRUE
+"RWE00717",57,1,27,"Moderate","Usual care","Survived",TRUE
+"RWE00718",51,2,22,"High","Usual care","Survived",TRUE
+"RWE00719",80,2,34,"Low","Treatment","Survived",TRUE
+"RWE00720",26,0,30,"Moderate","Usual care","Survived",TRUE
+"RWE00721",68,1,27,"Moderate","Usual care","Survived",TRUE
+"RWE00722",47,0,36,"High","Treatment","Survived",TRUE
+"RWE00723",60,2,64,"High","Treatment","Survived",TRUE
+"RWE00724",63,3,61,"Moderate","Treatment","Died",TRUE
+"RWE00725",47,1,53,"Moderate","Treatment","Survived",TRUE
+"RWE00726",58,4,37,"Moderate","Usual care","Survived",TRUE
+"RWE00727",95,3,38,"Moderate","Usual care","Survived",TRUE
+"RWE00728",53,0,40,"High","Treatment","Survived",TRUE
+"RWE00729",62,1,36,"Moderate","Usual care","Survived",TRUE
+"RWE00730",52,1,48,"Moderate","Usual care","Died",TRUE
+"RWE00731",80,3,37,"High","Usual care","Died",TRUE
+"RWE00732",45,0,70,"High","Treatment","Survived",TRUE
+"RWE00733",61,0,90,"Low","Treatment","Survived",TRUE
+"RWE00734",80,1,47,"High","Treatment","Survived",TRUE
+"RWE00735",61,1,47,"Moderate","Usual care","Survived",TRUE
+"RWE00736",74,2,30,"Low","Usual care","Survived",TRUE
+"RWE00737",95,4,40,"High","Usual care","Survived",TRUE
+"RWE00738",67,2,27,"High","Usual care","Survived",TRUE
+"RWE00739",59,0,63,"High","Treatment","Survived",TRUE
+"RWE00740",79,2,87,"Moderate","Treatment","Died",TRUE
+"RWE00741",52,0,26,"Low","Usual care","Survived",TRUE
+"RWE00742",54,2,32,"Low","Usual care","Survived",TRUE
+"RWE00743",41,0,49,"Moderate","Usual care","Survived",TRUE
+"RWE00744",37,1,46,"Moderate","Usual care","Survived",TRUE
+"RWE00745",87,2,63,"Moderate","Treatment","Survived",TRUE
+"RWE00746",83,4,51,"Moderate","Usual care","Survived",TRUE
+"RWE00747",52,3,34,"Moderate","Usual care","Survived",TRUE
+"RWE00748",59,1,37,"Low","Usual care","Survived",TRUE
+"RWE00749",58,1,53,"High","Usual care","Survived",TRUE
+"RWE00750",37,0,47,"High","Usual care","Survived",TRUE
+"RWE00751",76,2,63,"Moderate","Usual care","Survived",TRUE
+"RWE00752",47,2,61,"Low","Treatment","Survived",TRUE
+"RWE00753",62,2,48,"High","Treatment","Died",TRUE
+"RWE00754",75,2,78,"High","Treatment","Died",TRUE
+"RWE00755",56,0,38,"Moderate","Usual care","Survived",TRUE
+"RWE00756",59,0,78,"Low","Treatment","Survived",TRUE
+"RWE00757",69,0,46,"Moderate","Treatment","Survived",TRUE
+"RWE00758",63,0,40,"Low","Treatment","Survived",TRUE
+"RWE00759",50,0,43,"High","Treatment","Survived",TRUE
+"RWE00760",73,3,53,"High","Usual care","Died",TRUE
+"RWE00761",78,5,41,"Moderate","Usual care","Survived",TRUE
+"RWE00762",74,1,53,"High","Treatment","Died",TRUE
+"RWE00763",75,1,55,"High","Usual care","Survived",TRUE
+"RWE00764",43,4,33,"Low","Usual care","Survived",TRUE
+"RWE00765",95,2,48,"Low","Usual care","Survived",TRUE
+"RWE00766",61,1,37,"Moderate","Usual care","Survived",TRUE
+"RWE00767",92,3,36,"Moderate","Usual care","Survived",TRUE
+"RWE00768",44,0,60,"Moderate","Usual care","Survived",TRUE
+"RWE00769",45,0,25,"Moderate","Treatment","Survived",TRUE
+"RWE00770",57,0,48,"High","Treatment","Survived",TRUE
+"RWE00771",75,2,45,"Low","Usual care","Survived",TRUE
+"RWE00772",68,0,61,"High","Treatment","Survived",TRUE
+"RWE00773",39,0,25,"High","Usual care","Survived",TRUE
+"RWE00774",73,0,73,"Moderate","Treatment","Survived",TRUE
+"RWE00775",55,3,47,"Moderate","Usual care","Died",TRUE
+"RWE00776",61,0,47,"High","Treatment","Survived",TRUE
+"RWE00777",62,1,55,"High","Treatment","Died",TRUE
+"RWE00778",73,3,71,"Low","Treatment","Survived",TRUE
+"RWE00779",76,2,58,"High","Treatment","Died",TRUE
+"RWE00780",70,1,66,"High","Treatment","Survived",TRUE
+"RWE00781",61,2,43,"Moderate","Treatment","Survived",TRUE
+"RWE00782",68,1,44,"Moderate","Usual care","Survived",TRUE
+"RWE00783",77,4,83,"High","Treatment","Died",TRUE
+"RWE00784",94,2,50,"Moderate","Treatment","Survived",TRUE
+"RWE00785",65,1,60,"Moderate","Treatment","Survived",TRUE
+"RWE00786",78,2,23,"Moderate","Usual care","Survived",TRUE
+"RWE00787",66,1,57,"Moderate","Usual care","Survived",TRUE
+"RWE00788",71,0,52,"High","Treatment","Survived",TRUE
+"RWE00789",61,0,57,"Moderate","Treatment","Survived",TRUE
+"RWE00790",68,0,41,"Moderate","Usual care","Survived",TRUE
+"RWE00791",76,2,40,"Moderate","Treatment","Survived",TRUE
+"RWE00792",95,1,83,"Low","Treatment","Died",TRUE
+"RWE00793",40,0,36,"Moderate","Usual care","Survived",TRUE
+"RWE00794",38,0,50,"Low","Usual care","Survived",TRUE
+"RWE00795",55,2,17,"Low","Usual care","Survived",TRUE
+"RWE00796",88,5,30,"High","Treatment","Survived",TRUE
+"RWE00797",27,0,45,"High","Usual care","Survived",TRUE
+"RWE00798",63,0,53,"Moderate","Usual care","Survived",TRUE
+"RWE00799",40,1,39,"Moderate","Usual care","Survived",TRUE
+"RWE00800",69,1,35,"Moderate","Usual care","Survived",TRUE
+"RWE00801",72,2,71,"High","Treatment","Died",TRUE
+"RWE00802",83,1,51,"High","Treatment","Survived",TRUE
+"RWE00803",74,0,37,"High","Treatment","Survived",TRUE
+"RWE00804",62,1,38,"Low","Usual care","Survived",TRUE
+"RWE00805",63,2,65,"High","Usual care","Survived",TRUE
+"RWE00806",64,0,66,"Moderate","Usual care","Survived",TRUE
+"RWE00807",83,1,77,"Moderate","Treatment","Survived",TRUE
+"RWE00808",31,0,61,"Moderate","Treatment","Survived",TRUE
+"RWE00809",81,1,49,"Moderate","Usual care","Survived",TRUE
+"RWE00810",46,2,60,"Moderate","Usual care","Survived",TRUE
+"RWE00811",64,2,53,"High","Usual care","Survived",TRUE
+"RWE00812",41,0,34,"Moderate","Treatment","Survived",TRUE
+"RWE00813",84,1,73,"High","Treatment","Died",TRUE
+"RWE00814",39,0,62,"High","Treatment","Survived",TRUE
+"RWE00815",56,1,51,"Moderate","Usual care","Died",TRUE
+"RWE00816",74,2,26,"Moderate","Usual care","Survived",TRUE
+"RWE00817",72,0,21,"High","Usual care","Survived",TRUE
+"RWE00818",80,0,57,"Moderate","Treatment","Survived",TRUE
+"RWE00819",74,3,27,"Low","Usual care","Survived",TRUE
+"RWE00820",58,1,87,"Moderate","Treatment","Survived",TRUE
+"RWE00821",79,1,62,"Moderate","Treatment","Died",TRUE
+"RWE00822",83,2,77,"High","Treatment","Died",TRUE
+"RWE00823",72,1,51,"Moderate","Treatment","Survived",TRUE
+"RWE00824",35,0,67,"Low","Treatment","Survived",TRUE
+"RWE00825",58,0,70,"Moderate","Treatment","Survived",TRUE
+"RWE00826",77,2,48,"Moderate","Usual care","Died",TRUE
+"RWE00827",70,3,28,"Moderate","Usual care","Survived",TRUE
+"RWE00828",83,2,69,"High","Treatment","Died",TRUE
+"RWE00829",74,2,41,"Moderate","Usual care","Survived",TRUE
+"RWE00830",95,1,60,"Low","Usual care","Died",TRUE
+"RWE00831",85,1,13,"High","Usual care","Survived",TRUE
+"RWE00832",72,1,56,"Low","Usual care","Survived",TRUE
+"RWE00833",82,4,9,"Low","Usual care","Survived",TRUE
+"RWE00834",48,2,48,"Moderate","Treatment","Died",TRUE
+"RWE00835",68,0,50,"Moderate","Usual care","Survived",TRUE
+"RWE00836",39,1,50,"Moderate","Treatment","Died",TRUE
+"RWE00837",53,1,48,"Moderate","Usual care","Survived",TRUE
+"RWE00838",82,3,51,"Moderate","Usual care","Survived",TRUE
+"RWE00839",51,0,53,"High","Treatment","Survived",TRUE
+"RWE00840",19,0,24,"Low","Usual care","Survived",TRUE
+"RWE00841",69,1,46,"High","Usual care","Survived",TRUE
+"RWE00842",83,2,47,"High","Usual care","Died",TRUE
+"RWE00843",74,2,53,"Low","Usual care","Died",TRUE
+"RWE00844",82,2,67,"Low","Treatment","Died",TRUE
+"RWE00845",70,0,62,"Moderate","Treatment","Survived",TRUE
+"RWE00846",60,1,41,"High","Treatment","Survived",TRUE
+"RWE00847",57,2,46,"Moderate","Usual care","Survived",TRUE
+"RWE00848",83,2,53,"High","Treatment","Survived",TRUE
+"RWE00849",62,1,16,"Moderate","Usual care","Survived",TRUE
+"RWE00850",95,1,81,"Moderate","Usual care","Survived",TRUE
+"RWE00851",46,1,34,"Moderate","Usual care","Died",TRUE
+"RWE00852",43,1,28,"High","Treatment","Survived",TRUE
+"RWE00853",60,3,7,"Moderate","Usual care","Survived",TRUE
+"RWE00854",72,0,52,"High","Treatment","Survived",TRUE
+"RWE00855",69,1,34,"Moderate","Usual care","Survived",TRUE
+"RWE00856",57,0,47,"Moderate","Usual care","Survived",TRUE
+"RWE00857",70,1,34,"Moderate","Usual care","Survived",TRUE
+"RWE00858",46,0,52,"Moderate","Treatment","Survived",TRUE
+"RWE00859",80,1,66,"High","Usual care","Died",TRUE
+"RWE00860",62,0,40,"High","Treatment","Survived",TRUE
+"RWE00861",71,3,49,"Moderate","Usual care","Survived",TRUE
+"RWE00862",75,2,58,"High","Treatment","Survived",TRUE
+"RWE00863",26,0,52,"Low","Treatment","Survived",TRUE
+"RWE00864",66,1,46,"Moderate","Treatment","Survived",TRUE
+"RWE00865",88,2,64,"Moderate","Treatment","Died",TRUE
+"RWE00866",60,0,35,"Moderate","Usual care","Survived",TRUE
+"RWE00867",51,3,65,"Moderate","Usual care","Survived",TRUE
+"RWE00868",79,0,53,"Moderate","Usual care","Died",TRUE
+"RWE00869",54,2,45,"Moderate","Usual care","Survived",TRUE
+"RWE00870",84,0,62,"Moderate","Usual care","Survived",TRUE
+"RWE00871",82,3,48,"Moderate","Treatment","Survived",TRUE
+"RWE00872",65,2,48,"Moderate","Treatment","Survived",TRUE
+"RWE00873",63,4,41,"High","Usual care","Died",TRUE
+"RWE00874",53,0,47,"High","Usual care","Survived",TRUE
+"RWE00875",57,0,21,"Moderate","Treatment","Survived",TRUE
+"RWE00876",53,1,48,"High","Usual care","Survived",TRUE
+"RWE00877",64,1,55,"High","Usual care","Died",TRUE
+"RWE00878",79,2,47,"Low","Usual care","Survived",TRUE
+"RWE00879",76,3,41,"Moderate","Usual care","Survived",TRUE
+"RWE00880",51,1,40,"High","Usual care","Survived",TRUE
+"RWE00881",95,3,75,"Moderate","Treatment","Died",TRUE
+"RWE00882",58,1,53,"High","Usual care","Died",TRUE
+"RWE00883",53,3,50,"High","Usual care","Died",TRUE
+"RWE00884",61,0,55,"Moderate","Usual care","Survived",TRUE
+"RWE00885",61,1,63,"Moderate","Treatment","Died",TRUE
+"RWE00886",79,2,51,"Moderate","Treatment","Survived",TRUE
+"RWE00887",58,0,48,"Low","Usual care","Survived",TRUE
+"RWE00888",59,1,49,"High","Treatment","Survived",TRUE
+"RWE00889",87,1,40,"Moderate","Usual care","Survived",TRUE
+"RWE00890",70,0,73,"High","Usual care","Died",TRUE
+"RWE00891",82,2,54,"High","Usual care","Survived",TRUE
+"RWE00892",47,0,43,"High","Usual care","Survived",TRUE
+"RWE00893",86,5,54,"Moderate","Usual care","Died",TRUE
+"RWE00894",59,1,24,"Moderate","Treatment","Survived",TRUE
+"RWE00895",80,3,5,"High","Usual care","Survived",TRUE
+"RWE00896",52,0,40,"High","Treatment","Survived",TRUE
+"RWE00897",66,0,7,"High","Usual care","Survived",TRUE
+"RWE00898",64,3,43,"High","Treatment","Survived",TRUE
+"RWE00899",47,1,52,"Moderate","Usual care","Survived",TRUE
+"RWE00900",53,0,53,"Low","Treatment","Survived",TRUE
+"RWE00901",73,1,80,"Moderate","Usual care","Died",TRUE
+"RWE00902",66,0,20,"Low","Usual care","Survived",TRUE
+"RWE00903",74,0,38,"High","Usual care","Survived",TRUE
+"RWE00904",68,3,60,"Moderate","Usual care","Survived",TRUE
+"RWE00905",67,0,30,"Low","Usual care","Survived",TRUE
+"RWE00906",57,0,26,"Moderate","Usual care","Survived",TRUE
+"RWE00907",70,1,54,"Moderate","Usual care","Survived",TRUE
+"RWE00908",86,1,53,"High","Treatment","Survived",TRUE
+"RWE00909",88,1,36,"Low","Usual care","Survived",TRUE
+"RWE00910",63,0,39,"Moderate","Treatment","Survived",TRUE
+"RWE00911",82,3,33,"Moderate","Usual care","Survived",TRUE
+"RWE00912",56,1,34,"High","Treatment","Survived",TRUE
+"RWE00913",78,0,38,"High","Usual care","Survived",TRUE
+"RWE00914",60,1,68,"Moderate","Treatment","Died",TRUE
+"RWE00915",65,0,35,"High","Treatment","Survived",TRUE
+"RWE00916",83,3,37,"High","Usual care","Survived",TRUE
+"RWE00917",85,3,68,"High","Treatment","Died",TRUE
+"RWE00918",44,2,65,"High","Usual care","Died",TRUE
+"RWE00919",81,1,38,"High","Usual care","Died",TRUE
+"RWE00920",79,0,69,"Moderate","Usual care","Survived",TRUE
+"RWE00921",81,0,28,"Low","Usual care","Survived",TRUE
+"RWE00922",70,0,45,"High","Treatment","Survived",TRUE
+"RWE00923",63,1,61,"Moderate","Usual care","Died",TRUE
+"RWE00924",83,3,61,"High","Usual care","Survived",TRUE
+"RWE00925",69,2,52,"Moderate","Usual care","Survived",TRUE
+"RWE00926",65,2,29,"High","Treatment","Survived",TRUE
+"RWE00927",79,2,65,"Low","Usual care","Died",TRUE
+"RWE00928",83,1,32,"Moderate","Usual care","Survived",TRUE
+"RWE00929",69,1,38,"Moderate","Treatment","Survived",TRUE
+"RWE00930",57,0,41,"Low","Usual care","Died",TRUE
+"RWE00931",64,1,43,"Moderate","Usual care","Survived",TRUE
+"RWE00932",48,0,48,"High","Usual care","Survived",TRUE
+"RWE00933",61,0,56,"Low","Usual care","Survived",TRUE
+"RWE00934",70,3,71,"Low","Treatment","Died",TRUE
+"RWE00935",64,1,57,"High","Treatment","Survived",TRUE
+"RWE00936",66,2,40,"Low","Treatment","Survived",TRUE
+"RWE00937",53,1,39,"High","Usual care","Survived",TRUE
+"RWE00938",59,1,34,"Low","Usual care","Survived",TRUE
+"RWE00939",60,3,32,"High","Usual care","Survived",TRUE
+"RWE00940",75,1,50,"Moderate","Usual care","Died",TRUE
+"RWE00941",49,2,56,"Low","Treatment","Survived",TRUE
+"RWE00942",73,0,45,"Moderate","Usual care","Survived",TRUE
+"RWE00943",73,0,8,"Moderate","Usual care","Survived",TRUE
+"RWE00944",53,3,66,"Moderate","Usual care","Died",TRUE
+"RWE00945",80,2,58,"High","Usual care","Survived",TRUE
+"RWE00946",62,1,40,"Moderate","Treatment","Died",TRUE
+"RWE00947",54,1,10,"Moderate","Usual care","Survived",TRUE
+"RWE00948",59,2,55,"Moderate","Usual care","Survived",TRUE
+"RWE00949",69,2,36,"Low","Usual care","Survived",TRUE
+"RWE00950",70,1,53,"Moderate","Usual care","Survived",TRUE
+"RWE00951",57,0,50,"High","Usual care","Survived",TRUE
+"RWE00952",61,3,48,"High","Usual care","Died",TRUE
+"RWE00953",90,2,60,"High","Treatment","Survived",TRUE
+"RWE00954",67,0,62,"Moderate","Usual care","Survived",TRUE
+"RWE00955",50,0,43,"High","Usual care","Survived",TRUE
+"RWE00956",65,4,40,"Moderate","Usual care","Survived",TRUE
+"RWE00957",35,0,40,"Low","Treatment","Survived",TRUE
+"RWE00958",80,2,73,"Moderate","Treatment","Survived",TRUE
+"RWE00959",57,2,51,"Moderate","Usual care","Survived",TRUE
+"RWE00960",87,2,45,"High","Treatment","Survived",TRUE
+"RWE00961",61,0,34,"High","Usual care","Survived",TRUE
+"RWE00962",86,4,49,"Moderate","Usual care","Survived",TRUE
+"RWE00963",72,1,43,"Moderate","Usual care","Survived",TRUE
+"RWE00964",54,1,31,"Moderate","Usual care","Survived",TRUE
+"RWE00965",57,2,8,"Low","Usual care","Survived",TRUE
+"RWE00966",58,1,52,"Low","Usual care","Survived",TRUE
+"RWE00967",66,0,20,"High","Usual care","Survived",TRUE
+"RWE00968",73,2,40,"Moderate","Usual care","Survived",TRUE
+"RWE00969",72,2,50,"High","Treatment","Survived",TRUE
+"RWE00970",84,4,49,"Low","Usual care","Died",TRUE
+"RWE00971",72,2,31,"High","Usual care","Survived",TRUE
+"RWE00972",72,1,67,"High","Treatment","Survived",TRUE
+"RWE00973",52,1,32,"High","Usual care","Survived",TRUE
+"RWE00974",63,3,40,"Low","Usual care","Survived",TRUE
+"RWE00975",79,0,60,"Moderate","Treatment","Survived",TRUE
+"RWE00976",63,0,24,"High","Treatment","Survived",TRUE
+"RWE00977",87,0,50,"High","Usual care","Died",TRUE
+"RWE00978",65,3,50,"Low","Usual care","Survived",TRUE
+"RWE00979",58,2,47,"Moderate","Usual care","Survived",TRUE
+"RWE00980",57,0,37,"Moderate","Usual care","Survived",TRUE
+"RWE00981",57,0,43,"Low","Usual care","Died",TRUE
+"RWE00982",56,4,26,"Low","Treatment","Survived",TRUE
+"RWE00983",81,0,75,"Moderate","Treatment","Survived",TRUE
+"RWE00984",68,1,27,"High","Treatment","Survived",TRUE
+"RWE00985",95,2,52,"High","Usual care","Survived",TRUE
+"RWE00986",91,1,70,"Low","Usual care","Died",TRUE
+"RWE00987",95,4,44,"Moderate","Treatment","Survived",TRUE
+"RWE00988",48,0,31,"Low","Usual care","Survived",TRUE
+"RWE00989",70,1,50,"High","Usual care","Died",TRUE
+"RWE00990",77,2,57,"Low","Usual care","Survived",TRUE
+"RWE00991",59,2,32,"Low","Usual care","Survived",TRUE
+"RWE00992",52,1,46,"Moderate","Treatment","Died",TRUE
+"RWE00993",58,2,52,"Low","Treatment","Survived",TRUE
+"RWE00994",70,1,47,"High","Treatment","Survived",TRUE
+"RWE00995",59,0,26,"High","Usual care","Survived",TRUE
+"RWE00996",57,2,57,"High","Treatment","Survived",TRUE
+"RWE00997",79,1,56,"High","Usual care","Died",TRUE
+"RWE00998",58,0,28,"Moderate","Treatment","Survived",TRUE
+"RWE00999",60,1,61,"Low","Usual care","Survived",TRUE
+"RWE01000",95,2,39,"Moderate","Usual care","Survived",TRUE
+"RWE01001",95,2,57,"High","Usual care","Survived",TRUE
+"RWE01002",36,0,26,"High","Usual care","Survived",TRUE
+"RWE01003",85,3,56,"High","Usual care","Died",TRUE
+"RWE01004",50,0,51,"High","Treatment","Survived",TRUE
+"RWE01005",71,0,39,"Low","Usual care","Survived",TRUE
+"RWE01006",42,2,36,"High","Usual care","Died",TRUE
+"RWE01007",74,0,56,"High","Usual care","Died",TRUE
+"RWE01008",47,0,67,"Moderate","Usual care","Survived",TRUE
+"RWE01009",51,1,12,"Moderate","Usual care","Died",TRUE
+"RWE01010",36,0,14,"High","Usual care","Survived",TRUE
+"RWE01011",54,2,43,"High","Usual care","Survived",TRUE
+"RWE01012",55,1,17,"Moderate","Usual care","Survived",TRUE
+"RWE01013",40,0,44,"High","Usual care","Survived",TRUE
+"RWE01014",47,0,59,"Moderate","Treatment","Survived",TRUE
+"RWE01015",61,0,51,"Low","Usual care","Survived",TRUE
+"RWE01016",75,0,58,"High","Treatment","Survived",TRUE
+"RWE01017",39,0,31,"Moderate","Treatment","Survived",TRUE
+"RWE01018",73,4,69,"High","Treatment","Survived",TRUE
+"RWE01019",70,2,47,"Low","Treatment","Survived",TRUE
+"RWE01020",61,0,40,"Low","Usual care","Survived",TRUE
+"RWE01021",73,4,63,"Low","Treatment","Survived",TRUE
+"RWE01022",60,3,35,"Moderate","Treatment","Survived",TRUE
+"RWE01023",57,1,46,"Low","Treatment","Survived",TRUE
+"RWE01024",78,5,49,"Moderate","Usual care","Survived",TRUE
+"RWE01025",66,1,44,"Moderate","Usual care","Survived",TRUE
+"RWE01026",57,3,46,"High","Usual care","Survived",TRUE
+"RWE01027",82,3,39,"Moderate","Treatment","Survived",TRUE
+"RWE01028",56,0,46,"High","Usual care","Survived",TRUE
+"RWE01029",36,0,55,"Moderate","Treatment","Survived",TRUE
+"RWE01030",67,3,44,"Moderate","Usual care","Survived",TRUE
+"RWE01031",81,2,60,"Moderate","Usual care","Died",TRUE
+"RWE01032",78,2,49,"Low","Treatment","Survived",TRUE
+"RWE01033",62,0,34,"Moderate","Usual care","Survived",TRUE
+"RWE01034",70,3,48,"High","Treatment","Survived",TRUE
+"RWE01035",52,2,45,"Moderate","Usual care","Survived",TRUE
+"RWE01036",73,2,47,"Moderate","Treatment","Survived",TRUE
+"RWE01037",84,3,17,"Moderate","Usual care","Survived",TRUE
+"RWE01038",66,2,39,"Moderate","Treatment","Survived",TRUE
+"RWE01039",36,0,38,"Low","Treatment","Survived",TRUE
+"RWE01040",76,0,43,"Moderate","Usual care","Survived",TRUE
+"RWE01041",71,3,46,"Moderate","Treatment","Survived",TRUE
+"RWE01042",38,0,33,"Moderate","Usual care","Survived",TRUE
+"RWE01043",59,3,52,"Moderate","Usual care","Survived",TRUE
+"RWE01044",55,1,27,"Moderate","Usual care","Survived",TRUE
+"RWE01045",59,0,42,"Low","Usual care","Survived",TRUE
+"RWE01046",45,0,66,"High","Treatment","Survived",TRUE
+"RWE01047",54,0,37,"High","Treatment","Survived",TRUE
+"RWE01048",53,1,33,"High","Treatment","Survived",TRUE
+"RWE01049",73,1,24,"Low","Usual care","Survived",TRUE
+"RWE01050",82,1,80,"High","Treatment","Died",TRUE
+"RWE01051",95,3,55,"Moderate","Treatment","Survived",TRUE
+"RWE01052",85,3,51,"Moderate","Usual care","Survived",TRUE
+"RWE01053",82,2,29,"Low","Usual care","Died",TRUE
+"RWE01054",59,1,38,"High","Treatment","Survived",TRUE
+"RWE01055",80,0,82,"High","Treatment","Died",TRUE
+"RWE01056",71,2,79,"High","Treatment","Died",TRUE
+"RWE01057",87,1,46,"Low","Usual care","Survived",TRUE
+"RWE01058",61,0,46,"High","Usual care","Survived",TRUE
+"RWE01059",74,2,53,"Low","Usual care","Survived",TRUE
+"RWE01060",84,1,44,"Low","Usual care","Survived",TRUE
+"RWE01061",41,0,45,"Low","Usual care","Died",TRUE
+"RWE01062",55,0,25,"Moderate","Usual care","Survived",TRUE
+"RWE01063",59,1,60,"Moderate","Treatment","Survived",TRUE
+"RWE01064",67,0,47,"Moderate","Usual care","Survived",TRUE
+"RWE01065",69,3,54,"Moderate","Usual care","Survived",TRUE
+"RWE01066",51,1,63,"Moderate","Usual care","Survived",TRUE
+"RWE01067",60,0,40,"Moderate","Usual care","Survived",TRUE
+"RWE01068",79,4,36,"Moderate","Treatment","Survived",TRUE
+"RWE01069",54,1,40,"High","Usual care","Survived",TRUE
+"RWE01070",85,3,45,"High","Usual care","Survived",TRUE
+"RWE01071",58,1,52,"Moderate","Treatment","Survived",TRUE
+"RWE01072",81,2,33,"Moderate","Usual care","Survived",TRUE
+"RWE01073",63,0,60,"High","Usual care","Survived",TRUE
+"RWE01074",64,2,58,"Moderate","Treatment","Survived",TRUE
+"RWE01075",95,5,53,"High","Usual care","Survived",TRUE
+"RWE01076",59,0,26,"High","Usual care","Survived",TRUE
+"RWE01077",84,1,11,"High","Usual care","Survived",TRUE
+"RWE01078",80,4,39,"Low","Usual care","Survived",TRUE
+"RWE01079",51,0,18,"Low","Usual care","Survived",TRUE
+"RWE01080",49,0,38,"Moderate","Usual care","Survived",TRUE
+"RWE01081",72,0,33,"High","Usual care","Survived",TRUE
+"RWE01082",84,4,47,"Low","Usual care","Died",TRUE
+"RWE01083",66,0,72,"Moderate","Treatment","Survived",TRUE
+"RWE01084",76,2,63,"Low","Treatment","Survived",TRUE
+"RWE01085",56,2,51,"Moderate","Usual care","Died",TRUE
+"RWE01086",65,3,46,"Moderate","Treatment","Survived",TRUE
+"RWE01087",74,0,41,"Low","Treatment","Survived",TRUE
+"RWE01088",85,2,69,"High","Treatment","Died",TRUE
+"RWE01089",59,1,55,"Moderate","Usual care","Survived",TRUE
+"RWE01090",79,0,35,"Low","Usual care","Survived",TRUE
+"RWE01091",58,0,33,"High","Usual care","Survived",TRUE
+"RWE01092",60,1,36,"High","Usual care","Survived",TRUE
+"RWE01093",51,0,23,"Moderate","Usual care","Survived",TRUE
+"RWE01094",56,1,45,"Moderate","Usual care","Survived",TRUE
+"RWE01095",59,1,55,"Low","Treatment","Survived",TRUE
+"RWE01096",64,1,52,"Low","Treatment","Died",TRUE
+"RWE01097",68,0,35,"Moderate","Usual care","Survived",TRUE
+"RWE01098",65,2,37,"Moderate","Usual care","Survived",TRUE
+"RWE01099",81,0,20,"Moderate","Treatment","Survived",TRUE
+"RWE01100",51,1,44,"Moderate","Treatment","Survived",TRUE
+"RWE01101",81,3,27,"Low","Usual care","Survived",TRUE
+"RWE01102",56,1,43,"Low","Usual care","Survived",TRUE
+"RWE01103",72,1,63,"Moderate","Usual care","Died",TRUE
+"RWE01104",75,3,61,"Moderate","Treatment","Died",TRUE
+"RWE01105",81,2,52,"Low","Usual care","Died",TRUE
+"RWE01106",62,0,29,"Moderate","Usual care","Survived",TRUE
+"RWE01107",52,1,79,"High","Treatment","Survived",TRUE
+"RWE01108",78,2,60,"High","Treatment","Survived",TRUE
+"RWE01109",73,1,62,"Moderate","Treatment","Survived",TRUE
+"RWE01110",66,1,29,"Moderate","Usual care","Survived",TRUE
+"RWE01111",82,1,51,"High","Usual care","Survived",TRUE
+"RWE01112",49,1,32,"High","Usual care","Survived",TRUE
+"RWE01113",70,2,46,"High","Treatment","Survived",TRUE
+"RWE01114",78,1,20,"Moderate","Usual care","Survived",TRUE
+"RWE01115",66,2,54,"Moderate","Treatment","Survived",TRUE
+"RWE01116",51,2,44,"Moderate","Treatment","Survived",TRUE
+"RWE01117",82,0,31,"Low","Usual care","Survived",TRUE
+"RWE01118",69,0,43,"Moderate","Usual care","Survived",TRUE
+"RWE01119",34,0,13,"Low","Usual care","Survived",TRUE
+"RWE01120",53,3,47,"Moderate","Treatment","Survived",TRUE
+"RWE01121",48,2,46,"High","Usual care","Survived",TRUE
+"RWE01122",58,3,36,"High","Usual care","Survived",TRUE
+"RWE01123",74,4,42,"Low","Usual care","Survived",TRUE
+"RWE01124",76,2,24,"High","Usual care","Survived",TRUE
+"RWE01125",46,1,46,"Low","Usual care","Survived",TRUE
+"RWE01126",63,0,47,"Moderate","Usual care","Survived",TRUE
+"RWE01127",68,2,57,"High","Treatment","Survived",TRUE
+"RWE01128",57,0,31,"Low","Usual care","Survived",TRUE
+"RWE01129",78,0,36,"Moderate","Usual care","Survived",TRUE
+"RWE01130",86,3,57,"Low","Usual care","Died",TRUE
+"RWE01131",61,2,62,"Moderate","Treatment","Died",TRUE
+"RWE01132",69,0,29,"High","Usual care","Survived",TRUE
+"RWE01133",95,1,64,"High","Treatment","Died",TRUE
+"RWE01134",54,1,54,"Moderate","Usual care","Survived",TRUE
+"RWE01135",70,2,25,"High","Treatment","Survived",TRUE
+"RWE01136",68,2,56,"High","Treatment","Survived",TRUE
+"RWE01137",73,2,49,"Moderate","Treatment","Survived",TRUE
+"RWE01138",53,3,59,"High","Usual care","Survived",TRUE
+"RWE01139",63,2,47,"High","Treatment","Died",TRUE
+"RWE01140",71,2,47,"Moderate","Usual care","Survived",TRUE
+"RWE01141",82,3,58,"Low","Usual care","Survived",TRUE
+"RWE01142",60,1,38,"High","Treatment","Survived",TRUE
+"RWE01143",95,4,67,"Moderate","Treatment","Survived",TRUE
+"RWE01144",70,0,26,"Moderate","Treatment","Survived",TRUE
+"RWE01145",81,1,61,"Moderate","Treatment","Survived",TRUE
+"RWE01146",73,1,38,"Moderate","Treatment","Survived",TRUE
+"RWE01147",69,2,44,"High","Usual care","Survived",TRUE
+"RWE01148",52,1,41,"Moderate","Usual care","Survived",TRUE
+"RWE01149",46,1,66,"High","Treatment","Survived",TRUE
+"RWE01150",38,2,64,"High","Usual care","Died",TRUE
+"RWE01151",61,0,29,"Moderate","Usual care","Survived",TRUE
+"RWE01152",55,0,49,"High","Usual care","Survived",TRUE
+"RWE01153",71,1,44,"Moderate","Usual care","Survived",TRUE
+"RWE01154",73,2,61,"High","Treatment","Survived",TRUE
+"RWE01155",78,1,46,"Moderate","Treatment","Died",TRUE
+"RWE01156",58,1,56,"Low","Usual care","Survived",TRUE
+"RWE01157",69,2,37,"Moderate","Treatment","Survived",TRUE
+"RWE01158",91,3,72,"High","Usual care","Survived",TRUE
+"RWE01159",63,0,38,"High","Usual care","Survived",TRUE
+"RWE01160",83,1,65,"Low","Treatment","Died",TRUE
+"RWE01161",47,0,70,"High","Treatment","Survived",TRUE
+"RWE01162",69,3,54,"Moderate","Usual care","Survived",TRUE
+"RWE01163",77,0,47,"High","Usual care","Survived",TRUE
+"RWE01164",81,1,54,"High","Treatment","Survived",TRUE
+"RWE01165",68,1,47,"Low","Treatment","Survived",TRUE
+"RWE01166",54,0,52,"Moderate","Treatment","Survived",TRUE
+"RWE01167",69,1,44,"Moderate","Treatment","Survived",TRUE
+"RWE01168",79,0,44,"High","Usual care","Survived",TRUE
+"RWE01169",75,2,65,"Low","Treatment","Died",TRUE
+"RWE01170",47,1,42,"Moderate","Treatment","Survived",TRUE
+"RWE01171",64,0,51,"Moderate","Treatment","Survived",TRUE
+"RWE01172",54,2,46,"Moderate","Treatment","Survived",TRUE
+"RWE01173",77,2,39,"Moderate","Usual care","Survived",TRUE
+"RWE01174",59,0,32,"Moderate","Usual care","Survived",TRUE
+"RWE01175",58,2,55,"Low","Treatment","Survived",TRUE
+"RWE01176",66,0,76,"Moderate","Treatment","Survived",TRUE
+"RWE01177",94,2,47,"High","Treatment","Survived",TRUE
+"RWE01178",71,0,84,"Low","Treatment","Survived",TRUE
+"RWE01179",40,0,32,"Moderate","Usual care","Survived",TRUE
+"RWE01180",62,2,43,"Moderate","Usual care","Survived",TRUE
+"RWE01181",62,1,40,"Moderate","Usual care","Survived",TRUE
+"RWE01182",72,3,38,"High","Treatment","Survived",TRUE
+"RWE01183",48,4,37,"Moderate","Usual care","Survived",TRUE
+"RWE01184",72,2,42,"High","Treatment","Survived",TRUE
+"RWE01185",46,0,46,"High","Treatment","Survived",TRUE
+"RWE01186",52,1,30,"Moderate","Treatment","Survived",TRUE
+"RWE01187",74,3,39,"High","Usual care","Survived",TRUE
+"RWE01188",73,1,46,"Low","Usual care","Survived",TRUE
+"RWE01189",56,1,60,"Low","Treatment","Survived",TRUE
+"RWE01190",52,2,23,"Moderate","Usual care","Survived",TRUE
+"RWE01191",63,3,65,"Low","Usual care","Survived",TRUE
+"RWE01192",68,2,41,"Moderate","Usual care","Survived",TRUE
+"RWE01193",83,3,55,"Moderate","Treatment","Died",TRUE
+"RWE01194",86,1,45,"Moderate","Usual care","Died",TRUE
+"RWE01195",68,1,64,"Moderate","Treatment","Survived",TRUE
+"RWE01196",53,2,45,"High","Usual care","Survived",TRUE
+"RWE01197",68,3,52,"Moderate","Treatment","Survived",TRUE
+"RWE01198",69,0,43,"Moderate","Usual care","Survived",TRUE
+"RWE01199",62,2,60,"Low","Usual care","Survived",TRUE
+"RWE01200",57,0,47,"Low","Treatment","Survived",TRUE
+"RWE01201",55,2,15,"Moderate","Usual care","Died",TRUE
+"RWE01202",47,0,39,"Moderate","Treatment","Survived",TRUE
+"RWE01203",75,1,56,"Low","Usual care","Survived",TRUE
+"RWE01204",73,1,45,"Moderate","Usual care","Died",TRUE
+"RWE01205",56,1,57,"Moderate","Usual care","Survived",TRUE
+"RWE01206",58,2,63,"High","Usual care","Survived",TRUE
+"RWE01207",95,4,26,"Moderate","Usual care","Survived",TRUE
+"RWE01208",71,2,76,"High","Treatment","Died",TRUE
+"RWE01209",49,0,56,"Moderate","Treatment","Survived",TRUE
+"RWE01210",40,0,48,"Low","Treatment","Survived",TRUE
+"RWE01211",67,2,53,"Moderate","Usual care","Died",TRUE
+"RWE01212",72,0,53,"High","Usual care","Survived",TRUE
+"RWE01213",68,1,42,"Low","Treatment","Survived",TRUE
+"RWE01214",51,0,72,"Low","Treatment","Died",TRUE
+"RWE01215",56,0,70,"Moderate","Treatment","Survived",TRUE
+"RWE01216",58,4,55,"Moderate","Treatment","Survived",TRUE
+"RWE01217",71,3,30,"High","Treatment","Survived",TRUE
+"RWE01218",67,2,32,"Low","Treatment","Survived",TRUE
+"RWE01219",72,2,51,"Moderate","Usual care","Survived",TRUE
+"RWE01220",65,1,74,"Moderate","Treatment","Survived",TRUE
+"RWE01221",38,1,33,"High","Usual care","Survived",TRUE
+"RWE01222",70,1,59,"Moderate","Treatment","Survived",TRUE
+"RWE01223",57,0,22,"Moderate","Usual care","Survived",TRUE
+"RWE01224",79,2,34,"Moderate","Usual care","Survived",TRUE
+"RWE01225",54,3,22,"High","Usual care","Survived",TRUE
+"RWE01226",76,2,60,"Moderate","Usual care","Died",TRUE
+"RWE01227",42,0,23,"Moderate","Usual care","Survived",TRUE
+"RWE01228",77,0,42,"High","Treatment","Survived",TRUE
+"RWE01229",56,3,46,"Moderate","Treatment","Survived",TRUE
+"RWE01230",78,2,17,"Moderate","Usual care","Survived",TRUE
+"RWE01231",61,1,60,"Low","Treatment","Survived",TRUE
+"RWE01232",73,3,53,"High","Usual care","Survived",TRUE
+"RWE01233",31,0,28,"Low","Usual care","Survived",TRUE
+"RWE01234",64,3,36,"Moderate","Usual care","Survived",TRUE
+"RWE01235",63,1,41,"Moderate","Usual care","Survived",TRUE
+"RWE01236",78,3,63,"High","Usual care","Died",TRUE
+"RWE01237",78,4,54,"High","Usual care","Survived",TRUE
+"RWE01238",74,2,49,"High","Usual care","Survived",TRUE
+"RWE01239",76,0,54,"Moderate","Treatment","Survived",TRUE
+"RWE01240",84,2,54,"High","Treatment","Survived",TRUE
+"RWE01241",74,0,48,"High","Treatment","Survived",TRUE
+"RWE01242",80,3,59,"Moderate","Usual care","Survived",TRUE
+"RWE01243",71,1,41,"Moderate","Usual care","Survived",TRUE
+"RWE01244",71,1,52,"Moderate","Usual care","Survived",TRUE
+"RWE01245",85,4,59,"Moderate","Usual care","Died",TRUE
+"RWE01246",40,1,26,"High","Usual care","Survived",TRUE
+"RWE01247",42,1,43,"High","Usual care","Survived",TRUE
+"RWE01248",94,4,72,"Low","Treatment","Survived",TRUE
+"RWE01249",32,0,56,"Moderate","Treatment","Survived",TRUE
+"RWE01250",72,1,64,"Moderate","Usual care","Died",TRUE
+"RWE01251",55,1,28,"High","Usual care","Survived",TRUE
+"RWE01252",68,2,56,"Moderate","Treatment","Survived",TRUE
+"RWE01253",60,0,13,"High","Usual care","Survived",TRUE
+"RWE01254",38,0,18,"Moderate","Usual care","Survived",TRUE
+"RWE01255",50,2,61,"Low","Usual care","Survived",TRUE
+"RWE01256",65,1,35,"High","Usual care","Survived",TRUE
+"RWE01257",56,1,48,"High","Treatment","Survived",TRUE
+"RWE01258",67,0,52,"High","Usual care","Died",TRUE
+"RWE01259",64,3,34,"High","Usual care","Survived",TRUE
+"RWE01260",44,0,53,"Moderate","Treatment","Survived",TRUE
+"RWE01261",54,1,43,"High","Treatment","Survived",TRUE
+"RWE01262",95,5,36,"Moderate","Usual care","Died",TRUE
+"RWE01263",65,5,60,"Moderate","Usual care","Survived",TRUE
+"RWE01264",62,0,24,"Low","Usual care","Survived",TRUE
+"RWE01265",63,0,22,"Moderate","Usual care","Survived",TRUE
+"RWE01266",47,0,38,"Moderate","Usual care","Survived",TRUE
+"RWE01267",74,3,63,"Moderate","Treatment","Survived",TRUE
+"RWE01268",66,0,37,"Low","Usual care","Survived",TRUE
+"RWE01269",84,3,48,"Moderate","Usual care","Died",TRUE
+"RWE01270",72,0,41,"High","Treatment","Survived",TRUE
+"RWE01271",72,3,40,"Moderate","Usual care","Survived",TRUE
+"RWE01272",76,1,31,"Moderate","Usual care","Survived",TRUE
+"RWE01273",53,0,26,"Low","Usual care","Survived",TRUE
+"RWE01274",91,4,39,"Moderate","Usual care","Died",TRUE
+"RWE01275",78,5,65,"Low","Usual care","Survived",TRUE
+"RWE01276",51,2,43,"High","Usual care","Survived",TRUE
+"RWE01277",68,3,71,"Moderate","Treatment","Survived",TRUE
+"RWE01278",63,1,49,"Moderate","Usual care","Survived",TRUE
+"RWE01279",73,1,57,"High","Treatment","Survived",TRUE
+"RWE01280",53,1,20,"High","Usual care","Survived",TRUE
+"RWE01281",56,2,25,"Moderate","Usual care","Survived",TRUE
+"RWE01282",81,4,32,"Moderate","Usual care","Survived",TRUE
+"RWE01283",60,1,59,"High","Treatment","Survived",TRUE
+"RWE01284",75,1,35,"Moderate","Usual care","Died",TRUE
+"RWE01285",75,3,76,"Moderate","Treatment","Died",TRUE
+"RWE01286",37,0,59,"Moderate","Usual care","Survived",TRUE
+"RWE01287",62,4,40,"Moderate","Treatment","Survived",TRUE
+"RWE01288",78,2,56,"Low","Treatment","Died",TRUE
+"RWE01289",79,4,69,"High","Treatment","Survived",TRUE
+"RWE01290",51,0,60,"High","Treatment","Survived",TRUE
+"RWE01291",39,0,63,"Low","Treatment","Survived",TRUE
+"RWE01292",57,2,62,"Moderate","Treatment","Survived",TRUE
+"RWE01293",78,2,45,"Low","Usual care","Survived",TRUE
+"RWE01294",63,1,44,"Moderate","Usual care","Survived",TRUE
+"RWE01295",70,6,48,"Low","Usual care","Died",TRUE
+"RWE01296",63,3,48,"Low","Usual care","Survived",TRUE
+"RWE01297",95,2,60,"Moderate","Usual care","Died",TRUE
+"RWE01298",75,1,66,"Low","Treatment","Survived",TRUE
+"RWE01299",53,1,70,"High","Treatment","Survived",TRUE
+"RWE01300",87,1,38,"Low","Treatment","Survived",TRUE
+"RWE01301",77,3,45,"Low","Usual care","Survived",TRUE
+"RWE01302",78,4,83,"Moderate","Usual care","Died",TRUE
+"RWE01303",95,3,67,"High","Treatment","Died",TRUE
+"RWE01304",86,4,47,"Moderate","Usual care","Survived",TRUE
+"RWE01305",63,0,47,"High","Usual care","Survived",TRUE
+"RWE01306",65,2,46,"High","Usual care","Survived",TRUE
+"RWE01307",71,2,28,"High","Usual care","Survived",TRUE
+"RWE01308",56,1,36,"Moderate","Treatment","Survived",TRUE
+"RWE01309",53,2,33,"Moderate","Usual care","Survived",TRUE
+"RWE01310",73,3,33,"High","Usual care","Survived",TRUE
+"RWE01311",46,1,44,"Moderate","Usual care","Died",TRUE
+"RWE01312",45,0,63,"Low","Treatment","Survived",TRUE
+"RWE01313",71,1,56,"Moderate","Treatment","Survived",TRUE
+"RWE01314",79,5,47,"Moderate","Usual care","Survived",TRUE
+"RWE01315",64,1,54,"High","Usual care","Survived",TRUE
+"RWE01316",73,2,54,"High","Usual care","Survived",TRUE
+"RWE01317",61,2,41,"Moderate","Treatment","Survived",TRUE
+"RWE01318",53,0,29,"Low","Treatment","Survived",TRUE
+"RWE01319",42,0,59,"Moderate","Treatment","Survived",TRUE
+"RWE01320",56,1,42,"Moderate","Usual care","Survived",TRUE
+"RWE01321",93,3,19,"Moderate","Usual care","Survived",TRUE
+"RWE01322",61,4,62,"Moderate","Treatment","Survived",TRUE
+"RWE01323",53,2,51,"Moderate","Treatment","Survived",TRUE
+"RWE01324",73,1,43,"High","Usual care","Survived",TRUE
+"RWE01325",27,0,33,"High","Usual care","Survived",TRUE
+"RWE01326",67,1,42,"Low","Usual care","Survived",TRUE
+"RWE01327",43,0,30,"Low","Treatment","Survived",TRUE
+"RWE01328",54,1,60,"High","Usual care","Died",TRUE
+"RWE01329",84,1,26,"Moderate","Usual care","Survived",TRUE
+"RWE01330",67,0,32,"Moderate","Usual care","Survived",TRUE
+"RWE01331",56,0,26,"Moderate","Usual care","Survived",TRUE
+"RWE01332",53,2,41,"High","Usual care","Survived",TRUE
+"RWE01333",41,0,31,"Moderate","Usual care","Survived",TRUE
+"RWE01334",37,0,42,"High","Usual care","Survived",TRUE
+"RWE01335",70,3,40,"High","Usual care","Survived",TRUE
+"RWE01336",65,2,42,"Low","Usual care","Died",TRUE
+"RWE01337",89,2,62,"Moderate","Treatment","Died",TRUE
+"RWE01338",70,2,37,"Moderate","Usual care","Survived",TRUE
+"RWE01339",46,0,32,"High","Usual care","Survived",TRUE
+"RWE01340",55,4,38,"High","Usual care","Survived",TRUE
+"RWE01341",62,0,48,"Low","Usual care","Survived",TRUE
+"RWE01342",95,4,35,"Low","Usual care","Survived",TRUE
+"RWE01343",47,1,57,"Moderate","Usual care","Survived",TRUE
+"RWE01344",73,1,41,"Moderate","Usual care","Died",TRUE
+"RWE01345",50,0,34,"Low","Usual care","Died",TRUE
+"RWE01346",37,0,32,"High","Treatment","Survived",TRUE
+"RWE01347",40,0,54,"Moderate","Usual care","Survived",TRUE
+"RWE01348",39,0,34,"Moderate","Treatment","Survived",TRUE
+"RWE01349",80,0,43,"High","Usual care","Died",TRUE
+"RWE01350",64,0,46,"Moderate","Usual care","Survived",TRUE
+"RWE01351",52,0,35,"Low","Usual care","Died",TRUE
+"RWE01352",69,4,54,"High","Usual care","Died",TRUE
+"RWE01353",92,1,34,"Moderate","Usual care","Survived",TRUE
+"RWE01354",65,0,61,"Moderate","Treatment","Survived",TRUE
+"RWE01355",81,1,64,"High","Treatment","Survived",TRUE
+"RWE01356",91,3,56,"Low","Usual care","Died",TRUE
+"RWE01357",54,0,27,"High","Usual care","Survived",TRUE
+"RWE01358",40,0,5,"High","Usual care","Survived",TRUE
+"RWE01359",56,1,39,"Moderate","Usual care","Survived",TRUE
+"RWE01360",25,0,40,"Moderate","Usual care","Survived",TRUE
+"RWE01361",43,0,29,"Moderate","Usual care","Survived",TRUE
+"RWE01362",68,3,59,"Low","Usual care","Survived",TRUE
+"RWE01363",62,2,33,"High","Treatment","Survived",TRUE
+"RWE01364",59,1,51,"Moderate","Treatment","Survived",TRUE
+"RWE01365",67,2,52,"High","Treatment","Survived",TRUE
+"RWE01366",64,3,63,"Moderate","Treatment","Died",TRUE
+"RWE01367",49,1,50,"Moderate","Usual care","Survived",TRUE
+"RWE01368",79,2,68,"High","Treatment","Survived",TRUE
+"RWE01369",89,3,38,"High","Treatment","Survived",TRUE
+"RWE01370",55,0,45,"High","Treatment","Survived",TRUE
+"RWE01371",71,4,42,"Moderate","Usual care","Survived",TRUE
+"RWE01372",51,0,23,"High","Treatment","Survived",TRUE
+"RWE01373",55,2,33,"Moderate","Usual care","Survived",TRUE
+"RWE01374",76,3,54,"Moderate","Usual care","Died",TRUE
+"RWE01375",76,0,58,"Moderate","Usual care","Survived",TRUE
+"RWE01376",57,2,58,"Moderate","Treatment","Survived",TRUE
+"RWE01377",60,0,23,"High","Usual care","Survived",TRUE
+"RWE01378",64,0,42,"High","Usual care","Survived",TRUE
+"RWE01379",74,2,55,"High","Usual care","Survived",TRUE
+"RWE01380",79,1,24,"Moderate","Usual care","Survived",TRUE
+"RWE01381",58,2,51,"Moderate","Usual care","Survived",TRUE
+"RWE01382",42,1,44,"Moderate","Usual care","Died",TRUE
+"RWE01383",85,3,36,"High","Treatment","Survived",TRUE
+"RWE01384",47,0,47,"Moderate","Usual care","Died",TRUE
+"RWE01385",91,2,70,"Moderate","Treatment","Survived",TRUE
+"RWE01386",44,0,36,"Moderate","Usual care","Survived",TRUE
+"RWE01387",76,3,52,"Moderate","Usual care","Died",TRUE
+"RWE01388",89,1,31,"Moderate","Usual care","Died",TRUE
+"RWE01389",68,2,52,"High","Treatment","Survived",TRUE
+"RWE01390",55,0,61,"Moderate","Treatment","Survived",TRUE
+"RWE01391",55,2,40,"Moderate","Usual care","Survived",TRUE
+"RWE01392",68,1,33,"Moderate","Usual care","Survived",TRUE
+"RWE01393",86,0,44,"Moderate","Treatment","Survived",TRUE
+"RWE01394",65,0,24,"Moderate","Usual care","Survived",TRUE
+"RWE01395",76,3,14,"Low","Usual care","Survived",TRUE
+"RWE01396",86,1,72,"Low","Usual care","Survived",TRUE
+"RWE01397",72,1,39,"High","Usual care","Survived",TRUE
+"RWE01398",75,4,68,"High","Treatment","Survived",TRUE
+"RWE01399",57,0,43,"Moderate","Usual care","Survived",TRUE
+"RWE01400",78,5,27,"High","Usual care","Survived",TRUE
+"RWE01401",47,1,27,"Low","Usual care","Survived",TRUE
+"RWE01402",56,1,70,"High","Treatment","Survived",TRUE
+"RWE01403",68,1,37,"High","Usual care","Survived",TRUE
+"RWE01404",59,4,31,"High","Treatment","Survived",TRUE
+"RWE01405",53,1,44,"High","Usual care","Survived",TRUE
+"RWE01406",72,2,69,"Moderate","Treatment","Survived",TRUE
+"RWE01407",58,0,78,"High","Usual care","Survived",TRUE
+"RWE01408",71,0,45,"Moderate","Usual care","Survived",TRUE
+"RWE01409",57,1,38,"High","Usual care","Died",TRUE
+"RWE01410",62,1,33,"Moderate","Usual care","Survived",TRUE
+"RWE01411",83,1,57,"High","Treatment","Survived",TRUE
+"RWE01412",93,1,67,"High","Treatment","Died",TRUE
+"RWE01413",64,2,65,"Moderate","Usual care","Survived",TRUE
+"RWE01414",72,3,59,"Moderate","Treatment","Survived",TRUE
+"RWE01415",82,2,40,"Moderate","Usual care","Died",TRUE
+"RWE01416",75,6,81,"High","Usual care","Survived",TRUE
+"RWE01417",75,1,50,"High","Usual care","Survived",TRUE
+"RWE01418",76,2,68,"Moderate","Usual care","Survived",TRUE
+"RWE01419",73,1,44,"High","Treatment","Died",TRUE
+"RWE01420",58,1,72,"Moderate","Usual care","Survived",TRUE
+"RWE01421",82,3,57,"Moderate","Treatment","Survived",TRUE
+"RWE01422",95,2,42,"Moderate","Usual care","Survived",TRUE
+"RWE01423",40,0,31,"Low","Usual care","Survived",TRUE
+"RWE01424",91,4,35,"Low","Usual care","Survived",TRUE
+"RWE01425",81,2,16,"Moderate","Usual care","Survived",TRUE
+"RWE01426",64,2,13,"Moderate","Usual care","Survived",TRUE
+"RWE01427",50,2,67,"Low","Treatment","Survived",TRUE
+"RWE01428",75,5,60,"High","Usual care","Died",TRUE
+"RWE01429",75,2,27,"Moderate","Usual care","Survived",TRUE
+"RWE01430",64,1,19,"Moderate","Usual care","Survived",TRUE
+"RWE01431",52,0,59,"Moderate","Usual care","Survived",TRUE
+"RWE01432",82,1,57,"Moderate","Usual care","Died",TRUE
+"RWE01433",75,4,87,"Low","Usual care","Died",TRUE
+"RWE01434",85,2,53,"Moderate","Usual care","Survived",TRUE
+"RWE01435",47,1,5,"Moderate","Treatment","Survived",TRUE
+"RWE01436",95,3,29,"High","Treatment","Survived",TRUE
+"RWE01437",41,0,57,"High","Treatment","Survived",TRUE
+"RWE01438",66,1,18,"Moderate","Usual care","Survived",TRUE
+"RWE01439",72,1,30,"Moderate","Usual care","Survived",TRUE
+"RWE01440",77,4,23,"Moderate","Usual care","Died",TRUE
+"RWE01441",66,0,31,"Moderate","Usual care","Survived",TRUE
+"RWE01442",61,1,26,"High","Usual care","Survived",TRUE
+"RWE01443",73,3,58,"Moderate","Usual care","Survived",TRUE
+"RWE01444",92,3,52,"Low","Treatment","Survived",TRUE
+"RWE01445",56,2,36,"Moderate","Usual care","Survived",TRUE
+"RWE01446",95,5,69,"High","Treatment","Survived",TRUE
+"RWE01447",74,2,64,"High","Treatment","Survived",TRUE
+"RWE01448",51,0,69,"Moderate","Usual care","Survived",TRUE
+"RWE01449",67,2,45,"Moderate","Usual care","Survived",TRUE
+"RWE01450",80,3,60,"Moderate","Usual care","Survived",TRUE
+"RWE01451",70,2,47,"High","Usual care","Died",TRUE
+"RWE01452",93,3,64,"Low","Treatment","Died",TRUE
+"RWE01453",72,3,51,"Moderate","Usual care","Died",TRUE
+"RWE01454",85,3,49,"High","Treatment","Survived",TRUE
+"RWE01455",78,2,49,"High","Treatment","Survived",TRUE
+"RWE01456",68,1,70,"Moderate","Treatment","Survived",TRUE
+"RWE01457",85,1,30,"Moderate","Usual care","Survived",TRUE
+"RWE01458",68,3,40,"Low","Usual care","Survived",TRUE
+"RWE01459",64,1,44,"Moderate","Treatment","Survived",TRUE
+"RWE01460",40,1,16,"Moderate","Usual care","Survived",TRUE
+"RWE01461",54,1,25,"Moderate","Usual care","Survived",TRUE
+"RWE01462",57,0,36,"High","Usual care","Survived",TRUE
+"RWE01463",68,0,48,"Moderate","Treatment","Survived",TRUE
+"RWE01464",70,1,48,"High","Usual care","Died",TRUE
+"RWE01465",58,0,28,"Moderate","Usual care","Survived",TRUE
+"RWE01466",42,1,54,"High","Usual care","Survived",TRUE
+"RWE01467",65,0,60,"Moderate","Treatment","Survived",TRUE
+"RWE01468",50,2,62,"Low","Usual care","Survived",TRUE
+"RWE01469",50,1,59,"Moderate","Usual care","Survived",TRUE
+"RWE01470",74,1,44,"Moderate","Treatment","Survived",TRUE
+"RWE01471",39,0,66,"Moderate","Usual care","Survived",TRUE
+"RWE01472",61,1,49,"Low","Treatment","Survived",TRUE
+"RWE01473",91,5,69,"Moderate","Treatment","Died",TRUE
+"RWE01474",56,0,50,"Low","Usual care","Survived",TRUE
+"RWE01475",63,0,44,"High","Usual care","Survived",TRUE
+"RWE01476",66,1,53,"Moderate","Usual care","Survived",TRUE
+"RWE01477",65,0,16,"Moderate","Usual care","Survived",TRUE
+"RWE01478",74,2,76,"Moderate","Treatment","Died",TRUE
+"RWE01479",74,2,55,"Moderate","Usual care","Survived",TRUE
+"RWE01480",79,2,54,"High","Treatment","Survived",TRUE
+"RWE01481",63,2,24,"Moderate","Usual care","Survived",TRUE
+"RWE01482",85,3,90,"Moderate","Treatment","Died",TRUE
+"RWE01483",70,0,48,"Moderate","Usual care","Survived",TRUE
+"RWE01484",60,2,42,"High","Usual care","Survived",TRUE
+"RWE01485",52,0,45,"High","Usual care","Survived",TRUE
+"RWE01486",51,0,36,"Low","Treatment","Survived",TRUE
+"RWE01487",57,0,51,"Moderate","Treatment","Survived",TRUE
+"RWE01488",70,3,41,"Low","Usual care","Survived",TRUE
+"RWE01489",57,0,44,"Low","Usual care","Survived",TRUE
+"RWE01490",73,2,32,"High","Usual care","Survived",TRUE
+"RWE01491",50,1,58,"Moderate","Usual care","Died",TRUE
+"RWE01492",74,2,81,"Low","Treatment","Died",TRUE
+"RWE01493",76,1,44,"High","Usual care","Survived",TRUE
+"RWE01494",79,1,27,"Moderate","Usual care","Survived",TRUE
+"RWE01495",51,1,26,"High","Usual care","Survived",TRUE
+"RWE01496",78,2,40,"Low","Treatment","Survived",TRUE
+"RWE01497",73,0,79,"Low","Usual care","Died",TRUE
+"RWE01498",55,1,60,"High","Treatment","Survived",TRUE
+"RWE01499",65,2,29,"High","Usual care","Survived",TRUE
+"RWE01500",55,1,38,"Low","Usual care","Survived",TRUE
+"RWE01501",74,1,34,"High","Usual care","Survived",TRUE
+"RWE01502",56,3,67,"Moderate","Treatment","Died",TRUE
+"RWE01503",36,0,95,"High","Treatment","Survived",TRUE
+"RWE01504",43,0,55,"Moderate","Usual care","Died",TRUE
+"RWE01505",37,2,31,"High","Treatment","Survived",TRUE
+"RWE01506",76,4,31,"Moderate","Usual care","Survived",TRUE
+"RWE01507",69,2,44,"High","Usual care","Survived",TRUE
+"RWE01508",69,3,54,"Moderate","Usual care","Died",TRUE
+"RWE01509",62,1,48,"Low","Treatment","Died",TRUE
+"RWE01510",85,4,32,"Moderate","Usual care","Survived",TRUE
+"RWE01511",48,0,36,"High","Usual care","Survived",TRUE
+"RWE01512",47,0,35,"Moderate","Usual care","Died",TRUE
+"RWE01513",52,2,37,"Moderate","Usual care","Survived",TRUE
+"RWE01514",86,3,61,"Moderate","Usual care","Died",TRUE
+"RWE01515",92,3,45,"High","Usual care","Survived",TRUE
+"RWE01516",67,1,58,"Moderate","Usual care","Died",TRUE
+"RWE01517",54,0,37,"Moderate","Treatment","Survived",TRUE
+"RWE01518",63,0,37,"Moderate","Treatment","Survived",TRUE
+"RWE01519",60,0,69,"Low","Treatment","Survived",TRUE
+"RWE01520",93,3,53,"Moderate","Usual care","Died",TRUE
+"RWE01521",60,4,52,"High","Usual care","Died",TRUE
+"RWE01522",66,3,71,"High","Treatment","Survived",TRUE
+"RWE01523",92,1,75,"High","Treatment","Died",TRUE
+"RWE01524",80,3,68,"Moderate","Treatment","Died",TRUE
+"RWE01525",62,2,46,"High","Treatment","Survived",TRUE
+"RWE01526",95,7,48,"High","Usual care","Died",TRUE
+"RWE01527",51,0,39,"Low","Treatment","Survived",TRUE
+"RWE01528",94,7,49,"Moderate","Usual care","Died",TRUE
+"RWE01529",60,1,60,"Low","Usual care","Survived",TRUE
+"RWE01530",68,0,24,"High","Usual care","Survived",TRUE
+"RWE01531",70,3,48,"High","Treatment","Survived",TRUE
+"RWE01532",51,0,27,"Low","Usual care","Survived",TRUE
+"RWE01533",60,1,26,"High","Treatment","Survived",TRUE
+"RWE01534",61,1,71,"Moderate","Usual care","Died",TRUE
+"RWE01535",95,1,5,"Moderate","Usual care","Survived",TRUE
+"RWE01536",83,1,72,"Moderate","Treatment","Survived",TRUE
+"RWE01537",55,0,43,"Moderate","Treatment","Survived",TRUE
+"RWE01538",92,3,55,"High","Usual care","Survived",TRUE
+"RWE01539",76,1,46,"Low","Treatment","Survived",TRUE
+"RWE01540",56,0,55,"High","Treatment","Survived",TRUE
+"RWE01541",73,1,34,"Moderate","Usual care","Died",TRUE
+"RWE01542",47,2,55,"High","Treatment","Survived",TRUE
+"RWE01543",60,2,47,"High","Usual care","Died",TRUE
+"RWE01544",82,4,40,"High","Treatment","Survived",TRUE
+"RWE01545",62,0,65,"Moderate","Usual care","Survived",TRUE
+"RWE01546",75,3,46,"Moderate","Usual care","Died",TRUE
+"RWE01547",47,2,44,"Moderate","Usual care","Survived",TRUE
+"RWE01548",59,0,61,"Moderate","Treatment","Survived",TRUE
+"RWE01549",90,1,51,"Low","Treatment","Survived",TRUE
+"RWE01550",79,2,51,"Low","Usual care","Survived",TRUE
+"RWE01551",65,1,47,"Low","Usual care","Died",TRUE
+"RWE01552",58,2,17,"Low","Usual care","Survived",TRUE
+"RWE01553",55,0,77,"High","Treatment","Survived",TRUE
+"RWE01554",95,3,56,"Low","Usual care","Died",TRUE
+"RWE01555",75,0,13,"Low","Treatment","Survived",TRUE
+"RWE01556",75,4,41,"High","Usual care","Survived",TRUE
+"RWE01557",76,2,78,"High","Treatment","Died",TRUE
+"RWE01558",74,4,60,"Moderate","Treatment","Died",TRUE
+"RWE01559",57,0,39,"Moderate","Treatment","Survived",TRUE
+"RWE01560",54,0,18,"High","Usual care","Survived",TRUE
+"RWE01561",72,0,48,"High","Treatment","Died",TRUE
+"RWE01562",41,0,35,"Moderate","Usual care","Survived",TRUE
+"RWE01563",73,3,47,"High","Usual care","Survived",TRUE
+"RWE01564",78,1,50,"Moderate","Treatment","Survived",TRUE
+"RWE01565",80,3,56,"Moderate","Treatment","Survived",TRUE
+"RWE01566",72,3,5,"High","Usual care","Survived",TRUE
+"RWE01567",60,0,68,"Low","Treatment","Survived",TRUE
+"RWE01568",40,0,57,"High","Treatment","Survived",TRUE
+"RWE01569",42,0,49,"Low","Usual care","Survived",TRUE
+"RWE01570",88,2,60,"Moderate","Treatment","Survived",TRUE
+"RWE01571",55,1,53,"Moderate","Treatment","Survived",TRUE
+"RWE01572",21,0,12,"Moderate","Usual care","Survived",TRUE
+"RWE01573",60,5,23,"High","Treatment","Survived",TRUE
+"RWE01574",65,2,55,"Low","Treatment","Survived",TRUE
+"RWE01575",60,0,28,"High","Usual care","Survived",TRUE
+"RWE01576",66,0,43,"Low","Usual care","Survived",TRUE
+"RWE01577",71,2,60,"Low","Treatment","Died",TRUE
+"RWE01578",64,1,36,"Low","Usual care","Survived",TRUE
+"RWE01579",44,1,60,"Moderate","Treatment","Survived",TRUE
+"RWE01580",57,1,45,"High","Usual care","Survived",TRUE
+"RWE01581",64,1,64,"High","Treatment","Survived",TRUE
+"RWE01582",71,0,46,"Moderate","Treatment","Survived",TRUE
+"RWE01583",67,1,39,"Low","Treatment","Survived",TRUE
+"RWE01584",62,0,48,"Moderate","Usual care","Survived",TRUE
+"RWE01585",86,1,84,"Moderate","Treatment","Died",TRUE
+"RWE01586",49,0,56,"Moderate","Treatment","Survived",TRUE
+"RWE01587",74,4,63,"High","Usual care","Died",TRUE
+"RWE01588",72,2,64,"Moderate","Usual care","Survived",TRUE
+"RWE01589",58,0,32,"High","Usual care","Survived",TRUE
+"RWE01590",78,2,50,"High","Usual care","Survived",TRUE
+"RWE01591",82,3,53,"Moderate","Usual care","Survived",TRUE
+"RWE01592",44,0,20,"Low","Usual care","Survived",TRUE
+"RWE01593",64,3,49,"Moderate","Usual care","Survived",TRUE
+"RWE01594",51,2,32,"High","Treatment","Survived",TRUE
+"RWE01595",49,1,23,"Moderate","Usual care","Survived",TRUE
+"RWE01596",66,0,31,"High","Usual care","Survived",TRUE
+"RWE01597",86,4,68,"High","Usual care","Died",TRUE
+"RWE01598",64,1,32,"High","Usual care","Survived",TRUE
+"RWE01599",64,0,29,"High","Usual care","Survived",TRUE
+"RWE01600",35,0,9,"Moderate","Usual care","Survived",TRUE
+"RWE01601",76,1,40,"Low","Usual care","Survived",TRUE
+"RWE01602",61,3,48,"High","Treatment","Survived",TRUE
+"RWE01603",59,2,45,"High","Usual care","Survived",TRUE
+"RWE01604",71,1,57,"Low","Treatment","Survived",TRUE
+"RWE01605",41,0,26,"High","Treatment","Survived",TRUE
+"RWE01606",85,1,37,"Moderate","Usual care","Died",TRUE
+"RWE01607",51,1,49,"High","Treatment","Survived",TRUE
+"RWE01608",57,1,68,"Low","Treatment","Survived",TRUE
+"RWE01609",36,0,37,"Low","Usual care","Survived",TRUE
+"RWE01610",72,0,30,"Moderate","Usual care","Survived",TRUE
+"RWE01611",67,2,28,"Moderate","Usual care","Survived",TRUE
+"RWE01612",45,1,16,"Moderate","Usual care","Survived",TRUE
+"RWE01613",47,1,19,"Moderate","Usual care","Survived",TRUE
+"RWE01614",63,1,30,"Moderate","Usual care","Survived",TRUE
+"RWE01615",70,0,68,"High","Usual care","Survived",TRUE
+"RWE01616",73,3,63,"Moderate","Treatment","Died",TRUE
+"RWE01617",45,1,25,"High","Usual care","Survived",TRUE
+"RWE01618",80,2,65,"Low","Treatment","Died",TRUE
+"RWE01619",68,1,22,"Low","Treatment","Survived",TRUE
+"RWE01620",82,2,50,"Low","Usual care","Died",TRUE
+"RWE01621",74,1,61,"High","Treatment","Survived",TRUE
+"RWE01622",69,3,24,"High","Usual care","Survived",TRUE
+"RWE01623",86,2,63,"Low","Usual care","Survived",TRUE
+"RWE01624",61,0,76,"Moderate","Treatment","Survived",TRUE
+"RWE01625",62,1,35,"High","Treatment","Survived",TRUE
+"RWE01626",70,1,48,"Moderate","Treatment","Survived",TRUE
+"RWE01627",77,0,6,"High","Treatment","Survived",TRUE
+"RWE01628",69,2,37,"Moderate","Usual care","Survived",TRUE
+"RWE01629",51,0,38,"Low","Usual care","Survived",TRUE
+"RWE01630",60,2,34,"Moderate","Usual care","Survived",TRUE
+"RWE01631",79,1,52,"High","Treatment","Survived",TRUE
+"RWE01632",74,1,61,"Moderate","Usual care","Died",TRUE
+"RWE01633",77,1,21,"Low","Treatment","Survived",TRUE
+"RWE01634",75,3,59,"High","Usual care","Died",TRUE
+"RWE01635",72,1,73,"High","Treatment","Died",TRUE
+"RWE01636",33,0,32,"Moderate","Usual care","Survived",TRUE
+"RWE01637",55,0,61,"High","Treatment","Died",TRUE
+"RWE01638",79,2,39,"High","Usual care","Survived",TRUE
+"RWE01639",65,0,31,"Moderate","Usual care","Survived",TRUE
+"RWE01640",65,1,47,"Moderate","Treatment","Survived",TRUE
+"RWE01641",56,1,59,"High","Treatment","Survived",TRUE
+"RWE01642",63,1,26,"Moderate","Usual care","Survived",TRUE
+"RWE01643",57,1,54,"Moderate","Usual care","Died",TRUE
+"RWE01644",28,0,32,"Low","Usual care","Survived",TRUE
+"RWE01645",56,1,62,"Moderate","Treatment","Survived",TRUE
+"RWE01646",67,0,43,"Low","Usual care","Survived",TRUE
+"RWE01647",62,2,41,"Low","Usual care","Survived",TRUE
+"RWE01648",50,1,78,"Moderate","Treatment","Died",TRUE
+"RWE01649",53,1,25,"Moderate","Treatment","Survived",TRUE
+"RWE01650",74,2,63,"Low","Usual care","Died",TRUE
+"RWE01651",68,1,46,"Low","Usual care","Survived",TRUE
+"RWE01652",91,2,44,"Moderate","Usual care","Survived",TRUE
+"RWE01653",60,2,35,"Moderate","Usual care","Survived",TRUE
+"RWE01654",78,1,57,"Low","Usual care","Survived",TRUE
+"RWE01655",63,1,59,"High","Usual care","Survived",TRUE
+"RWE01656",71,1,61,"Moderate","Treatment","Survived",TRUE
+"RWE01657",86,3,61,"Moderate","Treatment","Died",TRUE
+"RWE01658",52,0,49,"High","Treatment","Survived",TRUE
+"RWE01659",56,3,49,"Moderate","Treatment","Died",TRUE
+"RWE01660",79,0,58,"Moderate","Treatment","Survived",TRUE
+"RWE01661",74,3,79,"Moderate","Usual care","Died",TRUE
+"RWE01662",64,0,24,"Low","Usual care","Survived",TRUE
+"RWE01663",53,0,26,"High","Usual care","Survived",TRUE
+"RWE01664",73,1,41,"Moderate","Treatment","Survived",TRUE
+"RWE01665",46,0,57,"Moderate","Treatment","Survived",TRUE
+"RWE01666",54,3,45,"Low","Treatment","Survived",TRUE
+"RWE01667",87,5,64,"Low","Usual care","Survived",TRUE
+"RWE01668",75,3,59,"Moderate","Treatment","Died",TRUE
+"RWE01669",91,0,67,"Low","Usual care","Survived",TRUE
+"RWE01670",77,2,49,"Moderate","Usual care","Died",TRUE
+"RWE01671",89,3,52,"Moderate","Treatment","Survived",TRUE
+"RWE01672",86,2,31,"Moderate","Usual care","Survived",TRUE
+"RWE01673",58,0,63,"High","Usual care","Survived",TRUE
+"RWE01674",58,0,68,"High","Treatment","Survived",TRUE
+"RWE01675",45,3,37,"Low","Usual care","Survived",TRUE
+"RWE01676",74,1,49,"Moderate","Treatment","Survived",TRUE
+"RWE01677",72,1,72,"Low","Treatment","Died",TRUE
+"RWE01678",42,0,37,"Moderate","Usual care","Survived",TRUE
+"RWE01679",50,0,56,"Moderate","Usual care","Survived",TRUE
+"RWE01680",78,3,79,"High","Usual care","Survived",TRUE
+"RWE01681",72,1,47,"Moderate","Usual care","Survived",TRUE
+"RWE01682",71,2,77,"High","Treatment","Survived",TRUE
+"RWE01683",90,1,63,"High","Treatment","Died",TRUE
+"RWE01684",88,2,49,"Moderate","Usual care","Died",TRUE
+"RWE01685",76,2,49,"High","Treatment","Survived",TRUE
+"RWE01686",73,2,50,"High","Usual care","Survived",TRUE
+"RWE01687",53,0,40,"Moderate","Usual care","Survived",TRUE
+"RWE01688",78,1,37,"Low","Usual care","Survived",TRUE
+"RWE01689",59,0,40,"High","Usual care","Survived",TRUE
+"RWE01690",72,0,53,"High","Treatment","Survived",TRUE
+"RWE01691",45,0,41,"Low","Usual care","Survived",TRUE
+"RWE01692",23,0,5,"High","Usual care","Survived",TRUE
+"RWE01693",55,1,56,"Moderate","Treatment","Survived",TRUE
+"RWE01694",69,4,5,"Moderate","Usual care","Survived",TRUE
+"RWE01695",57,2,86,"Moderate","Usual care","Died",TRUE
+"RWE01696",70,2,41,"High","Usual care","Survived",TRUE
+"RWE01697",59,2,49,"High","Treatment","Survived",TRUE
+"RWE01698",57,2,66,"Moderate","Treatment","Survived",TRUE
+"RWE01699",52,0,52,"Moderate","Treatment","Survived",TRUE
+"RWE01700",63,1,61,"Moderate","Treatment","Died",TRUE
+"RWE01701",67,2,45,"Moderate","Treatment","Survived",TRUE
+"RWE01702",95,5,72,"Moderate","Treatment","Died",TRUE
+"RWE01703",56,2,64,"High","Usual care","Survived",TRUE
+"RWE01704",71,2,56,"Low","Usual care","Survived",TRUE
+"RWE01705",93,1,38,"Moderate","Usual care","Survived",TRUE
+"RWE01706",70,3,43,"Moderate","Usual care","Survived",TRUE
+"RWE01707",62,3,61,"High","Usual care","Survived",TRUE
+"RWE01708",68,1,46,"Moderate","Treatment","Survived",TRUE
+"RWE01709",58,2,31,"High","Usual care","Survived",TRUE
+"RWE01710",64,1,83,"Moderate","Treatment","Died",TRUE
+"RWE01711",40,2,20,"Moderate","Usual care","Survived",TRUE
+"RWE01712",79,2,19,"Low","Usual care","Survived",TRUE
+"RWE01713",70,2,54,"Moderate","Usual care","Survived",TRUE
+"RWE01714",66,2,37,"High","Treatment","Survived",TRUE
+"RWE01715",71,1,60,"Low","Treatment","Survived",TRUE
+"RWE01716",84,4,58,"High","Treatment","Survived",TRUE
+"RWE01717",63,0,71,"Moderate","Usual care","Died",TRUE
+"RWE01718",57,3,36,"Moderate","Treatment","Survived",TRUE
+"RWE01719",95,3,66,"Moderate","Treatment","Died",TRUE
+"RWE01720",42,0,29,"Low","Usual care","Survived",TRUE
+"RWE01721",72,0,30,"Low","Treatment","Survived",TRUE
+"RWE01722",95,2,48,"Moderate","Treatment","Survived",TRUE
+"RWE01723",72,0,13,"Moderate","Usual care","Survived",TRUE
+"RWE01724",68,0,44,"Moderate","Usual care","Survived",TRUE
+"RWE01725",74,2,50,"Moderate","Usual care","Survived",TRUE
+"RWE01726",60,0,69,"Low","Usual care","Died",TRUE
+"RWE01727",85,3,55,"Low","Treatment","Survived",TRUE
+"RWE01728",49,1,46,"Moderate","Treatment","Survived",TRUE
+"RWE01729",72,0,52,"High","Usual care","Survived",TRUE
+"RWE01730",67,0,39,"High","Usual care","Survived",TRUE
+"RWE01731",64,1,51,"Moderate","Usual care","Survived",TRUE
+"RWE01732",95,2,65,"High","Usual care","Survived",TRUE
+"RWE01733",51,0,35,"Moderate","Usual care","Survived",TRUE
+"RWE01734",56,2,29,"Moderate","Treatment","Survived",TRUE
+"RWE01735",70,3,44,"High","Treatment","Survived",TRUE
+"RWE01736",57,1,50,"Low","Treatment","Survived",TRUE
+"RWE01737",64,2,65,"Moderate","Usual care","Died",TRUE
+"RWE01738",36,1,43,"Moderate","Treatment","Survived",TRUE
+"RWE01739",71,1,52,"Moderate","Usual care","Survived",TRUE
+"RWE01740",79,0,44,"Low","Treatment","Survived",TRUE
+"RWE01741",66,2,42,"High","Usual care","Survived",TRUE
+"RWE01742",60,1,31,"High","Treatment","Survived",TRUE
+"RWE01743",75,5,53,"High","Usual care","Died",TRUE
+"RWE01744",81,5,44,"High","Usual care","Died",TRUE
+"RWE01745",82,1,28,"High","Usual care","Survived",TRUE
+"RWE01746",44,2,41,"Moderate","Treatment","Survived",TRUE
+"RWE01747",71,1,49,"High","Treatment","Survived",TRUE
+"RWE01748",48,1,42,"Moderate","Usual care","Survived",TRUE
+"RWE01749",71,2,60,"Moderate","Usual care","Survived",TRUE
+"RWE01750",85,3,39,"Moderate","Usual care","Survived",TRUE
+"RWE01751",95,1,68,"High","Treatment","Survived",TRUE
+"RWE01752",91,1,51,"Low","Usual care","Survived",TRUE
+"RWE01753",59,0,24,"Moderate","Usual care","Survived",TRUE
+"RWE01754",79,3,30,"High","Usual care","Died",TRUE
+"RWE01755",60,0,47,"High","Usual care","Survived",TRUE
+"RWE01756",78,2,46,"Moderate","Usual care","Survived",TRUE
+"RWE01757",58,2,29,"Low","Usual care","Survived",TRUE
+"RWE01758",50,0,19,"High","Usual care","Survived",TRUE
+"RWE01759",57,1,31,"Moderate","Usual care","Survived",TRUE
+"RWE01760",43,0,41,"Moderate","Usual care","Survived",TRUE
+"RWE01761",66,2,44,"High","Usual care","Survived",TRUE
+"RWE01762",75,1,82,"Moderate","Usual care","Died",TRUE
+"RWE01763",95,1,69,"Low","Treatment","Survived",TRUE
+"RWE01764",73,1,43,"Moderate","Usual care","Survived",TRUE
+"RWE01765",58,1,63,"High","Treatment","Survived",TRUE
+"RWE01766",79,4,63,"Moderate","Treatment","Survived",TRUE
+"RWE01767",45,1,39,"Moderate","Usual care","Survived",TRUE
+"RWE01768",60,0,32,"Moderate","Usual care","Survived",TRUE
+"RWE01769",37,1,12,"Moderate","Usual care","Survived",TRUE
+"RWE01770",81,1,74,"High","Treatment","Survived",TRUE
+"RWE01771",65,0,49,"High","Usual care","Survived",TRUE
+"RWE01772",65,1,43,"High","Usual care","Survived",TRUE
+"RWE01773",59,1,41,"High","Usual care","Survived",TRUE
+"RWE01774",56,1,50,"Moderate","Usual care","Died",TRUE
+"RWE01775",60,1,58,"Moderate","Usual care","Survived",TRUE
+"RWE01776",86,5,55,"Moderate","Treatment","Survived",TRUE
+"RWE01777",41,1,9,"Moderate","Usual care","Survived",TRUE
+"RWE01778",63,1,57,"High","Usual care","Died",TRUE
+"RWE01779",75,2,49,"Moderate","Treatment","Survived",TRUE
+"RWE01780",71,1,46,"High","Usual care","Survived",TRUE
+"RWE01781",67,4,36,"Low","Usual care","Survived",TRUE
+"RWE01782",73,1,61,"Moderate","Treatment","Survived",TRUE
+"RWE01783",46,1,28,"High","Treatment","Survived",TRUE
+"RWE01784",59,0,44,"High","Treatment","Survived",TRUE
+"RWE01785",78,1,39,"Moderate","Treatment","Died",TRUE
+"RWE01786",42,0,44,"Low","Usual care","Survived",TRUE
+"RWE01787",73,1,26,"Moderate","Usual care","Survived",TRUE
+"RWE01788",83,4,46,"High","Treatment","Survived",TRUE
+"RWE01789",64,2,64,"Moderate","Treatment","Survived",TRUE
+"RWE01790",95,7,50,"High","Treatment","Survived",TRUE
+"RWE01791",76,3,38,"High","Usual care","Survived",TRUE
+"RWE01792",54,1,36,"High","Usual care","Survived",TRUE
+"RWE01793",70,2,55,"Moderate","Treatment","Died",TRUE
+"RWE01794",65,2,59,"High","Usual care","Died",TRUE
+"RWE01795",60,2,53,"Moderate","Treatment","Died",TRUE
+"RWE01796",34,0,36,"Moderate","Usual care","Survived",TRUE
+"RWE01797",82,0,48,"Low","Usual care","Survived",TRUE
+"RWE01798",69,1,32,"High","Usual care","Survived",TRUE
+"RWE01799",66,0,48,"Moderate","Treatment","Survived",TRUE
+"RWE01800",74,1,59,"Low","Treatment","Died",TRUE
+"RWE01801",72,1,64,"High","Treatment","Survived",TRUE
+"RWE01802",78,3,32,"High","Usual care","Survived",TRUE
+"RWE01803",88,2,48,"Moderate","Usual care","Died",TRUE
+"RWE01804",83,2,78,"High","Usual care","Died",TRUE
+"RWE01805",55,1,42,"Moderate","Usual care","Survived",TRUE
+"RWE01806",69,3,46,"Moderate","Usual care","Died",TRUE
+"RWE01807",58,1,39,"Moderate","Usual care","Survived",TRUE
+"RWE01808",95,4,48,"Moderate","Treatment","Died",TRUE
+"RWE01809",43,1,12,"Moderate","Usual care","Survived",TRUE
+"RWE01810",48,1,62,"High","Treatment","Survived",TRUE
+"RWE01811",50,1,83,"Moderate","Treatment","Died",TRUE
+"RWE01812",66,1,70,"Moderate","Treatment","Survived",TRUE
+"RWE01813",72,2,72,"Low","Treatment","Survived",TRUE
+"RWE01814",79,2,70,"High","Treatment","Survived",TRUE
+"RWE01815",68,2,55,"Low","Treatment","Died",TRUE
+"RWE01816",88,3,33,"Moderate","Usual care","Died",TRUE
+"RWE01817",68,1,49,"Moderate","Usual care","Survived",TRUE
+"RWE01818",86,4,55,"Moderate","Usual care","Survived",TRUE
+"RWE01819",51,0,59,"Low","Treatment","Survived",TRUE
+"RWE01820",48,2,50,"High","Treatment","Survived",TRUE
+"RWE01821",84,1,32,"Moderate","Usual care","Survived",TRUE
+"RWE01822",95,2,50,"Low","Treatment","Survived",TRUE
+"RWE01823",88,3,65,"Moderate","Treatment","Died",TRUE
+"RWE01824",41,1,34,"High","Usual care","Survived",TRUE
+"RWE01825",46,1,29,"High","Treatment","Survived",TRUE
+"RWE01826",57,4,59,"Moderate","Usual care","Died",TRUE
+"RWE01827",86,1,5,"Moderate","Usual care","Survived",TRUE
+"RWE01828",51,0,66,"High","Treatment","Survived",TRUE
+"RWE01829",52,1,57,"High","Treatment","Survived",TRUE
+"RWE01830",69,2,95,"High","Treatment","Survived",TRUE
+"RWE01831",60,0,55,"Moderate","Usual care","Survived",TRUE
+"RWE01832",56,2,44,"Low","Usual care","Survived",TRUE
+"RWE01833",78,4,56,"Moderate","Usual care","Survived",TRUE
+"RWE01834",62,0,34,"High","Treatment","Survived",TRUE
+"RWE01835",79,1,44,"Moderate","Usual care","Survived",TRUE
+"RWE01836",73,1,55,"Low","Usual care","Survived",TRUE
+"RWE01837",77,1,58,"Low","Usual care","Survived",TRUE
+"RWE01838",44,1,43,"Moderate","Treatment","Survived",TRUE
+"RWE01839",65,0,54,"High","Usual care","Survived",TRUE
+"RWE01840",77,3,70,"Moderate","Treatment","Survived",TRUE
+"RWE01841",82,2,74,"Moderate","Treatment","Survived",TRUE
+"RWE01842",65,0,40,"Moderate","Treatment","Died",TRUE
+"RWE01843",63,1,36,"Moderate","Usual care","Survived",TRUE
+"RWE01844",66,2,44,"High","Treatment","Died",TRUE
+"RWE01845",62,0,5,"Moderate","Usual care","Survived",TRUE
+"RWE01846",47,1,11,"Moderate","Usual care","Survived",TRUE
+"RWE01847",83,1,41,"Moderate","Usual care","Survived",TRUE
+"RWE01848",50,0,52,"High","Treatment","Survived",TRUE
+"RWE01849",68,4,51,"Moderate","Usual care","Survived",TRUE
+"RWE01850",77,0,40,"Low","Treatment","Survived",TRUE
+"RWE01851",95,6,60,"Moderate","Usual care","Died",TRUE
+"RWE01852",57,1,51,"High","Treatment","Survived",TRUE
+"RWE01853",56,0,28,"Moderate","Treatment","Survived",TRUE
+"RWE01854",72,0,66,"Moderate","Treatment","Survived",TRUE
+"RWE01855",51,2,42,"Moderate","Usual care","Survived",TRUE
+"RWE01856",44,0,40,"High","Usual care","Survived",TRUE
+"RWE01857",49,1,36,"Low","Treatment","Survived",TRUE
+"RWE01858",74,0,47,"Moderate","Usual care","Survived",TRUE
+"RWE01859",66,1,49,"High","Usual care","Survived",TRUE
+"RWE01860",68,1,47,"Moderate","Usual care","Survived",TRUE
+"RWE01861",74,3,40,"Moderate","Usual care","Survived",TRUE
+"RWE01862",43,1,44,"Moderate","Treatment","Survived",TRUE
+"RWE01863",79,2,60,"Moderate","Treatment","Died",TRUE
+"RWE01864",65,4,57,"Moderate","Treatment","Survived",TRUE
+"RWE01865",65,3,76,"High","Treatment","Died",TRUE
+"RWE01866",81,3,52,"Moderate","Usual care","Survived",TRUE
+"RWE01867",89,3,53,"Moderate","Usual care","Survived",TRUE
+"RWE01868",57,1,29,"High","Usual care","Survived",TRUE
+"RWE01869",59,1,27,"High","Usual care","Survived",TRUE
+"RWE01870",51,1,68,"High","Treatment","Survived",TRUE
+"RWE01871",79,2,44,"Low","Usual care","Died",TRUE
+"RWE01872",79,2,57,"Moderate","Treatment","Survived",TRUE
+"RWE01873",66,1,44,"High","Usual care","Survived",TRUE
+"RWE01874",47,1,74,"Low","Usual care","Survived",TRUE
+"RWE01875",77,1,37,"Low","Treatment","Survived",TRUE
+"RWE01876",56,2,52,"High","Treatment","Survived",TRUE
+"RWE01877",65,1,49,"High","Usual care","Survived",TRUE
+"RWE01878",72,1,84,"Low","Treatment","Died",TRUE
+"RWE01879",54,1,44,"High","Treatment","Died",TRUE
+"RWE01880",72,0,58,"High","Usual care","Survived",TRUE
+"RWE01881",47,0,40,"High","Usual care","Survived",TRUE
+"RWE01882",56,1,28,"Moderate","Usual care","Survived",TRUE
+"RWE01883",91,2,54,"High","Treatment","Died",TRUE
+"RWE01884",60,1,39,"Low","Usual care","Survived",TRUE
+"RWE01885",68,1,49,"Low","Treatment","Survived",TRUE
+"RWE01886",66,0,33,"Moderate","Treatment","Survived",TRUE
+"RWE01887",57,0,24,"Moderate","Treatment","Survived",TRUE
+"RWE01888",71,3,46,"High","Usual care","Survived",TRUE
+"RWE01889",60,5,90,"Moderate","Usual care","Died",TRUE
+"RWE01890",71,2,58,"High","Usual care","Died",TRUE
+"RWE01891",61,1,48,"Low","Treatment","Survived",TRUE
+"RWE01892",79,0,41,"Moderate","Usual care","Survived",TRUE
+"RWE01893",70,0,31,"Moderate","Usual care","Survived",TRUE
+"RWE01894",76,1,66,"Low","Treatment","Survived",TRUE
+"RWE01895",75,3,30,"High","Usual care","Survived",TRUE
+"RWE01896",65,3,64,"Low","Usual care","Died",TRUE
+"RWE01897",69,0,43,"Low","Usual care","Died",TRUE
+"RWE01898",64,0,21,"High","Usual care","Survived",TRUE
+"RWE01899",26,0,50,"Moderate","Treatment","Survived",TRUE
+"RWE01900",65,1,51,"Low","Usual care","Survived",TRUE
+"RWE01901",72,3,47,"Moderate","Treatment","Survived",TRUE
+"RWE01902",86,2,45,"High","Treatment","Survived",TRUE
+"RWE01903",60,3,47,"Moderate","Treatment","Survived",TRUE
+"RWE01904",86,2,16,"Moderate","Usual care","Survived",TRUE
+"RWE01905",57,2,32,"Low","Usual care","Survived",TRUE
+"RWE01906",50,0,50,"Moderate","Treatment","Survived",TRUE
+"RWE01907",95,1,39,"High","Treatment","Died",TRUE
+"RWE01908",51,3,15,"High","Treatment","Survived",TRUE
+"RWE01909",73,2,52,"Moderate","Usual care","Survived",TRUE
+"RWE01910",59,0,52,"Low","Treatment","Survived",TRUE
+"RWE01911",77,3,85,"Moderate","Usual care","Died",TRUE
+"RWE01912",58,1,28,"Moderate","Usual care","Survived",TRUE
+"RWE01913",58,1,31,"High","Treatment","Survived",TRUE
+"RWE01914",22,1,20,"Moderate","Usual care","Survived",TRUE
+"RWE01915",70,1,47,"Moderate","Treatment","Survived",TRUE
+"RWE01916",47,0,27,"High","Usual care","Survived",TRUE
+"RWE01917",75,1,44,"Moderate","Treatment","Survived",TRUE
+"RWE01918",76,1,65,"Low","Usual care","Survived",TRUE
+"RWE01919",66,1,55,"High","Treatment","Died",TRUE
+"RWE01920",57,2,42,"Moderate","Usual care","Survived",TRUE
+"RWE01921",65,1,47,"Moderate","Usual care","Died",TRUE
+"RWE01922",65,0,43,"High","Treatment","Died",TRUE
+"RWE01923",76,0,39,"Moderate","Treatment","Survived",TRUE
+"RWE01924",61,1,76,"Moderate","Usual care","Died",TRUE
+"RWE01925",39,0,56,"Moderate","Usual care","Survived",TRUE
+"RWE01926",72,1,63,"Moderate","Treatment","Died",TRUE
+"RWE01927",79,1,40,"Moderate","Usual care","Survived",TRUE
+"RWE01928",61,1,38,"Moderate","Usual care","Survived",TRUE
+"RWE01929",79,4,44,"Moderate","Treatment","Survived",TRUE
+"RWE01930",67,1,37,"Low","Usual care","Survived",TRUE
+"RWE01931",85,2,65,"Moderate","Treatment","Survived",TRUE
+"RWE01932",65,1,54,"High","Treatment","Survived",TRUE
+"RWE01933",54,0,49,"Low","Treatment","Survived",TRUE
+"RWE01934",46,1,41,"Low","Usual care","Survived",TRUE
+"RWE01935",80,4,63,"Moderate","Treatment","Died",TRUE
+"RWE01936",87,2,47,"Low","Usual care","Survived",TRUE
+"RWE01937",64,0,65,"Low","Treatment","Survived",TRUE
+"RWE01938",62,2,22,"High","Usual care","Survived",TRUE
+"RWE01939",65,3,55,"Moderate","Treatment","Survived",TRUE
+"RWE01940",77,1,82,"Moderate","Treatment","Survived",TRUE
+"RWE01941",53,1,21,"Moderate","Usual care","Survived",TRUE
+"RWE01942",72,3,44,"High","Usual care","Died",TRUE
+"RWE01943",59,4,41,"Moderate","Usual care","Died",TRUE
+"RWE01944",66,2,35,"Low","Usual care","Survived",TRUE
+"RWE01945",72,0,40,"Moderate","Usual care","Survived",TRUE
+"RWE01946",80,0,49,"Low","Usual care","Survived",TRUE
+"RWE01947",61,3,62,"Low","Treatment","Died",TRUE
+"RWE01948",95,2,45,"Moderate","Usual care","Survived",TRUE
+"RWE01949",72,1,54,"Moderate","Treatment","Survived",TRUE
+"RWE01950",70,2,63,"Moderate","Usual care","Survived",TRUE
+"RWE01951",68,3,12,"Low","Usual care","Survived",TRUE
+"RWE01952",29,0,52,"High","Treatment","Survived",TRUE
+"RWE01953",93,3,52,"Moderate","Treatment","Survived",TRUE
+"RWE01954",70,1,55,"Moderate","Usual care","Survived",TRUE
+"RWE01955",73,0,31,"High","Treatment","Survived",TRUE
+"RWE01956",95,2,44,"Moderate","Usual care","Survived",TRUE
+"RWE01957",79,0,50,"Moderate","Treatment","Survived",TRUE
+"RWE01958",58,1,59,"Moderate","Treatment","Survived",TRUE
+"RWE01959",78,2,59,"Moderate","Usual care","Died",TRUE
+"RWE01960",53,1,35,"High","Treatment","Survived",TRUE
+"RWE01961",41,0,37,"High","Treatment","Survived",TRUE
+"RWE01962",70,0,62,"Moderate","Treatment","Survived",TRUE
+"RWE01963",86,0,45,"High","Treatment","Survived",TRUE
+"RWE01964",38,0,25,"Moderate","Treatment","Survived",TRUE
+"RWE01965",78,1,61,"Moderate","Usual care","Died",TRUE
+"RWE01966",55,2,23,"High","Usual care","Survived",TRUE
+"RWE01967",83,3,39,"Moderate","Usual care","Survived",TRUE
+"RWE01968",61,2,22,"Moderate","Usual care","Survived",TRUE
+"RWE01969",78,0,23,"Moderate","Treatment","Survived",TRUE
+"RWE01970",63,2,55,"Moderate","Treatment","Died",TRUE
+"RWE01971",55,1,20,"Moderate","Usual care","Survived",TRUE
+"RWE01972",66,1,25,"High","Usual care","Died",TRUE
+"RWE01973",74,2,61,"Low","Treatment","Survived",TRUE
+"RWE01974",68,1,27,"Moderate","Usual care","Survived",TRUE
+"RWE01975",73,1,41,"Low","Usual care","Survived",TRUE
+"RWE01976",81,1,43,"Moderate","Treatment","Died",TRUE
+"RWE01977",60,0,17,"Low","Usual care","Survived",TRUE
+"RWE01978",46,0,71,"Moderate","Treatment","Survived",TRUE
+"RWE01979",52,1,53,"High","Treatment","Survived",TRUE
+"RWE01980",75,5,54,"High","Treatment","Survived",TRUE
+"RWE01981",61,1,41,"High","Usual care","Survived",TRUE
+"RWE01982",86,0,26,"High","Usual care","Survived",TRUE
+"RWE01983",80,2,38,"Moderate","Treatment","Died",TRUE
+"RWE01984",69,0,58,"High","Usual care","Died",TRUE
+"RWE01985",68,1,52,"High","Usual care","Survived",TRUE
+"RWE01986",49,0,59,"High","Treatment","Survived",TRUE
+"RWE01987",65,1,31,"High","Usual care","Survived",TRUE
+"RWE01988",56,1,26,"High","Usual care","Survived",TRUE
+"RWE01989",71,1,40,"Low","Usual care","Survived",TRUE
+"RWE01990",82,1,45,"Moderate","Usual care","Died",TRUE
+"RWE01991",79,1,59,"Moderate","Treatment","Survived",TRUE
+"RWE01992",61,1,49,"Low","Treatment","Survived",TRUE
+"RWE01993",62,1,32,"Moderate","Usual care","Survived",TRUE
+"RWE01994",51,0,34,"High","Treatment","Survived",TRUE
+"RWE01995",68,0,58,"High","Treatment","Died",TRUE
+"RWE01996",66,0,76,"Low","Treatment","Survived",TRUE
+"RWE01997",34,0,47,"Low","Treatment","Survived",TRUE
+"RWE01998",63,1,6,"Low","Usual care","Survived",TRUE
+"RWE01999",59,1,40,"Moderate","Usual care","Survived",TRUE
+"RWE02000",54,1,60,"Moderate","Usual care","Survived",TRUE
+"RWE02001",56,4,50,"Moderate","Usual care","Died",TRUE
+"RWE02002",66,1,55,"Moderate","Treatment","Survived",TRUE
+"RWE02003",71,0,30,"Moderate","Usual care","Survived",TRUE
+"RWE02004",68,3,47,"High","Usual care","Survived",TRUE
+"RWE02005",69,4,36,"High","Usual care","Died",TRUE
+"RWE02006",64,1,76,"Moderate","Treatment","Died",TRUE
+"RWE02007",65,3,56,"Moderate","Usual care","Survived",TRUE
+"RWE02008",82,0,59,"High","Treatment","Died",TRUE
+"RWE02009",49,1,18,"High","Usual care","Survived",TRUE
+"RWE02010",67,1,49,"Low","Usual care","Survived",TRUE
+"RWE02011",64,1,27,"High","Usual care","Survived",TRUE
+"RWE02012",51,0,28,"Moderate","Usual care","Survived",TRUE
+"RWE02013",79,2,47,"High","Usual care","Survived",TRUE
+"RWE02014",20,0,47,"High","Treatment","Survived",TRUE
+"RWE02015",58,1,29,"Low","Usual care","Survived",TRUE
+"RWE02016",44,1,36,"High","Treatment","Survived",TRUE
+"RWE02017",59,1,81,"Moderate","Treatment","Died",TRUE
+"RWE02018",64,0,50,"High","Usual care","Survived",TRUE
+"RWE02019",74,1,42,"Moderate","Usual care","Survived",TRUE
+"RWE02020",81,3,54,"Low","Usual care","Survived",TRUE
+"RWE02021",55,5,53,"Moderate","Usual care","Survived",TRUE
+"RWE02022",48,3,80,"Moderate","Treatment","Died",TRUE
+"RWE02023",95,0,50,"High","Usual care","Survived",TRUE
+"RWE02024",59,1,53,"High","Treatment","Survived",TRUE
+"RWE02025",73,0,41,"High","Usual care","Died",TRUE
+"RWE02026",80,1,40,"Low","Usual care","Survived",TRUE
+"RWE02027",66,1,51,"Moderate","Treatment","Died",TRUE
+"RWE02028",80,2,56,"Moderate","Usual care","Survived",TRUE
+"RWE02029",85,0,22,"High","Usual care","Survived",TRUE
+"RWE02030",85,1,58,"Moderate","Treatment","Died",TRUE
+"RWE02031",54,1,58,"Low","Treatment","Survived",TRUE
+"RWE02032",41,0,34,"Moderate","Usual care","Died",TRUE
+"RWE02033",76,2,70,"Moderate","Treatment","Died",TRUE
+"RWE02034",81,1,67,"Moderate","Treatment","Survived",TRUE
+"RWE02035",66,3,63,"High","Usual care","Survived",TRUE
+"RWE02036",68,1,58,"High","Treatment","Survived",TRUE
+"RWE02037",62,1,45,"Moderate","Treatment","Died",TRUE
+"RWE02038",77,3,33,"Moderate","Usual care","Survived",TRUE
+"RWE02039",39,0,42,"Moderate","Treatment","Survived",TRUE
+"RWE02040",51,1,5,"Moderate","Usual care","Survived",TRUE
+"RWE02041",55,1,66,"Moderate","Usual care","Survived",TRUE
+"RWE02042",47,1,63,"High","Usual care","Died",TRUE
+"RWE02043",69,4,26,"Moderate","Usual care","Died",TRUE
+"RWE02044",30,3,28,"High","Usual care","Survived",TRUE
+"RWE02045",53,1,58,"High","Treatment","Survived",TRUE
+"RWE02046",61,2,33,"High","Usual care","Survived",TRUE
+"RWE02047",95,2,37,"High","Treatment","Survived",TRUE
+"RWE02048",60,2,52,"Moderate","Treatment","Survived",TRUE
+"RWE02049",67,1,36,"Moderate","Usual care","Survived",TRUE
+"RWE02050",59,0,27,"Moderate","Usual care","Survived",TRUE
+"RWE02051",55,1,39,"High","Usual care","Survived",TRUE
+"RWE02052",71,0,57,"Low","Usual care","Died",TRUE
+"RWE02053",52,0,51,"Low","Usual care","Died",TRUE
+"RWE02054",44,1,36,"Moderate","Usual care","Survived",TRUE
+"RWE02055",50,1,34,"Moderate","Treatment","Survived",TRUE
+"RWE02056",68,0,46,"Low","Usual care","Survived",TRUE
+"RWE02057",56,0,35,"Moderate","Usual care","Survived",TRUE
+"RWE02058",56,0,16,"High","Usual care","Survived",TRUE
+"RWE02059",41,0,49,"Moderate","Usual care","Died",TRUE
+"RWE02060",62,3,52,"Low","Usual care","Survived",TRUE
+"RWE02061",49,2,47,"High","Usual care","Died",TRUE
+"RWE02062",77,1,24,"Moderate","Usual care","Survived",TRUE
+"RWE02063",86,4,61,"High","Treatment","Survived",TRUE
+"RWE02064",70,1,82,"High","Treatment","Died",TRUE
+"RWE02065",69,1,55,"High","Usual care","Survived",TRUE
+"RWE02066",51,0,39,"Moderate","Treatment","Survived",TRUE
+"RWE02067",51,0,63,"Moderate","Usual care","Died",TRUE
+"RWE02068",95,3,57,"Moderate","Usual care","Survived",TRUE
+"RWE02069",65,2,45,"Moderate","Treatment","Survived",TRUE
+"RWE02070",62,1,31,"High","Usual care","Survived",TRUE
+"RWE02071",50,0,34,"High","Treatment","Survived",TRUE
+"RWE02072",57,2,33,"Low","Usual care","Survived",TRUE
+"RWE02073",63,0,42,"Moderate","Usual care","Survived",TRUE
+"RWE02074",67,0,36,"Moderate","Treatment","Survived",TRUE
+"RWE02075",52,1,75,"High","Usual care","Died",TRUE
+"RWE02076",82,0,29,"Moderate","Usual care","Survived",TRUE
+"RWE02077",68,1,32,"High","Usual care","Survived",TRUE
+"RWE02078",63,2,43,"High","Usual care","Survived",TRUE
+"RWE02079",70,1,57,"Moderate","Treatment","Survived",TRUE
+"RWE02080",62,1,55,"Low","Usual care","Survived",TRUE
+"RWE02081",39,0,42,"High","Usual care","Survived",TRUE
+"RWE02082",51,0,26,"High","Usual care","Survived",TRUE
+"RWE02083",59,2,42,"Moderate","Treatment","Survived",TRUE
+"RWE02084",68,2,63,"Moderate","Treatment","Died",TRUE
+"RWE02085",51,0,70,"Low","Treatment","Survived",TRUE
+"RWE02086",87,2,57,"High","Usual care","Died",TRUE
+"RWE02087",44,0,25,"High","Usual care","Survived",TRUE
+"RWE02088",63,0,51,"Moderate","Treatment","Survived",TRUE
+"RWE02089",59,1,34,"Moderate","Usual care","Survived",TRUE
+"RWE02090",52,0,30,"High","Usual care","Survived",TRUE
+"RWE02091",79,3,69,"High","Treatment","Survived",TRUE
+"RWE02092",54,1,54,"High","Usual care","Survived",TRUE
+"RWE02093",76,0,44,"Moderate","Treatment","Survived",TRUE
+"RWE02094",86,3,48,"Moderate","Usual care","Died",TRUE
+"RWE02095",58,0,27,"Moderate","Treatment","Survived",TRUE
+"RWE02096",68,3,53,"High","Treatment","Died",TRUE
+"RWE02097",43,0,49,"Moderate","Usual care","Survived",TRUE
+"RWE02098",48,0,45,"High","Usual care","Survived",TRUE
+"RWE02099",93,1,49,"Low","Usual care","Survived",TRUE
+"RWE02100",58,2,45,"Moderate","Usual care","Died",TRUE
+"RWE02101",75,1,42,"Moderate","Usual care","Survived",TRUE
+"RWE02102",54,0,32,"High","Usual care","Survived",TRUE
+"RWE02103",50,0,15,"Moderate","Usual care","Survived",TRUE
+"RWE02104",68,1,53,"High","Treatment","Survived",TRUE
+"RWE02105",64,3,53,"Low","Usual care","Died",TRUE
+"RWE02106",86,0,20,"Moderate","Usual care","Survived",TRUE
+"RWE02107",77,2,19,"Moderate","Usual care","Survived",TRUE
+"RWE02108",77,0,55,"Moderate","Usual care","Survived",TRUE
+"RWE02109",42,0,34,"High","Treatment","Survived",TRUE
+"RWE02110",68,0,36,"Low","Treatment","Survived",TRUE
+"RWE02111",50,0,73,"Moderate","Treatment","Survived",TRUE
+"RWE02112",58,3,51,"Moderate","Treatment","Survived",TRUE
+"RWE02113",88,1,43,"Low","Usual care","Survived",TRUE
+"RWE02114",71,0,55,"Moderate","Treatment","Survived",TRUE
+"RWE02115",55,2,58,"Moderate","Usual care","Died",TRUE
+"RWE02116",60,3,60,"Moderate","Usual care","Survived",TRUE
+"RWE02117",85,1,82,"Moderate","Treatment","Died",TRUE
+"RWE02118",72,3,41,"High","Usual care","Survived",TRUE
+"RWE02119",86,3,67,"Moderate","Treatment","Survived",TRUE
+"RWE02120",79,4,66,"Moderate","Treatment","Died",TRUE
+"RWE02121",75,0,38,"Low","Treatment","Survived",TRUE
+"RWE02122",58,0,60,"High","Treatment","Died",TRUE
+"RWE02123",64,3,15,"Moderate","Treatment","Survived",TRUE
+"RWE02124",58,1,59,"Low","Treatment","Survived",TRUE
+"RWE02125",63,4,48,"Moderate","Usual care","Survived",TRUE
+"RWE02126",54,1,61,"High","Usual care","Died",TRUE
+"RWE02127",59,4,59,"Moderate","Usual care","Survived",TRUE
+"RWE02128",50,1,24,"High","Usual care","Survived",TRUE
+"RWE02129",81,2,69,"High","Treatment","Died",TRUE
+"RWE02130",41,0,48,"Low","Treatment","Survived",TRUE
+"RWE02131",79,3,57,"Low","Treatment","Survived",TRUE
+"RWE02132",64,0,86,"Moderate","Treatment","Died",TRUE
+"RWE02133",77,3,51,"Moderate","Usual care","Survived",TRUE
+"RWE02134",80,0,63,"Low","Treatment","Survived",TRUE
+"RWE02135",73,2,39,"Moderate","Usual care","Survived",TRUE
+"RWE02136",83,2,32,"Low","Usual care","Survived",TRUE
+"RWE02137",83,1,26,"High","Usual care","Survived",TRUE
+"RWE02138",62,1,61,"High","Treatment","Survived",TRUE
+"RWE02139",68,1,78,"Moderate","Treatment","Died",TRUE
+"RWE02140",50,2,41,"High","Usual care","Survived",TRUE
+"RWE02141",73,2,53,"Moderate","Usual care","Survived",TRUE
+"RWE02142",53,2,29,"Moderate","Usual care","Survived",TRUE
+"RWE02143",47,1,65,"Moderate","Treatment","Survived",TRUE
+"RWE02144",84,2,43,"Moderate","Treatment","Survived",TRUE
+"RWE02145",69,0,57,"High","Treatment","Survived",TRUE
+"RWE02146",78,2,38,"Moderate","Treatment","Survived",TRUE
+"RWE02147",66,1,24,"Moderate","Usual care","Survived",TRUE
+"RWE02148",73,4,12,"Moderate","Usual care","Survived",TRUE
+"RWE02149",56,1,49,"Moderate","Treatment","Survived",TRUE
+"RWE02150",52,2,52,"Moderate","Usual care","Died",TRUE
+"RWE02151",83,1,55,"Low","Usual care","Died",TRUE
+"RWE02152",84,4,33,"Low","Usual care","Survived",TRUE
+"RWE02153",63,2,41,"Moderate","Usual care","Survived",TRUE
+"RWE02154",54,3,65,"Moderate","Treatment","Died",TRUE
+"RWE02155",78,1,39,"Moderate","Usual care","Survived",TRUE
+"RWE02156",69,1,51,"High","Usual care","Survived",TRUE
+"RWE02157",61,0,64,"High","Treatment","Survived",TRUE
+"RWE02158",68,3,64,"Low","Treatment","Survived",TRUE
+"RWE02159",69,1,35,"High","Treatment","Died",TRUE
+"RWE02160",76,4,45,"Moderate","Usual care","Died",TRUE
+"RWE02161",76,2,60,"Low","Usual care","Survived",TRUE
+"RWE02162",41,0,34,"High","Usual care","Survived",TRUE
+"RWE02163",52,2,42,"Low","Usual care","Survived",TRUE
+"RWE02164",64,0,57,"High","Treatment","Survived",TRUE
+"RWE02165",73,1,34,"Moderate","Usual care","Died",TRUE
+"RWE02166",90,2,41,"Moderate","Treatment","Died",TRUE
+"RWE02167",90,4,65,"High","Usual care","Survived",TRUE
+"RWE02168",65,3,36,"Low","Usual care","Survived",TRUE
+"RWE02169",65,1,41,"Moderate","Usual care","Survived",TRUE
+"RWE02170",68,3,48,"Moderate","Treatment","Died",TRUE
+"RWE02171",84,2,56,"Low","Treatment","Survived",TRUE
+"RWE02172",47,1,44,"High","Usual care","Survived",TRUE
+"RWE02173",81,0,51,"High","Usual care","Survived",TRUE
+"RWE02174",81,3,45,"High","Usual care","Survived",TRUE
+"RWE02175",80,3,30,"Moderate","Usual care","Died",TRUE
+"RWE02176",73,0,23,"Moderate","Usual care","Survived",TRUE
+"RWE02177",83,1,42,"Moderate","Usual care","Survived",TRUE
+"RWE02178",70,1,58,"High","Usual care","Survived",TRUE
+"RWE02179",90,1,64,"High","Treatment","Survived",TRUE
+"RWE02180",84,4,66,"Moderate","Treatment","Died",TRUE
+"RWE02181",66,2,33,"High","Usual care","Survived",TRUE
+"RWE02182",74,1,45,"High","Usual care","Survived",TRUE
+"RWE02183",64,1,37,"High","Usual care","Survived",TRUE
+"RWE02184",95,1,53,"Moderate","Usual care","Survived",TRUE
+"RWE02185",74,3,71,"Low","Treatment","Survived",TRUE
+"RWE02186",63,1,65,"Moderate","Treatment","Survived",TRUE
+"RWE02187",52,0,56,"High","Treatment","Survived",TRUE
+"RWE02188",93,1,52,"High","Treatment","Died",TRUE
+"RWE02189",47,1,57,"Moderate","Treatment","Died",TRUE
+"RWE02190",70,0,20,"High","Usual care","Survived",TRUE
+"RWE02191",49,0,56,"Moderate","Usual care","Survived",TRUE
+"RWE02192",81,3,58,"High","Treatment","Died",TRUE
+"RWE02193",49,1,50,"High","Usual care","Survived",TRUE
+"RWE02194",64,1,57,"High","Usual care","Survived",TRUE
+"RWE02195",69,2,29,"High","Usual care","Survived",TRUE
+"RWE02196",56,2,53,"Moderate","Usual care","Survived",TRUE
+"RWE02197",49,1,57,"Moderate","Treatment","Died",TRUE
+"RWE02198",46,1,48,"Moderate","Usual care","Survived",TRUE
+"RWE02199",52,0,49,"Low","Usual care","Survived",TRUE
+"RWE02200",95,0,77,"Moderate","Treatment","Died",TRUE
+"RWE02201",44,0,64,"High","Treatment","Survived",TRUE
+"RWE02202",50,0,37,"Moderate","Usual care","Died",TRUE
+"RWE02203",95,3,52,"Moderate","Usual care","Survived",TRUE
+"RWE02204",54,1,56,"Low","Treatment","Survived",TRUE
+"RWE02205",67,2,47,"High","Usual care","Survived",TRUE
+"RWE02206",74,2,33,"Moderate","Usual care","Survived",TRUE
+"RWE02207",56,2,36,"Low","Treatment","Survived",TRUE
+"RWE02208",65,1,47,"High","Usual care","Survived",TRUE
+"RWE02209",47,0,55,"Moderate","Usual care","Survived",TRUE
+"RWE02210",60,1,19,"Moderate","Usual care","Survived",TRUE
+"RWE02211",49,0,27,"Low","Usual care","Survived",TRUE
+"RWE02212",80,2,43,"High","Usual care","Died",TRUE
+"RWE02213",58,1,31,"High","Usual care","Survived",TRUE
+"RWE02214",66,2,60,"Moderate","Usual care","Survived",TRUE
+"RWE02215",73,2,51,"Moderate","Treatment","Survived",TRUE
+"RWE02216",67,2,28,"Low","Usual care","Died",TRUE
+"RWE02217",69,3,23,"High","Usual care","Survived",TRUE
+"RWE02218",86,1,38,"Moderate","Usual care","Survived",TRUE
+"RWE02219",79,3,56,"Moderate","Treatment","Survived",TRUE
+"RWE02220",63,1,62,"Low","Treatment","Survived",TRUE
+"RWE02221",79,0,32,"High","Usual care","Survived",TRUE
+"RWE02222",48,2,46,"High","Usual care","Survived",TRUE
+"RWE02223",68,0,74,"High","Treatment","Survived",TRUE
+"RWE02224",71,0,60,"Moderate","Treatment","Survived",TRUE
+"RWE02225",59,2,37,"Moderate","Treatment","Survived",TRUE
+"RWE02226",64,1,57,"High","Treatment","Died",TRUE
+"RWE02227",69,3,55,"Low","Usual care","Survived",TRUE
+"RWE02228",77,0,38,"Moderate","Usual care","Died",TRUE
+"RWE02229",58,1,44,"Moderate","Treatment","Died",TRUE
+"RWE02230",95,6,51,"Moderate","Usual care","Survived",TRUE
+"RWE02231",36,0,51,"High","Treatment","Survived",TRUE
+"RWE02232",79,2,32,"High","Treatment","Died",TRUE
+"RWE02233",59,4,44,"Moderate","Treatment","Survived",TRUE
+"RWE02234",62,3,14,"Moderate","Usual care","Survived",TRUE
+"RWE02235",73,3,67,"Low","Usual care","Died",TRUE
+"RWE02236",69,1,75,"Moderate","Treatment","Died",TRUE
+"RWE02237",83,2,34,"Moderate","Treatment","Survived",TRUE
+"RWE02238",55,0,59,"High","Usual care","Survived",TRUE
+"RWE02239",50,0,59,"Low","Treatment","Survived",TRUE
+"RWE02240",64,1,56,"Moderate","Treatment","Died",TRUE
+"RWE02241",78,1,56,"Moderate","Treatment","Died",TRUE
+"RWE02242",95,3,21,"Moderate","Usual care","Survived",TRUE
+"RWE02243",95,5,27,"Moderate","Usual care","Survived",TRUE
+"RWE02244",77,4,43,"Moderate","Treatment","Died",TRUE
+"RWE02245",74,3,30,"Moderate","Usual care","Survived",TRUE
+"RWE02246",74,3,53,"Moderate","Treatment","Died",TRUE
+"RWE02247",83,1,38,"Moderate","Treatment","Survived",TRUE
+"RWE02248",53,3,36,"Moderate","Usual care","Survived",TRUE
+"RWE02249",68,1,66,"High","Treatment","Survived",TRUE
+"RWE02250",50,0,25,"Low","Usual care","Survived",TRUE
+"RWE02251",64,0,69,"Low","Usual care","Died",TRUE
+"RWE02252",81,0,71,"High","Treatment","Survived",TRUE
+"RWE02253",84,1,53,"Moderate","Treatment","Survived",TRUE
+"RWE02254",62,0,74,"Moderate","Treatment","Died",TRUE
+"RWE02255",95,0,48,"Moderate","Treatment","Survived",TRUE
+"RWE02256",76,2,25,"Moderate","Usual care","Survived",TRUE
+"RWE02257",95,2,46,"High","Usual care","Died",TRUE
+"RWE02258",68,1,25,"Moderate","Usual care","Survived",TRUE
+"RWE02259",67,2,33,"Low","Usual care","Survived",TRUE
+"RWE02260",72,3,75,"High","Treatment","Died",TRUE
+"RWE02261",64,3,61,"Moderate","Usual care","Survived",TRUE
+"RWE02262",78,1,45,"High","Usual care","Survived",TRUE
+"RWE02263",50,1,56,"Moderate","Treatment","Survived",TRUE
+"RWE02264",68,2,62,"Moderate","Usual care","Died",TRUE
+"RWE02265",73,2,47,"Low","Usual care","Survived",TRUE
+"RWE02266",76,0,71,"Moderate","Usual care","Died",TRUE
+"RWE02267",40,0,26,"Low","Usual care","Survived",TRUE
+"RWE02268",95,2,39,"High","Usual care","Survived",TRUE
+"RWE02269",51,2,43,"Moderate","Usual care","Survived",TRUE
+"RWE02270",63,0,55,"Moderate","Usual care","Survived",TRUE
+"RWE02271",56,0,67,"Moderate","Treatment","Survived",TRUE
+"RWE02272",41,0,40,"Moderate","Usual care","Survived",TRUE
+"RWE02273",59,0,44,"High","Treatment","Survived",TRUE
+"RWE02274",53,2,65,"High","Treatment","Survived",TRUE
+"RWE02275",69,1,34,"High","Usual care","Survived",TRUE
+"RWE02276",62,2,80,"High","Treatment","Died",TRUE
+"RWE02277",67,1,48,"Moderate","Usual care","Died",TRUE
+"RWE02278",91,2,56,"Moderate","Treatment","Survived",TRUE
+"RWE02279",66,4,36,"Low","Usual care","Survived",TRUE
+"RWE02280",57,2,44,"Moderate","Treatment","Survived",TRUE
+"RWE02281",66,1,37,"Moderate","Treatment","Survived",TRUE
+"RWE02282",80,1,29,"Moderate","Usual care","Survived",TRUE
+"RWE02283",75,4,51,"Low","Usual care","Died",TRUE
+"RWE02284",61,2,17,"Moderate","Treatment","Survived",TRUE
+"RWE02285",76,3,68,"Moderate","Treatment","Died",TRUE
+"RWE02286",74,2,51,"High","Treatment","Survived",TRUE
+"RWE02287",58,0,20,"Moderate","Treatment","Survived",TRUE
+"RWE02288",29,0,14,"Moderate","Usual care","Survived",TRUE
+"RWE02289",70,3,42,"Moderate","Usual care","Survived",TRUE
+"RWE02290",60,0,50,"Moderate","Treatment","Survived",TRUE
+"RWE02291",80,5,68,"Moderate","Treatment","Died",TRUE
+"RWE02292",83,0,65,"Moderate","Treatment","Survived",TRUE
+"RWE02293",55,0,51,"High","Usual care","Survived",TRUE
+"RWE02294",67,0,67,"High","Usual care","Survived",TRUE
+"RWE02295",69,2,79,"Moderate","Usual care","Died",TRUE
+"RWE02296",54,1,42,"High","Usual care","Survived",TRUE
+"RWE02297",86,3,47,"Moderate","Treatment","Survived",TRUE
+"RWE02298",62,1,63,"Moderate","Treatment","Survived",TRUE
+"RWE02299",65,2,95,"Low","Treatment","Died",TRUE
+"RWE02300",63,1,51,"High","Usual care","Survived",TRUE
+"RWE02301",51,2,42,"Moderate","Usual care","Survived",TRUE
+"RWE02302",70,0,27,"Moderate","Usual care","Survived",TRUE
+"RWE02303",80,2,49,"Moderate","Usual care","Survived",TRUE
+"RWE02304",41,0,27,"High","Usual care","Survived",TRUE
+"RWE02305",43,0,78,"High","Treatment","Survived",TRUE
+"RWE02306",67,2,55,"Moderate","Treatment","Survived",TRUE
+"RWE02307",70,2,30,"Low","Usual care","Survived",TRUE
+"RWE02308",82,4,59,"Moderate","Usual care","Survived",TRUE
+"RWE02309",69,4,54,"Moderate","Treatment","Survived",TRUE
+"RWE02310",76,2,91,"Moderate","Treatment","Died",TRUE
+"RWE02311",54,2,41,"Moderate","Usual care","Survived",TRUE
+"RWE02312",62,0,34,"Moderate","Usual care","Survived",TRUE
+"RWE02313",73,0,39,"Low","Treatment","Survived",TRUE
+"RWE02314",64,1,68,"Low","Usual care","Died",TRUE
+"RWE02315",71,0,72,"Moderate","Usual care","Survived",TRUE
+"RWE02316",78,1,75,"Moderate","Treatment","Survived",TRUE
+"RWE02317",72,2,27,"Moderate","Usual care","Survived",TRUE
+"RWE02318",59,1,33,"Moderate","Usual care","Survived",TRUE
+"RWE02319",95,2,49,"High","Usual care","Survived",TRUE
+"RWE02320",71,4,34,"Low","Usual care","Survived",TRUE
+"RWE02321",75,0,27,"Low","Treatment","Survived",TRUE
+"RWE02322",46,0,5,"Moderate","Usual care","Survived",TRUE
+"RWE02323",57,3,36,"Moderate","Usual care","Survived",TRUE
+"RWE02324",59,1,29,"High","Usual care","Survived",TRUE
+"RWE02325",80,1,65,"Moderate","Treatment","Survived",TRUE
+"RWE02326",55,0,57,"Moderate","Usual care","Survived",TRUE
+"RWE02327",78,3,34,"Low","Usual care","Died",TRUE
+"RWE02328",66,2,52,"High","Usual care","Died",TRUE
+"RWE02329",31,0,43,"Moderate","Usual care","Survived",TRUE
+"RWE02330",70,2,60,"High","Usual care","Died",TRUE
+"RWE02331",60,0,10,"High","Usual care","Survived",TRUE
+"RWE02332",95,4,85,"Low","Usual care","Died",TRUE
+"RWE02333",90,5,78,"Low","Treatment","Died",TRUE
+"RWE02334",75,1,44,"Low","Usual care","Survived",TRUE
+"RWE02335",63,1,65,"Moderate","Treatment","Died",TRUE
+"RWE02336",72,0,50,"Moderate","Treatment","Survived",TRUE
+"RWE02337",57,0,17,"Low","Usual care","Survived",TRUE
+"RWE02338",59,1,51,"High","Usual care","Survived",TRUE
+"RWE02339",78,0,59,"Moderate","Treatment","Survived",TRUE
+"RWE02340",35,0,32,"Moderate","Treatment","Survived",TRUE
+"RWE02341",54,0,40,"Moderate","Usual care","Survived",TRUE
+"RWE02342",65,0,46,"High","Treatment","Survived",TRUE
+"RWE02343",55,0,45,"High","Usual care","Survived",TRUE
+"RWE02344",52,1,50,"Moderate","Treatment","Survived",TRUE
+"RWE02345",81,0,72,"Moderate","Treatment","Died",TRUE
+"RWE02346",46,0,38,"Low","Usual care","Survived",TRUE
+"RWE02347",82,1,32,"Moderate","Usual care","Survived",TRUE
+"RWE02348",65,0,68,"Low","Treatment","Survived",TRUE
+"RWE02349",55,0,24,"High","Usual care","Survived",TRUE
+"RWE02350",56,2,80,"High","Treatment","Survived",TRUE
+"RWE02351",77,2,59,"High","Treatment","Died",TRUE
+"RWE02352",76,1,32,"Low","Usual care","Died",TRUE
+"RWE02353",59,2,18,"Low","Usual care","Survived",TRUE
+"RWE02354",90,3,34,"Moderate","Usual care","Survived",TRUE
+"RWE02355",65,0,61,"Low","Treatment","Died",TRUE
+"RWE02356",78,1,30,"High","Usual care","Survived",TRUE
+"RWE02357",78,1,31,"Moderate","Usual care","Survived",TRUE
+"RWE02358",39,0,58,"High","Usual care","Survived",TRUE
+"RWE02359",75,6,56,"Moderate","Usual care","Died",TRUE
+"RWE02360",89,4,40,"Moderate","Usual care","Died",TRUE
+"RWE02361",81,1,43,"High","Treatment","Survived",TRUE
+"RWE02362",55,2,65,"Low","Treatment","Survived",TRUE
+"RWE02363",27,0,23,"Low","Usual care","Survived",TRUE
+"RWE02364",60,1,52,"High","Usual care","Survived",TRUE
+"RWE02365",71,2,52,"Moderate","Treatment","Survived",TRUE
+"RWE02366",64,1,56,"Moderate","Treatment","Survived",TRUE
+"RWE02367",59,0,28,"Moderate","Usual care","Survived",TRUE
+"RWE02368",58,1,23,"Moderate","Usual care","Survived",TRUE
+"RWE02369",79,0,54,"Moderate","Treatment","Survived",TRUE
+"RWE02370",59,0,70,"Moderate","Treatment","Died",TRUE
+"RWE02371",70,4,51,"High","Treatment","Survived",TRUE
+"RWE02372",65,5,52,"Low","Usual care","Died",TRUE
+"RWE02373",68,2,35,"Low","Treatment","Survived",TRUE
+"RWE02374",54,1,63,"Moderate","Usual care","Survived",TRUE
+"RWE02375",53,0,48,"High","Treatment","Survived",TRUE
+"RWE02376",52,0,95,"High","Treatment","Died",TRUE
+"RWE02377",90,5,54,"High","Treatment","Survived",TRUE
+"RWE02378",62,3,36,"Low","Usual care","Survived",TRUE
+"RWE02379",55,1,47,"Low","Treatment","Survived",TRUE
+"RWE02380",53,0,58,"High","Treatment","Died",TRUE
+"RWE02381",68,0,31,"High","Usual care","Survived",TRUE
+"RWE02382",86,2,16,"High","Usual care","Survived",TRUE
+"RWE02383",60,1,37,"Moderate","Usual care","Survived",TRUE
+"RWE02384",55,0,56,"Moderate","Usual care","Survived",TRUE
+"RWE02385",49,1,72,"Moderate","Treatment","Survived",TRUE
+"RWE02386",68,0,54,"Low","Treatment","Survived",TRUE
+"RWE02387",49,0,46,"Moderate","Usual care","Survived",TRUE
+"RWE02388",71,2,54,"Moderate","Treatment","Survived",TRUE
+"RWE02389",66,1,45,"Moderate","Usual care","Survived",TRUE
+"RWE02390",73,2,20,"High","Usual care","Survived",TRUE
+"RWE02391",82,2,41,"Low","Treatment","Survived",TRUE
+"RWE02392",78,2,6,"High","Usual care","Survived",TRUE
+"RWE02393",91,3,52,"Moderate","Treatment","Died",TRUE
+"RWE02394",66,0,57,"Moderate","Usual care","Survived",TRUE
+"RWE02395",95,1,72,"Moderate","Treatment","Survived",TRUE
+"RWE02396",79,2,63,"High","Treatment","Died",TRUE
+"RWE02397",68,0,53,"Moderate","Treatment","Survived",TRUE
+"RWE02398",37,0,48,"Moderate","Usual care","Survived",TRUE
+"RWE02399",75,1,32,"Moderate","Usual care","Died",TRUE
+"RWE02400",85,2,61,"High","Treatment","Survived",TRUE
+"RWE02401",63,1,70,"High","Usual care","Died",TRUE
+"RWE02402",48,1,45,"Low","Treatment","Survived",TRUE
+"RWE02403",70,0,48,"High","Treatment","Survived",TRUE
+"RWE02404",61,0,29,"High","Usual care","Survived",TRUE
+"RWE02405",38,1,28,"High","Usual care","Survived",TRUE
+"RWE02406",76,2,53,"Moderate","Usual care","Died",TRUE
+"RWE02407",71,2,65,"High","Usual care","Survived",TRUE
+"RWE02408",47,1,33,"High","Treatment","Survived",TRUE
+"RWE02409",55,0,21,"Moderate","Usual care","Survived",TRUE
+"RWE02410",45,2,27,"Moderate","Usual care","Survived",TRUE
+"RWE02411",67,0,47,"Moderate","Usual care","Survived",TRUE
+"RWE02412",66,1,45,"Moderate","Usual care","Survived",TRUE
+"RWE02413",48,1,73,"Moderate","Treatment","Died",TRUE
+"RWE02414",77,4,28,"Low","Usual care","Survived",TRUE
+"RWE02415",79,3,48,"Low","Usual care","Survived",TRUE
+"RWE02416",55,4,95,"High","Treatment","Died",TRUE
+"RWE02417",70,1,60,"High","Treatment","Survived",TRUE
+"RWE02418",55,1,36,"Moderate","Treatment","Survived",TRUE
+"RWE02419",65,1,32,"Moderate","Usual care","Survived",TRUE
+"RWE02420",50,1,46,"High","Usual care","Survived",TRUE
+"RWE02421",63,1,36,"High","Usual care","Survived",TRUE
+"RWE02422",76,0,34,"Low","Usual care","Survived",TRUE
+"RWE02423",82,0,34,"High","Treatment","Survived",TRUE
+"RWE02424",60,1,37,"High","Usual care","Survived",TRUE
+"RWE02425",66,1,37,"High","Usual care","Survived",TRUE
+"RWE02426",95,3,57,"Moderate","Usual care","Died",TRUE
+"RWE02427",83,6,43,"Moderate","Usual care","Died",TRUE
+"RWE02428",60,0,5,"High","Usual care","Survived",TRUE
+"RWE02429",51,1,47,"Low","Usual care","Survived",TRUE
+"RWE02430",62,2,28,"Low","Usual care","Survived",TRUE
+"RWE02431",82,2,55,"High","Usual care","Died",TRUE
+"RWE02432",74,1,45,"Moderate","Usual care","Survived",TRUE
+"RWE02433",88,1,32,"High","Usual care","Survived",TRUE
+"RWE02434",51,1,40,"Low","Usual care","Survived",TRUE
+"RWE02435",46,1,48,"Moderate","Usual care","Survived",TRUE
+"RWE02436",62,0,47,"High","Treatment","Survived",TRUE
+"RWE02437",57,1,46,"High","Usual care","Survived",TRUE
+"RWE02438",95,0,61,"Low","Treatment","Survived",TRUE
+"RWE02439",49,0,58,"High","Treatment","Survived",TRUE
+"RWE02440",51,2,44,"Low","Usual care","Survived",TRUE
+"RWE02441",59,2,63,"High","Treatment","Survived",TRUE
+"RWE02442",58,2,25,"High","Usual care","Survived",TRUE
+"RWE02443",71,2,45,"Low","Usual care","Survived",TRUE
+"RWE02444",38,0,38,"High","Treatment","Survived",TRUE
+"RWE02445",72,3,36,"Moderate","Usual care","Survived",TRUE
+"RWE02446",63,2,38,"Low","Usual care","Survived",TRUE
+"RWE02447",41,1,62,"Moderate","Usual care","Survived",TRUE
+"RWE02448",77,1,33,"Moderate","Treatment","Survived",TRUE
+"RWE02449",58,3,31,"Moderate","Usual care","Survived",TRUE
+"RWE02450",55,0,29,"High","Usual care","Died",TRUE
+"RWE02451",63,2,45,"High","Treatment","Survived",TRUE
+"RWE02452",72,2,33,"Low","Usual care","Died",TRUE
+"RWE02453",51,1,63,"Moderate","Usual care","Died",TRUE
+"RWE02454",62,1,53,"High","Treatment","Died",TRUE
+"RWE02455",66,1,41,"High","Usual care","Survived",TRUE
+"RWE02456",55,2,28,"Moderate","Treatment","Survived",TRUE
+"RWE02457",67,2,57,"Moderate","Treatment","Died",TRUE
+"RWE02458",63,1,54,"Moderate","Treatment","Survived",TRUE
+"RWE02459",81,3,78,"Low","Treatment","Survived",TRUE
+"RWE02460",82,1,61,"Low","Usual care","Died",TRUE
+"RWE02461",70,2,27,"High","Treatment","Survived",TRUE
+"RWE02462",67,1,26,"Moderate","Usual care","Survived",TRUE
+"RWE02463",38,1,42,"Moderate","Usual care","Died",TRUE
+"RWE02464",49,1,60,"High","Treatment","Survived",TRUE
+"RWE02465",71,0,33,"Low","Usual care","Survived",TRUE
+"RWE02466",41,0,50,"Moderate","Usual care","Survived",TRUE
+"RWE02467",62,1,36,"Moderate","Usual care","Survived",TRUE
+"RWE02468",51,0,56,"Low","Usual care","Survived",TRUE
+"RWE02469",95,3,40,"High","Usual care","Survived",TRUE
+"RWE02470",56,3,41,"High","Usual care","Survived",TRUE
+"RWE02471",74,1,54,"Low","Treatment","Died",TRUE
+"RWE02472",83,1,45,"Moderate","Usual care","Survived",TRUE
+"RWE02473",56,1,41,"Moderate","Usual care","Survived",TRUE
+"RWE02474",53,0,37,"Moderate","Usual care","Survived",TRUE
+"RWE02475",65,2,15,"High","Usual care","Survived",TRUE
+"RWE02476",69,0,50,"High","Treatment","Survived",TRUE
+"RWE02477",56,1,37,"High","Usual care","Survived",TRUE
+"RWE02478",78,1,51,"High","Treatment","Survived",TRUE
+"RWE02479",54,0,46,"Moderate","Usual care","Survived",TRUE
+"RWE02480",44,1,37,"Moderate","Treatment","Survived",TRUE
+"RWE02481",72,1,69,"Moderate","Usual care","Survived",TRUE
+"RWE02482",60,5,21,"High","Usual care","Survived",TRUE
+"RWE02483",55,1,44,"Moderate","Usual care","Died",TRUE
+"RWE02484",37,0,35,"High","Usual care","Survived",TRUE
+"RWE02485",34,0,40,"Moderate","Usual care","Survived",TRUE
+"RWE02486",69,1,66,"High","Usual care","Died",TRUE
+"RWE02487",55,1,36,"Moderate","Usual care","Survived",TRUE
+"RWE02488",52,3,19,"Low","Treatment","Survived",TRUE
+"RWE02489",51,0,24,"Low","Usual care","Survived",TRUE
+"RWE02490",70,5,32,"High","Usual care","Survived",TRUE
+"RWE02491",65,1,33,"Moderate","Usual care","Survived",TRUE
+"RWE02492",69,0,31,"High","Treatment","Survived",TRUE
+"RWE02493",61,2,37,"Low","Treatment","Survived",TRUE
+"RWE02494",67,1,64,"Moderate","Treatment","Died",TRUE
+"RWE02495",65,1,46,"High","Treatment","Survived",TRUE
+"RWE02496",53,0,38,"Moderate","Usual care","Survived",TRUE
+"RWE02497",59,0,37,"High","Usual care","Survived",TRUE
+"RWE02498",27,0,62,"Moderate","Treatment","Survived",TRUE
+"RWE02499",62,1,49,"Low","Treatment","Survived",TRUE
+"RWE02500",48,1,41,"High","Usual care","Survived",TRUE

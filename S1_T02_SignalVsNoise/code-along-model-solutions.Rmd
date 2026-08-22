@@ -1,0 +1,62 @@
+---
+title: "Topic 02 model solutions: Signal versus noise in an MND trial"
+output: html_document
+---
+
+This fictional trial contains no real participants and is not an MND-SMART result. Higher change scores are better.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+theme_set(theme_minimal())
+mnd <- read_csv("data/topic02_synthetic.csv", show_col_types = FALSE)
+completed <- mnd |> filter(!is.na(change_in_function_score))
+```
+
+## Inspect and estimate
+
+```{r inspect}
+mnd |> count(trial_arm, completed_followup)
+
+completed |>
+  ggplot(aes(trial_arm, change_in_function_score)) +
+  geom_boxplot() +
+  labs(x = NULL, y = "Change in fictional function score")
+
+completed |>
+  group_by(trial_arm) |>
+  summarise(n = n(), mean_change = mean(change_in_function_score), sd_change = sd(change_in_function_score))
+```
+
+## Confidence interval and p-value
+
+```{r inference}
+trial_test <- t.test(change_in_function_score ~ trial_arm, data = completed)
+tidy(trial_test, conf.int = TRUE)
+```
+
+Because R orders the arms alphabetically here, the estimate is Active minus Placebo. A positive difference means less average decline with the active treatment.
+
+## Repeated samples
+
+```{r resampling}
+set.seed(202)
+sample_effect <- function(data, size = 60) {
+  s <- data |> slice_sample(n = size)
+  means <- tapply(s$change_in_function_score, s$trial_arm, mean)
+  unname(means["Active"] - means["Placebo"])
+}
+
+sampling_results <- tibble(estimate = replicate(500, sample_effect(completed)))
+
+sampling_results |>
+  ggplot(aes(estimate)) +
+  geom_histogram(bins = 30) +
+  geom_vline(xintercept = 0, linetype = 2) +
+  labs(x = "Active minus placebo difference", y = "Repeated samples")
+
+sampling_results |> summarise(mean = mean(estimate), sd = sd(estimate), proportion_below_zero = mean(estimate < 0))
+```
+
+The estimate and interval describe effect size and precision. The p-value does not determine whether the magnitude is worthwhile, nor whether incomplete follow-up is unbiased.
+

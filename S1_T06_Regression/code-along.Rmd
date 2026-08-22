@@ -1,0 +1,46 @@
+---
+title: "Topic 06 code-along: Regression and ME biomarkers"
+output: html_document
+---
+
+The biomarker in this dataset is fictional. The analysis is inspired by ME biomarker research but is not a diagnostic study or a DecodeME result.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+theme_set(theme_minimal())
+me <- read_csv("data/topic06_synthetic.csv", show_col_types = FALSE)
+```
+
+## 1. Inspect before modelling
+
+```{r inspect}
+# TODO: compare biomarker distributions by me_status.
+# TODO: compare daily steps by me_status.
+```
+
+## 2. Crude association
+
+```{r crude}
+# TODO: fit biomarker_concentration_au ~ me_status.
+# Interpret the ME coefficient in arbitrary units.
+```
+
+## 3. Sequential adjustment
+
+```{r adjustment}
+# TODO: add age and sex.
+# TODO: then add BMI and medication.
+# TODO: finally add daily_steps.
+```
+
+## 4. Compare coefficients
+
+```{r compare}
+# TODO: use broom::tidy(..., conf.int = TRUE) to compare the ME coefficient.
+```
+
+## Interpretation
+
+Does adjustment for activity answer the same question as the crude model? Could activity be a consequence rather than a cause of ME status?
+

@@ -6,38 +6,132 @@ subtitle: "Estimate relationships while making adjustment assumptions explicit."
 ::: {.topic-banner}
 **The clinical question**
 
-Does the group difference persist after accounting for credible alternative explanations?
+Does an observed relationship persist after accounting for credible alternative explanations?
 :::
 
 ::: {.learning-outcomes}
 ### By the end of this topic
 
-- Explain regression as a tool for estimation and adjustment.
+- Explain regression as a framework for estimation and adjustment.
 - Distinguish linear regression for continuous outcomes from logistic regression for binary outcomes.
-- Interpret coefficients and odds ratios in clinical language.
-- Explain “holding other variables constant” and why it does not automatically remove bias.
+- Interpret coefficients, odds ratios, fitted values, and residuals clinically.
+- Assess the central assumptions of linear and logistic regression.
+- Explain multivariable adjustment and why it does not automatically remove bias.
+- Store, inspect, and tidy fitted model objects in R.
 :::
 
-## Core ideas
+## 6.1 Univariable regression
 
-Linear regression estimates an average change in a continuous outcome associated with a one-unit change in a predictor. Logistic regression models a binary outcome and commonly reports odds ratios. Adjustment compares patients who have the same values of included covariates—but only for the structure the model represents.
+Regression quantifies how an outcome varies with one or more explanatory variables. A **univariable** model contains one explanatory variable; it may compare groups or represent a continuous relationship.
+
+### Linear regression
+
+For a continuous outcome, a simple linear model can be written:
+
+\[
+Y_i = \beta_0 + \beta_1X_i + \varepsilon_i
+\]
+
+- \(\beta_0\), the intercept, is the expected outcome when \(X=0\), if that value is meaningful.
+- \(\beta_1\), the slope, is the average difference in outcome for a one-unit increase in \(X\).
+- The residual is observed outcome minus fitted outcome.
+
+R-squared is the proportion of observed outcome variation explained by the fitted model in the analysed data. A high R-squared does not establish causality, eliminate bias, or guarantee useful predictions for new patients.
+
+### Logistic regression
+
+A binary outcome requires predicted probabilities between 0 and 1. Logistic regression models the **log-odds** of the event. Exponentiating a coefficient produces an odds ratio.
+
+For a continuous predictor, the odds ratio compares the odds after a one-unit increase. For a categorical predictor, it compares a category with the stated reference group. Because odds are not risks, the interpretation must retain the word “odds”.
 
 ::: {.clinical-lens}
-**Ask:** Why was each variable included? Is it a confounder, mediator, collider, or merely available? A longer model is not necessarily a fairer model.
+An estimated association should state the outcome, predictor contrast, units or reference group, effect size, confidence interval, and population.
 :::
 
-## R checkpoint
+## 6.2 Assumptions of regression
+
+Regression assumptions concern the relationship represented by the model and, for linear regression, the residuals—not whether every raw variable is normally distributed.
+
+### Linear regression checks
+
+- **Linearity:** is the expected outcome represented adequately by the chosen functional form?
+- **Constant residual variance:** does residual spread remain reasonably stable across fitted values?
+- **Independence:** does the study design justify treating observations as independent?
+- **Residual distribution:** are residuals sufficiently compatible with the inferential method?
+- **Influence:** do a small number of observations determine the fitted result?
+
+Logistic regression has different requirements. These include independent observations, a correctly specified relationship between continuous predictors and log-odds, adequate information for the fitted complexity, and absence of complete separation or extreme instability.
+
+No single plot proves that a model is valid. Diagnostics, study design, clinical knowledge, and sensitivity analyses should be read together. When an assumption is questionable, check data coding, reconsider functional form, examine influence, compare defensible alternatives, and report limitations.
+
+## 6.3 Multivariable regression
+
+A **multivariable** model includes more than one explanatory variable. Adjustment estimates the association for one predictor while comparing observations with the same values of the other included variables—within the structure imposed by the model.
+
+For example:
+
+\[
+\text{blood pressure} \sim \text{physical activity} + \text{age}
+\]
+
+The physical-activity coefficient may change after age is added because age is associated with both activity and blood pressure. This can make a comparison fairer when age is a genuine confounder.
+
+However, adjustment can only address variables that were:
+
+- measured;
+- measured with sufficient accuracy;
+- selected for a defensible causal reason;
+- represented appropriately in the model.
+
+Unmeasured confounding, missing data, measurement error, selection bias, inappropriate adjustment for mediators or colliders, and model misspecification can remain. “Adjusted” does not mean “free from bias”, and adding every available variable is not a valid selection strategy.
+
+## 6.4 Working with objects in R
+
+Assignment stores the output of an instruction under a name. Fitted models are complex objects containing coefficients, fitted values, residuals, diagnostics, and metadata.
 
 ```r
 #| eval: false
 
-linear_model <- lm(outcome ~ treatment + age + baseline_score, data = analysis_data)
-logistic_model <- glm(event ~ treatment + age, data = analysis_data, family = binomial())
+unadjusted_model <- lm(
+  blood_pressure ~ treatment,
+  data = analysis_data
+)
+
+adjusted_model <- lm(
+  blood_pressure ~ treatment + age + bmi,
+  data = analysis_data
+)
+
+logistic_model <- glm(
+  disease ~ treatment + age,
+  data = analysis_data,
+  family = binomial()
+)
+
+summary(adjusted_model)
+coef(adjusted_model)
+confint(adjusted_model)
+fitted(adjusted_model)
+residuals(adjusted_model)
+
+model_results <- broom::tidy(
+  adjusted_model,
+  conf.int = TRUE
+)
 ```
 
-## Lab-book prompts
+In a model formula, `+` includes another explanatory variable; it does not add patient values together. `lm()` is used for a continuous outcome, while `glm(..., family = binomial())` fits logistic regression for a binary outcome.
 
-1. What is the outcome scale?
-2. What does one coefficient compare?
-3. Which important cause is not measured?
+## Bringing it together
+
+::: {.clinical-lens}
+**Ask of every adjusted model:** What outcome scale is being modelled? What does the coefficient compare? Why was each variable included? Which important cause is unmeasured? Would a different defensible model change the conclusion?
+:::
+
+### Lab-book prompts
+
+1. Is the outcome continuous or binary, and is the model family appropriate?
+2. What does the main coefficient compare after adjustment?
+3. Which diagnostic evidence supports or challenges the model?
+4. Why was each covariate included, and could any be a mediator or collider?
 

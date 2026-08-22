@@ -1,0 +1,52 @@
+---
+title: "Topic 05 code-along: Measuring developmental risk"
+output: html_document
+---
+
+This fictional longitudinal dataset is inspired by CHILDS. It does not show that a prenatal exposure causes a developmental outcome.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+theme_set(theme_minimal())
+childs <- read_csv("data/topic05_synthetic.csv", show_col_types = FALSE)
+```
+
+## 1. Define the analysis population
+
+```{r cohort}
+childs |> count(observed_at_followup)
+
+observed <- childs |>
+  filter(observed_at_followup == "Yes")
+```
+
+## 2. Risks in exposed and unexposed groups
+
+```{r risks}
+risk_summary <- observed |>
+  group_by(prenatal_exposure) |>
+  summarise(
+    children = n(),
+    events = sum(developmental_support_flag == "Yes")
+    # TODO: calculate risk.
+  )
+
+risk_summary
+```
+
+## 3. Absolute and relative effects
+
+```{r effects}
+# TODO: calculate the risk difference and risk ratio.
+# TODO: calculate odds in each group and the odds ratio.
+```
+
+## 4. Examine framing and missing follow-up
+
+```{r missingness}
+# TODO: compare follow-up completion by deprivation quintile and exposure.
+```
+
+## Interpretation
+
+Report both groups' risks using the same denominator, followed by absolute and relative differences. Explain why the risk ratio is not automatically causal.

@@ -6,38 +6,127 @@ subtitle: "A model that explains an average relationship is not automatically go
 ::: {.topic-banner}
 **The clinical question**
 
-Are we estimating how an exposure relates to an outcome, or predicting what will happen for a new patient?
+Are we explaining or estimating a relationship, or predicting what may happen for a new patient?
 :::
 
 ::: {.learning-outcomes}
 ### By the end of this topic
 
-- Distinguish explanatory and predictive modelling goals.
-- Explain training performance, generalisation, and overfitting.
-- Describe the purpose of train/test splits and external validation.
-- Recognise when calibration and discrimination matter for clinical risk scores.
+- Distinguish explanatory, estimative, and predictive modelling goals.
+- Select performance measures for continuous predictions, probabilities, and classifications.
+- Interpret sensitivity, specificity, discrimination, and calibration.
+- Explain overfitting, train/validation/test data, dataset shift, and external validation.
+- Build a reproducible prediction workflow in R.
 :::
 
-## Core ideas
+## 7.1 Explanation, estimation and prediction
 
-Estimation focuses on a parameter and its uncertainty. Prediction focuses on performance for unseen observations. Adding complexity can improve fit to the development data while harming generalisation. Validation should mimic the intended clinical use.
+The same regression model can be used for different purposes, but the question determines the interpretation and evaluation.
+
+| Purpose | Central question | Main emphasis |
+|---|---|---|
+| Explanation | Why or how are variables related? | Causal structure, competing explanations |
+| Estimation | How large is a population relationship? | Effect size, uncertainty, target population |
+| Prediction | What outcome is likely for a new patient? | Performance on unseen, relevant patients |
+
+A predicted probability is not a certain individual outcome. If 100 comparable patients each receive a risk near 30%, roughly 30 may experience the outcome, but the model cannot identify with certainty which 30. Unmeasured factors, measurement error, and future events remain.
+
+New-patient predictions require the same predictors, definitions, coding, and measurement timing used during model development. A model cannot be deployed as intended if crucial information is unavailable at the decision point.
 
 ::: {.clinical-lens}
-**Ask:** Who will receive this prediction, at what point in care, what action follows, and was performance assessed in a sufficiently similar population?
+Before modelling, ask: Who will receive this prediction, at what moment in care, what action could follow, and which errors would matter?
 :::
 
-## R checkpoint
+## 7.2 Evaluating prediction models
+
+Different prediction outputs require different metrics:
+
+| Output | Example | Useful measures |
+|---|---|---|
+| Continuous value | Length of stay | MAE, RMSE, R-squared |
+| Event probability | 30-day readmission risk | Calibration, Brier score, AUC |
+| Binary classification | Flag for follow-up | Sensitivity, specificity, predictive values |
+
+A threshold converts a probability into a classification. This creates true positives, false positives, true negatives, and false negatives.
+
+- **Sensitivity** = TP / (TP + FN): among those who experienced the outcome, how many were identified?
+- **Specificity** = TN / (TN + FP): among those who did not, how many were correctly classified?
+
+Lowering a threshold usually increases sensitivity and false positives while reducing specificity and false negatives. Raising it usually does the reverse. The appropriate trade-off depends on the clinical consequences and available intervention, not on a default threshold of 0.50.
+
+An ROC curve displays sensitivity against the false-positive rate across thresholds. Its area, the **AUC**, measures discrimination: whether people who experience the event tend to receive higher predicted risks. It does not show whether the numerical risks are accurate.
+
+**Calibration** asks whether predicted probabilities agree with observed event frequencies. A model can rank patients well yet systematically over- or under-estimate their risks. Accuracy alone can be misleading when outcomes are uncommon; predicting the majority class for everyone may appear accurate while having zero clinical value.
+
+Statistical performance is not the same as clinical usefulness. A model is useful only if its predictions can lead to feasible actions that improve decisions or outcomes relative to current care.
+
+## 7.3 Machine learning and generalisation
+
+Supervised machine learning learns a mapping from patient features, \(X\), to a known outcome or target, \(Y\). Regression is already part of this framework. More flexible algorithms can learn more complex patterns, but “machine learning” does not imply understanding or reliability.
+
+- **Underfitting:** the model is too simple to capture useful signal.
+- **Overfitting:** the model learns training-set noise and quirks that do not generalise.
+
+Training performance is optimistic because the model has already seen those observations. A typical development process separates:
+
+1. **training data** to estimate model parameters;
+2. **validation data** or cross-validation to guide model choices;
+3. **test data** used once for final internal performance assessment.
+
+Performance may change in a different hospital, patient group, time period, diagnostic system, or treatment pathway. This is dataset shift. **External validation** evaluates discrimination, calibration, subgroup performance, and clinical usefulness in data genuinely separated from model development.
+
+::: {.callout-important}
+The best-fitting training model is not necessarily the best clinical prediction model. Generalisation—not memorisation—is the goal.
+:::
+
+## 7.4 Reproducibility in R
+
+A reproducible workflow preserves the analysis dataset, split, model, predictions, evaluation results, random seed, software environment, and analytical decisions.
 
 ```r
 #| eval: false
 
-# Future code-along:
-# split data → fit on training data → predict on test data → assess performance
+set.seed(2026)
+
+training_rows <- sample(
+  seq_len(nrow(analysis_data)),
+  size = 0.8 * nrow(analysis_data)
+)
+
+training_data <- analysis_data |> slice(training_rows)
+test_data <- analysis_data |> slice(-training_rows)
+
+readmission_model <- glm(
+  readmitted ~ age + disease_severity + previous_admissions,
+  data = training_data,
+  family = binomial()
+)
+
+test_predictions <- test_data |>
+  select(patient_id, readmitted) |>
+  mutate(
+    predicted_risk = predict(
+      readmission_model,
+      newdata = test_data,
+      type = "response"
+    ),
+    predicted_readmission = predicted_risk >= 0.30
+  )
+
+confusion_counts <- test_predictions |>
+  count(predicted_readmission, readmitted)
+
+sessionInfo()
 ```
 
-## Lab-book prompts
+The seed must be set immediately before the random operation. Test data must remain separate during model development. Preserve patient identifiers so predictions remain aligned with observed outcomes, and record why the chosen threshold is clinically appropriate.
 
-1. What is the model’s intended use?
-2. Was evaluation performed on genuinely unseen data?
-3. What kind of error would cause the greater clinical harm?
+## Bringing it together
+
+### Lab-book prompts
+
+1. Is the goal explanation, estimation, prediction, or a mixture?
+2. Was performance evaluated on genuinely unseen patients?
+3. Are both discrimination and calibration adequate for the intended use?
+4. What dataset shift or error could cause the greatest clinical harm?
 

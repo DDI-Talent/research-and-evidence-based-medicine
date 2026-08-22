@@ -1,0 +1,57 @@
+---
+title: "Topic 03 code-along: Comparing islet-transplant groups"
+output: html_document
+---
+
+This fictional dataset is inspired by islet-transplant research. `graft_function_score` is an invented teaching measure, not the validated BETA-2 score.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+theme_set(theme_minimal())
+islet <- read_csv("data/topic03_synthetic.csv", show_col_types = FALSE)
+```
+
+## 1. Visual comparison
+
+```{r visualise}
+# TODO: draw a boxplot of graft_function_score by transplant_strategy.
+```
+
+## 2. Group summaries
+
+```{r summaries}
+islet |>
+  group_by(transplant_strategy) |>
+  summarise(
+    recipients = n(),
+    # TODO: add mean, SD and insulin-independence proportion.
+  )
+```
+
+## 3. Two groups
+
+```{r two-groups}
+two_groups <- islet |>
+  filter(transplant_strategy != "Repeat transplant")
+
+# TODO: estimate/test the difference in graft-function score.
+```
+
+## 4. Three groups
+
+```{r anova}
+# TODO: fit a one-way ANOVA and inspect its overall test.
+# What additional comparisons would be needed afterwards?
+```
+
+## 5. Categorical outcome
+
+```{r categorical}
+# TODO: construct a contingency table and run a chi-squared test.
+```
+
+## Interpretation
+
+Separate the estimated magnitude, statistical evidence and clinical importance.
+

@@ -1,0 +1,70 @@
+---
+title: "Topic 07 model solutions: Predicting colorectal-cancer progression"
+output: html_document
+---
+
+The records and simplified genomic categories are fictional and reproduce no real study result.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+theme_set(theme_minimal())
+crc <- read_csv("data/topic07_synthetic.csv", show_col_types = FALSE) |>
+  mutate(progressed = progression_within_2_years == "Yes")
+development <- crc |> filter(cohort == "Development")
+validation <- crc |> filter(cohort == "External validation")
+```
+
+## Develop the model
+
+```{r model}
+progression_model <- glm(
+  progressed ~ age_years + tumour_stage + msi_status + apc_function_group + molecular_subtype,
+  data = development, family = binomial()
+)
+tidy(progression_model, exponentiate = TRUE, conf.int = TRUE)
+```
+
+## Predict development and external-validation cohorts
+
+```{r predictions}
+development <- development |> mutate(predicted_risk = predict(progression_model, newdata = development, type = "response"))
+validation <- validation |> mutate(predicted_risk = predict(progression_model, newdata = validation, type = "response"))
+```
+
+```{r auc}
+auc_rank <- function(truth, probability) {
+  n1 <- sum(truth); n0 <- sum(!truth)
+  (sum(rank(probability)[truth]) - n1*(n1+1)/2) / (n1*n0)
+}
+
+tibble(
+  cohort = c("Development", "External validation"),
+  auc = c(auc_rank(development$progressed, development$predicted_risk),
+          auc_rank(validation$progressed, validation$predicted_risk)),
+  brier_score = c(mean((development$progressed-development$predicted_risk)^2),
+                  mean((validation$progressed-validation$predicted_risk)^2)),
+  mean_prediction = c(mean(development$predicted_risk), mean(validation$predicted_risk)),
+  observed_risk = c(mean(development$progressed), mean(validation$progressed))
+)
+```
+
+## Calibration in the validation cohort
+
+```{r calibration}
+calibration <- validation |>
+  mutate(risk_group = ntile(predicted_risk, 5)) |>
+  group_by(risk_group) |>
+  summarise(n = n(), mean_prediction = mean(predicted_risk), observed_risk = mean(progressed))
+
+calibration
+calibration |>
+  ggplot(aes(mean_prediction, observed_risk)) +
+  geom_abline(slope = 1, intercept = 0, linetype = 2) +
+  geom_point(size = 3) + geom_line() +
+  coord_equal(xlim = c(0, .8), ylim = c(0, .8)) +
+  labs(x = "Mean predicted risk", y = "Observed progression proportion")
+```
+
+A coefficient estimates a conditional association; prediction asks how accurately the complete model performs for unseen patients. External validation protects this assessment from optimism created during model development.
+

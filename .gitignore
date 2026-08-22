@@ -6,3 +6,18 @@
 
 
 **/*.quarto_ipynb
+
+# Local video recordings (never publish to GitHub)
+*.mp4
+*.mov
+*.m4v
+*.avi
+*.webm
+
+# Recorded PowerPoint decks. Publish the matching *_NORECORDING.pptx files.
+S1_T*/Theory[0-9][0-9].pptx
+S1_T*/CaseStudy[0-9][0-9].pptx
+
+# Temporary Microsoft Office lock files
+~$*.pptx
+~$*.docx

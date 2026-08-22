@@ -1,0 +1,50 @@
+---
+title: "Topic 02 code-along: Signal versus noise in an MND trial"
+output: html_document
+---
+
+This is a fictional MND trial inspired by work on neurodegenerative clinical trials. Higher change scores are better. It is not an MND-SMART result.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+theme_set(theme_minimal())
+mnd <- read_csv("data/topic02_synthetic.csv", show_col_types = FALSE)
+```
+
+## 1. Inspect completeness and distributions
+
+```{r inspect}
+mnd |> count(trial_arm, completed_followup)
+
+# TODO: plot change_in_function_score by trial_arm.
+```
+
+## 2. Estimate the difference
+
+```{r estimate}
+mnd |>
+  group_by(trial_arm) |>
+  summarise(
+    participants = sum(!is.na(change_in_function_score))
+    # TODO: calculate mean change and SD.
+  )
+```
+
+## 3. Confidence interval and test
+
+```{r inference}
+# TODO: run t.test(change_in_function_score ~ trial_arm, data = mnd)
+# and use broom::tidy() to obtain an estimate and confidence interval.
+```
+
+## 4. Samples vary
+
+```{r resampling}
+# TODO: repeatedly sample 60 completed participants and calculate
+# the Active minus Placebo difference in mean change.
+```
+
+## 5. Interpretation
+
+Report the estimated effect and confidence interval before the p-value. Does statistical uncertainty settle whether the effect is clinically worthwhile?

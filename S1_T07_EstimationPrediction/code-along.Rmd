@@ -1,0 +1,48 @@
+---
+title: "Topic 07 code-along: Predicting colorectal-cancer progression"
+output: html_document
+---
+
+This fictional colorectal-cancer dataset contains simplified genomic categories. It does not reproduce any real cohort, genotype or research result.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+theme_set(theme_minimal())
+crc <- read_csv("data/topic07_synthetic.csv", show_col_types = FALSE)
+```
+
+## 1. Preserve the validation cohort
+
+```{r split}
+development <- crc |> filter(cohort == "Development")
+validation <- crc |> filter(cohort == "External validation")
+
+development |> count(progression_within_2_years)
+validation |> count(progression_within_2_years)
+```
+
+## 2. Fit on development data only
+
+```{r model}
+# TODO: fit logistic regression for progression using age, stage,
+# MSI status, APC function group and molecular subtype.
+```
+
+## 3. Predict unseen patients
+
+```{r predict}
+# TODO: add predicted probabilities to development and validation.
+```
+
+## 4. Discrimination and calibration
+
+```{r evaluate}
+# TODO: compare average predicted risk with observed outcome prevalence.
+# TODO: group validation predictions into risk bands and assess calibration.
+```
+
+## 5. Estimation versus prediction
+
+Does a coefficient answer the same question as performance for a new patient? Why should the external-validation cohort remain untouched until evaluation?
+

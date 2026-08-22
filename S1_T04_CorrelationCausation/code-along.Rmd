@@ -1,0 +1,51 @@
+---
+title: "Topic 04 code-along: Association, confounding and causation"
+output: html_document
+---
+
+This fictional real-world treatment dataset was designed to contain confounding by indication. It does not establish the effect of any real treatment.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+theme_set(theme_minimal())
+rwe <- read_csv("data/topic04_synthetic.csv", show_col_types = FALSE)
+```
+
+## 1. Draw the assumed causal structure
+
+Before analysing, draw arrows among baseline severity, treatment and 90-day outcome. Where should age, comorbidity and healthcare access sit?
+
+## 2. Crude association
+
+```{r crude}
+rwe |>
+  count(treatment_received, outcome_90_days) |>
+  group_by(treatment_received) |>
+  mutate(risk = n / sum(n))
+
+# TODO: extract and compare mortality risks.
+```
+
+## 3. Inspect treatment selection
+
+```{r selection}
+# TODO: compare baseline_severity_score across treatment groups.
+```
+
+## 4. Stratify and adjust
+
+```{r adjusted}
+rwe <- rwe |>
+  mutate(severity_group = cut(baseline_severity_score,
+                              breaks = c(0, 35, 55, 100),
+                              labels = c("Lower", "Middle", "Higher")))
+
+# TODO: calculate risks within severity_group.
+# TODO: fit crude and adjusted logistic models.
+```
+
+## 5. Causal interpretation
+
+Why can crude and adjusted associations point in different directions? Which assumptions are still needed for a causal claim?
+

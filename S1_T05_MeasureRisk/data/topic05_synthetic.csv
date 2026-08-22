@@ -1,0 +1,1801 @@
+"child_id","maternal_age_years","deprivation_quintile","prenatal_exposure","preterm_birth","followup_age_months","developmental_support_flag","observed_at_followup","synthetic"
+"CHD00001",24.3,3,"No recorded exposure","No",40.6,"No","Yes",TRUE
+"CHD00002",34.4,2,"Recorded exposure","Yes",29.8,"No","Yes",TRUE
+"CHD00003",39,5,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00004",32.3,5,"Recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD00005",30.2,2,"No recorded exposure","No",25.5,"No","Yes",TRUE
+"CHD00006",31.3,3,"No recorded exposure","No",36.4,"No","Yes",TRUE
+"CHD00007",39.8,1,"No recorded exposure","No",25.5,"No","Yes",TRUE
+"CHD00008",32.8,2,"No recorded exposure","No",,,"No",TRUE
+"CHD00009",36.8,1,"Recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD00010",40.4,1,"No recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD00011",35.6,1,"Recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD00012",23.4,1,"Recorded exposure","No",34.4,"No","Yes",TRUE
+"CHD00013",28,1,"Recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD00014",34.3,4,"No recorded exposure","No",31,"No","Yes",TRUE
+"CHD00015",38.8,4,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD00016",31.1,3,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00017",27.1,3,"No recorded exposure","No",39.1,"No","Yes",TRUE
+"CHD00018",25.5,5,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD00019",28,3,"Recorded exposure","No",30.8,"Yes","Yes",TRUE
+"CHD00020",27,2,"No recorded exposure","No",31.4,"No","Yes",TRUE
+"CHD00021",29.8,2,"No recorded exposure","No",27.2,"No","Yes",TRUE
+"CHD00022",34.6,4,"Recorded exposure","No",,,"No",TRUE
+"CHD00023",34.9,5,"No recorded exposure","No",35.6,"No","Yes",TRUE
+"CHD00024",28.6,1,"No recorded exposure","No",28.3,"No","Yes",TRUE
+"CHD00025",23.7,4,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD00026",34.2,1,"Recorded exposure","No",25,"No","Yes",TRUE
+"CHD00027",38,1,"Recorded exposure","No",28.3,"No","Yes",TRUE
+"CHD00028",31,2,"Recorded exposure","No",31.1,"No","Yes",TRUE
+"CHD00029",26.3,4,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD00030",22.1,5,"No recorded exposure","No",31,"No","Yes",TRUE
+"CHD00031",21.5,3,"No recorded exposure","No",,,"No",TRUE
+"CHD00032",31.8,3,"No recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD00033",41.9,1,"No recorded exposure","No",34.2,"Yes","Yes",TRUE
+"CHD00034",32.6,2,"No recorded exposure","No",29.4,"No","Yes",TRUE
+"CHD00035",32.4,4,"No recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD00036",23.5,5,"No recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD00037",33.3,3,"No recorded exposure","No",34.6,"No","Yes",TRUE
+"CHD00038",33.6,2,"No recorded exposure","No",24.2,"No","Yes",TRUE
+"CHD00039",34.3,3,"No recorded exposure","No",32,"No","Yes",TRUE
+"CHD00040",38.7,2,"No recorded exposure","No",31.4,"No","Yes",TRUE
+"CHD00041",29.5,1,"Recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD00042",31.3,1,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00043",35.3,2,"No recorded exposure","No",27.6,"No","Yes",TRUE
+"CHD00044",38.6,5,"No recorded exposure","No",26.3,"No","Yes",TRUE
+"CHD00045",32.7,1,"Recorded exposure","No",32.2,"Yes","Yes",TRUE
+"CHD00046",25.5,2,"Recorded exposure","Yes",26.4,"No","Yes",TRUE
+"CHD00047",33.3,1,"No recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD00048",28.3,2,"No recorded exposure","No",34.5,"No","Yes",TRUE
+"CHD00049",28.5,1,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00050",20,4,"Recorded exposure","No",40.4,"No","Yes",TRUE
+"CHD00051",31.1,3,"No recorded exposure","No",22.5,"No","Yes",TRUE
+"CHD00052",35.3,2,"No recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD00053",36.2,2,"No recorded exposure","No",25.5,"Yes","Yes",TRUE
+"CHD00054",33.9,4,"No recorded exposure","No",,,"No",TRUE
+"CHD00055",31,3,"Recorded exposure","No",33.7,"Yes","Yes",TRUE
+"CHD00056",32.3,4,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD00057",26.7,1,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00058",31.8,5,"No recorded exposure","No",35.4,"No","Yes",TRUE
+"CHD00059",37.7,1,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00060",25.6,1,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00061",25.5,3,"No recorded exposure","No",29.3,"No","Yes",TRUE
+"CHD00062",35.2,3,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD00063",30.8,5,"No recorded exposure","No",38,"No","Yes",TRUE
+"CHD00064",23.5,2,"No recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD00065",28.1,5,"No recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD00066",32.3,3,"Recorded exposure","No",27.5,"Yes","Yes",TRUE
+"CHD00067",36.9,4,"No recorded exposure","No",26.3,"No","Yes",TRUE
+"CHD00068",39.1,1,"Recorded exposure","No",34.9,"Yes","Yes",TRUE
+"CHD00069",28.1,5,"No recorded exposure","No",25.4,"No","Yes",TRUE
+"CHD00070",41.6,3,"Recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD00071",26.8,2,"No recorded exposure","No",26.5,"No","Yes",TRUE
+"CHD00072",25.2,3,"Recorded exposure","No",25.9,"No","Yes",TRUE
+"CHD00073",33.9,2,"No recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD00074",34.7,1,"Recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD00075",26.5,2,"No recorded exposure","No",36.5,"No","Yes",TRUE
+"CHD00076",34.4,1,"No recorded exposure","Yes",30.4,"No","Yes",TRUE
+"CHD00077",29.9,4,"Recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD00078",31.1,1,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD00079",27.4,4,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD00080",29.3,1,"No recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD00081",29.6,4,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD00082",32.5,2,"Recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD00083",28.2,1,"Recorded exposure","No",,,"No",TRUE
+"CHD00084",30.8,3,"No recorded exposure","Yes",31.3,"No","Yes",TRUE
+"CHD00085",34.2,4,"No recorded exposure","No",35.4,"No","Yes",TRUE
+"CHD00086",23.4,2,"No recorded exposure","Yes",31.4,"No","Yes",TRUE
+"CHD00087",38.3,5,"No recorded exposure","No",27.5,"No","Yes",TRUE
+"CHD00088",36.3,5,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD00089",28,4,"No recorded exposure","No",,,"No",TRUE
+"CHD00090",33,2,"No recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD00091",26.7,1,"No recorded exposure","No",24.6,"No","Yes",TRUE
+"CHD00092",24.7,1,"No recorded exposure","No",29,"No","Yes",TRUE
+"CHD00093",26.5,1,"No recorded exposure","Yes",25.7,"No","Yes",TRUE
+"CHD00094",31.1,5,"No recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD00095",26.1,5,"No recorded exposure","No",25.9,"No","Yes",TRUE
+"CHD00096",30.7,1,"No recorded exposure","No",25.6,"No","Yes",TRUE
+"CHD00097",23.3,2,"No recorded exposure","No",24.8,"No","Yes",TRUE
+"CHD00098",35,1,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD00099",29.4,4,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00100",37.6,4,"No recorded exposure","No",26.5,"No","Yes",TRUE
+"CHD00101",31.2,2,"No recorded exposure","No",27.6,"No","Yes",TRUE
+"CHD00102",34.7,3,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00103",36.4,4,"No recorded exposure","No",31,"No","Yes",TRUE
+"CHD00104",39.5,3,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00105",34.9,1,"No recorded exposure","No",33,"No","Yes",TRUE
+"CHD00106",32,5,"No recorded exposure","No",,,"No",TRUE
+"CHD00107",38.6,5,"No recorded exposure","No",28.6,"No","Yes",TRUE
+"CHD00108",34.5,2,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD00109",29.1,4,"No recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD00110",31.1,2,"No recorded exposure","Yes",24.1,"Yes","Yes",TRUE
+"CHD00111",31,3,"No recorded exposure","No",40.7,"No","Yes",TRUE
+"CHD00112",35.6,3,"Recorded exposure","No",35.7,"No","Yes",TRUE
+"CHD00113",21,4,"No recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD00114",20.7,5,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00115",26.7,1,"No recorded exposure","No",23.8,"No","Yes",TRUE
+"CHD00116",30.6,2,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD00117",37.5,4,"No recorded exposure","No",27.2,"No","Yes",TRUE
+"CHD00118",35.3,5,"No recorded exposure","No",33.3,"No","Yes",TRUE
+"CHD00119",28.4,2,"Recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD00120",28.1,3,"No recorded exposure","No",32.5,"No","Yes",TRUE
+"CHD00121",23.2,5,"No recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD00122",29,3,"Recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD00123",31.5,2,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD00124",29.4,3,"Recorded exposure","No",27.1,"No","Yes",TRUE
+"CHD00125",43.3,5,"No recorded exposure","No",,,"No",TRUE
+"CHD00126",32.4,2,"Recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD00127",27.7,1,"Recorded exposure","No",23.9,"No","Yes",TRUE
+"CHD00128",32.8,3,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD00129",34,2,"No recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD00130",19.9,1,"Recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD00131",25.7,2,"Recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD00132",22.7,2,"No recorded exposure","No",24.1,"No","Yes",TRUE
+"CHD00133",31.1,5,"No recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD00134",26.6,1,"No recorded exposure","No",34.7,"No","Yes",TRUE
+"CHD00135",34.4,2,"Recorded exposure","No",32.6,"No","Yes",TRUE
+"CHD00136",27.4,5,"No recorded exposure","No",25.9,"No","Yes",TRUE
+"CHD00137",28.6,3,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD00138",37.7,2,"Recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD00139",34.5,1,"No recorded exposure","No",40.3,"No","Yes",TRUE
+"CHD00140",30.3,3,"Recorded exposure","Yes",,,"No",TRUE
+"CHD00141",33.5,3,"No recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD00142",30.7,3,"No recorded exposure","No",25.7,"No","Yes",TRUE
+"CHD00143",34.9,4,"No recorded exposure","Yes",32.3,"No","Yes",TRUE
+"CHD00144",34.2,1,"No recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD00145",39.5,2,"No recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD00146",32.2,2,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD00147",33.4,5,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00148",30.9,4,"Recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD00149",30,1,"Recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD00150",33.6,1,"No recorded exposure","No",25.8,"No","Yes",TRUE
+"CHD00151",30.8,1,"No recorded exposure","No",33.1,"No","Yes",TRUE
+"CHD00152",36.7,3,"Recorded exposure","Yes",,,"No",TRUE
+"CHD00153",31.6,1,"No recorded exposure","No",32.5,"No","Yes",TRUE
+"CHD00154",34.5,3,"No recorded exposure","No",24.4,"No","Yes",TRUE
+"CHD00155",23.5,4,"No recorded exposure","No",,,"No",TRUE
+"CHD00156",31,4,"No recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD00157",33.2,1,"Recorded exposure","No",22,"No","Yes",TRUE
+"CHD00158",18.6,4,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD00159",41.4,5,"No recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD00160",36.3,2,"No recorded exposure","No",25.7,"No","Yes",TRUE
+"CHD00161",24.2,1,"No recorded exposure","No",31,"No","Yes",TRUE
+"CHD00162",34.7,2,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00163",27.9,4,"No recorded exposure","No",23.2,"No","Yes",TRUE
+"CHD00164",30.8,5,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00165",35.4,5,"Recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD00166",38.8,5,"No recorded exposure","No",31.1,"No","Yes",TRUE
+"CHD00167",24.7,2,"Recorded exposure","No",34.3,"No","Yes",TRUE
+"CHD00168",31.1,4,"Recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD00169",22.2,5,"Recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD00170",34.2,3,"Recorded exposure","Yes",22,"No","Yes",TRUE
+"CHD00171",31.7,3,"Recorded exposure","No",35.1,"No","Yes",TRUE
+"CHD00172",26.3,4,"Recorded exposure","No",34.2,"No","Yes",TRUE
+"CHD00173",37.6,4,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00174",34.2,4,"Recorded exposure","No",32.5,"No","Yes",TRUE
+"CHD00175",31.7,5,"No recorded exposure","No",29.4,"No","Yes",TRUE
+"CHD00176",25.7,2,"No recorded exposure","No",28.3,"No","Yes",TRUE
+"CHD00177",36.4,1,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD00178",23.5,4,"No recorded exposure","No",26.4,"No","Yes",TRUE
+"CHD00179",28.9,5,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD00180",44.9,4,"No recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD00181",40.6,1,"Recorded exposure","No",24.2,"No","Yes",TRUE
+"CHD00182",27.6,1,"Recorded exposure","No",28,"No","Yes",TRUE
+"CHD00183",32.2,4,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD00184",31.8,5,"No recorded exposure","No",22.4,"No","Yes",TRUE
+"CHD00185",27.4,1,"No recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD00186",27,2,"Recorded exposure","No",25.3,"Yes","Yes",TRUE
+"CHD00187",36.5,2,"No recorded exposure","No",29,"No","Yes",TRUE
+"CHD00188",30,3,"Recorded exposure","No",35.7,"No","Yes",TRUE
+"CHD00189",37.6,5,"No recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD00190",31.5,1,"No recorded exposure","No",34,"No","Yes",TRUE
+"CHD00191",33.7,4,"No recorded exposure","No",31.4,"No","Yes",TRUE
+"CHD00192",33.9,3,"Recorded exposure","No",35.2,"No","Yes",TRUE
+"CHD00193",29.3,3,"Recorded exposure","No",,,"No",TRUE
+"CHD00194",43.7,2,"No recorded exposure","No",28.3,"No","Yes",TRUE
+"CHD00195",37.1,5,"No recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD00196",25.9,4,"No recorded exposure","No",27.2,"No","Yes",TRUE
+"CHD00197",33.5,1,"Recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD00198",22.8,2,"No recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD00199",34,2,"No recorded exposure","Yes",29.4,"No","Yes",TRUE
+"CHD00200",25,4,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD00201",25.3,3,"Recorded exposure","No",34.4,"No","Yes",TRUE
+"CHD00202",34.2,4,"Recorded exposure","No",,,"No",TRUE
+"CHD00203",32.6,5,"No recorded exposure","No",26.4,"No","Yes",TRUE
+"CHD00204",39,1,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00205",39,3,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD00206",29.4,5,"No recorded exposure","No",26.6,"No","Yes",TRUE
+"CHD00207",35.5,1,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD00208",34.8,4,"No recorded exposure","No",27.7,"No","Yes",TRUE
+"CHD00209",33.5,3,"No recorded exposure","No",32.5,"No","Yes",TRUE
+"CHD00210",28,3,"Recorded exposure","No",28.6,"No","Yes",TRUE
+"CHD00211",35.7,1,"Recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD00212",36,5,"No recorded exposure","No",32.6,"No","Yes",TRUE
+"CHD00213",36.7,3,"No recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD00214",33.1,4,"Recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00215",32.2,2,"No recorded exposure","Yes",30,"No","Yes",TRUE
+"CHD00216",30.3,2,"No recorded exposure","No",25.1,"No","Yes",TRUE
+"CHD00217",32.1,2,"Recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD00218",30.1,3,"Recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00219",34.2,4,"No recorded exposure","No",26.6,"No","Yes",TRUE
+"CHD00220",30.8,3,"Recorded exposure","No",,,"No",TRUE
+"CHD00221",26.6,5,"No recorded exposure","No",31.5,"No","Yes",TRUE
+"CHD00222",38.5,3,"No recorded exposure","Yes",,,"No",TRUE
+"CHD00223",41.2,2,"No recorded exposure","No",37.6,"No","Yes",TRUE
+"CHD00224",35.1,2,"No recorded exposure","No",27.2,"No","Yes",TRUE
+"CHD00225",38.8,1,"No recorded exposure","No",32.2,"Yes","Yes",TRUE
+"CHD00226",43.6,1,"Recorded exposure","No",25.9,"No","Yes",TRUE
+"CHD00227",30.7,1,"No recorded exposure","Yes",28.4,"No","Yes",TRUE
+"CHD00228",28.8,2,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00229",32.6,3,"No recorded exposure","No",32.5,"No","Yes",TRUE
+"CHD00230",30.1,4,"No recorded exposure","No",,,"No",TRUE
+"CHD00231",42.3,4,"Recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD00232",29.1,5,"No recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD00233",25.2,1,"No recorded exposure","No",36.4,"No","Yes",TRUE
+"CHD00234",26.3,5,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00235",27.3,2,"No recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD00236",30,3,"Recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD00237",36.4,1,"No recorded exposure","No",27.6,"No","Yes",TRUE
+"CHD00238",30.2,2,"No recorded exposure","Yes",38,"No","Yes",TRUE
+"CHD00239",23.6,5,"Recorded exposure","No",31.1,"No","Yes",TRUE
+"CHD00240",37.5,5,"No recorded exposure","No",34.8,"No","Yes",TRUE
+"CHD00241",34.9,3,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00242",26.4,5,"No recorded exposure","No",38.1,"No","Yes",TRUE
+"CHD00243",24.5,1,"Recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD00244",22.4,5,"No recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD00245",28.1,1,"No recorded exposure","No",36.4,"No","Yes",TRUE
+"CHD00246",37.1,3,"Recorded exposure","No",34.6,"No","Yes",TRUE
+"CHD00247",20.1,4,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00248",28.5,2,"No recorded exposure","No",28.6,"No","Yes",TRUE
+"CHD00249",35.3,4,"Recorded exposure","No",31.1,"No","Yes",TRUE
+"CHD00250",24.7,3,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00251",32.5,3,"Recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD00252",38.2,1,"Recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD00253",32,5,"No recorded exposure","No",31,"No","Yes",TRUE
+"CHD00254",23.7,2,"No recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD00255",28.5,1,"No recorded exposure","No",24.2,"No","Yes",TRUE
+"CHD00256",29.8,2,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00257",30.6,3,"No recorded exposure","No",38,"No","Yes",TRUE
+"CHD00258",34.4,2,"No recorded exposure","No",,,"No",TRUE
+"CHD00259",23.7,3,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD00260",42.6,1,"Recorded exposure","No",38.9,"No","Yes",TRUE
+"CHD00261",35.9,5,"Recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00262",24.4,4,"Recorded exposure","No",27,"No","Yes",TRUE
+"CHD00263",29.1,3,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00264",29,4,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD00265",19.6,1,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD00266",26.8,3,"No recorded exposure","Yes",26.6,"No","Yes",TRUE
+"CHD00267",26.1,5,"No recorded exposure","No",35.2,"No","Yes",TRUE
+"CHD00268",29.8,4,"No recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD00269",25.7,4,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD00270",36.2,3,"Recorded exposure","No",27.5,"No","Yes",TRUE
+"CHD00271",29.2,3,"Recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00272",17,4,"No recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD00273",36.4,4,"No recorded exposure","No",23.4,"No","Yes",TRUE
+"CHD00274",34.5,1,"Recorded exposure","No",25.2,"No","Yes",TRUE
+"CHD00275",25.7,5,"No recorded exposure","No",35.3,"No","Yes",TRUE
+"CHD00276",35.4,5,"No recorded exposure","No",25.8,"No","Yes",TRUE
+"CHD00277",29.5,5,"No recorded exposure","No",31.1,"No","Yes",TRUE
+"CHD00278",30.6,5,"No recorded exposure","No",35,"No","Yes",TRUE
+"CHD00279",27.8,2,"Recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD00280",29,5,"Recorded exposure","No",25.8,"No","Yes",TRUE
+"CHD00281",29.4,3,"No recorded exposure","No",33.1,"No","Yes",TRUE
+"CHD00282",24.4,5,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00283",38.7,4,"No recorded exposure","No",26.8,"No","Yes",TRUE
+"CHD00284",43.4,2,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD00285",35.8,3,"No recorded exposure","No",36.1,"No","Yes",TRUE
+"CHD00286",26.4,3,"Recorded exposure","No",27.2,"No","Yes",TRUE
+"CHD00287",32,1,"No recorded exposure","No",33.6,"Yes","Yes",TRUE
+"CHD00288",40.9,1,"Recorded exposure","No",34.6,"No","Yes",TRUE
+"CHD00289",26.9,3,"Recorded exposure","No",26.8,"No","Yes",TRUE
+"CHD00290",18.2,5,"No recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD00291",33.8,5,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00292",31.6,2,"Recorded exposure","No",31.9,"No","Yes",TRUE
+"CHD00293",29.8,4,"Recorded exposure","No",31.1,"No","Yes",TRUE
+"CHD00294",28.1,1,"No recorded exposure","No",,,"No",TRUE
+"CHD00295",37.6,2,"No recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD00296",33.9,5,"No recorded exposure","Yes",33.1,"No","Yes",TRUE
+"CHD00297",21,2,"Recorded exposure","No",28.3,"No","Yes",TRUE
+"CHD00298",31.3,3,"No recorded exposure","No",28,"No","Yes",TRUE
+"CHD00299",38.1,4,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD00300",30,1,"No recorded exposure","Yes",28.6,"No","Yes",TRUE
+"CHD00301",35.7,4,"No recorded exposure","No",,,"No",TRUE
+"CHD00302",41.7,5,"No recorded exposure","No",34.6,"No","Yes",TRUE
+"CHD00303",29.7,2,"Recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD00304",38.4,5,"No recorded exposure","No",34.2,"No","Yes",TRUE
+"CHD00305",24.3,5,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD00306",30.9,1,"No recorded exposure","No",25.7,"No","Yes",TRUE
+"CHD00307",31.4,5,"No recorded exposure","No",25,"No","Yes",TRUE
+"CHD00308",31.3,4,"Recorded exposure","No",36.1,"No","Yes",TRUE
+"CHD00309",26.6,2,"No recorded exposure","No",38.6,"No","Yes",TRUE
+"CHD00310",25.8,4,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD00311",33,2,"No recorded exposure","No",25,"No","Yes",TRUE
+"CHD00312",24.6,4,"No recorded exposure","No",,,"No",TRUE
+"CHD00313",31.9,4,"No recorded exposure","No",24,"Yes","Yes",TRUE
+"CHD00314",26.4,2,"Recorded exposure","No",,,"No",TRUE
+"CHD00315",26.3,4,"No recorded exposure","No",33.3,"No","Yes",TRUE
+"CHD00316",23.8,3,"No recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD00317",40.7,5,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD00318",26.2,3,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD00319",33.6,1,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD00320",17,4,"No recorded exposure","Yes",29.4,"No","Yes",TRUE
+"CHD00321",31.7,3,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00322",42.5,2,"No recorded exposure","No",,,"No",TRUE
+"CHD00323",33.5,3,"Recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD00324",24.3,1,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD00325",41.7,1,"Recorded exposure","Yes",,,"No",TRUE
+"CHD00326",30.1,4,"No recorded exposure","No",35.9,"No","Yes",TRUE
+"CHD00327",35.5,5,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD00328",37.4,3,"Recorded exposure","Yes",33.2,"No","Yes",TRUE
+"CHD00329",32,2,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD00330",32.9,1,"Recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD00331",28.3,2,"Recorded exposure","No",22.7,"No","Yes",TRUE
+"CHD00332",31.7,1,"No recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD00333",35.8,5,"No recorded exposure","No",36.5,"No","Yes",TRUE
+"CHD00334",32.1,3,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00335",32.2,1,"No recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD00336",30.4,2,"No recorded exposure","No",29,"No","Yes",TRUE
+"CHD00337",33.2,1,"No recorded exposure","No",,,"No",TRUE
+"CHD00338",29.1,1,"No recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD00339",32.9,3,"Recorded exposure","No",26.2,"No","Yes",TRUE
+"CHD00340",38.4,1,"Recorded exposure","Yes",38.3,"No","Yes",TRUE
+"CHD00341",23.8,3,"Recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00342",22.4,2,"No recorded exposure","No",,,"No",TRUE
+"CHD00343",23.1,3,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00344",25.7,4,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD00345",36.6,5,"No recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD00346",32.2,5,"Recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD00347",34.4,4,"No recorded exposure","No",34.6,"No","Yes",TRUE
+"CHD00348",31.4,3,"Recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD00349",28.2,1,"No recorded exposure","No",35.7,"No","Yes",TRUE
+"CHD00350",24.1,1,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD00351",25.6,2,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00352",32.9,3,"No recorded exposure","No",,,"No",TRUE
+"CHD00353",36.3,2,"No recorded exposure","No",25.9,"No","Yes",TRUE
+"CHD00354",24.1,4,"No recorded exposure","No",29.5,"Yes","Yes",TRUE
+"CHD00355",33.6,3,"Recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD00356",34.2,3,"No recorded exposure","No",25,"No","Yes",TRUE
+"CHD00357",22.6,2,"Recorded exposure","Yes",37.5,"Yes","Yes",TRUE
+"CHD00358",28.6,4,"No recorded exposure","No",38.6,"No","Yes",TRUE
+"CHD00359",38.3,3,"No recorded exposure","No",35.3,"No","Yes",TRUE
+"CHD00360",28.4,2,"No recorded exposure","No",35.4,"No","Yes",TRUE
+"CHD00361",23.9,5,"No recorded exposure","No",35.3,"No","Yes",TRUE
+"CHD00362",29.7,5,"No recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD00363",31.4,4,"No recorded exposure","No",25.7,"No","Yes",TRUE
+"CHD00364",27,3,"No recorded exposure","No",33,"No","Yes",TRUE
+"CHD00365",21.3,3,"No recorded exposure","No",27,"No","Yes",TRUE
+"CHD00366",34.1,2,"No recorded exposure","No",26.1,"No","Yes",TRUE
+"CHD00367",39.1,5,"No recorded exposure","No",35,"No","Yes",TRUE
+"CHD00368",36.7,5,"Recorded exposure","No",30,"No","Yes",TRUE
+"CHD00369",37.8,1,"Recorded exposure","No",27.3,"No","Yes",TRUE
+"CHD00370",21.1,1,"Recorded exposure","Yes",33.7,"No","Yes",TRUE
+"CHD00371",31.7,1,"No recorded exposure","No",37.9,"No","Yes",TRUE
+"CHD00372",35.3,1,"Recorded exposure","No",34.2,"No","Yes",TRUE
+"CHD00373",27,2,"No recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD00374",32,4,"No recorded exposure","No",23.1,"No","Yes",TRUE
+"CHD00375",35.7,1,"No recorded exposure","No",31.6,"Yes","Yes",TRUE
+"CHD00376",30.8,4,"No recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD00377",38.3,2,"Recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD00378",30,2,"Recorded exposure","No",29,"No","Yes",TRUE
+"CHD00379",31.2,2,"No recorded exposure","No",37.9,"No","Yes",TRUE
+"CHD00380",29.3,1,"No recorded exposure","No",26.6,"Yes","Yes",TRUE
+"CHD00381",28.7,1,"No recorded exposure","No",,,"No",TRUE
+"CHD00382",24.8,1,"Recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD00383",33.3,3,"Recorded exposure","No",27.3,"No","Yes",TRUE
+"CHD00384",28.5,4,"No recorded exposure","No",24.9,"No","Yes",TRUE
+"CHD00385",31.9,1,"Recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD00386",29.9,5,"Recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD00387",27.7,4,"No recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD00388",34.3,4,"Recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD00389",29.9,3,"No recorded exposure","No",24.8,"No","Yes",TRUE
+"CHD00390",33.4,2,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD00391",30.8,5,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD00392",36.6,3,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00393",29.3,3,"No recorded exposure","No",,,"No",TRUE
+"CHD00394",17,3,"No recorded exposure","No",32.6,"No","Yes",TRUE
+"CHD00395",34.9,2,"No recorded exposure","Yes",37.1,"No","Yes",TRUE
+"CHD00396",34.5,5,"No recorded exposure","No",31.5,"No","Yes",TRUE
+"CHD00397",28.6,3,"No recorded exposure","No",36.6,"No","Yes",TRUE
+"CHD00398",36.1,3,"Recorded exposure","No",35.4,"No","Yes",TRUE
+"CHD00399",28,3,"No recorded exposure","No",36,"No","Yes",TRUE
+"CHD00400",39.4,2,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD00401",28.3,5,"No recorded exposure","No",35.4,"No","Yes",TRUE
+"CHD00402",35.5,1,"Recorded exposure","No",34.4,"No","Yes",TRUE
+"CHD00403",34.7,3,"No recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD00404",41.9,1,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD00405",30.2,3,"Recorded exposure","Yes",31.7,"No","Yes",TRUE
+"CHD00406",32.2,2,"Recorded exposure","No",34.7,"No","Yes",TRUE
+"CHD00407",30.7,2,"No recorded exposure","No",36.1,"No","Yes",TRUE
+"CHD00408",26.4,3,"No recorded exposure","No",25.5,"No","Yes",TRUE
+"CHD00409",37.8,4,"No recorded exposure","No",24.5,"No","Yes",TRUE
+"CHD00410",28.9,5,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD00411",39,2,"No recorded exposure","No",34.2,"No","Yes",TRUE
+"CHD00412",33.4,3,"No recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD00413",29,3,"Recorded exposure","No",25.6,"Yes","Yes",TRUE
+"CHD00414",33.1,5,"No recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD00415",36,1,"No recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD00416",35,4,"Recorded exposure","No",26.3,"No","Yes",TRUE
+"CHD00417",35.4,1,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD00418",37.4,3,"No recorded exposure","No",26.6,"No","Yes",TRUE
+"CHD00419",36.9,3,"No recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD00420",27.1,3,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00421",28.8,4,"Recorded exposure","No",22.9,"No","Yes",TRUE
+"CHD00422",30.8,2,"No recorded exposure","No",29.3,"No","Yes",TRUE
+"CHD00423",23.9,2,"No recorded exposure","No",33.3,"No","Yes",TRUE
+"CHD00424",23.7,1,"No recorded exposure","No",25.4,"No","Yes",TRUE
+"CHD00425",30.8,1,"Recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00426",29.4,1,"No recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD00427",35.1,3,"No recorded exposure","No",22.9,"No","Yes",TRUE
+"CHD00428",37.9,5,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00429",31.1,2,"No recorded exposure","No",29.9,"Yes","Yes",TRUE
+"CHD00430",34.7,3,"Recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD00431",32.5,5,"No recorded exposure","No",29,"No","Yes",TRUE
+"CHD00432",30.6,5,"No recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD00433",28.3,3,"Recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD00434",34.9,4,"No recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD00435",34.7,4,"No recorded exposure","No",25.1,"No","Yes",TRUE
+"CHD00436",39.9,1,"No recorded exposure","No",22.8,"No","Yes",TRUE
+"CHD00437",34.9,5,"No recorded exposure","No",28,"No","Yes",TRUE
+"CHD00438",20.5,5,"Recorded exposure","No",25.7,"No","Yes",TRUE
+"CHD00439",18.7,4,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD00440",26.1,2,"No recorded exposure","No",32.5,"No","Yes",TRUE
+"CHD00441",24.2,5,"Recorded exposure","No",28.2,"No","Yes",TRUE
+"CHD00442",31,2,"Recorded exposure","No",32.6,"No","Yes",TRUE
+"CHD00443",38.5,4,"Recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD00444",32.9,2,"Recorded exposure","No",26,"No","Yes",TRUE
+"CHD00445",28,2,"No recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD00446",17.4,3,"No recorded exposure","No",31,"No","Yes",TRUE
+"CHD00447",27.9,1,"Recorded exposure","No",30.4,"Yes","Yes",TRUE
+"CHD00448",26.3,5,"Recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD00449",34.2,3,"No recorded exposure","No",29,"No","Yes",TRUE
+"CHD00450",28.9,4,"Recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD00451",34.6,2,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD00452",35.2,3,"Recorded exposure","No",25.9,"No","Yes",TRUE
+"CHD00453",33.7,1,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00454",25.8,2,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD00455",26.1,3,"No recorded exposure","No",29.1,"No","Yes",TRUE
+"CHD00456",33.1,4,"No recorded exposure","No",22.8,"No","Yes",TRUE
+"CHD00457",33.1,2,"No recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD00458",27.8,3,"No recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD00459",32,5,"No recorded exposure","No",35.5,"No","Yes",TRUE
+"CHD00460",37.8,2,"No recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD00461",20.9,5,"No recorded exposure","Yes",29.5,"No","Yes",TRUE
+"CHD00462",20.2,2,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00463",27.8,1,"No recorded exposure","No",25.2,"No","Yes",TRUE
+"CHD00464",28.8,3,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00465",27.6,5,"No recorded exposure","No",,,"No",TRUE
+"CHD00466",28.9,2,"No recorded exposure","No",28.3,"No","Yes",TRUE
+"CHD00467",38.9,1,"Recorded exposure","No",37.2,"No","Yes",TRUE
+"CHD00468",41.1,2,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD00469",33.1,1,"No recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD00470",30.6,4,"Recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD00471",34.3,1,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00472",35.6,1,"Recorded exposure","No",29.3,"No","Yes",TRUE
+"CHD00473",24.2,2,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD00474",29,1,"Recorded exposure","No",34.6,"No","Yes",TRUE
+"CHD00475",31.6,4,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00476",32.5,3,"Recorded exposure","No",30,"No","Yes",TRUE
+"CHD00477",37.1,2,"No recorded exposure","Yes",29.8,"No","Yes",TRUE
+"CHD00478",30.4,2,"No recorded exposure","No",32,"No","Yes",TRUE
+"CHD00479",24.8,2,"No recorded exposure","No",26.4,"No","Yes",TRUE
+"CHD00480",27.8,1,"Recorded exposure","No",37.2,"No","Yes",TRUE
+"CHD00481",24.9,4,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00482",37,3,"No recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD00483",28.2,5,"No recorded exposure","No",23.8,"No","Yes",TRUE
+"CHD00484",27.4,4,"No recorded exposure","No",36.7,"No","Yes",TRUE
+"CHD00485",27.3,2,"No recorded exposure","No",31.5,"No","Yes",TRUE
+"CHD00486",31.9,2,"No recorded exposure","No",33,"No","Yes",TRUE
+"CHD00487",28.6,1,"No recorded exposure","No",28.3,"No","Yes",TRUE
+"CHD00488",34.3,3,"No recorded exposure","No",32,"No","Yes",TRUE
+"CHD00489",33.6,5,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD00490",27.5,4,"No recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD00491",25.8,1,"No recorded exposure","No",30.8,"Yes","Yes",TRUE
+"CHD00492",42.1,4,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD00493",32.4,3,"No recorded exposure","No",29.1,"No","Yes",TRUE
+"CHD00494",28,5,"No recorded exposure","No",33.1,"No","Yes",TRUE
+"CHD00495",31.4,3,"Recorded exposure","No",39.6,"No","Yes",TRUE
+"CHD00496",35.9,3,"No recorded exposure","No",27.1,"No","Yes",TRUE
+"CHD00497",32.3,5,"No recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD00498",28.2,2,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00499",32.2,4,"No recorded exposure","No",25.8,"No","Yes",TRUE
+"CHD00500",45.9,1,"No recorded exposure","No",27.2,"No","Yes",TRUE
+"CHD00501",30.5,1,"No recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD00502",24,5,"No recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD00503",27.4,1,"No recorded exposure","No",31.1,"No","Yes",TRUE
+"CHD00504",28,2,"No recorded exposure","No",34.9,"No","Yes",TRUE
+"CHD00505",20.2,1,"Recorded exposure","No",41,"No","Yes",TRUE
+"CHD00506",28.5,4,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00507",25,2,"Recorded exposure","No",36.1,"No","Yes",TRUE
+"CHD00508",23.3,5,"Recorded exposure","No",28.9,"No","Yes",TRUE
+"CHD00509",40.9,1,"No recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD00510",23.4,4,"No recorded exposure","Yes",33.9,"No","Yes",TRUE
+"CHD00511",35.1,4,"No recorded exposure","No",31.1,"No","Yes",TRUE
+"CHD00512",23.8,1,"No recorded exposure","No",25,"No","Yes",TRUE
+"CHD00513",27,3,"Recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD00514",31.6,1,"No recorded exposure","No",30.1,"Yes","Yes",TRUE
+"CHD00515",39.2,5,"No recorded exposure","No",26.1,"No","Yes",TRUE
+"CHD00516",30.6,5,"No recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD00517",37.9,5,"No recorded exposure","No",28.9,"No","Yes",TRUE
+"CHD00518",31.9,4,"No recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD00519",20.4,3,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD00520",25.8,4,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD00521",24.4,3,"No recorded exposure","No",22.2,"No","Yes",TRUE
+"CHD00522",36.6,2,"No recorded exposure","No",25.1,"No","Yes",TRUE
+"CHD00523",41,5,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00524",21.8,2,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00525",25,1,"Recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD00526",31.9,5,"No recorded exposure","No",29.4,"No","Yes",TRUE
+"CHD00527",30.1,5,"Recorded exposure","No",29.1,"Yes","Yes",TRUE
+"CHD00528",32.4,5,"No recorded exposure","No",39.3,"No","Yes",TRUE
+"CHD00529",32.9,5,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00530",27,3,"No recorded exposure","No",29,"No","Yes",TRUE
+"CHD00531",29.8,1,"Recorded exposure","No",,,"No",TRUE
+"CHD00532",34,1,"Recorded exposure","No",31.4,"No","Yes",TRUE
+"CHD00533",37.9,5,"No recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD00534",30.5,3,"No recorded exposure","No",29.3,"No","Yes",TRUE
+"CHD00535",35.2,1,"Recorded exposure","No",29.4,"No","Yes",TRUE
+"CHD00536",24.6,4,"No recorded exposure","No",29.3,"No","Yes",TRUE
+"CHD00537",39.6,2,"No recorded exposure","No",28.6,"No","Yes",TRUE
+"CHD00538",33.5,1,"Recorded exposure","No",36.7,"No","Yes",TRUE
+"CHD00539",30,5,"No recorded exposure","No",28.6,"No","Yes",TRUE
+"CHD00540",36.3,3,"No recorded exposure","No",36.8,"No","Yes",TRUE
+"CHD00541",25.6,2,"No recorded exposure","No",29.3,"Yes","Yes",TRUE
+"CHD00542",30.1,3,"No recorded exposure","No",27.2,"No","Yes",TRUE
+"CHD00543",28.3,5,"No recorded exposure","No",34.3,"No","Yes",TRUE
+"CHD00544",26.8,5,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD00545",37.5,1,"No recorded exposure","No",38.4,"No","Yes",TRUE
+"CHD00546",23.9,2,"No recorded exposure","No",27.5,"No","Yes",TRUE
+"CHD00547",29.1,1,"Recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD00548",22.4,4,"Recorded exposure","No",28.3,"No","Yes",TRUE
+"CHD00549",20.3,5,"No recorded exposure","No",25.6,"No","Yes",TRUE
+"CHD00550",32.7,2,"No recorded exposure","No",25.1,"No","Yes",TRUE
+"CHD00551",40.2,5,"No recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD00552",39,4,"No recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD00553",28.2,4,"No recorded exposure","No",31,"No","Yes",TRUE
+"CHD00554",31.3,4,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00555",26.9,1,"No recorded exposure","No",,,"No",TRUE
+"CHD00556",38.9,2,"No recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD00557",29,4,"No recorded exposure","No",,,"No",TRUE
+"CHD00558",33.9,3,"No recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD00559",31.5,1,"No recorded exposure","No",26.4,"No","Yes",TRUE
+"CHD00560",28.5,4,"No recorded exposure","No",34.8,"No","Yes",TRUE
+"CHD00561",28.1,1,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00562",29.2,2,"No recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD00563",30,4,"Recorded exposure","No",33.2,"No","Yes",TRUE
+"CHD00564",30.3,2,"Recorded exposure","No",26.9,"Yes","Yes",TRUE
+"CHD00565",34.1,3,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD00566",28.9,4,"No recorded exposure","No",27,"No","Yes",TRUE
+"CHD00567",32,3,"No recorded exposure","No",35.2,"No","Yes",TRUE
+"CHD00568",28.6,2,"No recorded exposure","No",31.3,"Yes","Yes",TRUE
+"CHD00569",27.5,5,"Recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD00570",35.2,4,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD00571",32,5,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD00572",44.1,3,"No recorded exposure","No",34.9,"No","Yes",TRUE
+"CHD00573",33.4,5,"No recorded exposure","No",26.1,"No","Yes",TRUE
+"CHD00574",28.3,2,"No recorded exposure","No",,,"No",TRUE
+"CHD00575",29.9,4,"Recorded exposure","No",34.7,"No","Yes",TRUE
+"CHD00576",20.2,2,"No recorded exposure","No",33.1,"No","Yes",TRUE
+"CHD00577",30.7,4,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00578",27.8,5,"No recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD00579",29.8,2,"No recorded exposure","No",32,"No","Yes",TRUE
+"CHD00580",37.8,4,"No recorded exposure","No",24.6,"No","Yes",TRUE
+"CHD00581",30.5,5,"No recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD00582",26.4,1,"No recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD00583",35,5,"No recorded exposure","No",34.4,"No","Yes",TRUE
+"CHD00584",40.4,3,"No recorded exposure","No",34.5,"No","Yes",TRUE
+"CHD00585",28.8,5,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD00586",32.1,1,"No recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD00587",37.6,1,"No recorded exposure","Yes",22.4,"No","Yes",TRUE
+"CHD00588",33.8,4,"Recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD00589",28.2,4,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD00590",35.2,5,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD00591",29.2,2,"No recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD00592",22,1,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD00593",35.7,5,"No recorded exposure","No",27.7,"No","Yes",TRUE
+"CHD00594",19.2,1,"Recorded exposure","No",29.3,"No","Yes",TRUE
+"CHD00595",30.7,5,"No recorded exposure","No",29.3,"No","Yes",TRUE
+"CHD00596",33.4,4,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD00597",44.2,3,"Recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD00598",31.5,2,"No recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD00599",26.2,2,"No recorded exposure","No",,,"No",TRUE
+"CHD00600",28.4,2,"Recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD00601",20.7,1,"No recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD00602",31.6,3,"No recorded exposure","No",31.1,"No","Yes",TRUE
+"CHD00603",27.1,4,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD00604",27.3,3,"Recorded exposure","No",25.1,"No","Yes",TRUE
+"CHD00605",33.6,4,"No recorded exposure","No",35.6,"No","Yes",TRUE
+"CHD00606",35.3,5,"No recorded exposure","No",26.5,"No","Yes",TRUE
+"CHD00607",34.6,2,"Recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00608",27.5,2,"No recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD00609",26.5,3,"No recorded exposure","No",,,"No",TRUE
+"CHD00610",32.4,2,"No recorded exposure","No",24.9,"No","Yes",TRUE
+"CHD00611",27.8,2,"No recorded exposure","No",25.5,"No","Yes",TRUE
+"CHD00612",30.5,4,"No recorded exposure","No",24.7,"No","Yes",TRUE
+"CHD00613",31.7,3,"No recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD00614",28.4,2,"No recorded exposure","No",31.4,"No","Yes",TRUE
+"CHD00615",39,4,"No recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD00616",28.9,5,"No recorded exposure","No",30.1,"Yes","Yes",TRUE
+"CHD00617",40,4,"Recorded exposure","No",34.3,"No","Yes",TRUE
+"CHD00618",35.6,2,"No recorded exposure","No",26.6,"No","Yes",TRUE
+"CHD00619",26.6,5,"No recorded exposure","No",28,"No","Yes",TRUE
+"CHD00620",19.4,2,"No recorded exposure","No",22.2,"No","Yes",TRUE
+"CHD00621",27,1,"No recorded exposure","No",,,"No",TRUE
+"CHD00622",29.2,1,"No recorded exposure","No",24.9,"No","Yes",TRUE
+"CHD00623",22.1,2,"No recorded exposure","No",25.3,"No","Yes",TRUE
+"CHD00624",31,3,"No recorded exposure","No",24.8,"No","Yes",TRUE
+"CHD00625",35,3,"No recorded exposure","No",28.6,"No","Yes",TRUE
+"CHD00626",32,3,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00627",28.9,5,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00628",31.6,4,"No recorded exposure","No",24.9,"No","Yes",TRUE
+"CHD00629",18.6,1,"No recorded exposure","No",32,"No","Yes",TRUE
+"CHD00630",28.9,1,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00631",31.1,5,"No recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD00632",29.8,4,"No recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD00633",28,1,"No recorded exposure","No",33.5,"No","Yes",TRUE
+"CHD00634",23.9,4,"No recorded exposure","No",31.9,"No","Yes",TRUE
+"CHD00635",18.5,3,"No recorded exposure","No",22,"Yes","Yes",TRUE
+"CHD00636",32.3,2,"No recorded exposure","No",37.4,"No","Yes",TRUE
+"CHD00637",33.8,5,"Recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD00638",26.6,3,"Recorded exposure","No",34.7,"No","Yes",TRUE
+"CHD00639",39.7,5,"Recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD00640",31.1,5,"No recorded exposure","No",35.9,"No","Yes",TRUE
+"CHD00641",28.9,4,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD00642",33,1,"No recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD00643",32.7,3,"No recorded exposure","No",34,"No","Yes",TRUE
+"CHD00644",34.1,1,"No recorded exposure","No",31.9,"No","Yes",TRUE
+"CHD00645",32,3,"No recorded exposure","No",29.1,"No","Yes",TRUE
+"CHD00646",36.5,2,"Recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD00647",29.2,2,"No recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD00648",21.4,4,"No recorded exposure","No",35.1,"No","Yes",TRUE
+"CHD00649",35.8,3,"No recorded exposure","No",33.9,"No","Yes",TRUE
+"CHD00650",36.2,1,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00651",31,2,"No recorded exposure","No",27.6,"No","Yes",TRUE
+"CHD00652",25.3,2,"No recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD00653",31.6,5,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD00654",27,4,"Recorded exposure","No",25.9,"Yes","Yes",TRUE
+"CHD00655",26.5,4,"No recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD00656",34.1,2,"No recorded exposure","No",,,"No",TRUE
+"CHD00657",37.2,2,"No recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD00658",41.7,2,"Recorded exposure","No",39.3,"No","Yes",TRUE
+"CHD00659",26.1,4,"No recorded exposure","No",39.7,"No","Yes",TRUE
+"CHD00660",43.3,1,"No recorded exposure","No",36.3,"Yes","Yes",TRUE
+"CHD00661",30.9,3,"Recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00662",30.6,4,"No recorded exposure","No",37.5,"No","Yes",TRUE
+"CHD00663",21.2,3,"No recorded exposure","No",34,"No","Yes",TRUE
+"CHD00664",36.1,3,"Recorded exposure","No",31.1,"Yes","Yes",TRUE
+"CHD00665",31.3,2,"Recorded exposure","No",28.2,"No","Yes",TRUE
+"CHD00666",20.6,5,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD00667",24.2,1,"Recorded exposure","Yes",25.8,"Yes","Yes",TRUE
+"CHD00668",33.4,3,"No recorded exposure","Yes",24.3,"No","Yes",TRUE
+"CHD00669",27.7,2,"Recorded exposure","No",31,"Yes","Yes",TRUE
+"CHD00670",26.6,4,"Recorded exposure","No",24.4,"Yes","Yes",TRUE
+"CHD00671",22.4,5,"No recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD00672",24.1,1,"No recorded exposure","No",31,"No","Yes",TRUE
+"CHD00673",30.3,5,"Recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD00674",34.6,4,"No recorded exposure","No",26.1,"No","Yes",TRUE
+"CHD00675",28.4,4,"Recorded exposure","Yes",26.8,"No","Yes",TRUE
+"CHD00676",32.1,5,"No recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD00677",21,1,"No recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD00678",22.9,5,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD00679",30.9,3,"No recorded exposure","No",25.6,"No","Yes",TRUE
+"CHD00680",34.7,1,"No recorded exposure","No",25.5,"No","Yes",TRUE
+"CHD00681",42.9,3,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD00682",28,1,"No recorded exposure","No",,,"No",TRUE
+"CHD00683",28.2,5,"No recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD00684",34.3,3,"No recorded exposure","No",33.2,"No","Yes",TRUE
+"CHD00685",42,4,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD00686",24.6,5,"No recorded exposure","No",28.2,"No","Yes",TRUE
+"CHD00687",34.5,5,"No recorded exposure","No",26.5,"No","Yes",TRUE
+"CHD00688",30,1,"Recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD00689",24,3,"Recorded exposure","No",,,"No",TRUE
+"CHD00690",31.7,3,"No recorded exposure","No",27.3,"No","Yes",TRUE
+"CHD00691",22.8,5,"No recorded exposure","No",24.3,"No","Yes",TRUE
+"CHD00692",24.6,1,"Recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD00693",28.8,5,"Recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00694",44.5,1,"Recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD00695",28.5,3,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00696",32.6,1,"No recorded exposure","No",33.5,"No","Yes",TRUE
+"CHD00697",19.5,1,"Recorded exposure","No",33.8,"No","Yes",TRUE
+"CHD00698",33.8,5,"No recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD00699",40.1,3,"No recorded exposure","No",,,"No",TRUE
+"CHD00700",25.1,4,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD00701",34.9,2,"No recorded exposure","No",,,"No",TRUE
+"CHD00702",38.3,2,"No recorded exposure","No",24.8,"No","Yes",TRUE
+"CHD00703",19.7,3,"No recorded exposure","No",25.5,"No","Yes",TRUE
+"CHD00704",30.2,2,"No recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD00705",41.6,5,"No recorded exposure","No",28.9,"No","Yes",TRUE
+"CHD00706",30.5,3,"Recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD00707",27.3,5,"No recorded exposure","No",34.6,"No","Yes",TRUE
+"CHD00708",24.4,2,"Recorded exposure","No",22.5,"Yes","Yes",TRUE
+"CHD00709",45.7,2,"No recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD00710",42.2,3,"Recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD00711",29.7,3,"No recorded exposure","No",26,"No","Yes",TRUE
+"CHD00712",32.4,1,"Recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD00713",22,1,"Recorded exposure","No",,,"No",TRUE
+"CHD00714",32.5,3,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00715",35.8,2,"No recorded exposure","No",25,"No","Yes",TRUE
+"CHD00716",29.7,1,"No recorded exposure","No",33.2,"No","Yes",TRUE
+"CHD00717",23.8,4,"No recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD00718",29.8,1,"Recorded exposure","Yes",30,"No","Yes",TRUE
+"CHD00719",25.3,5,"No recorded exposure","No",27.3,"No","Yes",TRUE
+"CHD00720",36.2,1,"No recorded exposure","Yes",35.4,"Yes","Yes",TRUE
+"CHD00721",30.4,4,"No recorded exposure","No",35.6,"No","Yes",TRUE
+"CHD00722",22,3,"No recorded exposure","No",26.8,"No","Yes",TRUE
+"CHD00723",34.7,5,"Recorded exposure","No",35.8,"No","Yes",TRUE
+"CHD00724",27.6,4,"Recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00725",31.2,2,"Recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD00726",30.7,3,"Recorded exposure","No",24.7,"No","Yes",TRUE
+"CHD00727",33.5,2,"Recorded exposure","No",33.3,"No","Yes",TRUE
+"CHD00728",27.5,3,"No recorded exposure","No",29.3,"No","Yes",TRUE
+"CHD00729",34.3,3,"No recorded exposure","No",33.8,"No","Yes",TRUE
+"CHD00730",41.1,1,"Recorded exposure","No",32.5,"No","Yes",TRUE
+"CHD00731",31.1,3,"No recorded exposure","No",,,"No",TRUE
+"CHD00732",17,4,"No recorded exposure","Yes",40.1,"No","Yes",TRUE
+"CHD00733",33.3,1,"No recorded exposure","No",,,"No",TRUE
+"CHD00734",34.9,1,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00735",26.9,2,"No recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD00736",28.7,1,"No recorded exposure","Yes",,,"No",TRUE
+"CHD00737",32,1,"No recorded exposure","No",31.6,"Yes","Yes",TRUE
+"CHD00738",42.1,2,"No recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD00739",38.7,3,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00740",26.1,2,"Recorded exposure","No",31,"No","Yes",TRUE
+"CHD00741",29.5,2,"No recorded exposure","No",34,"Yes","Yes",TRUE
+"CHD00742",36.1,2,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD00743",26.5,1,"No recorded exposure","No",23.6,"Yes","Yes",TRUE
+"CHD00744",29.7,5,"No recorded exposure","No",25.1,"No","Yes",TRUE
+"CHD00745",24.5,5,"No recorded exposure","No",35.4,"No","Yes",TRUE
+"CHD00746",28.2,4,"Recorded exposure","No",,,"No",TRUE
+"CHD00747",36,3,"Recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD00748",37.8,3,"No recorded exposure","No",37.3,"No","Yes",TRUE
+"CHD00749",27.9,2,"Recorded exposure","No",26.3,"No","Yes",TRUE
+"CHD00750",40.1,2,"No recorded exposure","No",34.4,"Yes","Yes",TRUE
+"CHD00751",25.8,5,"Recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD00752",36.2,2,"No recorded exposure","No",33.8,"No","Yes",TRUE
+"CHD00753",27.2,3,"No recorded exposure","No",,,"No",TRUE
+"CHD00754",36.1,5,"No recorded exposure","No",,,"No",TRUE
+"CHD00755",31.1,1,"No recorded exposure","No",27.5,"No","Yes",TRUE
+"CHD00756",22.3,1,"No recorded exposure","No",29.1,"No","Yes",TRUE
+"CHD00757",33.8,1,"Recorded exposure","Yes",33.8,"No","Yes",TRUE
+"CHD00758",25,2,"No recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD00759",38.2,3,"No recorded exposure","No",36,"No","Yes",TRUE
+"CHD00760",31.7,2,"Recorded exposure","No",25.3,"No","Yes",TRUE
+"CHD00761",29.1,4,"No recorded exposure","No",27,"No","Yes",TRUE
+"CHD00762",30.7,3,"No recorded exposure","No",,,"No",TRUE
+"CHD00763",38.7,1,"Recorded exposure","No",31.5,"No","Yes",TRUE
+"CHD00764",19.1,1,"No recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD00765",31.3,4,"No recorded exposure","No",37.6,"No","Yes",TRUE
+"CHD00766",33.4,1,"No recorded exposure","No",26.1,"No","Yes",TRUE
+"CHD00767",35.9,2,"No recorded exposure","No",34.9,"No","Yes",TRUE
+"CHD00768",27.3,4,"No recorded exposure","No",27.7,"No","Yes",TRUE
+"CHD00769",26.4,3,"No recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD00770",35.6,1,"No recorded exposure","No",28,"No","Yes",TRUE
+"CHD00771",31.4,2,"Recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00772",23.9,5,"No recorded exposure","No",22.4,"No","Yes",TRUE
+"CHD00773",34.1,5,"No recorded exposure","No",26,"No","Yes",TRUE
+"CHD00774",26.2,5,"Recorded exposure","No",36.9,"No","Yes",TRUE
+"CHD00775",33.7,4,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00776",30.9,2,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00777",38.9,2,"Recorded exposure","No",31.4,"No","Yes",TRUE
+"CHD00778",29.5,3,"No recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD00779",27.7,2,"No recorded exposure","No",40.3,"No","Yes",TRUE
+"CHD00780",39.1,5,"Recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD00781",33.3,1,"Recorded exposure","No",26.8,"No","Yes",TRUE
+"CHD00782",30.8,5,"No recorded exposure","No",34.5,"No","Yes",TRUE
+"CHD00783",29.9,1,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00784",35.2,3,"Recorded exposure","No",31.3,"Yes","Yes",TRUE
+"CHD00785",19.3,5,"No recorded exposure","No",35.5,"No","Yes",TRUE
+"CHD00786",32.9,5,"No recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD00787",34.8,4,"No recorded exposure","No",42,"No","Yes",TRUE
+"CHD00788",29.3,4,"No recorded exposure","No",42,"No","Yes",TRUE
+"CHD00789",21.9,1,"Recorded exposure","No",25.5,"No","Yes",TRUE
+"CHD00790",22.6,3,"No recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD00791",31.1,4,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD00792",35.1,2,"No recorded exposure","No",27.5,"No","Yes",TRUE
+"CHD00793",24.3,5,"No recorded exposure","No",29,"No","Yes",TRUE
+"CHD00794",28.2,2,"Recorded exposure","No",26.1,"No","Yes",TRUE
+"CHD00795",34.1,1,"No recorded exposure","No",26.3,"No","Yes",TRUE
+"CHD00796",31.3,1,"Recorded exposure","No",33,"No","Yes",TRUE
+"CHD00797",33.6,1,"No recorded exposure","Yes",28.2,"No","Yes",TRUE
+"CHD00798",29.4,4,"No recorded exposure","No",34.9,"No","Yes",TRUE
+"CHD00799",19.4,2,"No recorded exposure","No",36,"No","Yes",TRUE
+"CHD00800",32.8,4,"No recorded exposure","No",32,"No","Yes",TRUE
+"CHD00801",33.8,3,"Recorded exposure","No",22.7,"No","Yes",TRUE
+"CHD00802",24.4,3,"Recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD00803",32.9,5,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00804",25,5,"No recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD00805",25.2,3,"No recorded exposure","No",31.9,"No","Yes",TRUE
+"CHD00806",30.7,1,"Recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD00807",35.6,3,"No recorded exposure","No",35.5,"No","Yes",TRUE
+"CHD00808",37.8,3,"Recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD00809",29.5,1,"No recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD00810",35.7,2,"Recorded exposure","No",22,"No","Yes",TRUE
+"CHD00811",30.3,4,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD00812",31.2,2,"Recorded exposure","No",37.2,"No","Yes",TRUE
+"CHD00813",33.3,3,"No recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD00814",31.5,5,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00815",35.4,1,"Recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD00816",32.7,3,"Recorded exposure","No",31.7,"Yes","Yes",TRUE
+"CHD00817",22.7,3,"No recorded exposure","No",24.4,"No","Yes",TRUE
+"CHD00818",33.5,1,"No recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD00819",37.8,1,"No recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD00820",40.3,2,"Recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD00821",31,1,"Recorded exposure","No",35.7,"No","Yes",TRUE
+"CHD00822",34.3,1,"No recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD00823",25.9,3,"No recorded exposure","No",,,"No",TRUE
+"CHD00824",34.2,3,"No recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD00825",29.3,1,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD00826",28.8,2,"Recorded exposure","No",35.6,"No","Yes",TRUE
+"CHD00827",35.8,4,"No recorded exposure","No",31,"No","Yes",TRUE
+"CHD00828",27.2,3,"No recorded exposure","No",29.4,"No","Yes",TRUE
+"CHD00829",25.7,3,"No recorded exposure","No",,,"No",TRUE
+"CHD00830",26.5,2,"No recorded exposure","Yes",30.9,"No","Yes",TRUE
+"CHD00831",39.3,5,"No recorded exposure","No",29,"No","Yes",TRUE
+"CHD00832",36.7,5,"No recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD00833",39.3,4,"No recorded exposure","Yes",32.2,"No","Yes",TRUE
+"CHD00834",17,2,"Recorded exposure","No",32.6,"No","Yes",TRUE
+"CHD00835",28.3,4,"No recorded exposure","No",37.3,"No","Yes",TRUE
+"CHD00836",26,3,"No recorded exposure","No",33.5,"No","Yes",TRUE
+"CHD00837",26.7,4,"No recorded exposure","No",27,"No","Yes",TRUE
+"CHD00838",28.9,1,"No recorded exposure","No",24.7,"No","Yes",TRUE
+"CHD00839",31,4,"Recorded exposure","No",30.2,"Yes","Yes",TRUE
+"CHD00840",32,5,"Recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD00841",23.3,2,"Recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00842",33.6,5,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD00843",34.3,2,"Recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD00844",28.4,4,"No recorded exposure","No",,,"No",TRUE
+"CHD00845",31.1,5,"No recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD00846",27,1,"No recorded exposure","No",40.8,"No","Yes",TRUE
+"CHD00847",26.9,4,"No recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD00848",30.7,3,"Recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD00849",21.6,3,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD00850",34.3,4,"No recorded exposure","No",35.9,"Yes","Yes",TRUE
+"CHD00851",26.6,2,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD00852",40.4,4,"No recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD00853",35,5,"No recorded exposure","No",32.5,"No","Yes",TRUE
+"CHD00854",30.3,4,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD00855",22.6,2,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD00856",27.6,2,"Recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00857",31.5,3,"Recorded exposure","Yes",35.5,"No","Yes",TRUE
+"CHD00858",35.4,5,"No recorded exposure","No",25.1,"No","Yes",TRUE
+"CHD00859",35.1,4,"Recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD00860",26.4,1,"No recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD00861",40.1,4,"No recorded exposure","No",35.3,"No","Yes",TRUE
+"CHD00862",30.1,1,"No recorded exposure","No",27.6,"No","Yes",TRUE
+"CHD00863",34.7,4,"Recorded exposure","No",34.7,"No","Yes",TRUE
+"CHD00864",34.5,4,"Recorded exposure","No",34.3,"No","Yes",TRUE
+"CHD00865",23.5,2,"No recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD00866",27,3,"No recorded exposure","Yes",36.1,"Yes","Yes",TRUE
+"CHD00867",39.4,5,"Recorded exposure","No",30,"No","Yes",TRUE
+"CHD00868",33.3,1,"No recorded exposure","No",35.1,"No","Yes",TRUE
+"CHD00869",28.6,4,"Recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD00870",24.6,5,"No recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD00871",36.8,2,"No recorded exposure","No",22,"Yes","Yes",TRUE
+"CHD00872",33.8,4,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00873",31.7,2,"Recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD00874",28.2,5,"No recorded exposure","No",35.4,"No","Yes",TRUE
+"CHD00875",34.3,2,"Recorded exposure","Yes",,,"No",TRUE
+"CHD00876",37.1,3,"No recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD00877",26.5,3,"No recorded exposure","No",27,"No","Yes",TRUE
+"CHD00878",26.3,5,"No recorded exposure","No",33.5,"No","Yes",TRUE
+"CHD00879",34.1,1,"No recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD00880",31.9,2,"No recorded exposure","No",25.5,"No","Yes",TRUE
+"CHD00881",28.2,5,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00882",37.8,2,"No recorded exposure","No",26.8,"No","Yes",TRUE
+"CHD00883",27.6,4,"No recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD00884",37.3,4,"No recorded exposure","No",24.9,"No","Yes",TRUE
+"CHD00885",32.6,2,"No recorded exposure","No",27,"No","Yes",TRUE
+"CHD00886",26.3,3,"No recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD00887",30.9,4,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD00888",27.6,1,"No recorded exposure","No",29.1,"No","Yes",TRUE
+"CHD00889",28.4,1,"No recorded exposure","No",,,"No",TRUE
+"CHD00890",19.2,1,"No recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD00891",41.8,4,"Recorded exposure","No",34.9,"No","Yes",TRUE
+"CHD00892",27.3,3,"Recorded exposure","No",32.4,"Yes","Yes",TRUE
+"CHD00893",36.4,2,"No recorded exposure","No",26.6,"No","Yes",TRUE
+"CHD00894",35.6,2,"No recorded exposure","No",26.6,"Yes","Yes",TRUE
+"CHD00895",36.1,5,"No recorded exposure","No",35.1,"No","Yes",TRUE
+"CHD00896",31.7,1,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00897",36.4,3,"Recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD00898",26,4,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD00899",44.2,5,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD00900",33.1,5,"No recorded exposure","No",36.4,"No","Yes",TRUE
+"CHD00901",33.3,1,"No recorded exposure","No",29,"No","Yes",TRUE
+"CHD00902",29.3,2,"Recorded exposure","No",34.3,"No","Yes",TRUE
+"CHD00903",32.6,4,"No recorded exposure","No",26.3,"No","Yes",TRUE
+"CHD00904",25.4,5,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00905",30.1,2,"No recorded exposure","No",25,"No","Yes",TRUE
+"CHD00906",17,3,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD00907",33,1,"No recorded exposure","No",29.3,"No","Yes",TRUE
+"CHD00908",26.3,3,"No recorded exposure","No",28.9,"No","Yes",TRUE
+"CHD00909",28.6,2,"No recorded exposure","No",,,"No",TRUE
+"CHD00910",26.7,3,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00911",28.1,1,"No recorded exposure","No",33.5,"No","Yes",TRUE
+"CHD00912",22.7,2,"No recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD00913",30.3,2,"No recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD00914",32.4,5,"No recorded exposure","No",28.9,"No","Yes",TRUE
+"CHD00915",33.8,4,"No recorded exposure","No",24.3,"No","Yes",TRUE
+"CHD00916",29.7,4,"No recorded exposure","No",22.9,"No","Yes",TRUE
+"CHD00917",25.1,4,"No recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD00918",35.6,2,"Recorded exposure","Yes",27.4,"No","Yes",TRUE
+"CHD00919",36.9,4,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD00920",28.2,4,"No recorded exposure","Yes",33.3,"Yes","Yes",TRUE
+"CHD00921",31.5,4,"No recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD00922",39.9,2,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD00923",25.9,2,"Recorded exposure","No",23.3,"No","Yes",TRUE
+"CHD00924",27.9,2,"No recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD00925",35.7,2,"No recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD00926",32.7,2,"Recorded exposure","No",25.3,"No","Yes",TRUE
+"CHD00927",36,1,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD00928",37.9,1,"Recorded exposure","No",27.7,"Yes","Yes",TRUE
+"CHD00929",17,3,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00930",44,1,"Recorded exposure","No",,,"No",TRUE
+"CHD00931",30.8,3,"Recorded exposure","Yes",27.5,"No","Yes",TRUE
+"CHD00932",25.3,5,"No recorded exposure","No",,,"No",TRUE
+"CHD00933",32.6,2,"No recorded exposure","No",31.9,"No","Yes",TRUE
+"CHD00934",24.8,5,"No recorded exposure","No",34.6,"No","Yes",TRUE
+"CHD00935",31.2,3,"Recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD00936",27.9,1,"Recorded exposure","No",,,"No",TRUE
+"CHD00937",37.8,4,"No recorded exposure","No",23.3,"No","Yes",TRUE
+"CHD00938",41.1,4,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00939",32.5,5,"No recorded exposure","No",35.9,"No","Yes",TRUE
+"CHD00940",30.4,2,"No recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD00941",29.4,1,"No recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD00942",30.1,3,"Recorded exposure","No",28.6,"No","Yes",TRUE
+"CHD00943",27.1,1,"No recorded exposure","No",32.7,"Yes","Yes",TRUE
+"CHD00944",28.6,3,"No recorded exposure","No",27.2,"No","Yes",TRUE
+"CHD00945",41.5,1,"No recorded exposure","No",25.5,"No","Yes",TRUE
+"CHD00946",34.4,5,"No recorded exposure","No",24.5,"No","Yes",TRUE
+"CHD00947",32.6,1,"No recorded exposure","No",32.3,"Yes","Yes",TRUE
+"CHD00948",31.6,4,"No recorded exposure","No",,,"No",TRUE
+"CHD00949",23.8,5,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD00950",36.1,5,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00951",24.4,4,"Recorded exposure","Yes",30.3,"No","Yes",TRUE
+"CHD00952",21.3,2,"No recorded exposure","No",23.9,"No","Yes",TRUE
+"CHD00953",32.8,1,"No recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD00954",31.2,5,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD00955",35.2,4,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD00956",27.1,5,"No recorded exposure","No",25.9,"No","Yes",TRUE
+"CHD00957",39.9,3,"No recorded exposure","No",33.1,"No","Yes",TRUE
+"CHD00958",29.7,4,"Recorded exposure","No",28.9,"No","Yes",TRUE
+"CHD00959",35.7,4,"No recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD00960",42,3,"No recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD00961",25.2,2,"No recorded exposure","No",33.5,"No","Yes",TRUE
+"CHD00962",30.9,4,"No recorded exposure","No",31.4,"No","Yes",TRUE
+"CHD00963",32.1,2,"No recorded exposure","No",25,"No","Yes",TRUE
+"CHD00964",30.6,1,"Recorded exposure","No",23,"No","Yes",TRUE
+"CHD00965",33.3,3,"Recorded exposure","No",27.3,"No","Yes",TRUE
+"CHD00966",36.2,5,"No recorded exposure","No",36.3,"No","Yes",TRUE
+"CHD00967",23.4,4,"Recorded exposure","No",28,"No","Yes",TRUE
+"CHD00968",28.9,4,"No recorded exposure","No",33,"No","Yes",TRUE
+"CHD00969",26.2,1,"No recorded exposure","No",27.1,"No","Yes",TRUE
+"CHD00970",27.6,3,"No recorded exposure","No",25.2,"No","Yes",TRUE
+"CHD00971",27.5,2,"No recorded exposure","No",25.8,"No","Yes",TRUE
+"CHD00972",33.9,4,"No recorded exposure","No",35.1,"No","Yes",TRUE
+"CHD00973",28.6,5,"No recorded exposure","No",34.2,"No","Yes",TRUE
+"CHD00974",33.9,5,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD00975",30.3,4,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD00976",38.8,1,"No recorded exposure","Yes",27.5,"No","Yes",TRUE
+"CHD00977",29.5,1,"No recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD00978",28.6,3,"Recorded exposure","No",22,"No","Yes",TRUE
+"CHD00979",21.8,1,"No recorded exposure","No",24.8,"No","Yes",TRUE
+"CHD00980",35.6,4,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD00981",33.7,3,"No recorded exposure","Yes",24.8,"No","Yes",TRUE
+"CHD00982",35.1,2,"No recorded exposure","No",28.3,"No","Yes",TRUE
+"CHD00983",33,3,"No recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD00984",38.8,1,"No recorded exposure","No",31.9,"No","Yes",TRUE
+"CHD00985",37.7,3,"No recorded exposure","No",28.6,"No","Yes",TRUE
+"CHD00986",24.9,3,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD00987",32.6,3,"Recorded exposure","No",26.6,"No","Yes",TRUE
+"CHD00988",27.7,3,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD00989",24.5,1,"Recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD00990",24.9,5,"No recorded exposure","No",25.7,"No","Yes",TRUE
+"CHD00991",38.8,5,"No recorded exposure","No",25.3,"No","Yes",TRUE
+"CHD00992",26.9,1,"Recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD00993",24.4,2,"No recorded exposure","No",,,"No",TRUE
+"CHD00994",32,1,"No recorded exposure","No",25,"No","Yes",TRUE
+"CHD00995",36.7,4,"No recorded exposure","No",24.6,"No","Yes",TRUE
+"CHD00996",29.6,3,"Recorded exposure","No",26.1,"No","Yes",TRUE
+"CHD00997",39,3,"No recorded exposure","No",26.8,"Yes","Yes",TRUE
+"CHD00998",25.5,4,"No recorded exposure","No",,,"No",TRUE
+"CHD00999",40,3,"No recorded exposure","No",28,"No","Yes",TRUE
+"CHD01000",33.5,2,"No recorded exposure","No",23.8,"No","Yes",TRUE
+"CHD01001",23.4,4,"No recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD01002",33.2,4,"No recorded exposure","No",25,"No","Yes",TRUE
+"CHD01003",32.1,1,"No recorded exposure","No",27.5,"No","Yes",TRUE
+"CHD01004",35.4,2,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD01005",34.9,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01006",23.1,5,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD01007",27.1,3,"No recorded exposure","No",22.9,"No","Yes",TRUE
+"CHD01008",24.3,5,"No recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD01009",40.2,2,"Recorded exposure","No",25.6,"No","Yes",TRUE
+"CHD01010",33,1,"No recorded exposure","No",25.9,"No","Yes",TRUE
+"CHD01011",32,5,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD01012",34.5,4,"No recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD01013",27.4,3,"No recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD01014",38.3,5,"No recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD01015",37.6,1,"No recorded exposure","No",26,"No","Yes",TRUE
+"CHD01016",31.7,1,"No recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD01017",35.4,3,"No recorded exposure","Yes",37.2,"No","Yes",TRUE
+"CHD01018",30.8,2,"Recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD01019",33.8,4,"No recorded exposure","No",26,"No","Yes",TRUE
+"CHD01020",33.6,2,"No recorded exposure","No",26.8,"No","Yes",TRUE
+"CHD01021",30.5,5,"No recorded exposure","No",26.8,"No","Yes",TRUE
+"CHD01022",28.5,5,"Recorded exposure","No",22,"No","Yes",TRUE
+"CHD01023",28.3,2,"Recorded exposure","No",27.1,"No","Yes",TRUE
+"CHD01024",26.8,5,"No recorded exposure","No",26.3,"No","Yes",TRUE
+"CHD01025",29.4,2,"No recorded exposure","No",32.5,"No","Yes",TRUE
+"CHD01026",30.2,5,"No recorded exposure","No",25.5,"No","Yes",TRUE
+"CHD01027",29.3,5,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD01028",34.8,3,"No recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD01029",33.1,1,"Recorded exposure","No",22,"Yes","Yes",TRUE
+"CHD01030",32.1,1,"No recorded exposure","No",26.2,"No","Yes",TRUE
+"CHD01031",21.3,1,"Recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD01032",33.6,5,"No recorded exposure","No",,,"No",TRUE
+"CHD01033",27.3,1,"No recorded exposure","No",,,"No",TRUE
+"CHD01034",31.6,5,"Recorded exposure","No",35.4,"No","Yes",TRUE
+"CHD01035",32,4,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD01036",36.6,2,"No recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD01037",24.2,4,"No recorded exposure","No",24.8,"No","Yes",TRUE
+"CHD01038",29.2,2,"No recorded exposure","No",34.2,"No","Yes",TRUE
+"CHD01039",32.4,4,"Recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD01040",22.4,2,"Recorded exposure","No",24.4,"Yes","Yes",TRUE
+"CHD01041",38,1,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD01042",27.5,1,"No recorded exposure","No",25.4,"No","Yes",TRUE
+"CHD01043",36.7,2,"Recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD01044",28.8,2,"No recorded exposure","Yes",32.7,"No","Yes",TRUE
+"CHD01045",28.1,1,"Recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD01046",32.5,5,"No recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD01047",28.4,3,"Recorded exposure","No",22,"No","Yes",TRUE
+"CHD01048",26.2,4,"No recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD01049",28.3,4,"No recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD01050",32.8,2,"Recorded exposure","No",25,"No","Yes",TRUE
+"CHD01051",36.5,3,"No recorded exposure","No",34.8,"No","Yes",TRUE
+"CHD01052",25.7,3,"Recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD01053",29.3,1,"No recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD01054",31.2,3,"No recorded exposure","No",23.7,"No","Yes",TRUE
+"CHD01055",31.8,3,"No recorded exposure","No",31,"No","Yes",TRUE
+"CHD01056",44.9,4,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD01057",30.1,1,"No recorded exposure","No",28,"No","Yes",TRUE
+"CHD01058",28.3,3,"Recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD01059",31.1,1,"No recorded exposure","No",29.4,"No","Yes",TRUE
+"CHD01060",33.3,1,"Recorded exposure","No",29,"No","Yes",TRUE
+"CHD01061",29.6,3,"Recorded exposure","No",24.6,"Yes","Yes",TRUE
+"CHD01062",33.2,4,"No recorded exposure","No",31.9,"No","Yes",TRUE
+"CHD01063",33.4,1,"No recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD01064",29,2,"No recorded exposure","No",34.6,"No","Yes",TRUE
+"CHD01065",29.1,3,"Recorded exposure","No",,,"No",TRUE
+"CHD01066",28.7,5,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD01067",37.2,2,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD01068",28.8,2,"No recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD01069",35.5,4,"No recorded exposure","No",25.9,"No","Yes",TRUE
+"CHD01070",35.5,1,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD01071",31.8,3,"No recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD01072",38.6,5,"No recorded exposure","No",27.2,"No","Yes",TRUE
+"CHD01073",35.1,4,"No recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD01074",28.3,1,"No recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD01075",28.3,3,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD01076",31.4,2,"No recorded exposure","No",36.7,"No","Yes",TRUE
+"CHD01077",35.1,3,"No recorded exposure","No",26.2,"No","Yes",TRUE
+"CHD01078",27.8,1,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD01079",32.8,5,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD01080",31.6,4,"Recorded exposure","No",31.5,"No","Yes",TRUE
+"CHD01081",30.1,3,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD01082",40.2,1,"Recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD01083",31,2,"No recorded exposure","No",25.1,"No","Yes",TRUE
+"CHD01084",35.7,4,"No recorded exposure","No",27.3,"No","Yes",TRUE
+"CHD01085",28.8,1,"Recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD01086",32.3,2,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD01087",31.6,4,"No recorded exposure","No",33,"No","Yes",TRUE
+"CHD01088",30.7,3,"No recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD01089",38.5,2,"No recorded exposure","No",30.6,"Yes","Yes",TRUE
+"CHD01090",34.2,1,"No recorded exposure","No",32,"No","Yes",TRUE
+"CHD01091",29.2,4,"Recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD01092",27.5,3,"No recorded exposure","No",25.5,"Yes","Yes",TRUE
+"CHD01093",28.3,3,"No recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD01094",31.5,2,"No recorded exposure","No",26.4,"No","Yes",TRUE
+"CHD01095",30.3,3,"Recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD01096",33,5,"No recorded exposure","No",31.5,"No","Yes",TRUE
+"CHD01097",37,2,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD01098",32.2,3,"No recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD01099",31,2,"Recorded exposure","No",,,"No",TRUE
+"CHD01100",35.2,4,"No recorded exposure","No",22.9,"No","Yes",TRUE
+"CHD01101",25.1,1,"No recorded exposure","No",34.9,"No","Yes",TRUE
+"CHD01102",31.4,1,"Recorded exposure","No",31.9,"No","Yes",TRUE
+"CHD01103",30.5,3,"No recorded exposure","No",34.5,"No","Yes",TRUE
+"CHD01104",43.5,2,"Recorded exposure","No",25,"No","Yes",TRUE
+"CHD01105",29.2,1,"Recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD01106",35.7,4,"No recorded exposure","No",28.6,"No","Yes",TRUE
+"CHD01107",33.5,3,"No recorded exposure","No",36.6,"No","Yes",TRUE
+"CHD01108",24.4,1,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD01109",33.1,5,"No recorded exposure","No",24.7,"No","Yes",TRUE
+"CHD01110",40.3,4,"Recorded exposure","No",27.1,"No","Yes",TRUE
+"CHD01111",31.3,5,"No recorded exposure","No",,,"No",TRUE
+"CHD01112",28.3,4,"No recorded exposure","No",33,"No","Yes",TRUE
+"CHD01113",27.7,5,"No recorded exposure","No",28.4,"Yes","Yes",TRUE
+"CHD01114",24.9,1,"Recorded exposure","No",36.1,"No","Yes",TRUE
+"CHD01115",36.2,5,"No recorded exposure","No",35.8,"No","Yes",TRUE
+"CHD01116",32.3,5,"No recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD01117",36.4,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01118",39.7,2,"No recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD01119",19.1,4,"No recorded exposure","No",29.4,"No","Yes",TRUE
+"CHD01120",31.3,4,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD01121",34.9,2,"No recorded exposure","No",29.1,"No","Yes",TRUE
+"CHD01122",30,5,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD01123",30.1,5,"Recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD01124",33.2,3,"No recorded exposure","No",33,"No","Yes",TRUE
+"CHD01125",36.6,3,"No recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD01126",31.6,5,"No recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD01127",29.1,5,"No recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD01128",31.2,2,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD01129",36.3,1,"Recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD01130",23.2,3,"No recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD01131",40.2,1,"Recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD01132",37.4,4,"No recorded exposure","No",38.8,"No","Yes",TRUE
+"CHD01133",32.8,3,"No recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD01134",31.7,1,"No recorded exposure","Yes",32.7,"No","Yes",TRUE
+"CHD01135",39.5,4,"Recorded exposure","No",,,"No",TRUE
+"CHD01136",33.3,2,"Recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD01137",34,1,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD01138",30,2,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD01139",30.5,1,"Recorded exposure","No",30,"No","Yes",TRUE
+"CHD01140",27.8,2,"No recorded exposure","No",33.1,"No","Yes",TRUE
+"CHD01141",32.4,1,"Recorded exposure","No",30.4,"Yes","Yes",TRUE
+"CHD01142",28.6,1,"No recorded exposure","No",,,"No",TRUE
+"CHD01143",35.2,1,"Recorded exposure","Yes",33.5,"No","Yes",TRUE
+"CHD01144",23.3,4,"No recorded exposure","No",,,"No",TRUE
+"CHD01145",27.4,3,"No recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD01146",39.7,4,"Recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD01147",37.8,3,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD01148",23.7,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01149",35.8,4,"No recorded exposure","No",34.6,"No","Yes",TRUE
+"CHD01150",23.3,5,"No recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD01151",33.7,1,"No recorded exposure","Yes",26.2,"No","Yes",TRUE
+"CHD01152",26.5,2,"No recorded exposure","No",29.3,"No","Yes",TRUE
+"CHD01153",33.9,3,"No recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD01154",30.3,5,"No recorded exposure","No",28.9,"No","Yes",TRUE
+"CHD01155",26.5,1,"No recorded exposure","No",23.2,"No","Yes",TRUE
+"CHD01156",22.2,4,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD01157",33.7,3,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD01158",34.7,1,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD01159",20.1,2,"No recorded exposure","No",35.4,"No","Yes",TRUE
+"CHD01160",33.3,3,"Recorded exposure","No",26.2,"No","Yes",TRUE
+"CHD01161",20.7,1,"No recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD01162",28.9,4,"No recorded exposure","No",36.8,"No","Yes",TRUE
+"CHD01163",27.9,1,"No recorded exposure","No",24.1,"No","Yes",TRUE
+"CHD01164",35.4,2,"No recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD01165",31.2,1,"No recorded exposure","No",27.3,"No","Yes",TRUE
+"CHD01166",29,4,"No recorded exposure","No",35.7,"No","Yes",TRUE
+"CHD01167",31.7,2,"Recorded exposure","No",24.4,"No","Yes",TRUE
+"CHD01168",37.9,2,"Recorded exposure","No",27.5,"No","Yes",TRUE
+"CHD01169",24.7,1,"Recorded exposure","No",,,"No",TRUE
+"CHD01170",32.5,5,"No recorded exposure","No",35.7,"No","Yes",TRUE
+"CHD01171",31.2,5,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD01172",25.8,4,"Recorded exposure","Yes",34.2,"No","Yes",TRUE
+"CHD01173",30.8,5,"No recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD01174",31.4,4,"No recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD01175",21.4,2,"No recorded exposure","Yes",27.8,"No","Yes",TRUE
+"CHD01176",29.6,1,"Recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD01177",33.5,2,"Recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD01178",31.7,2,"No recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD01179",28.1,5,"Recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD01180",29.7,5,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD01181",22.6,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01182",29.1,2,"No recorded exposure","No",31.5,"No","Yes",TRUE
+"CHD01183",32.3,1,"No recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD01184",34.1,3,"No recorded exposure","No",34.4,"No","Yes",TRUE
+"CHD01185",27.4,1,"Recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD01186",30.2,5,"No recorded exposure","No",34.2,"No","Yes",TRUE
+"CHD01187",32.1,1,"No recorded exposure","No",29.4,"No","Yes",TRUE
+"CHD01188",33,1,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD01189",22.3,4,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD01190",38.5,5,"No recorded exposure","No",33.2,"No","Yes",TRUE
+"CHD01191",43.3,5,"Recorded exposure","No",24,"No","Yes",TRUE
+"CHD01192",20.6,2,"No recorded exposure","No",33,"No","Yes",TRUE
+"CHD01193",36,3,"Recorded exposure","No",,,"No",TRUE
+"CHD01194",36,1,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD01195",28.9,4,"Recorded exposure","No",22,"No","Yes",TRUE
+"CHD01196",37.2,5,"No recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD01197",30,5,"Recorded exposure","No",35.9,"No","Yes",TRUE
+"CHD01198",45.3,5,"No recorded exposure","No",31.4,"No","Yes",TRUE
+"CHD01199",31.5,5,"No recorded exposure","No",27.6,"No","Yes",TRUE
+"CHD01200",32.2,3,"Recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD01201",36.3,3,"No recorded exposure","No",23.4,"No","Yes",TRUE
+"CHD01202",44.1,2,"No recorded exposure","No",25.3,"No","Yes",TRUE
+"CHD01203",23.6,1,"No recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD01204",39.3,2,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD01205",39.5,3,"No recorded exposure","No",25.1,"No","Yes",TRUE
+"CHD01206",21.7,4,"No recorded exposure","No",25.3,"No","Yes",TRUE
+"CHD01207",36.9,5,"No recorded exposure","No",35.4,"No","Yes",TRUE
+"CHD01208",24.2,3,"No recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD01209",29.7,3,"No recorded exposure","No",28,"No","Yes",TRUE
+"CHD01210",33,3,"Recorded exposure","No",39.2,"No","Yes",TRUE
+"CHD01211",41.4,1,"No recorded exposure","No",32,"No","Yes",TRUE
+"CHD01212",32.2,5,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD01213",34.2,4,"No recorded exposure","No",22.9,"No","Yes",TRUE
+"CHD01214",26.5,1,"No recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD01215",42.2,1,"Recorded exposure","Yes",32.8,"No","Yes",TRUE
+"CHD01216",30.9,4,"No recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD01217",34.7,4,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD01218",30.1,1,"No recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD01219",38.5,2,"No recorded exposure","No",34.3,"No","Yes",TRUE
+"CHD01220",21.8,2,"No recorded exposure","Yes",34.4,"No","Yes",TRUE
+"CHD01221",32,4,"No recorded exposure","No",36.2,"No","Yes",TRUE
+"CHD01222",27.7,1,"Recorded exposure","No",35.2,"No","Yes",TRUE
+"CHD01223",36.6,1,"No recorded exposure","No",28.9,"No","Yes",TRUE
+"CHD01224",33.1,3,"No recorded exposure","No",39.1,"No","Yes",TRUE
+"CHD01225",27.4,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01226",25.9,2,"Recorded exposure","No",37.3,"No","Yes",TRUE
+"CHD01227",28.9,4,"No recorded exposure","Yes",29.8,"No","Yes",TRUE
+"CHD01228",29.8,3,"No recorded exposure","No",26.3,"No","Yes",TRUE
+"CHD01229",37.7,1,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD01230",29.7,2,"No recorded exposure","No",32.6,"No","Yes",TRUE
+"CHD01231",26.2,2,"Recorded exposure","No",33.2,"No","Yes",TRUE
+"CHD01232",28.8,2,"Recorded exposure","No",26.6,"No","Yes",TRUE
+"CHD01233",31.1,1,"Recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD01234",35.4,3,"No recorded exposure","No",36.2,"No","Yes",TRUE
+"CHD01235",24.8,1,"No recorded exposure","No",33.8,"No","Yes",TRUE
+"CHD01236",34.6,2,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD01237",32,1,"No recorded exposure","No",29.3,"No","Yes",TRUE
+"CHD01238",34.7,2,"No recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD01239",32.6,2,"Recorded exposure","No",,,"No",TRUE
+"CHD01240",24.8,5,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD01241",30.3,1,"No recorded exposure","No",26.5,"No","Yes",TRUE
+"CHD01242",26.9,5,"No recorded exposure","No",35.6,"No","Yes",TRUE
+"CHD01243",23.2,2,"Recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD01244",38.3,5,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD01245",22.1,3,"No recorded exposure","Yes",27.5,"No","Yes",TRUE
+"CHD01246",32.6,3,"Recorded exposure","No",28.2,"No","Yes",TRUE
+"CHD01247",32.5,3,"No recorded exposure","No",32.5,"No","Yes",TRUE
+"CHD01248",28.7,1,"No recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD01249",33.2,3,"No recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD01250",32.1,4,"No recorded exposure","No",28.9,"No","Yes",TRUE
+"CHD01251",33.8,4,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD01252",27.9,3,"Recorded exposure","No",31.3,"Yes","Yes",TRUE
+"CHD01253",38,4,"No recorded exposure","No",27.6,"No","Yes",TRUE
+"CHD01254",29.6,5,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD01255",26.3,1,"No recorded exposure","No",22.7,"No","Yes",TRUE
+"CHD01256",35.6,2,"Recorded exposure","No",28.5,"Yes","Yes",TRUE
+"CHD01257",33,3,"No recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD01258",31,4,"No recorded exposure","No",24.7,"No","Yes",TRUE
+"CHD01259",28.7,3,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD01260",34.9,4,"No recorded exposure","No",25.8,"No","Yes",TRUE
+"CHD01261",28.6,4,"Recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD01262",28.7,2,"No recorded exposure","No",36.5,"No","Yes",TRUE
+"CHD01263",29.4,2,"Recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD01264",29.9,2,"Recorded exposure","No",25.4,"No","Yes",TRUE
+"CHD01265",28.7,2,"No recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD01266",27.3,1,"Recorded exposure","No",23.6,"No","Yes",TRUE
+"CHD01267",34.7,5,"No recorded exposure","No",25.8,"No","Yes",TRUE
+"CHD01268",28.1,3,"Recorded exposure","No",35.3,"No","Yes",TRUE
+"CHD01269",21.3,4,"No recorded exposure","No",32.5,"No","Yes",TRUE
+"CHD01270",24.7,2,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD01271",32.1,1,"Recorded exposure","No",36,"No","Yes",TRUE
+"CHD01272",35.9,1,"No recorded exposure","No",32.5,"No","Yes",TRUE
+"CHD01273",34.5,3,"Recorded exposure","No",27.7,"No","Yes",TRUE
+"CHD01274",29.9,2,"Recorded exposure","No",31.1,"No","Yes",TRUE
+"CHD01275",30,3,"No recorded exposure","No",28.3,"No","Yes",TRUE
+"CHD01276",35.4,2,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD01277",24.4,5,"Recorded exposure","No",22.2,"No","Yes",TRUE
+"CHD01278",30.5,2,"Recorded exposure","No",,,"No",TRUE
+"CHD01279",31.8,4,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD01280",26.6,1,"Recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD01281",25.4,3,"No recorded exposure","No",,,"No",TRUE
+"CHD01282",25,2,"No recorded exposure","Yes",32,"No","Yes",TRUE
+"CHD01283",26,1,"Recorded exposure","No",33.9,"No","Yes",TRUE
+"CHD01284",35.3,3,"No recorded exposure","Yes",24.9,"No","Yes",TRUE
+"CHD01285",31.4,4,"No recorded exposure","No",27.5,"No","Yes",TRUE
+"CHD01286",44.7,2,"No recorded exposure","No",37.9,"Yes","Yes",TRUE
+"CHD01287",33.4,2,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD01288",33.3,4,"No recorded exposure","No",33.5,"No","Yes",TRUE
+"CHD01289",34.4,3,"Recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD01290",35.2,3,"No recorded exposure","No",36.9,"No","Yes",TRUE
+"CHD01291",36.1,5,"No recorded exposure","No",34,"No","Yes",TRUE
+"CHD01292",24.3,4,"Recorded exposure","No",26.6,"No","Yes",TRUE
+"CHD01293",36.3,5,"Recorded exposure","No",34.2,"No","Yes",TRUE
+"CHD01294",33.6,3,"No recorded exposure","No",25.8,"No","Yes",TRUE
+"CHD01295",27,4,"Recorded exposure","No",33.5,"No","Yes",TRUE
+"CHD01296",25.8,2,"No recorded exposure","No",35.7,"No","Yes",TRUE
+"CHD01297",30,1,"Recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD01298",33,1,"Recorded exposure","Yes",,,"No",TRUE
+"CHD01299",38.4,5,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD01300",29.2,1,"No recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD01301",27.1,3,"Recorded exposure","No",33.3,"No","Yes",TRUE
+"CHD01302",24.2,5,"Recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD01303",29.8,1,"No recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD01304",19.6,5,"Recorded exposure","No",29.4,"No","Yes",TRUE
+"CHD01305",39.6,5,"No recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD01306",34.5,1,"No recorded exposure","No",33,"No","Yes",TRUE
+"CHD01307",26.5,2,"No recorded exposure","No",34.4,"No","Yes",TRUE
+"CHD01308",23.4,2,"No recorded exposure","Yes",29.2,"Yes","Yes",TRUE
+"CHD01309",27.8,3,"No recorded exposure","No",28,"No","Yes",TRUE
+"CHD01310",31.3,5,"Recorded exposure","No",27.1,"No","Yes",TRUE
+"CHD01311",27,1,"No recorded exposure","No",,,"No",TRUE
+"CHD01312",32.1,4,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD01313",35.3,3,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD01314",32.7,5,"No recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD01315",34,3,"No recorded exposure","No",,,"No",TRUE
+"CHD01316",33.1,5,"Recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD01317",29.4,4,"No recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD01318",26.8,1,"No recorded exposure","No",37.1,"No","Yes",TRUE
+"CHD01319",38.4,2,"Recorded exposure","No",25.9,"Yes","Yes",TRUE
+"CHD01320",32,2,"No recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD01321",29.7,2,"No recorded exposure","No",31.5,"Yes","Yes",TRUE
+"CHD01322",27.9,3,"Recorded exposure","No",34,"No","Yes",TRUE
+"CHD01323",20.5,4,"No recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD01324",30.3,5,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD01325",32.3,2,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD01326",30,2,"Recorded exposure","No",25.4,"No","Yes",TRUE
+"CHD01327",34.4,3,"No recorded exposure","No",36.7,"No","Yes",TRUE
+"CHD01328",30.9,4,"No recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD01329",34.1,2,"Recorded exposure","No",33.8,"No","Yes",TRUE
+"CHD01330",35.8,5,"No recorded exposure","No",29.1,"No","Yes",TRUE
+"CHD01331",21.7,1,"No recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD01332",22.3,4,"No recorded exposure","No",28.3,"No","Yes",TRUE
+"CHD01333",32.4,3,"No recorded exposure","No",34,"No","Yes",TRUE
+"CHD01334",36.8,4,"No recorded exposure","No",26.1,"No","Yes",TRUE
+"CHD01335",31.4,3,"No recorded exposure","No",24.2,"No","Yes",TRUE
+"CHD01336",33.7,4,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD01337",36,1,"No recorded exposure","Yes",32.1,"Yes","Yes",TRUE
+"CHD01338",24.3,2,"No recorded exposure","No",25.3,"No","Yes",TRUE
+"CHD01339",24.3,5,"No recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD01340",22.3,1,"No recorded exposure","No",25.8,"Yes","Yes",TRUE
+"CHD01341",29,4,"Recorded exposure","No",23.8,"No","Yes",TRUE
+"CHD01342",25.2,2,"No recorded exposure","No",35,"No","Yes",TRUE
+"CHD01343",31.8,1,"Recorded exposure","No",,,"No",TRUE
+"CHD01344",31.4,4,"No recorded exposure","No",34.5,"No","Yes",TRUE
+"CHD01345",27,1,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD01346",35.2,2,"Recorded exposure","No",27.2,"Yes","Yes",TRUE
+"CHD01347",34.9,2,"Recorded exposure","Yes",32.3,"No","Yes",TRUE
+"CHD01348",34.6,3,"Recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD01349",38.7,3,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD01350",32.8,1,"No recorded exposure","No",23.9,"No","Yes",TRUE
+"CHD01351",33.9,3,"No recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD01352",28.1,4,"Recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD01353",30.1,2,"No recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD01354",28.6,4,"No recorded exposure","No",37.1,"No","Yes",TRUE
+"CHD01355",37.8,5,"No recorded exposure","No",29.4,"No","Yes",TRUE
+"CHD01356",30.2,3,"No recorded exposure","No",,,"No",TRUE
+"CHD01357",21,1,"No recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD01358",34.1,2,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD01359",36.3,1,"No recorded exposure","No",,,"No",TRUE
+"CHD01360",36.8,3,"No recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD01361",37.8,4,"No recorded exposure","No",28.6,"Yes","Yes",TRUE
+"CHD01362",29.2,2,"No recorded exposure","No",35.9,"No","Yes",TRUE
+"CHD01363",36.7,1,"Recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD01364",36.8,5,"No recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD01365",31,3,"No recorded exposure","No",31,"No","Yes",TRUE
+"CHD01366",27.7,5,"No recorded exposure","No",25.1,"No","Yes",TRUE
+"CHD01367",31.5,4,"No recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD01368",29.8,3,"No recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD01369",29.3,2,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD01370",29.5,2,"Recorded exposure","No",29.3,"No","Yes",TRUE
+"CHD01371",30.7,2,"No recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD01372",36.8,4,"Recorded exposure","No",28.9,"No","Yes",TRUE
+"CHD01373",25.7,3,"No recorded exposure","No",26.8,"No","Yes",TRUE
+"CHD01374",30.1,2,"No recorded exposure","No",35.8,"No","Yes",TRUE
+"CHD01375",26.6,4,"No recorded exposure","No",,,"No",TRUE
+"CHD01376",35.3,2,"Recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD01377",33.3,1,"No recorded exposure","No",27.7,"No","Yes",TRUE
+"CHD01378",34.5,3,"No recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD01379",28.3,5,"Recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD01380",25.3,4,"No recorded exposure","No",33.1,"No","Yes",TRUE
+"CHD01381",24.9,1,"No recorded exposure","Yes",29.2,"No","Yes",TRUE
+"CHD01382",22.9,5,"No recorded exposure","No",22.1,"No","Yes",TRUE
+"CHD01383",27.8,2,"No recorded exposure","No",37,"No","Yes",TRUE
+"CHD01384",41.9,5,"Recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD01385",37.3,4,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD01386",26.4,4,"No recorded exposure","No",27.7,"No","Yes",TRUE
+"CHD01387",33.4,1,"No recorded exposure","No",24.4,"No","Yes",TRUE
+"CHD01388",36.7,5,"No recorded exposure","No",33.3,"No","Yes",TRUE
+"CHD01389",38.1,2,"No recorded exposure","No",40.2,"Yes","Yes",TRUE
+"CHD01390",30,4,"Recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD01391",25.9,5,"No recorded exposure","No",28.2,"No","Yes",TRUE
+"CHD01392",36.1,3,"No recorded exposure","Yes",27.8,"No","Yes",TRUE
+"CHD01393",17,4,"No recorded exposure","No",33.2,"No","Yes",TRUE
+"CHD01394",29.1,5,"No recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD01395",34.7,1,"Recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD01396",24.5,5,"No recorded exposure","No",26,"No","Yes",TRUE
+"CHD01397",34.6,2,"No recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD01398",22.6,1,"Recorded exposure","No",22,"Yes","Yes",TRUE
+"CHD01399",31.6,2,"No recorded exposure","No",29.5,"Yes","Yes",TRUE
+"CHD01400",36.3,3,"Recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD01401",34.1,2,"Recorded exposure","No",26.3,"Yes","Yes",TRUE
+"CHD01402",22.2,5,"Recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD01403",29.5,3,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD01404",22.1,2,"Recorded exposure","No",26.3,"No","Yes",TRUE
+"CHD01405",32.3,5,"No recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD01406",37.6,2,"No recorded exposure","No",34.7,"No","Yes",TRUE
+"CHD01407",36.9,1,"Recorded exposure","No",23.9,"No","Yes",TRUE
+"CHD01408",24.5,3,"Recorded exposure","No",23.8,"No","Yes",TRUE
+"CHD01409",40.2,3,"No recorded exposure","No",27.3,"No","Yes",TRUE
+"CHD01410",28.3,5,"No recorded exposure","No",28.9,"No","Yes",TRUE
+"CHD01411",32,4,"Recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD01412",31.2,3,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD01413",32.3,2,"Recorded exposure","No",35.5,"No","Yes",TRUE
+"CHD01414",30.1,1,"No recorded exposure","No",,,"No",TRUE
+"CHD01415",23.9,4,"No recorded exposure","No",,,"No",TRUE
+"CHD01416",33.4,4,"No recorded exposure","No",32.6,"No","Yes",TRUE
+"CHD01417",32.5,1,"No recorded exposure","No",,,"No",TRUE
+"CHD01418",33.3,3,"No recorded exposure","No",,,"No",TRUE
+"CHD01419",32.6,5,"Recorded exposure","No",31.1,"No","Yes",TRUE
+"CHD01420",21.4,1,"No recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD01421",22.8,2,"Recorded exposure","No",22,"No","Yes",TRUE
+"CHD01422",31.3,2,"Recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD01423",32.5,3,"No recorded exposure","No",31.4,"No","Yes",TRUE
+"CHD01424",26.8,3,"No recorded exposure","No",33.1,"No","Yes",TRUE
+"CHD01425",34.1,1,"Recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD01426",30.4,2,"No recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD01427",28.8,2,"No recorded exposure","No",27.7,"No","Yes",TRUE
+"CHD01428",31.2,3,"No recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD01429",27.7,2,"Recorded exposure","No",38.1,"No","Yes",TRUE
+"CHD01430",32.4,3,"Recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD01431",28.5,1,"Recorded exposure","No",33.2,"No","Yes",TRUE
+"CHD01432",31.2,5,"No recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD01433",29.8,4,"No recorded exposure","No",25.5,"No","Yes",TRUE
+"CHD01434",30.9,4,"No recorded exposure","No",32.6,"No","Yes",TRUE
+"CHD01435",18.4,2,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD01436",22.5,3,"No recorded exposure","Yes",28.6,"No","Yes",TRUE
+"CHD01437",28.2,5,"No recorded exposure","No",36.6,"No","Yes",TRUE
+"CHD01438",22.5,1,"No recorded exposure","Yes",30.6,"Yes","Yes",TRUE
+"CHD01439",26,3,"No recorded exposure","No",25.2,"No","Yes",TRUE
+"CHD01440",25.9,1,"No recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD01441",27.5,1,"No recorded exposure","No",36.2,"No","Yes",TRUE
+"CHD01442",28.7,1,"Recorded exposure","No",27.2,"Yes","Yes",TRUE
+"CHD01443",29.4,5,"No recorded exposure","No",41.2,"No","Yes",TRUE
+"CHD01444",29.7,1,"No recorded exposure","No",36,"No","Yes",TRUE
+"CHD01445",29.4,1,"Recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD01446",22.7,1,"No recorded exposure","No",38.1,"No","Yes",TRUE
+"CHD01447",27.5,2,"Recorded exposure","No",33.1,"No","Yes",TRUE
+"CHD01448",32.6,1,"No recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD01449",45.6,3,"Recorded exposure","No",26.5,"Yes","Yes",TRUE
+"CHD01450",30.9,1,"No recorded exposure","No",33.2,"Yes","Yes",TRUE
+"CHD01451",29.1,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01452",26.2,4,"No recorded exposure","No",25.8,"No","Yes",TRUE
+"CHD01453",27.6,3,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD01454",33.9,3,"Recorded exposure","No",26.6,"No","Yes",TRUE
+"CHD01455",37,1,"Recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD01456",27.6,1,"Recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD01457",27.6,5,"Recorded exposure","No",,,"No",TRUE
+"CHD01458",26.5,1,"Recorded exposure","No",26.3,"No","Yes",TRUE
+"CHD01459",35.4,3,"Recorded exposure","No",34.5,"No","Yes",TRUE
+"CHD01460",32.8,5,"No recorded exposure","No",,,"No",TRUE
+"CHD01461",26.6,2,"No recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD01462",38.3,3,"No recorded exposure","No",28.9,"No","Yes",TRUE
+"CHD01463",20.9,3,"No recorded exposure","No",31,"No","Yes",TRUE
+"CHD01464",35.1,4,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD01465",38.1,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01466",19.8,4,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD01467",27.8,5,"No recorded exposure","No",28,"No","Yes",TRUE
+"CHD01468",31.3,3,"No recorded exposure","No",25,"No","Yes",TRUE
+"CHD01469",30.1,4,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD01470",33.6,1,"Recorded exposure","No",,,"No",TRUE
+"CHD01471",27.2,1,"No recorded exposure","Yes",34.9,"Yes","Yes",TRUE
+"CHD01472",41.5,3,"No recorded exposure","No",24.9,"No","Yes",TRUE
+"CHD01473",17.2,1,"No recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD01474",31,3,"No recorded exposure","No",36,"No","Yes",TRUE
+"CHD01475",24.2,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01476",29.6,5,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD01477",29.6,3,"Recorded exposure","No",35.9,"No","Yes",TRUE
+"CHD01478",26.2,4,"No recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD01479",25.5,5,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD01480",31.8,1,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD01481",31.1,3,"No recorded exposure","Yes",37.5,"No","Yes",TRUE
+"CHD01482",32.4,1,"Recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD01483",29.6,2,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD01484",26.4,3,"Recorded exposure","No",37.3,"No","Yes",TRUE
+"CHD01485",43.7,3,"Recorded exposure","Yes",31,"No","Yes",TRUE
+"CHD01486",25.3,1,"Recorded exposure","No",28.6,"No","Yes",TRUE
+"CHD01487",36.7,3,"No recorded exposure","No",28,"No","Yes",TRUE
+"CHD01488",28.4,1,"Recorded exposure","No",31.9,"No","Yes",TRUE
+"CHD01489",33.3,4,"No recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD01490",26.7,4,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD01491",29.9,1,"Recorded exposure","No",27.6,"No","Yes",TRUE
+"CHD01492",23.9,3,"No recorded exposure","No",27.6,"No","Yes",TRUE
+"CHD01493",30.5,5,"No recorded exposure","No",33.1,"No","Yes",TRUE
+"CHD01494",27.7,3,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD01495",29.3,2,"No recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD01496",31.6,4,"No recorded exposure","No",32.6,"No","Yes",TRUE
+"CHD01497",23.4,1,"No recorded exposure","No",35.4,"No","Yes",TRUE
+"CHD01498",33.6,3,"Recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD01499",26.9,4,"Recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD01500",22,1,"No recorded exposure","Yes",,,"No",TRUE
+"CHD01501",27.4,2,"Recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD01502",34.4,3,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD01503",36.8,4,"No recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD01504",24.5,3,"No recorded exposure","No",23,"No","Yes",TRUE
+"CHD01505",34.1,2,"No recorded exposure","No",27.5,"Yes","Yes",TRUE
+"CHD01506",37.8,3,"No recorded exposure","No",34.6,"No","Yes",TRUE
+"CHD01507",24.8,5,"Recorded exposure","No",38,"No","Yes",TRUE
+"CHD01508",31.6,1,"Recorded exposure","No",23.4,"No","Yes",TRUE
+"CHD01509",31.8,1,"Recorded exposure","No",26.4,"No","Yes",TRUE
+"CHD01510",31.5,5,"No recorded exposure","No",27.5,"No","Yes",TRUE
+"CHD01511",27.3,2,"Recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD01512",32.6,3,"No recorded exposure","No",26.4,"No","Yes",TRUE
+"CHD01513",40.5,5,"Recorded exposure","No",23.8,"No","Yes",TRUE
+"CHD01514",35.2,3,"No recorded exposure","No",31.5,"No","Yes",TRUE
+"CHD01515",33.7,3,"No recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD01516",32.8,4,"No recorded exposure","No",25.4,"No","Yes",TRUE
+"CHD01517",28.1,3,"No recorded exposure","No",37,"No","Yes",TRUE
+"CHD01518",21.3,5,"No recorded exposure","No",27,"No","Yes",TRUE
+"CHD01519",36.1,5,"Recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD01520",29.3,1,"Recorded exposure","No",32.3,"No","Yes",TRUE
+"CHD01521",35.5,1,"No recorded exposure","No",31.3,"No","Yes",TRUE
+"CHD01522",29.7,5,"No recorded exposure","No",23.2,"No","Yes",TRUE
+"CHD01523",33.1,5,"Recorded exposure","No",,,"No",TRUE
+"CHD01524",36.8,2,"No recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD01525",25.5,5,"No recorded exposure","No",38.5,"No","Yes",TRUE
+"CHD01526",36.9,3,"No recorded exposure","Yes",31.4,"No","Yes",TRUE
+"CHD01527",37.9,1,"No recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD01528",28.2,4,"No recorded exposure","No",,,"No",TRUE
+"CHD01529",30.4,1,"Recorded exposure","No",34.1,"Yes","Yes",TRUE
+"CHD01530",22.8,4,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD01531",25.1,4,"Recorded exposure","No",32,"No","Yes",TRUE
+"CHD01532",35.1,2,"Recorded exposure","No",31.5,"No","Yes",TRUE
+"CHD01533",32.1,2,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD01534",37,3,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD01535",35.7,2,"No recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD01536",24.4,4,"No recorded exposure","No",29.3,"Yes","Yes",TRUE
+"CHD01537",30.3,5,"Recorded exposure","No",33.9,"No","Yes",TRUE
+"CHD01538",26,4,"Recorded exposure","No",27.7,"No","Yes",TRUE
+"CHD01539",38.9,3,"No recorded exposure","No",25.7,"No","Yes",TRUE
+"CHD01540",35,1,"No recorded exposure","No",25.4,"No","Yes",TRUE
+"CHD01541",37.2,2,"No recorded exposure","No",35.5,"No","Yes",TRUE
+"CHD01542",28.1,1,"No recorded exposure","No",26,"No","Yes",TRUE
+"CHD01543",29.5,3,"Recorded exposure","Yes",25.4,"No","Yes",TRUE
+"CHD01544",32.2,1,"No recorded exposure","No",26.2,"No","Yes",TRUE
+"CHD01545",37.1,5,"No recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD01546",37.3,4,"Recorded exposure","Yes",28.2,"No","Yes",TRUE
+"CHD01547",21.8,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01548",23.8,3,"No recorded exposure","No",23,"No","Yes",TRUE
+"CHD01549",28.5,1,"Recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD01550",39,2,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD01551",31.7,5,"No recorded exposure","No",28,"No","Yes",TRUE
+"CHD01552",32.5,1,"Recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD01553",38.1,3,"Recorded exposure","Yes",32.9,"No","Yes",TRUE
+"CHD01554",27.3,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01555",27.8,1,"No recorded exposure","No",31.9,"No","Yes",TRUE
+"CHD01556",28.5,4,"Recorded exposure","No",23.1,"No","Yes",TRUE
+"CHD01557",28.7,2,"No recorded exposure","No",38.2,"Yes","Yes",TRUE
+"CHD01558",26.4,4,"No recorded exposure","No",,,"No",TRUE
+"CHD01559",22,4,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD01560",25.5,4,"No recorded exposure","Yes",27.4,"No","Yes",TRUE
+"CHD01561",27.8,4,"Recorded exposure","No",,,"No",TRUE
+"CHD01562",25.8,4,"No recorded exposure","No",35.6,"No","Yes",TRUE
+"CHD01563",25.5,1,"Recorded exposure","No",23.7,"No","Yes",TRUE
+"CHD01564",23.4,1,"No recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD01565",37.4,3,"Recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD01566",35.1,3,"No recorded exposure","No",25.4,"Yes","Yes",TRUE
+"CHD01567",29.7,3,"No recorded exposure","No",28.5,"No","Yes",TRUE
+"CHD01568",41.7,1,"Recorded exposure","No",27,"Yes","Yes",TRUE
+"CHD01569",25.7,4,"No recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD01570",37,1,"No recorded exposure","No",,,"No",TRUE
+"CHD01571",29.3,3,"No recorded exposure","No",36.9,"No","Yes",TRUE
+"CHD01572",28.3,2,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD01573",21.7,2,"Recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD01574",33.7,1,"No recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD01575",25.4,5,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD01576",30.8,1,"Recorded exposure","No",22,"No","Yes",TRUE
+"CHD01577",34.6,5,"No recorded exposure","No",27.2,"No","Yes",TRUE
+"CHD01578",34.9,5,"Recorded exposure","No",,,"No",TRUE
+"CHD01579",33.5,1,"No recorded exposure","No",37.3,"No","Yes",TRUE
+"CHD01580",35.7,3,"No recorded exposure","No",,,"No",TRUE
+"CHD01581",31.7,4,"Recorded exposure","No",31.8,"No","Yes",TRUE
+"CHD01582",26.8,3,"Recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD01583",36.7,5,"No recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD01584",32.8,5,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD01585",34.6,1,"No recorded exposure","No",34.5,"No","Yes",TRUE
+"CHD01586",26,4,"No recorded exposure","No",29.1,"No","Yes",TRUE
+"CHD01587",21.8,3,"No recorded exposure","No",25.9,"No","Yes",TRUE
+"CHD01588",26.7,2,"Recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD01589",34.5,4,"Recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD01590",23.2,5,"Recorded exposure","No",27.3,"No","Yes",TRUE
+"CHD01591",41.9,1,"Recorded exposure","No",34.7,"No","Yes",TRUE
+"CHD01592",31.3,5,"No recorded exposure","No",28,"No","Yes",TRUE
+"CHD01593",27.1,1,"Recorded exposure","No",33.5,"No","Yes",TRUE
+"CHD01594",33.5,1,"No recorded exposure","No",33.7,"Yes","Yes",TRUE
+"CHD01595",36.7,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01596",31.1,2,"No recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD01597",27.6,3,"No recorded exposure","No",27.7,"No","Yes",TRUE
+"CHD01598",23.8,1,"No recorded exposure","No",24.7,"No","Yes",TRUE
+"CHD01599",38.9,2,"No recorded exposure","Yes",25.8,"No","Yes",TRUE
+"CHD01600",30,3,"No recorded exposure","No",24,"No","Yes",TRUE
+"CHD01601",39,3,"No recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD01602",35.9,4,"Recorded exposure","No",31.9,"No","Yes",TRUE
+"CHD01603",23,1,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD01604",31.5,3,"No recorded exposure","No",22.9,"No","Yes",TRUE
+"CHD01605",30.1,2,"No recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD01606",27.5,4,"No recorded exposure","No",29.9,"No","Yes",TRUE
+"CHD01607",19.7,4,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD01608",32.4,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01609",41.3,5,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD01610",38.5,5,"Recorded exposure","No",31.2,"No","Yes",TRUE
+"CHD01611",37,2,"No recorded exposure","No",22.6,"No","Yes",TRUE
+"CHD01612",27.9,2,"No recorded exposure","No",29.6,"No","Yes",TRUE
+"CHD01613",31.7,3,"Recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD01614",27.9,3,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD01615",31.4,4,"No recorded exposure","No",26.8,"No","Yes",TRUE
+"CHD01616",29,5,"No recorded exposure","No",36.8,"No","Yes",TRUE
+"CHD01617",20.1,3,"No recorded exposure","No",28.6,"No","Yes",TRUE
+"CHD01618",27.6,2,"No recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD01619",35.5,5,"Recorded exposure","No",34.8,"No","Yes",TRUE
+"CHD01620",38.8,2,"Recorded exposure","No",25.3,"No","Yes",TRUE
+"CHD01621",32.5,1,"Recorded exposure","No",,,"No",TRUE
+"CHD01622",20.9,4,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD01623",23.4,1,"No recorded exposure","No",,,"No",TRUE
+"CHD01624",30.1,2,"No recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD01625",23.5,5,"No recorded exposure","No",27.2,"No","Yes",TRUE
+"CHD01626",26.2,3,"No recorded exposure","No",33.8,"No","Yes",TRUE
+"CHD01627",33.3,1,"No recorded exposure","No",22,"Yes","Yes",TRUE
+"CHD01628",32.2,2,"Recorded exposure","No",26.9,"No","Yes",TRUE
+"CHD01629",33.1,3,"Recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD01630",28.2,1,"Recorded exposure","No",35.7,"Yes","Yes",TRUE
+"CHD01631",31.3,2,"No recorded exposure","No",32.7,"No","Yes",TRUE
+"CHD01632",36,4,"Recorded exposure","No",29,"No","Yes",TRUE
+"CHD01633",23.9,3,"No recorded exposure","No",35.8,"No","Yes",TRUE
+"CHD01634",35.9,2,"Recorded exposure","No",22,"Yes","Yes",TRUE
+"CHD01635",24.8,3,"No recorded exposure","No",35.7,"No","Yes",TRUE
+"CHD01636",27.1,3,"No recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD01637",38.5,1,"No recorded exposure","No",,,"No",TRUE
+"CHD01638",22.8,1,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD01639",29,3,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD01640",33.4,3,"No recorded exposure","No",33.9,"No","Yes",TRUE
+"CHD01641",21.9,2,"No recorded exposure","Yes",36.1,"No","Yes",TRUE
+"CHD01642",24.5,3,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD01643",25,4,"No recorded exposure","No",33.1,"No","Yes",TRUE
+"CHD01644",34.6,4,"No recorded exposure","No",32.8,"Yes","Yes",TRUE
+"CHD01645",32.2,2,"No recorded exposure","Yes",30.8,"No","Yes",TRUE
+"CHD01646",35,2,"Recorded exposure","No",22.9,"No","Yes",TRUE
+"CHD01647",28.4,5,"Recorded exposure","No",26.1,"No","Yes",TRUE
+"CHD01648",21,3,"No recorded exposure","No",26.5,"No","Yes",TRUE
+"CHD01649",33.6,1,"No recorded exposure","No",28.8,"No","Yes",TRUE
+"CHD01650",28.5,4,"No recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD01651",24.8,5,"No recorded exposure","No",25.7,"No","Yes",TRUE
+"CHD01652",34.2,5,"No recorded exposure","No",35.5,"No","Yes",TRUE
+"CHD01653",34.3,2,"No recorded exposure","No",26.1,"Yes","Yes",TRUE
+"CHD01654",25.1,4,"No recorded exposure","Yes",30.7,"No","Yes",TRUE
+"CHD01655",34.7,1,"No recorded exposure","No",,,"No",TRUE
+"CHD01656",30.9,5,"Recorded exposure","No",32.2,"No","Yes",TRUE
+"CHD01657",40.5,2,"No recorded exposure","No",29.1,"No","Yes",TRUE
+"CHD01658",33.4,2,"No recorded exposure","Yes",35.2,"No","Yes",TRUE
+"CHD01659",37.2,1,"No recorded exposure","No",,,"No",TRUE
+"CHD01660",31.1,1,"No recorded exposure","No",30.3,"No","Yes",TRUE
+"CHD01661",34.2,4,"No recorded exposure","No",29,"No","Yes",TRUE
+"CHD01662",35.2,5,"No recorded exposure","No",37.9,"No","Yes",TRUE
+"CHD01663",41.6,1,"No recorded exposure","No",25.6,"No","Yes",TRUE
+"CHD01664",32.2,2,"Recorded exposure","No",34.4,"No","Yes",TRUE
+"CHD01665",38.9,2,"No recorded exposure","No",26.2,"No","Yes",TRUE
+"CHD01666",30.4,2,"No recorded exposure","No",30.5,"Yes","Yes",TRUE
+"CHD01667",27,2,"No recorded exposure","No",29.1,"No","Yes",TRUE
+"CHD01668",24.6,3,"No recorded exposure","No",26,"No","Yes",TRUE
+"CHD01669",29.9,5,"No recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD01670",23.9,3,"No recorded exposure","No",30.6,"No","Yes",TRUE
+"CHD01671",28.4,3,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD01672",26.1,5,"No recorded exposure","No",29.1,"No","Yes",TRUE
+"CHD01673",28.8,2,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD01674",24.9,3,"No recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD01675",28.4,4,"Recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD01676",34.7,2,"No recorded exposure","No",27,"No","Yes",TRUE
+"CHD01677",27.8,2,"Recorded exposure","Yes",34.3,"No","Yes",TRUE
+"CHD01678",36.9,2,"Recorded exposure","No",26.8,"No","Yes",TRUE
+"CHD01679",36.1,3,"No recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD01680",31.4,2,"No recorded exposure","No",33.7,"No","Yes",TRUE
+"CHD01681",39.4,4,"Recorded exposure","No",29.3,"Yes","Yes",TRUE
+"CHD01682",36.3,3,"No recorded exposure","No",25.5,"No","Yes",TRUE
+"CHD01683",31.2,2,"No recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD01684",27.2,5,"Recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD01685",28.7,4,"No recorded exposure","No",26,"No","Yes",TRUE
+"CHD01686",27.9,1,"Recorded exposure","No",26.6,"No","Yes",TRUE
+"CHD01687",39.9,5,"No recorded exposure","No",30.4,"No","Yes",TRUE
+"CHD01688",36.5,4,"No recorded exposure","No",27.3,"No","Yes",TRUE
+"CHD01689",32.2,5,"Recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD01690",35.4,4,"No recorded exposure","No",31.5,"No","Yes",TRUE
+"CHD01691",25.3,3,"Recorded exposure","No",31.5,"No","Yes",TRUE
+"CHD01692",33.8,4,"Recorded exposure","No",,,"No",TRUE
+"CHD01693",31.4,2,"Recorded exposure","No",28,"No","Yes",TRUE
+"CHD01694",41,3,"No recorded exposure","No",32.1,"Yes","Yes",TRUE
+"CHD01695",30.7,4,"No recorded exposure","No",22.3,"No","Yes",TRUE
+"CHD01696",32.4,4,"No recorded exposure","No",33.9,"No","Yes",TRUE
+"CHD01697",23.3,2,"No recorded exposure","No",32.9,"No","Yes",TRUE
+"CHD01698",31.8,1,"No recorded exposure","No",29.4,"No","Yes",TRUE
+"CHD01699",30.3,1,"No recorded exposure","No",38.2,"No","Yes",TRUE
+"CHD01700",32.1,5,"No recorded exposure","No",27,"No","Yes",TRUE
+"CHD01701",23.3,2,"Recorded exposure","No",24.9,"No","Yes",TRUE
+"CHD01702",40.6,1,"No recorded exposure","No",28.2,"No","Yes",TRUE
+"CHD01703",32.3,4,"Recorded exposure","No",25.1,"No","Yes",TRUE
+"CHD01704",33,2,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD01705",28.5,2,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD01706",28.4,1,"Recorded exposure","No",32.1,"No","Yes",TRUE
+"CHD01707",28.9,5,"Recorded exposure","No",27.6,"No","Yes",TRUE
+"CHD01708",30.5,3,"No recorded exposure","No",33.3,"No","Yes",TRUE
+"CHD01709",34.8,3,"Recorded exposure","No",,,"No",TRUE
+"CHD01710",28.9,1,"No recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD01711",28.3,4,"Recorded exposure","No",33.1,"No","Yes",TRUE
+"CHD01712",32.1,3,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD01713",30.9,5,"Recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD01714",24.5,5,"No recorded exposure","No",26.7,"No","Yes",TRUE
+"CHD01715",33.8,4,"No recorded exposure","No",31.4,"Yes","Yes",TRUE
+"CHD01716",25.2,1,"Recorded exposure","No",31.4,"Yes","Yes",TRUE
+"CHD01717",32.1,1,"No recorded exposure","No",25.6,"No","Yes",TRUE
+"CHD01718",30.6,5,"No recorded exposure","No",32.8,"No","Yes",TRUE
+"CHD01719",26.8,4,"No recorded exposure","No",30,"No","Yes",TRUE
+"CHD01720",37.2,1,"No recorded exposure","No",35.6,"No","Yes",TRUE
+"CHD01721",25,3,"No recorded exposure","No",,,"No",TRUE
+"CHD01722",33.8,5,"Recorded exposure","No",34.2,"No","Yes",TRUE
+"CHD01723",32.4,2,"No recorded exposure","No",25.2,"No","Yes",TRUE
+"CHD01724",23.8,3,"No recorded exposure","No",37.4,"No","Yes",TRUE
+"CHD01725",39.2,5,"No recorded exposure","No",34.8,"No","Yes",TRUE
+"CHD01726",32.7,1,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD01727",29.4,3,"No recorded exposure","Yes",22,"No","Yes",TRUE
+"CHD01728",17.2,1,"No recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD01729",34.4,2,"No recorded exposure","No",33,"No","Yes",TRUE
+"CHD01730",29.4,5,"Recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD01731",32.8,5,"No recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD01732",30.7,1,"Recorded exposure","No",27.8,"No","Yes",TRUE
+"CHD01733",37.5,3,"No recorded exposure","No",27.9,"No","Yes",TRUE
+"CHD01734",31.5,1,"No recorded exposure","No",27.3,"No","Yes",TRUE
+"CHD01735",34.5,5,"No recorded exposure","No",31.7,"No","Yes",TRUE
+"CHD01736",27.1,2,"No recorded exposure","No",33.9,"No","Yes",TRUE
+"CHD01737",25.5,3,"No recorded exposure","No",26.2,"No","Yes",TRUE
+"CHD01738",38,1,"No recorded exposure","No",36.1,"No","Yes",TRUE
+"CHD01739",33.8,1,"Recorded exposure","No",25.2,"Yes","Yes",TRUE
+"CHD01740",23.5,4,"No recorded exposure","No",33,"No","Yes",TRUE
+"CHD01741",31.2,4,"Recorded exposure","No",24.7,"No","Yes",TRUE
+"CHD01742",27.4,1,"No recorded exposure","No",27.4,"No","Yes",TRUE
+"CHD01743",29.7,2,"No recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD01744",35.4,5,"No recorded exposure","No",27.1,"No","Yes",TRUE
+"CHD01745",26.7,4,"No recorded exposure","No",36.3,"No","Yes",TRUE
+"CHD01746",39.7,4,"Recorded exposure","Yes",,,"No",TRUE
+"CHD01747",29.5,5,"No recorded exposure","No",27.6,"No","Yes",TRUE
+"CHD01748",28.9,2,"No recorded exposure","No",29.7,"No","Yes",TRUE
+"CHD01749",34.6,2,"No recorded exposure","No",26.6,"No","Yes",TRUE
+"CHD01750",27.9,2,"No recorded exposure","No",33.9,"No","Yes",TRUE
+"CHD01751",24.7,2,"No recorded exposure","No",38.4,"No","Yes",TRUE
+"CHD01752",38.2,4,"Recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD01753",30.3,2,"Recorded exposure","No",29.1,"Yes","Yes",TRUE
+"CHD01754",39.1,3,"Recorded exposure","No",28.4,"No","Yes",TRUE
+"CHD01755",30.4,5,"No recorded exposure","No",,,"No",TRUE
+"CHD01756",33,4,"No recorded exposure","No",36,"No","Yes",TRUE
+"CHD01757",27.6,4,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD01758",22.6,5,"No recorded exposure","No",30.1,"No","Yes",TRUE
+"CHD01759",40.4,5,"No recorded exposure","No",27.2,"No","Yes",TRUE
+"CHD01760",23,4,"No recorded exposure","No",30.7,"No","Yes",TRUE
+"CHD01761",35.9,1,"Recorded exposure","No",32,"No","Yes",TRUE
+"CHD01762",31.9,5,"No recorded exposure","No",31.6,"No","Yes",TRUE
+"CHD01763",33.2,2,"No recorded exposure","No",28.7,"No","Yes",TRUE
+"CHD01764",29.9,1,"Recorded exposure","No",29.9,"Yes","Yes",TRUE
+"CHD01765",32.3,1,"No recorded exposure","No",,,"No",TRUE
+"CHD01766",35.8,4,"No recorded exposure","No",26.5,"No","Yes",TRUE
+"CHD01767",22,4,"Recorded exposure","No",29.8,"No","Yes",TRUE
+"CHD01768",28.3,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01769",34.3,4,"No recorded exposure","No",30.2,"No","Yes",TRUE
+"CHD01770",31.7,5,"No recorded exposure","No",22,"No","Yes",TRUE
+"CHD01771",32.9,5,"No recorded exposure","No",29.2,"No","Yes",TRUE
+"CHD01772",33,4,"No recorded exposure","No",33.2,"No","Yes",TRUE
+"CHD01773",31.6,5,"Recorded exposure","No",34.1,"No","Yes",TRUE
+"CHD01774",27.7,1,"No recorded exposure","No",30.9,"No","Yes",TRUE
+"CHD01775",25.8,4,"No recorded exposure","No",30.5,"No","Yes",TRUE
+"CHD01776",26.9,4,"No recorded exposure","No",26.6,"No","Yes",TRUE
+"CHD01777",34.3,5,"No recorded exposure","No",34.5,"No","Yes",TRUE
+"CHD01778",33.3,2,"No recorded exposure","No",35.9,"No","Yes",TRUE
+"CHD01779",30.3,1,"No recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD01780",25.2,4,"No recorded exposure","No",27.1,"No","Yes",TRUE
+"CHD01781",36.9,2,"No recorded exposure","No",25.1,"No","Yes",TRUE
+"CHD01782",32.1,5,"Recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD01783",31.2,5,"No recorded exposure","No",23.2,"No","Yes",TRUE
+"CHD01784",37.1,1,"No recorded exposure","No",30.8,"No","Yes",TRUE
+"CHD01785",24.8,3,"No recorded exposure","No",24.1,"No","Yes",TRUE
+"CHD01786",32.9,2,"Recorded exposure","No",42,"No","Yes",TRUE
+"CHD01787",28.5,3,"Recorded exposure","No",25.8,"No","Yes",TRUE
+"CHD01788",31.8,1,"No recorded exposure","No",32.4,"No","Yes",TRUE
+"CHD01789",37.1,1,"Recorded exposure","No",,,"No",TRUE
+"CHD01790",33.7,3,"No recorded exposure","No",29.5,"No","Yes",TRUE
+"CHD01791",29.8,2,"No recorded exposure","No",,,"No",TRUE
+"CHD01792",29.9,5,"No recorded exposure","No",26.5,"No","Yes",TRUE
+"CHD01793",30,4,"No recorded exposure","No",29.5,"Yes","Yes",TRUE
+"CHD01794",25,4,"No recorded exposure","No",33.4,"No","Yes",TRUE
+"CHD01795",27.2,2,"No recorded exposure","No",26.1,"No","Yes",TRUE
+"CHD01796",30.4,1,"Recorded exposure","No",28.1,"No","Yes",TRUE
+"CHD01797",32.7,4,"Recorded exposure","No",27.3,"No","Yes",TRUE
+"CHD01798",35.8,3,"No recorded exposure","No",33.6,"No","Yes",TRUE
+"CHD01799",34.4,3,"No recorded exposure","No",26.8,"No","Yes",TRUE
+"CHD01800",32.7,4,"No recorded exposure","No",37.7,"No","Yes",TRUE

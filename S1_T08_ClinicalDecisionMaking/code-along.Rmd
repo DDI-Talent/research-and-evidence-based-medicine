@@ -1,0 +1,47 @@
+---
+title: "Topic 08 code-along: From population evidence to decisions"
+output: html_document
+---
+
+This fictional perinatal dataset represents no real screening programme or region. It is designed to explore thresholds, equity, benefits and burdens.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+theme_set(theme_minimal())
+population <- read_csv("data/topic08_synthetic.csv", show_col_types = FALSE)
+```
+
+## 1. Describe access and outcomes
+
+```{r access}
+# TODO: calculate screening completion and adverse-outcome risk by region
+# and deprivation quintile.
+```
+
+## 2. Estimate baseline risk
+
+```{r model}
+# For teaching only, fit a risk model using age, deprivation and region.
+# TODO: generate each pregnancy's predicted baseline risk.
+```
+
+## 3. Apply decision thresholds
+
+```{r thresholds}
+# TODO: for thresholds of 5%, 10%, 15% and 20%, count how many
+# pregnancies would be offered support.
+```
+
+## 4. Benefits and burdens
+
+Assume, purely for this exercise, that support reduces relative risk by 32% and that 11% of recipients experience a burden.
+
+```{r tradeoffs}
+# TODO: estimate events prevented and burdens at each threshold.
+```
+
+## 5. Decide transparently
+
+Which threshold would you choose? State whose outcomes and preferences matter, and show how uncertainty could change your choice.
+

@@ -6,62 +6,132 @@ subtitle: "Choose the comparison from the outcome, groups, design, and assumptio
 ::: {.topic-banner}
 **The clinical question**
 
-How different are the outcomes between clinically relevant groups, and is that difference both credible and important?
+How different are outcomes between clinically relevant groups, and is that difference both credible and important?
 :::
 
 ::: {.learning-outcomes}
 ### By the end of this topic
 
-- Compare two independent groups using an appropriate estimate and test.
-- Explain what ANOVA assesses when more than two groups are compared.
+- Choose between one-sample, independent, and paired comparisons.
+- Explain how ANOVA compares between-group with within-group variation.
+- Interpret a global ANOVA test and the role of post-hoc comparisons.
 - Assess association between categorical variables with a contingency table.
-- Separate effect size, statistical evidence, and clinical importance.
+- Prepare a reproducible analysis dataset and perform group comparisons in R.
 :::
 
-## Start with the design
+## 3.1 Comparing two groups
 
-Before selecting a method, identify:
+When groups are compared, some difference will almost always be observed. The question is whether it is large relative to the natural variation between individuals and sufficiently precise and credible to matter.
 
-1. the outcome type;
-2. the number of groups;
-3. whether observations are independent or paired;
-4. the distribution and influential values;
-5. the effect measure that answers the clinical question.
+Begin with the design:
 
-## Common starting points
+1. What is the outcome type?
+2. How many groups or measurement occasions are there?
+3. Are observations independent, paired, or clustered?
+4. What effect measure answers the clinical question?
+5. Are distributional and variance assumptions reasonable?
 
-| Outcome | Comparison | Typical starting method |
+| Design | Typical question | Starting method |
 |---|---|---|
-| Continuous | Two independent groups | Difference in means; independent t-test |
-| Continuous | More than two groups | ANOVA |
-| Categorical | Two or more groups | Difference in proportions; chi-squared test |
+| One sample against a reference | Does the mean differ from a clinical target? | One-sample t-test |
+| Two independent groups | Do treatment and control means differ? | Independent t-test, often Welch’s |
+| The same people measured twice | Did the outcome change from baseline? | Paired t-test on within-person differences |
 
-ANOVA tests an overall null hypothesis that group means are equal. A small p-value indicates evidence that at least one differs; it does not identify which groups differ or how much.
+A z-test assumes the population variance is known, which is uncommon in healthcare research. A t-test estimates variability from the sample; the t-distribution reflects the additional uncertainty, especially in small samples.
 
-## R checkpoint
+::: {.clinical-lens}
+A p-value does not describe the size of a group difference. Report the estimated difference, units, confidence interval, and clinical importance.
+:::
+
+## 3.2 Comparing multiple groups
+
+Performing many pairwise t-tests inflates the probability of at least one Type I error. **Analysis of variance (ANOVA)** begins with one global test:
+
+- \(H_0\): all population group means are equal;
+- \(H_1\): at least one group mean differs.
+
+ANOVA partitions total outcome variability into:
+
+- **between-group variation**: how far group means lie from the overall mean;
+- **within-group variation**: how far individuals lie from their group mean.
+
+The F-ratio compares between-group with within-group mean squares. A large ratio suggests that group membership explains more variation than would be expected from the within-group noise alone.
+
+A statistically significant F-test says that not all means are equal. It does not identify which groups differ or by how much. Prespecified contrasts or multiplicity-controlled post-hoc procedures, such as Tukey’s HSD, are needed for those questions.
+
+### ANOVA assumptions
+
+- **Independence** comes from the study design, not a diagnostic test.
+- **Homogeneity of variance** can be explored by group plots and tests such as Levene’s test.
+- **Normality applies to model residuals**, not necessarily the raw outcome.
+- Influential observations and unequal group sizes require particular care.
+
+ANOVA is often robust to modest departures, especially with balanced groups. Depending on the problem, alternatives include Welch’s ANOVA, transformation, or a suitable non-parametric method.
+
+## 3.3 Comparing categorical variables
+
+A chi-squared test of independence asks whether two categorical variables are associated. It compares observed cell counts with the counts expected if the variables were independent:
+
+\[
+E = \frac{\text{row total} \times \text{column total}}{\text{grand total}}
+\]
+
+The chi-squared statistic accumulates the squared differences between observed and expected counts, scaled by the expected counts. The degrees of freedom for an \(r\)-by-\(c\) table are \((r-1)(c-1)\).
+
+Check that:
+
+- the input consists of counts rather than percentages;
+- categories are mutually exclusive;
+- observations are independent;
+- expected cell counts are sufficiently large for the approximation.
+
+If expected counts are sparse, combining clinically defensible categories or using an exact method may be more appropriate. A chi-squared result indicates evidence of association, not its magnitude or causal meaning.
+
+## 3.4 Exploring group differences in R
+
+A research question must first become an explicit analysis dataset. `select()` chooses variables, `filter()` chooses observations, and `!is.na()` makes the handling of missing observations visible.
 
 ```r
 #| eval: false
 
-analysis_data <- patient_data |>
-  select(outcome, group) |>
-  filter(!is.na(outcome), !is.na(group))
+library(tidyverse)
 
-analysis_data |>
-  ggplot(aes(x = group, y = outcome)) +
+sleep_data <- nhanes |>
+  select(age, sleep_hours, work_status) |>
+  filter(
+    age >= 18,
+    age <= 65,
+    work_status %in% c("Full-time", "Part-time", "Not working"),
+    !is.na(sleep_hours),
+    !is.na(work_status)
+  )
+
+sleep_data |>
+  ggplot(aes(x = work_status, y = sleep_hours)) +
   geom_boxplot() +
-  labs(x = NULL, y = "Clinical outcome")
+  labs(x = NULL, y = "Sleep duration (hours)")
 
+# Two independent groups
 t.test(outcome ~ group, data = analysis_data)
+
+# More than two groups
+anova_model <- aov(sleep_hours ~ work_status, data = sleep_data)
+summary(anova_model)
+TukeyHSD(anova_model)
+
+# Two categorical variables
+counts <- table(analysis_data$exposure, analysis_data$outcome)
+chisq.test(counts)
 ```
 
-::: {.clinical-lens}
-**Do not stop at “significant”.** Report the groups, estimated difference, confidence interval, direction, units, and whether the magnitude matters clinically.
-:::
+## Bringing it together
 
-## Lab-book prompts
+A reproducible comparison moves from **research question → analysis dataset → visual and numerical description → appropriate comparison → assumptions → contextual interpretation**.
 
-1. Are the groups independent, paired, or clustered?
+### Lab-book prompts
+
+1. Are the observations independent, paired, or clustered?
 2. What effect measure is easiest for a clinician or patient to understand?
-3. Could imbalance or confounding explain the observed difference?
+3. If the global ANOVA test is positive, which comparisons were planned?
+4. Could imbalance, confounding, missingness, or multiplicity explain the result?
 

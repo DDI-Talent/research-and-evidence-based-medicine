@@ -1,0 +1,55 @@
+---
+title: "Topic 06 model solutions: Regression and ME biomarkers"
+output: html_document
+---
+
+The biomarker and records are fictional. This is neither a diagnostic study nor a DecodeME result.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(broom)
+theme_set(theme_minimal())
+me <- read_csv("data/topic06_synthetic.csv", show_col_types = FALSE)
+```
+
+## Inspect relationships
+
+```{r inspect}
+me |>
+  ggplot(aes(me_status, biomarker_concentration_au)) +
+  geom_boxplot() +
+  labs(x = NULL, y = "Fictional biomarker (arbitrary units)")
+
+me |>
+  group_by(me_status) |>
+  summarise(n = n(), mean_biomarker = mean(biomarker_concentration_au, na.rm=TRUE), mean_steps = mean(daily_steps))
+```
+
+## Sequential models
+
+```{r models}
+m1 <- lm(biomarker_concentration_au ~ me_status, data = me)
+m2 <- lm(biomarker_concentration_au ~ me_status + age_years + sex, data = me)
+m3 <- lm(biomarker_concentration_au ~ me_status + age_years + sex + bmi_kg_m2 + regular_medication, data = me)
+m4 <- lm(biomarker_concentration_au ~ me_status + age_years + sex + bmi_kg_m2 + regular_medication + daily_steps, data = me)
+
+model_results <- list(Crude=m1, Demographic=m2, Clinical=m3, Activity_adjusted=m4) |>
+  imap_dfr(~tidy(.x, conf.int = TRUE) |> mutate(model = .y)) |>
+  filter(term == "me_statusME") |>
+  select(model, estimate, conf.low, conf.high, p.value)
+model_results
+```
+
+The coefficient is the mean biomarker difference for ME versus control at the covariate values held constant by the model. Its change after adding activity shows that models answer different conditional questions.
+
+## Assumptions
+
+```{r diagnostics, fig.width=8, fig.height=4}
+par(mfrow = c(1, 2))
+plot(m4, which = 1)
+plot(m4, which = 2)
+par(mfrow = c(1, 1))
+```
+
+Activity may partly follow from illness. Adjusting for it could remove part of the association of interest rather than remove confounding. Subject knowledge, timing and a causal diagram are needed before selecting variables.
+

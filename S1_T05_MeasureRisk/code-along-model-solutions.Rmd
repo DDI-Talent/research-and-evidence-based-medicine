@@ -1,0 +1,55 @@
+---
+title: "Topic 05 model solutions: Measuring developmental risk"
+output: html_document
+---
+
+This fictional longitudinal dataset is not a CHILDS result and does not establish causality.
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+theme_set(theme_minimal())
+childs <- read_csv("data/topic05_synthetic.csv", show_col_types = FALSE)
+observed <- childs |> filter(observed_at_followup == "Yes")
+```
+
+## Absolute risks
+
+```{r risks}
+risk_summary <- observed |>
+  group_by(prenatal_exposure) |>
+  summarise(children = n(), events = sum(developmental_support_flag == "Yes"), risk = events / children)
+risk_summary
+
+risk_exposed <- risk_summary$risk[risk_summary$prenatal_exposure == "Recorded exposure"]
+risk_unexposed <- risk_summary$risk[risk_summary$prenatal_exposure == "No recorded exposure"]
+```
+
+## Effect measures
+
+```{r measures}
+tibble(
+  measure = c("Risk difference", "Risk ratio", "Odds ratio"),
+  estimate = c(
+    risk_exposed - risk_unexposed,
+    risk_exposed / risk_unexposed,
+    (risk_exposed / (1-risk_exposed)) / (risk_unexposed / (1-risk_unexposed))
+  )
+)
+```
+
+The risk difference communicates additional events per child observed; multiplying by 100 gives additional events per 100. The risk ratio compares probabilities. The odds ratio compares event odds and is more distant from 1 when outcomes are not rare.
+
+## Follow-up
+
+```{r followup}
+childs |>
+  group_by(prenatal_exposure, deprivation_quintile) |>
+  summarise(n = n(), followup_proportion = mean(observed_at_followup == "Yes"), .groups = "drop") |>
+  ggplot(aes(deprivation_quintile, followup_proportion, colour = prenatal_exposure)) +
+  geom_line() + geom_point() +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = "Deprivation quintile", y = "Observed at follow-up", colour = "Prenatal exposure")
+```
+
+Balanced reporting gives risks in both groups, the same follow-up period, absolute and relative comparisons, and acknowledges confounding and differential follow-up.
+
