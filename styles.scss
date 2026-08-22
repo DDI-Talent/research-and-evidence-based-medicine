@@ -18,7 +18,26 @@ $border-radius: 0.65rem;
   --rebm-line: #d9ded8;
 }
 
-body { line-height: 1.65; }
+body { line-height: 1.68; }
+
+.content { max-width: 940px; }
+
+p, li { text-wrap: pretty; }
+
+table {
+  font-size: .95rem;
+  vertical-align: top;
+}
+
+thead th {
+  background: #eaf1f7;
+  color: var(--rebm-green);
+  border-bottom: 2px solid #9bb7cd;
+}
+
+tbody tr:nth-child(even) { background: rgba(230, 240, 247, .36); }
+
+code { color: #713044; }
 
 .navbar {
   border-bottom: 4px solid var(--rebm-gold);
@@ -112,6 +131,10 @@ h2 { border-bottom: 1px solid var(--rebm-line); padding-bottom: .35rem; }
   margin: 1.2rem 0 2.5rem;
 }
 
+/* Pandoc wraps adjacent raw HTML links in a paragraph. Let the links
+   participate directly in the grid without changing the source markup. */
+.topic-grid > p { display: contents; }
+
 .topic-card {
   display: block;
   min-height: 180px;
@@ -148,9 +171,51 @@ h2 { border-bottom: 1px solid var(--rebm-line); padding-bottom: .35rem; }
 .topic-card.placeholder { border-top-color: #9aa79f; }
 .topic-card.placeholder .number { color: #6c7971; }
 
+.playbook-intro {
+  margin: 1.5rem 0 2.5rem;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid #b8ccdc;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #f5f9fc, #e6f0f7);
+}
+
+.playbook-intro h3 { margin-top: 0; }
+
+.playbook-route {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: .65rem;
+  margin-top: 1.25rem;
+}
+
+.playbook-route div {
+  min-width: 0;
+  padding: .85rem;
+  border-radius: .75rem;
+  background: white;
+  border-top: 3px solid var(--rebm-jade);
+}
+
+.playbook-route span {
+  display: inline-grid;
+  place-items: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  margin-bottom: .45rem;
+  border-radius: 50%;
+  background: var(--rebm-green);
+  color: white;
+  font-weight: 800;
+  font-size: .8rem;
+}
+
+.playbook-route strong, .playbook-route small { display: block; }
+.playbook-route strong { color: var(--rebm-green); }
+.playbook-route small { margin-top: .25rem; color: #52625a; line-height: 1.35; }
+
 .topic-banner {
   border-left: 7px solid var(--rebm-gold);
-  background: linear-gradient(120deg, var(--rebm-green), #1a6955);
+  background: linear-gradient(120deg, var(--rebm-green), #07558b);
   color: white;
   padding: 1.4rem 1.6rem;
   border-radius: .8rem;
@@ -166,6 +231,93 @@ h2 { border-bottom: 1px solid var(--rebm-line); padding-bottom: .35rem; }
 .learning-outcomes { background: var(--rebm-mint); }
 .clinical-lens { background: #fae6eb; border-left: 5px solid var(--rebm-gold); }
 .learning-outcomes > :last-child, .clinical-lens > :last-child { margin-bottom: 0; }
+
+.playbook-summary {
+  margin: 1.5rem 0 2.2rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid #aac4d8;
+  border-top: 5px solid var(--rebm-jade);
+  border-radius: .85rem;
+  background: #f4f8fb;
+}
+
+.playbook-summary h3 { margin-top: 0; }
+.playbook-summary table { margin-bottom: .8rem; }
+.playbook-summary > :last-child { margin-bottom: 0; }
+
+.interpretation-template {
+  margin: 1.5rem 0;
+  padding: 1.15rem 1.25rem;
+  border-left: 5px solid #7c3aed;
+  border-radius: .75rem;
+  background: #f3f0ff;
+}
+
+.interpretation-template h3 { margin-top: 0; color: #4c1d95; }
+.interpretation-template > :last-child { margin-bottom: 0; }
+
+.self-check {
+  margin: 1.6rem 0;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid #e1bd64;
+  border-radius: .8rem;
+  background: #fff8e6;
+}
+
+.self-check h3 { margin-top: 0; }
+.self-check details {
+  margin-top: .8rem;
+  padding: .7rem .85rem;
+  border-radius: .55rem;
+  background: white;
+}
+
+.self-check summary {
+  cursor: pointer;
+  color: var(--rebm-green);
+  font-weight: 750;
+}
+
+.next-topic {
+  margin: 2rem 0 1rem;
+  padding: 1rem 1.15rem;
+  border-radius: .7rem;
+  background: var(--rebm-green);
+  color: white;
+}
+
+.next-topic strong { color: white; }
+.next-topic > :last-child { margin-bottom: 0; }
+
+.reasoning-loop {
+  margin: 1.2rem 0 1.8rem;
+  padding: 1.2rem;
+  border-radius: .8rem;
+  background: var(--rebm-green);
+  color: white;
+  text-align: center;
+  font-size: 1.04rem;
+  letter-spacing: .01em;
+}
+
+.habit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: .8rem;
+  margin: 1.2rem 0 2rem;
+}
+
+.habit-grid > div {
+  padding: 1rem 1.1rem;
+  border-left: 4px solid var(--rebm-jade);
+  border-radius: .65rem;
+  background: white;
+  box-shadow: 0 4px 18px rgba(4,30,66,.07);
+}
+
+.habit-grid strong, .habit-grid span { display: block; }
+.habit-grid strong { margin-bottom: .3rem; color: var(--rebm-green); }
+.habit-grid span { color: #52625a; font-size: .94rem; }
 
 .fourfold {
   display: grid;
@@ -195,4 +347,9 @@ h2 { border-bottom: 1px solid var(--rebm-line); padding-bottom: .35rem; }
   .hero { padding: 2rem 1.25rem; }
   .hero h1 { font-size: 2.65rem; }
   .semester-heading { display: block; }
+  .playbook-route { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 601px) and (max-width: 980px) {
+  .playbook-route { grid-template-columns: repeat(2, 1fr); }
 }

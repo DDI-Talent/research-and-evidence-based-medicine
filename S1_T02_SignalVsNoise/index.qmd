@@ -20,6 +20,20 @@ Is the pattern we observed likely to reflect a population effect, or could sampl
 - Recognise packages and functions as the building blocks of R analysis.
 :::
 
+::: {.playbook-summary}
+### Topic 02 at a glance
+
+| Element | Meaning | Question to keep visible |
+|---|---|---|
+| Target population | People or observations we want to understand | Does the sample represent them? |
+| Estimate | A sample-based approximation to a population parameter | How large is it? |
+| Confidence interval | Compatible effect sizes under the model | How precise is the estimate? |
+| P-value | Compatibility of the data with the null model | What does it add beyond the estimate? |
+| Power | Chance of detecting a prespecified effect if it exists | Was the study capable of answering the question? |
+
+**Core habit:** separate effect size, uncertainty, statistical evidence, bias, and clinical importance; none is a substitute for the others.
+:::
+
 ## 2.1 From samples to populations
 
 Descriptive statistics tell us about the observations collected. **Inferential statistics** use a sample to learn about a wider target population. A sample mean, risk, or association is an **estimate**; the corresponding unknown population value is a **parameter**.
@@ -113,6 +127,46 @@ shapiro.test(analysis_data$outcome)
 
 ## Bringing it together
 
+## Worked reasoning: a trial result near 0.05
+
+A small trial estimates that a treatment shortens recovery by 1.8 days compared with usual care, with a 95% confidence interval from 0.1 to 3.5 days and a p-value of 0.041.
+
+1. **Start with the estimate.** The sample suggests an average reduction of 1.8 days.
+2. **Read the interval.** Effects compatible with the data range from a very small to a more substantial reduction. The estimate is imprecise even though the interval narrowly excludes zero.
+3. **Use the p-value narrowly.** If there were no population mean difference and the assumptions held, data at least this incompatible with that model would occur about 4.1% of the time.
+4. **Do not manufacture a verdict.** A result of p = 0.049 would not be meaningfully different from p = 0.051.
+5. **Return to the clinical question.** Whether 1.8 days matters depends on the illness, treatment harms, costs, and patient priorities.
+
+::: {.interpretation-template}
+### A useful reporting sentence
+
+“The estimated **[effect]** was **[value and unit]** (95% CI **[lower to upper]**). The interval is compatible with **[clinical range of effects]**. The p-value of **[value]** provides **[degree]** evidence against the null model, assuming **[key assumptions]**, but does not establish clinical importance or absence of bias.”
+:::
+
+## Common traps
+
+- Saying “there is no effect” when a study is imprecise and fails to reject the null.
+- Treating p < 0.05 as proof and p ≥ 0.05 as evidence of equivalence.
+- Interpreting a confidence interval as the range containing 95% of individual patient outcomes.
+- Assuming more observations always remove bias.
+- Checking many outcomes or subgroups and reporting only the smallest p-value.
+
+::: {.self-check}
+### Check your understanding
+
+1. Can a result be statistically significant but clinically unimportant?
+2. Can a confidence interval include both an important benefit and no important benefit?
+3. Why can a very large sample make a tiny effect statistically persuasive?
+
+<details><summary>Show the answers</summary>
+
+1. Yes. Statistical compatibility does not determine whether the magnitude matters.
+2. Yes. That is a sign of decision-relevant imprecision.
+3. Standard errors generally shrink as sample size grows, so even small departures from the null can produce small p-values.
+
+</details>
+:::
+
 ::: {.clinical-lens}
 **A defensible inference states:** the target population, estimate and interval, what hypothesis was tested, which assumptions matter, and whether bias or imprecision could alter the clinical conclusion.
 :::
@@ -124,3 +178,6 @@ shapiro.test(analysis_data$outcome)
 3. What would a Type I or Type II error mean clinically here?
 4. Which assumption is most vulnerable, and what evidence informs that judgement?
 
+::: {.next-topic}
+**Next connection:** Topic 03 applies these inferential ideas to differences between two or more clinically relevant groups.
+:::

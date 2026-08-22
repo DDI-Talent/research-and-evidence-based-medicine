@@ -3,7 +3,16 @@ title: "How to use this course notebook"
 description: "The structure, learning outcomes, and a practical weekly workflow."
 ---
 
-This site is a **living reference**, not a replacement for discussion, code-alongs, or tutorial work. Use it before teaching to orient yourself, during the week to record connections, and afterwards to consolidate your lab book.
+This site is a **living REBM playbook**, not a replacement for discussion, code-alongs, or tutorial work. It is designed to help you organise your thinking before a session, interpret what you do during the week, and retain a concise but rigorous reference afterwards.
+
+## Three ways to use the playbook
+
+| When | Use the page to | A useful action |
+|---|---|---|
+| Before teaching | Orient yourself to the clinical question and vocabulary | Read “at a glance” and the learning outcomes |
+| During the week | Connect theory, code, and the case study | Annotate the worked reasoning and R workflow |
+| After teaching | Consolidate and practise retrieval | Complete the self-check and lab-book prompts without looking back |
+| During assessment | Check principles and reporting structure | Use templates as prompts, then write in your own words for your own analysis |
 
 ## The four-part weekly pattern
 
@@ -37,7 +46,70 @@ On each topic page, keep four questions in view:
 Every result in your lab book should have a sentence beside it explaining the population, groups, outcome, time period, uncertainty, and the decision it could inform.
 :::
 
+## How each completed topic page is organised
+
+1. **Clinical question:** the decision or uncertainty that gives the method a purpose.
+2. **Learning outcomes:** what you should be able to explain or do.
+3. **At a glance:** a compact map of concepts, outputs, and cautions.
+4. **Four-part notes:** the substantive teaching sequence from the topic slides.
+5. **R workflow:** code that makes the analytical reasoning visible and reproducible.
+6. **Worked reasoning:** a clinical example showing how to move from output to interpretation.
+7. **Reporting template:** a scaffold for complete sentences, not text to copy mechanically.
+8. **Common traps:** plausible but unsafe interpretations to recognise.
+9. **Self-check:** short retrieval questions with expandable answers.
+10. **Lab-book prompts and next connection:** reflection and the link to the wider course.
+
+## The REBM reasoning loop
+
+::: {.reasoning-loop}
+**Question → Data → Description → Method → Estimate → Uncertainty → Bias and assumptions → Clinical meaning → Decision → Documentation**
+:::
+
+The loop is deliberately longer than “choose a test and read the p-value”. You may need to move backwards: an implausible result can reveal a coding problem; a violated assumption can change the method; a patient priority can change which outcome matters.
+
+## How to read statistical output
+
+Use the same sequence whenever possible:
+
+1. Confirm the analysed population and number of observations.
+2. Check the outcome, exposure, groups, reference categories, units, and time horizon.
+3. Find the effect estimate or prediction—not only the test statistic.
+4. Read the confidence interval or other uncertainty measure.
+5. Check assumptions, diagnostics, missing-data handling, and sensitivity analyses.
+6. Translate the result into one plain clinical sentence.
+7. State what the analysis cannot establish.
+
+## How to write for the laboratory book
+
+For each analysis, preserve five layers:
+
+- **Purpose:** the question and why it matters.
+- **Provenance:** data source, eligibility criteria, variables, and any exclusions.
+- **Process:** visible code and justified analytical choices.
+- **Product:** tables, figures, estimates, intervals, and diagnostics.
+- **Interpretation:** clinical meaning, limitations, and the next decision or question.
+
+::: {.callout-warning}
+## A polished output is not a complete analysis
+
+A figure without a question, a p-value without an estimate, a model without diagnostics, or a prediction without a decision context is incomplete—even when the code runs perfectly.
+:::
+
 ## About the R sections
 
-The current pages include “R checkpoint” areas ready for executable Quarto chunks. As datasets and lab exercises are finalised, those chunks can be added directly and frozen so the published website shows reproducible output without requiring students to run code in the browser.
+The R examples are deliberately short enough to reveal the analytical structure. They are not intended to replace the code-along or model solutions. Read a pipe as a sequence of decisions, inspect every object before trusting it, and keep interpretation beside output.
 
+The repository also contains topic datasets, data dictionaries, data-generation scripts, code-along materials, and model solutions. The published playbook emphasises reasoning; the practical sessions provide the fuller analysis experience.
+
+## Using reporting templates responsibly
+
+Templates prevent omissions, but they can also produce empty formulaic writing. Replace every bracketed element with information from the actual study, remove clauses that do not apply, and add the limitation most likely to change interpretation. Never imply that filling the template makes a weak analysis valid.
+
+## When you are stuck
+
+1. Restate the clinical question without statistical jargon.
+2. Identify the outcome type and unit of analysis.
+3. Draw or tabulate the raw relationship.
+4. Find the relevant topic’s at-a-glance table.
+5. Write what you know, what remains uncertain, and which assumption is blocking progress.
+6. Bring that specific uncertainty to the tutorial or teaching team.

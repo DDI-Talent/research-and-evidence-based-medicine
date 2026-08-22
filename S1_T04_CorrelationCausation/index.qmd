@@ -19,6 +19,19 @@ Do two measurements vary together—and what additional evidence would be needed
 - Build and annotate layered `ggplot2` visualisations reproducibly.
 :::
 
+::: {.playbook-summary}
+### Topic 04 at a glance
+
+| Task | Tool | Limitation to remember |
+|---|---|---|
+| See how two continuous variables vary together | Scatterplot | The visible pattern may depend on scale and subgroups |
+| Summarise a linear association | Pearson correlation | Curved relationships can produce a value near zero |
+| Summarise a monotonic ranked association | Spearman correlation | Still does not establish causation |
+| Express causal assumptions | Directed acyclic graph | The graph is an argument to defend, not a fact discovered by software |
+
+**Core habit:** draw the relationship, state the proposed causal structure, and only then decide what numerical summary or adjustment is meaningful.
+:::
+
 ## 4.1 Scatterplots and visualisation
 
 An association describes how two variables change in relation to one another. It does not, by itself, imply that changing one would change the other.
@@ -110,6 +123,48 @@ Saving the result as an object allows the coefficient, interval, and p-value to 
 
 ## Bringing it together
 
+## Worked reasoning: exercise and depression
+
+An observational study finds that people reporting more weekly exercise have lower depression scores, with Pearson r = −0.32.
+
+1. **Describe the association.** The sample shows a modest negative linear relationship: higher exercise is associated with lower depression scores.
+2. **Inspect the plot.** Look for a curved pattern, floor or ceiling effects, influential observations, and distinct patient subgroups.
+3. **Ask about direction.** Exercise might affect mood, but depression may also reduce a person’s ability or motivation to exercise.
+4. **Identify common causes.** Physical health, socioeconomic circumstances, social support, and access to safe spaces could influence both.
+5. **Avoid automatic adjustment.** Adjusting for a mediator such as improved sleep would estimate a different effect; conditioning on study participation could introduce collider bias.
+6. **State what would strengthen the claim.** Longitudinal measurement, a credible intervention, negative controls, and sensitivity analyses would add information.
+
+::: {.interpretation-template}
+### A useful reporting sentence
+
+“In **[population]**, **[exposure]** was **[positively/negatively] associated** with **[outcome]** (r = **[value]**, 95% CI **[interval]**). The relationship was **[shape/strength]** on visual inspection. This observational association does not establish causation because **[key alternative explanations]**.”
+:::
+
+## Common traps
+
+- Describing r = 0 as “no relationship” without checking for non-linearity.
+- Inferring a large clinical effect from a small p-value in a very large sample.
+- Treating every third variable as a confounder based only on observed associations.
+- Adjusting for a mediator or collider without recognising that the target question changes.
+- Hiding subgroup differences with one pooled coefficient.
+- Adding a fitted line to a plot and describing it as a causal effect.
+
+::: {.self-check}
+### Check your understanding
+
+1. Why can a U-shaped relationship have Pearson r near zero?
+2. What distinguishes a confounder from a mediator?
+3. Why can restricting analysis to hospitalised patients create an association absent in the wider population?
+
+<details><summary>Show the answers</summary>
+
+1. Positive and negative linear tendencies across the curve can cancel.
+2. A confounder is a common cause of exposure and outcome; a mediator lies on the causal pathway from exposure to outcome.
+3. Hospitalisation may be a shared consequence—a collider—of two otherwise independent causes.
+
+</details>
+:::
+
 ### Lab-book prompts
 
 1. What does the scatterplot show that the coefficient hides?
@@ -117,3 +172,6 @@ Saving the result as an object allows the coefficient, interval, and p-value to 
 3. Which variable is a confounder, mediator, or collider under that structure?
 4. What study design or sensitivity analysis would make the causal claim more credible?
 
+::: {.next-topic}
+**Next connection:** Topic 05 focuses on binary clinical events and turns associations into absolute and relative measures of risk.
+:::

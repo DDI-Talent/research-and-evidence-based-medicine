@@ -1,9 +1,114 @@
 ---
-title: "Course resources"
-description: "A growing index of practical references for REBM."
+title: "REBM quick-reference library"
+description: "Compact decision aids for analysis, interpretation, appraisal, and reporting."
 ---
 
-## Quick-reference pages planned
+Use these tables to orient your reasoning, then return to the relevant topic page for explanation, assumptions, examples, and R code.
+
+## Choose a descriptive summary
+
+| Data pattern | Centre | Spread | First visualisation |
+|---|---|---|---|
+| Approximately symmetric continuous data | Mean | SD | Histogram |
+| Skewed or extreme continuous data | Median | IQR | Histogram and boxplot |
+| Nominal category | Count and proportion | Not applicable | Bar chart |
+| Ordered category | Count/proportion; sometimes median category | Category range or proportions | Ordered bar chart |
+
+[Open Topic 01: Describing data](S1_T01_DescribingData/index.qmd)
+
+## Interpret an estimate and confidence interval
+
+Ask in order:
+
+1. What is being estimated, in which population and units?
+2. What is the point estimate?
+3. Which effects are compatible with the interval?
+4. Does the interval cross the null value?
+5. Does it cross a threshold of clinical importance?
+6. Could bias or violated assumptions matter more than sampling uncertainty?
+
+[Open Topic 02: Signal vs the noise](S1_T02_SignalVsNoise/index.qmd)
+
+## Choose a starting comparison
+
+| Outcome | Design | Starting method |
+|---|---|---|
+| Continuous | One sample versus reference | One-sample t-test |
+| Continuous | Two independent groups | Independent/Welch t-test |
+| Continuous | Same people twice | Paired t-test |
+| Continuous | More than two independent groups | ANOVA or Welch’s ANOVA |
+| Categorical | Association between two variables | Contingency table and chi-squared/exact method |
+
+This table is a starting point, not an automatic test selector. Distribution, clustering, estimand, assumptions, and design may require another method.
+
+[Open Topic 03: Comparing groups](S1_T03_ComparingGroups/index.qmd)
+
+## Keep association and causation separate
+
+| Structure | Diagram | Adjustment implication |
+|---|---|---|
+| Confounding | `X ← C → Y` | Often adjust for C to block the backdoor path |
+| Mediation | `X → M → Y` | Adjusting for M removes part of the total effect |
+| Collider | `X → S ← Y` | Conditioning on S can create bias |
+
+[Open Topic 04: Correlation and causation](S1_T04_CorrelationCausation/index.qmd)
+
+## Translate risk measures
+
+| Measure | Calculation | Null | Plain-language focus |
+|---|---|---:|---|
+| Risk difference | Risk A − Risk B | 0 | Additional events per fixed number |
+| Relative risk | Risk A ÷ Risk B | 1 | Proportional risk |
+| Odds ratio | Odds A ÷ Odds B | 1 | Relative odds, not relative risk |
+| NNT | 1 ÷ absolute risk reduction | — | Patients treated per additional benefit |
+
+[Open Topic 05: Measuring risk](S1_T05_MeasureRisk/index.qmd)
+
+## Read a regression model
+
+1. Identify the outcome and model family.
+2. Check units and reference categories.
+3. Find the main coefficient and confidence interval.
+4. Confirm the scale: outcome units, log-odds, or odds ratio.
+5. Ask why each adjustment variable was included.
+6. Inspect diagnostics and missing-data handling.
+7. State the remaining sources of bias.
+
+[Open Topic 06: Regression for fair comparison](S1_T06_Regression/index.qmd)
+
+## Evaluate a prediction model
+
+| Question | Useful evidence |
+|---|---|
+| Who is ranked higher risk? | Discrimination/AUC |
+| Are the probabilities numerically trustworthy? | Calibration |
+| What happens at a chosen threshold? | Sensitivity, specificity, predictive values |
+| Does performance survive new settings? | External validation |
+| Does using it improve care? | Clinical utility and impact evaluation |
+
+[Open Topic 07: Estimation vs prediction](S1_T07_EstimationPrediction/index.qmd)
+
+## Move from evidence to a decision
+
+Use **BRAN** to make options visible: benefits, risks, alternatives, and nothing new/current care. Then ask whether plausible uncertainty crosses the decision threshold, how the patient values the consequences, and whether further information could change the action.
+
+[Open Topic 08: Clinical decision making](S1_T08_ClinicalDecisionMaking/index.qmd)
+
+## A complete interpretation checklist
+
+- Population and setting
+- Exposure, intervention, and comparator
+- Outcome and time horizon
+- Effect estimate or prediction
+- Uncertainty
+- Assumptions and missing data
+- Bias and alternative explanations
+- Clinical importance
+- Applicability to the patient
+- Decision that might change
+- Reproducible record of the analysis
+
+## Core R workflow
 
 - Choosing a descriptive summary and visualisation
 - Interpreting confidence intervals and p-values
@@ -30,9 +135,17 @@ analysis_data |>
   summarise(...)
 ```
 
-The important habit is not memorising isolated functions. It is making every transformation answer a visible part of the clinical question.
+The important habit is not memorising isolated functions. It is making every transformation answer a visible part of the clinical question and storing the outputs needed to reconstruct the final interpretation.
 
-## Suggested additions
+## Topic materials in the repository
 
-This page is designed to grow into a home for datasets, code-along scripts, lab briefs, recordings, reading lists, and assessment guidance. Links can be added as those materials are agreed.
+Each Semester 1 topic folder contains some or all of the following:
 
+- the `_NORECORDING` theory deck;
+- a case-study summary;
+- a data dictionary and synthetic dataset;
+- the data-generation script;
+- code-along and model-solution files;
+- the detailed topic playbook page.
+
+Recordings remain in the teaching environment rather than the public GitHub repository.

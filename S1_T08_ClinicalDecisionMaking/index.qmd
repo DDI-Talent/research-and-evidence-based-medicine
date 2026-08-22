@@ -20,6 +20,21 @@ At what point does the expected benefit of acting outweigh its harms and burdens
 - Create a traceable evidence-to-decision record in R.
 :::
 
+::: {.playbook-summary}
+### Topic 08 at a glance
+
+| Evidence-to-decision element | Question |
+|---|---|
+| Population evidence | What outcomes are plausible with each option? |
+| Baseline risk | How much opportunity is there to benefit? |
+| Benefits and harms | What is their magnitude, timing, and certainty? |
+| Threshold | At what point does the balance favour action? |
+| Patient values | Which consequences matter most to this person? |
+| Traceability | Can we reconstruct how evidence became an agreed action? |
+
+**Core habit:** a model output is evidence for a decision—not the decision, the patient’s preference, or the agreed action.
+:::
+
 ## 8.1 From evidence to action
 
 A predicted risk describes what might happen. An effect estimate describes how an intervention might change an outcome. Neither chooses an action automatically.
@@ -136,6 +151,59 @@ Use non-identifiable study IDs and approved secure storage for real clinical dat
 
 ## Bringing it together
 
+## Worked reasoning: a prediction near the threshold
+
+A patient has a predicted 30-day readmission risk of 22%, with a plausible range from 15% to 31%. Local guidance suggests offering intensive follow-up above 20%.
+
+1. **Do not apply the threshold mechanically.** The point estimate lies above 20%, but uncertainty spans both sides.
+2. **Define the options.** Usual care, lighter-touch telephone follow-up, intensive support, or gathering further information may all be relevant.
+3. **Translate expected consequences.** Estimate the likely absolute reduction in readmission and express burdens and harms using comparable time horizons.
+4. **Test scenarios.** Would intensive follow-up still be preferred at 15%? Would usual care remain acceptable at 31%? If the answer changes, the decision is sensitive.
+5. **Elicit patient priorities.** A patient who strongly wishes to avoid admission may accept a lower threshold; another for whom visits are exhausting may require a larger expected benefit.
+6. **Record the distinction.** The algorithm suggested follow-up; the agreed action followed a shared discussion and may differ.
+
+::: {.interpretation-template}
+### A useful decision summary
+
+“For **[patient/context]**, the estimated **[outcome]** risk is **[value]** over **[time]**, with plausible values from **[range]**. At the **[rationale]** threshold of **[value]**, **[action]** is suggested. The decision is **[robust/sensitive]** because **[scenario result]**. After discussing **[benefits, harms, burdens, alternatives, and priorities]**, the agreed action is **[action]**.”
+:::
+
+## A minimum evidence-to-decision checklist
+
+- Have all realistic options—including current care—been named?
+- Are baseline risk and absolute treatment effects visible?
+- Are benefits, harms, burdens, and opportunity costs compared fairly?
+- Does the evidence apply to this patient and setting?
+- Could plausible uncertainty change the preferred action?
+- Has the patient had the opportunity and support to express what matters?
+- Is the threshold’s rationale explicit rather than hidden in software?
+- Are the model suggestion and agreed action recorded separately?
+
+## Common traps
+
+- Treating a risk threshold as universal across different interventions.
+- Hiding uncertainty because it might make the conversation harder.
+- Assuming the average trial outcome is the outcome every patient values most.
+- Presenting “do nothing” as though current care has no consequences.
+- Asking for more information when delay is harmful or the result cannot change the choice.
+- Allowing an automated recommendation to obscure clinical accountability.
+
+::: {.self-check}
+### Check your understanding
+
+1. Why can two patients with the same risk reasonably choose differently?
+2. What makes uncertainty decision-relevant?
+3. When is gathering more information unlikely to be valuable?
+
+<details><summary>Show the answers</summary>
+
+1. They may value the benefits, harms, burdens, and uncertainty differently.
+2. When plausible values or assumptions lead to different preferred actions.
+3. When all plausible scenarios support the same action, information cannot reduce the relevant uncertainty, or delay would cause greater harm.
+
+</details>
+:::
+
 ::: {.clinical-lens}
 Before acting, ask: What are the options? What might happen with each? How certain are the estimates? Which consequences matter most to this patient? Would reasonable uncertainty change the choice? Can the reasoning be reconstructed later?
 :::
@@ -147,3 +215,6 @@ Before acting, ask: What are the options? What might happen with each? How certa
 3. Is the decision robust across plausible estimates and patient preferences?
 4. Does the record distinguish the model suggestion from the agreed action?
 
+::: {.next-topic}
+**Semester transition:** Semester 2 turns from analysing data to asking how evidence was found, designed, reported, appraised, and applied—and how outcome reporting bias can distort the record we inherit.
+:::

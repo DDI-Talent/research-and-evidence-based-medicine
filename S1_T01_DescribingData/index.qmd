@@ -19,6 +19,19 @@ Who is represented in these data, what was measured, and what does a typical—o
 - Explain why reproducible programming is valuable in health-data analysis.
 :::
 
+::: {.playbook-summary}
+### Topic 01 at a glance
+
+| Start with | Ask yourself | Produce |
+|---|---|---|
+| One variable at a time | What does it measure, and for whom? | A defensible summary and plot |
+| The observed distribution | Is it symmetric, skewed, multimodal, or affected by extremes? | Centre and spread that belong together |
+| The data-generating process | Could coding, missingness, or selection explain the shape? | A short clinical description, not just a table |
+| Reproducible code | Could someone recreate every number and figure? | Named objects and transparent analysis steps |
+
+**Core habit:** describe the data you actually have before applying a model to the data you hoped to have.
+:::
+
 ## 1.1 Variables, measures of centre and spread
 
 The type of variable determines which summaries are meaningful. A number might measure an amount, label a category, or encode an order; treating these as interchangeable produces misleading analysis.
@@ -104,6 +117,45 @@ patient_data |>
 
 ## Bringing it together
 
+## Worked reasoning: describing pulse measurements
+
+Suppose pulse was recorded for 500 adults attending an outpatient clinic. The mean is 78 beats per minute, the median is 73, the SD is 22, and the IQR is 64–84. A histogram shows a long right tail and a small cluster of very high values.
+
+1. **Name the variable and unit.** Pulse is a continuous measurement in beats per minute.
+2. **Match the summary to the shape.** The gap between mean and median and the long right tail suggest that the median and IQR describe a typical patient more honestly than the mean and SD alone.
+3. **Investigate before explaining.** High values might reflect acute illness, recent exertion, medication, measurement error, or a different clinical subgroup.
+4. **Retain clinical context.** These are clinic attendees, not a random sample of all adults. Their distribution should not automatically become a population reference range.
+
+::: {.interpretation-template}
+### A useful reporting sentence
+
+“Among **[population]**, **[variable and unit]** had a median of **[value]** and an IQR of **[lower–upper]**. The distribution was **[shape]**, with **[important feature]**. **[Missing or unusual values]** were handled by **[decision and rationale]**.”
+:::
+
+## Common traps
+
+- Reporting the mean because the variable is numerical, without inspecting its distribution.
+- Treating an outlier rule as permission to delete a clinically unusual patient.
+- Using a bar chart for a continuous measurement or joining histogram bars as if they were categories.
+- Interpreting “common in this dataset” as “normal” or “healthy”.
+- Reporting many statistics without identifying which answer the clinical question.
+
+::: {.self-check}
+### Check your understanding
+
+1. Why might the median remain stable when one extreme value is added but the mean changes markedly?
+2. What information does an IQR retain that a median alone does not?
+3. What are three possible explanations for two peaks in a distribution?
+
+<details><summary>Show the answers</summary>
+
+1. The median depends primarily on order, while the mean uses the magnitude of every observation.
+2. It describes the spread of the middle half of observations.
+3. Mixed populations, different measurement processes or settings, or a genuine multimodal biological process.
+
+</details>
+:::
+
 ::: {.clinical-lens}
 **Good descriptive reporting:** identify the population, define the variable and units, report a compatible pair of centre and spread, describe the distributional shape, and explain any important missing or unusual values.
 :::
@@ -115,3 +167,6 @@ patient_data |>
 3. What does the visualisation reveal that the summary statistic does not?
 4. Could the apparent shape reflect mixed subgroups or the way patients entered the dataset?
 
+::: {.next-topic}
+**Next connection:** Topic 02 moves from describing one observed sample to asking what that sample can tell us about a wider population.
+:::

@@ -20,6 +20,20 @@ Does an observed relationship persist after accounting for credible alternative 
 - Store, inspect, and tidy fitted model objects in R.
 :::
 
+::: {.playbook-summary}
+### Topic 06 at a glance
+
+| Decision | Linear regression | Logistic regression |
+|---|---|---|
+| Outcome | Continuous | Binary |
+| Model output | Mean difference or slope | Log-odds coefficient, often exponentiated to an odds ratio |
+| Fitted value | Predicted outcome value | Predicted event probability |
+| Key interpretation | Expected outcome change for a stated predictor contrast | Relative odds for a stated predictor contrast |
+| Central caution | Functional form and residual assumptions | Odds are not risks; check specification and information sufficiency |
+
+**Core habit:** define the estimand and causal role of every variable before reading coefficients from an adjusted model.
+:::
+
 ## 6.1 Univariable regression
 
 Regression quantifies how an outcome varies with one or more explanatory variables. A **univariable** model contains one explanatory variable; it may compare groups or represent a continuous relationship.
@@ -124,6 +138,57 @@ In a model formula, `+` includes another explanatory variable; it does not add p
 
 ## Bringing it together
 
+## Worked reasoning: unadjusted and adjusted treatment effects
+
+An observational study examines a treatment and 30-day readmission. The unadjusted odds ratio is 1.60; after adjustment for age and baseline severity it becomes 0.90.
+
+1. **Do not call this a contradiction.** The two models answer different conditional questions.
+2. **Inspect group differences.** If treated patients were older and more severely unwell, the unadjusted estimate mixed treatment with those pre-existing prognostic differences.
+3. **Interpret the adjusted estimate.** Among patients with the same included age and severity values, the estimated treatment odds are 0.90 times those of the comparator, subject to the model assumptions.
+4. **Ask whether adjustment was adequate.** Were age and severity measured accurately and at the right time? Were important common causes omitted? Was the relationship represented appropriately?
+5. **Avoid causal overclaiming.** The adjusted estimate may be less confounded, but observational adjustment does not reproduce randomisation automatically.
+
+::: {.interpretation-template}
+### A useful reporting sentence
+
+“After adjustment for **[prespecified covariates and rationale]**, **[exposure contrast]** was associated with **[effect estimate]** in **[outcome]** (95% CI **[interval]**). This compares patients with the same values of the included covariates under the fitted model. Residual confounding may remain because **[limitations]**.”
+:::
+
+## Reading a regression table systematically
+
+1. Identify the outcome and model family.
+2. Locate the exposure contrast, units, and reference categories.
+3. Decide whether coefficients are on the original, log, or odds-ratio scale.
+4. Read effect size and confidence interval before the p-value.
+5. Separate the main estimand from adjustment variables.
+6. Check sample size, missing-data handling, diagnostics, and sensitivity analyses.
+7. Translate one clinically meaningful contrast into plain language.
+
+## Common traps
+
+- Saying “all other variables are equal” rather than “holding included covariates constant within the model”.
+- Interpreting a logistic coefficient directly as a change in probability.
+- Choosing covariates because their univariable p-values are small.
+- Assuming a high R-squared proves a valid or clinically useful model.
+- Checking normality of the raw outcome instead of residual behaviour for linear-model inference.
+- Treating “adjusted” as synonymous with causal or unbiased.
+
+::: {.self-check}
+### Check your understanding
+
+1. Why might a treatment coefficient change after age is included?
+2. Does an odds ratio of 2 mean that risk has doubled?
+3. Why can adding a collider increase rather than reduce bias?
+
+<details><summary>Show the answers</summary>
+
+1. Age may influence both treatment allocation and outcome, so the unadjusted coefficient partly reflected age imbalance.
+2. No. It means the odds doubled; the corresponding risk change depends on baseline risk.
+3. Conditioning on a common consequence can open a non-causal association between its causes.
+
+</details>
+:::
+
 ::: {.clinical-lens}
 **Ask of every adjusted model:** What outcome scale is being modelled? What does the coefficient compare? Why was each variable included? Which important cause is unmeasured? Would a different defensible model change the conclusion?
 :::
@@ -135,3 +200,6 @@ In a model formula, `+` includes another explanatory variable; it does not add p
 3. Which diagnostic evidence supports or challenges the model?
 4. Why was each covariate included, and could any be a mediator or collider?
 
+::: {.next-topic}
+**Next connection:** Topic 07 asks whether a fitted model is being used to estimate a population relationship or predict an outcome for a new patient.
+:::

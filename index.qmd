@@ -13,13 +13,28 @@ Build the habits to analyse clinical data, judge research fairly, and turn uncer
 
 <div class="hero-actions">
   <a href="S1_T01_DescribingData/index.html">Start with Topic 1</a>
-  <a class="secondary" href="course-guide.html">How the course works</a>
+  <a class="secondary" href="course-guide.html">Use the playbook</a>
+  <a class="secondary" href="resources.html">Quick references</a>
 </div>
 :::
 
 ## One course, two connected questions
 
 Semester 1 develops a practical statistical language for analysing clinical data. Semester 2 uses that language to ask whether evidence is trustworthy, meaningful, and applicable.
+
+::: {.playbook-intro}
+### This is your REBM playbook
+
+Use it to move from a clinical uncertainty to a defensible conclusion—and to know when the evidence cannot support one. Each completed topic combines concise theory, worked clinical reasoning, reproducible R, common traps, reporting language, and questions for your laboratory book.
+
+<div class="playbook-route">
+<div><span>1</span><strong>Frame</strong><small>Name the population, question, outcome, and decision.</small></div>
+<div><span>2</span><strong>Describe</strong><small>Understand the data before modelling them.</small></div>
+<div><span>3</span><strong>Estimate</strong><small>Keep magnitude and uncertainty together.</small></div>
+<div><span>4</span><strong>Challenge</strong><small>Test assumptions, bias, and alternative explanations.</small></div>
+<div><span>5</span><strong>Apply</strong><small>Translate evidence into a patient-centred action.</small></div>
+</div>
+:::
 
 ::: {.semester-heading}
 ## Semester 1
@@ -32,10 +47,16 @@ Semester 1 develops a practical statistical language for analysing clinical data
 <a class="topic-card" href="S1_T03_ComparingGroups/index.html"><span class="number">TOPIC 03</span><span class="topic-title">Comparing groups</span><span class="topic-description">Two groups, multiple groups, categorical outcomes, and clinical importance.</span></a>
 <a class="topic-card" href="S1_T04_CorrelationCausation/index.html"><span class="number">TOPIC 04</span><span class="topic-title">Correlation and causation</span><span class="topic-description">Scatterplots, correlation, confounding, and the beginnings of causal thinking.</span></a>
 <a class="topic-card" href="S1_T05_MeasureRisk/index.html"><span class="number">TOPIC 05</span><span class="topic-title">Measuring risk</span><span class="topic-description">Absolute risk, risk difference, relative risk, odds, NNT, and clear communication.</span></a>
-<a class="topic-card placeholder" href="S1_T06_Regression/index.html"><span class="number">TOPIC 06</span><span class="topic-title">Regression for fair comparison</span><span class="topic-description">Adjustment, linear and logistic regression, and “holding other variables constant”.</span></a>
-<a class="topic-card placeholder" href="S1_T07_EstimationPrediction/index.html"><span class="number">TOPIC 07</span><span class="topic-title">Estimation vs prediction</span><span class="topic-description">Explanation, generalisation, overfitting, validation, and clinical risk scores.</span></a>
-<a class="topic-card placeholder" href="S1_T08_ClinicalDecisionMaking/index.html"><span class="number">TOPIC 08</span><span class="topic-title">Clinical decision making</span><span class="topic-description">Thresholds, trade-offs, uncertainty, and moving from evidence to action.</span></a>
+<a class="topic-card" href="S1_T06_Regression/index.html"><span class="number">TOPIC 06</span><span class="topic-title">Regression for fair comparison</span><span class="topic-description">Adjustment, linear and logistic regression, diagnostics, interpretation, and model objects.</span></a>
+<a class="topic-card" href="S1_T07_EstimationPrediction/index.html"><span class="number">TOPIC 07</span><span class="topic-title">Estimation vs prediction</span><span class="topic-description">Explanation, generalisation, performance, overfitting, validation, and reproducible prediction.</span></a>
+<a class="topic-card" href="S1_T08_ClinicalDecisionMaking/index.html"><span class="number">TOPIC 08</span><span class="topic-title">Clinical decision making</span><span class="topic-description">Evidence-to-action reasoning, thresholds, trade-offs, uncertainty, patient values, and traceability.</span></a>
 </div>
+
+::: {.callout-tip}
+## Semester 1 is now a complete pathway
+
+Start at Topic 01 if the language is new. If you are revising a clinical paper or your laboratory book, enter at the relevant topic and use its **at-a-glance table**, **worked reasoning**, **common traps**, and **reporting template**.
+:::
 
 ::: {.semester-heading}
 ## Semester 2
@@ -60,4 +81,20 @@ Semester 1 develops a practical statistical language for analysing clinical data
 <div><strong>Theory</strong>Short explanations build a consistent conceptual foundation.</div>
 <div><strong>Code-along</strong>Follow an analysis from question to clinically meaningful interpretation.</div>
 <div><strong>Tutorial-lab</strong>Adapt the workflow, make a decision, and add to your lab book.</div>
+:::
+
+## Five habits to carry into every topic
+
+::: {.habit-grid}
+<div><strong>Keep the question visible</strong><span>A method is only useful when it estimates or tests something clinically meaningful.</span></div>
+<div><strong>Describe before modelling</strong><span>Data quality, distributions, missingness, and subgroups shape every later conclusion.</span></div>
+<div><strong>Report magnitude with uncertainty</strong><span>A p-value, model score, or category cannot replace an effect estimate and its plausible range.</span></div>
+<div><strong>Interrogate the assumptions</strong><span>Ask what the analysis needs to be true and what bias would do to the result.</span></div>
+<div><strong>Return to the patient</strong><span>Population evidence informs—but never mechanically determines—an individual decision.</span></div>
+:::
+
+::: {.callout-note}
+## Assessment connection
+
+The same habits support the laboratory book, lay evidence summary, group replication report, and individual reflection: make the question explicit, preserve a reproducible trail, interpret rather than copy output, and be honest about what the evidence can and cannot support.
 :::

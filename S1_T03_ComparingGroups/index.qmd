@@ -19,6 +19,19 @@ How different are outcomes between clinically relevant groups, and is that diffe
 - Prepare a reproducible analysis dataset and perform group comparisons in R.
 :::
 
+::: {.playbook-summary}
+### Topic 03 at a glance
+
+| Outcome and design | Starting comparison | Null value or hypothesis |
+|---|---|---|
+| Continuous, two independent groups | Difference in means; independent t-test | Mean difference = 0 |
+| Continuous, paired measurements | Mean within-person difference; paired t-test | Mean difference = 0 |
+| Continuous, more than two groups | ANOVA followed by planned contrasts | All group means equal |
+| Two categorical variables | Contingency table; chi-squared test | Variables independent |
+
+**Core habit:** choose the comparison from the outcome, design, and clinical estimand—not from the name of a familiar test.
+:::
+
 ## 3.1 Comparing two groups
 
 When groups are compared, some difference will almost always be observed. The question is whether it is large relative to the natural variation between individuals and sufficiently precise and credible to matter.
@@ -126,6 +139,47 @@ chisq.test(counts)
 
 ## Bringing it together
 
+## Worked reasoning: three treatment groups
+
+Suppose mean symptom scores differ across usual care, brief intervention, and intensive intervention. The ANOVA p-value is 0.012.
+
+1. **Describe first.** Report each group’s sample size, centre, spread, and a plot. A global p-value cannot show whether one group is small or highly variable.
+2. **Interpret the global test correctly.** There is evidence that the population means are not all equal; it does not show that every pair differs.
+3. **Examine planned comparisons.** If the clinical question concerned each intervention versus usual care, those contrasts should drive interpretation. A Tukey procedure is useful for all pairwise comparisons but does not replace the original question.
+4. **Keep multiplicity visible.** Selecting the most favourable pair after viewing every result overstates certainty.
+5. **Report magnitude.** A precisely estimated one-point difference may still be unimportant if the clinically meaningful difference is five points.
+
+::: {.interpretation-template}
+### A useful reporting sentence
+
+“Mean **[outcome]** was **[value]** in **[group A]** and **[value]** in **[group B]**. The estimated difference was **[value and unit]** (95% CI **[lower to upper]**). This is **[smaller/larger]** than the clinically meaningful difference of **[value]**. The comparison assumes **[key design and model assumptions]**.”
+:::
+
+## Common traps
+
+- Using an independent test for repeated measurements from the same patient.
+- Concluding that groups are “the same” because p ≥ 0.05.
+- Performing repeated pairwise tests without controlling or acknowledging multiplicity.
+- Reading a significant ANOVA as evidence that every group differs.
+- Feeding percentages rather than the underlying counts into a chi-squared test.
+- Assuming association in a contingency table implies that group membership caused the outcome.
+
+::: {.self-check}
+### Check your understanding
+
+1. Why does pairing often improve precision when the same patient is measured twice?
+2. What additional work is needed after a statistically significant global ANOVA?
+3. What should you consider when expected cell counts are very small?
+
+<details><summary>Show the answers</summary>
+
+1. Each person acts as their own comparison, removing some between-person variability.
+2. Estimate and interpret planned or multiplicity-controlled group contrasts.
+3. Whether categories can be combined defensibly or an exact/alternative method is needed.
+
+</details>
+:::
+
 A reproducible comparison moves from **research question → analysis dataset → visual and numerical description → appropriate comparison → assumptions → contextual interpretation**.
 
 ### Lab-book prompts
@@ -135,3 +189,6 @@ A reproducible comparison moves from **research question → analysis dataset �
 3. If the global ANOVA test is positive, which comparisons were planned?
 4. Could imbalance, confounding, missingness, or multiplicity explain the result?
 
+::: {.next-topic}
+**Next connection:** Topic 04 replaces a group label with a second measurement and asks how two variables move together—and why association is not causation.
+:::

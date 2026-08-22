@@ -19,6 +19,20 @@ Are we explaining or estimating a relationship, or predicting what may happen fo
 - Build a reproducible prediction workflow in R.
 :::
 
+::: {.playbook-summary}
+### Topic 07 at a glance
+
+| Question | Evidence needed |
+|---|---|
+| Does the model rank higher- and lower-risk patients? | Discrimination, such as AUC |
+| Do predicted probabilities mean what they claim? | Calibration-in-the-large, calibration slope, and plots |
+| Are individual predictions close to outcomes? | Appropriate overall error or scoring measure |
+| Will performance generalise? | Internal validation plus external validation in the intended setting |
+| Is the model clinically useful? | Consequences, workflow, fairness, actionability, and comparison with current care |
+
+**Core habit:** evaluate a prediction model on patients it did not learn from, using measures aligned with the clinical action it is meant to support.
+:::
+
 ## 7.1 Explanation, estimation and prediction
 
 The same regression model can be used for different purposes, but the question determines the interpretation and evaluation.
@@ -123,6 +137,60 @@ The seed must be set immediately before the random operation. Test data must rem
 
 ## Bringing it together
 
+## Worked reasoning: an apparently accurate model
+
+A readmission model is 92% accurate in a hospital where 8% of patients are readmitted. Its AUC is 0.61, and predicted risks are systematically higher than observed risks.
+
+1. **Interrogate accuracy.** A rule predicting “no readmission” for everyone would already be 92% accurate. Accuracy is dominated by the common outcome class.
+2. **Read discrimination.** An AUC of 0.61 indicates only modest ranking ability.
+3. **Read calibration.** Systematic overprediction means that a stated risk such as 30% does not correspond to an observed frequency near 30% in this setting.
+4. **Consider consequences.** If a low threshold triggers intensive follow-up, overprediction may overwhelm services and burden many patients who would not be readmitted.
+5. **Ask why transport failed.** Different case mix, definitions, pathways, or time periods may have shifted the data. Recalibration might help, but the model still requires clinical evaluation.
+
+::: {.interpretation-template}
+### A useful reporting sentence
+
+“In **[validation population]**, the model showed **[level]** discrimination (AUC **[value]**) and **[description]** calibration. At a threshold of **[value and rationale]**, sensitivity was **[value]** and specificity **[value]**. The main expected consequence is **[false-positive/false-negative effect]**. Performance should not be assumed beyond **[setting limitations]**.”
+:::
+
+## A minimum prediction-model checklist
+
+- Was the target population and intended use defined before development?
+- Were predictors available at the moment the prediction would be made?
+- Were outcome and predictor definitions consistent and clinically defensible?
+- Were missing data handled without leaking future information?
+- Was model development separated from final testing?
+- Are discrimination and calibration both reported with uncertainty?
+- Was subgroup performance examined responsibly?
+- Has the model been externally validated and compared with current care?
+- Is there evidence that acting on predictions improves decisions or outcomes?
+
+## Common traps
+
+- Calling a model “validated” because it performed well on its training data.
+- Selecting the threshold that looks best on the final test set.
+- Using AUC alone when patients will be shown numerical probabilities.
+- Assuming 0.50 is a natural clinical threshold.
+- Allowing information recorded after the prediction time to leak into predictors.
+- Treating a proprietary or complex algorithm as inherently superior to regression.
+- Ignoring workload, access, and differential performance across patient groups.
+
+::: {.self-check}
+### Check your understanding
+
+1. Can a model have good discrimination and poor calibration?
+2. Why should the final test set be used only after development choices are complete?
+3. What clinical information is missing from an AUC of 0.80?
+
+<details><summary>Show the answers</summary>
+
+1. Yes. It can rank patients correctly while systematically misestimating their probabilities.
+2. Repeatedly using it turns it into development data and makes reported performance optimistic.
+3. Probability accuracy, threshold-specific errors, consequences, actionability, comparison with current care, and external validity.
+
+</details>
+:::
+
 ### Lab-book prompts
 
 1. Is the goal explanation, estimation, prediction, or a mixture?
@@ -130,3 +198,6 @@ The seed must be set immediately before the random operation. Test data must rem
 3. Are both discrimination and calibration adequate for the intended use?
 4. What dataset shift or error could cause the greatest clinical harm?
 
+::: {.next-topic}
+**Next connection:** Topic 08 starts where prediction ends: deciding whether a predicted risk justifies action for a particular patient.
+:::
