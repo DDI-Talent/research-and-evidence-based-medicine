@@ -319,6 +319,109 @@ h2 { border-bottom: 1px solid var(--rebm-line); padding-bottom: .35rem; }
 .habit-grid strong { margin-bottom: .3rem; color: var(--rebm-green); }
 .habit-grid span { color: #52625a; font-size: .94rem; }
 
+.r-toolkit-banner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(250px, .75fr);
+  gap: 1.5rem;
+  align-items: center;
+  margin: 1.2rem 0 2.8rem;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  background: linear-gradient(125deg, #24124f, #4c1d95 58%, #005ea8);
+  color: white;
+  box-shadow: 0 12px 32px rgba(36,18,79,.2);
+}
+
+.r-toolkit-banner h3 { color: white; margin: .35rem 0 .6rem; font-size: 1.65rem; }
+.r-toolkit-banner p { color: #f1eafe; }
+.r-toolkit-banner .eyebrow { font-weight: 800; font-size: .75rem; letter-spacing: .12em; color: #ddd0ff; }
+.r-toolkit-banner pre {
+  margin: 0;
+  padding: 1.1rem;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: .8rem;
+  background: rgba(10,7,30,.52);
+  color: white;
+  font-size: .88rem;
+}
+.r-toolkit-banner pre code { color: white; }
+
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 1rem;
+  margin: 1.4rem 0 2.5rem;
+}
+.toolkit-grid > p { display: contents; }
+
+.toolkit-card {
+  display: block;
+  min-height: 165px;
+  padding: 1.15rem;
+  border: 1px solid #d1c4ee;
+  border-top: 4px solid #7c3aed;
+  border-radius: .8rem;
+  background: white;
+  color: var(--rebm-ink);
+  text-decoration: none;
+  box-shadow: 0 5px 20px rgba(76,29,149,.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.toolkit-card:hover {
+  color: var(--rebm-ink);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(76,29,149,.15);
+}
+.toolkit-card.featured {
+  border-top-color: var(--rebm-gold);
+  background: linear-gradient(145deg, #fff, #f5f1ff);
+}
+.toolkit-card span {
+  display: block;
+  color: #6d28d9;
+  font-size: .76rem;
+  font-weight: 850;
+  letter-spacing: .08em;
+}
+.toolkit-card strong {
+  display: block;
+  margin: .5rem 0;
+  color: var(--rebm-green);
+  font-family: $headings-font-family;
+  font-size: 1.28rem;
+  line-height: 1.2;
+}
+.toolkit-card small { display: block; color: #52625a; font-size: .92rem; line-height: 1.5; }
+
+.code-flow {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(115px, 1fr));
+  gap: .65rem;
+  margin: 1.2rem 0 2rem;
+  overflow-x: auto;
+  padding-bottom: .4rem;
+}
+.code-flow > div {
+  padding: .9rem;
+  border-radius: .7rem;
+  border-top: 3px solid #7c3aed;
+  background: white;
+}
+.code-flow span {
+  display: inline-grid;
+  place-items: center;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 50%;
+  background: #4c1d95;
+  color: white;
+  font-weight: 800;
+  font-size: .75rem;
+}
+.code-flow strong, .code-flow small { display: block; }
+.code-flow strong { margin: .45rem 0 .2rem; color: var(--rebm-green); }
+.code-flow small { color: #52625a; line-height: 1.35; }
+
 .fourfold {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -348,8 +451,30 @@ h2 { border-bottom: 1px solid var(--rebm-line); padding-bottom: .35rem; }
   .hero h1 { font-size: 2.65rem; }
   .semester-heading { display: block; }
   .playbook-route { grid-template-columns: 1fr; }
+  .r-toolkit-banner { grid-template-columns: 1fr; padding: 1.25rem; }
+  .r-toolkit-banner .hero-actions { display: grid; }
+  .r-toolkit-banner .hero-actions a { text-align: center; }
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 980px) {
   .playbook-route { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media print {
+  .navbar, #quarto-sidebar, #quarto-margin-sidebar, .nav-footer,
+  .toc-actions, .page-navigation, .hero-actions { display: none !important; }
+  body { background: white; color: black; font-size: 10.5pt; }
+  #quarto-content { display: block; }
+  main.content { max-width: none; margin: 0; }
+  h1, h2, h3 { color: black; break-after: avoid; }
+  pre, table, .callout, .playbook-summary, .interpretation-template,
+  .self-check { break-inside: avoid; }
+  a { color: black; text-decoration: none; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 8pt; }
 }

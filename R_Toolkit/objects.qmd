@@ -1,0 +1,122 @@
+---
+title: "Objects, models and results"
+subtitle: "Store analytical meaning instead of copying disconnected numbers."
+---
+
+## Assignment creates an object
+
+```r
+mean_age <- mean(patients$age_years, na.rm = TRUE)
+```
+
+R evaluates the right-hand side and stores the result under the name on the left. Typing the object name retrieves it.
+
+Use names that describe purpose and stage:
+
+- `raw_data`
+- `eligible_patients`
+- `analysis_data`
+- `unadjusted_model`
+- `adjusted_model`
+- `test_predictions`
+- `decision_record`
+
+Avoid `x`, `temp`, `final2`, or `answer` for important work.
+
+## Objects have classes and structures
+
+```r
+class(analysis_data)
+class(adjusted_model)
+names(adjusted_model)
+str(adjusted_model)
+```
+
+The class tells R which methods apply. A model object is more than a printed table: it retains the formula, coefficients, fitted values, residuals and other components.
+
+## Retrieve model information
+
+```r
+summary(adjusted_model)
+coef(adjusted_model)
+confint(adjusted_model)
+fitted(adjusted_model)
+residuals(adjusted_model)
+```
+
+Helper functions are usually safer than depending on the internal layout of a complex object.
+
+The `$` operator retrieves a named component:
+
+```r
+correlation_result$estimate
+correlation_result$conf.int
+correlation_result$p.value
+```
+
+## Tidy model output
+
+```r
+model_table <- broom::tidy(
+  adjusted_model,
+  conf.int = TRUE
+)
+```
+
+`tidy()` returns one row per model term. `glance()` returns model-level summaries. `augment()` adds observation-level fitted values, residuals and diagnostics.
+
+```r
+model_summary <- broom::glance(adjusted_model)
+diagnostic_data <- broom::augment(adjusted_model)
+```
+
+## Generate reporting text from stored results
+
+```r
+treatment_result <- model_table |>
+  filter(term == "treatmentIntervention")
+
+caption <- paste0(
+  "Adjusted mean difference: ",
+  round(treatment_result$estimate, 1),
+  " (95% CI ",
+  round(treatment_result$conf.low, 1),
+  " to ",
+  round(treatment_result$conf.high, 1),
+  ")."
+)
+```
+
+The text updates when the analysis changes, reducing transcription errors.
+
+## Preserve objects
+
+```r
+saveRDS(adjusted_model, "outputs/adjusted-model.rds")
+reopened_model <- readRDS("outputs/adjusted-model.rds")
+
+write_csv(model_table, "outputs/adjusted-model-results.csv")
+```
+
+`.rds` preserves R-specific structures; `.csv` is easy to inspect and share appropriately. Neither replaces code, metadata, documentation or secure storage.
+
+## A results register
+
+```r
+results_register <- tibble(
+  analysis = "Primary adjusted model",
+  population = "Eligible adults with complete outcome data",
+  outcome = "Symptom score at 12 weeks",
+  exposure = "Intervention versus usual care",
+  model_object = "adjusted_model",
+  table_object = "model_table",
+  status = "Checked"
+)
+```
+
+This makes it clear which object supports each reported result.
+
+::: {.callout-warning}
+Deleting the console output does not delete an object, and clearing the Environment does not change the source script. The reproducible source of truth should be the code that recreates the object.
+:::
+

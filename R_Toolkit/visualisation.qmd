@@ -1,0 +1,135 @@
+---
+title: "Visualisation cookbook"
+subtitle: "Choose a figure that reveals the clinical pattern without distorting it."
+---
+
+## The grammar of a plot
+
+```r
+data |>
+  ggplot(aes(x = variable_x, y = variable_y)) +
+  geom_*() +
+  scales_or_facets +
+  labs(...) +
+  theme_minimal()
+```
+
+- **Data:** which observations are plotted?
+- **Aesthetics:** which variables control position, colour, size, or shape?
+- **Geometry:** points, bars, boxes, lines, or distributions?
+- **Scale:** how are values displayed?
+- **Facet:** should the same plot be repeated for subgroups?
+- **Labels:** could a reader understand it without the code?
+
+## Categorical counts
+
+```r
+patients |>
+  ggplot(aes(x = treatment)) +
+  geom_bar() +
+  labs(x = NULL, y = "Patients") +
+  theme_minimal()
+```
+
+Use a bar chart for counts or proportions of categories. Begin the count axis at zero and order categories deliberately.
+
+## One continuous distribution
+
+```r
+patients |>
+  ggplot(aes(x = length_of_stay_days)) +
+  geom_histogram(binwidth = 2, boundary = 0) +
+  labs(x = "Length of stay (days)", y = "Patients") +
+  theme_minimal()
+```
+
+Try more than one defensible bin width. A histogram can reveal skewness, gaps, heaping, truncation, and multiple modes.
+
+## A continuous outcome by group
+
+```r
+patients |>
+  ggplot(aes(x = treatment, y = outcome_score)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.12, alpha = 0.25) +
+  labs(x = NULL, y = "Outcome score") +
+  theme_minimal()
+```
+
+Boxplots show medians, quartiles and possible extremes. Adding lightly jittered points can reveal sample size and clustering. For very large datasets, points may overwhelm the figure.
+
+## Two continuous variables
+
+```r
+patients |>
+  ggplot(aes(x = age_years, y = systolic_bp)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(x = "Age (years)", y = "Systolic blood pressure (mmHg)") +
+  theme_minimal()
+```
+
+A fitted line summarises association under a model. It does not establish causation. Inspect non-linearity, changing spread, influential observations, and subgroup structure.
+
+## Compare subgroups
+
+```r
+patients |>
+  ggplot(aes(x = age_years, y = systolic_bp)) +
+  geom_point(alpha = 0.5) +
+  facet_wrap(~ treatment) +
+  theme_minimal()
+```
+
+Facets repeat the same scales and geometry across groups, making differences easier to inspect. Decide whether fixed or free scales serve the comparison; free scales can conceal absolute differences.
+
+## Predicted versus observed risk
+
+```r
+calibration_data |>
+  ggplot(aes(x = mean_prediction, y = observed_risk)) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed") +
+  geom_point() +
+  geom_line() +
+  coord_equal(xlim = c(0, 1), ylim = c(0, 1)) +
+  labs(x = "Mean predicted risk", y = "Observed risk") +
+  theme_minimal()
+```
+
+The diagonal represents perfect agreement. Include uncertainty and sufficient observations in each risk group where possible.
+
+## Labels and accessibility
+
+- Include units and time horizons.
+- Use descriptive rather than internal variable names.
+- Do not rely on colour alone; combine colour with shape, line type, facets, or direct labels.
+- Use a colour-blind-safe palette and adequate contrast.
+- Avoid 3D effects, decorative gradients and truncated axes that exaggerate differences.
+- Explain transformations such as logarithmic scales.
+- Put the principal comparison in the title or caption, not only the legend.
+
+## Save a figure
+
+```r
+outcome_plot <- patients |>
+  ggplot(aes(treatment, outcome_score)) +
+  geom_boxplot() +
+  theme_minimal()
+
+ggsave(
+  "figures/outcome-by-treatment.png",
+  plot = outcome_plot,
+  width = 7,
+  height = 5,
+  dpi = 300
+)
+```
+
+Store the plot as an object and export it from code. This keeps the published figure connected to the analysis.
+
+::: {.callout-warning}
+## A beautiful figure can still be wrong
+
+Before reporting it, verify the analysed rows, missing-data handling, variable coding, axis units, denominators, and whether every layer uses the intended dataset.
+:::
+

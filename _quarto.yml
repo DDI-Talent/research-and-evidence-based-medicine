@@ -5,6 +5,18 @@ project:
     - index.qmd
     - course-guide.qmd
     - resources.qmd
+    - R_Toolkit/index.qmd
+    - R_Toolkit/cheat-sheet.qmd
+    - R_Toolkit/reading-code.qmd
+    - R_Toolkit/tidyverse.qmd
+    - R_Toolkit/missing-data.qmd
+    - R_Toolkit/visualisation.qmd
+    - R_Toolkit/analyses.qmd
+    - R_Toolkit/objects.qmd
+    - R_Toolkit/debugging.qmd
+    - R_Toolkit/reproducibility.qmd
+    - R_Toolkit/reporting.qmd
+    - R_Toolkit/sandbox.qmd
     - S1_T01_DescribingData/index.qmd
     - S1_T02_SignalVsNoise/index.qmd
     - S1_T03_ComparingGroups/index.qmd
@@ -45,6 +57,8 @@ website:
         text: Topics
       - href: resources.qmd
         text: Resources
+      - href: R_Toolkit/index.qmd
+        text: R Toolkit
     right:
       - icon: github
         href: "https://github.com/DDI-Talent/research-and-evidence-based-medicine"
@@ -94,6 +108,32 @@ website:
             text: "15 · What do the results mean?"
           - href: S2_T16_UsingEvidence/index.qmd
             text: "16 · How do I use evidence?"
+      - section: "R Toolkit · Cross-semester reference"
+        contents:
+          - href: R_Toolkit/index.qmd
+            text: "R Toolkit home"
+          - href: R_Toolkit/cheat-sheet.qmd
+            text: "Complete cheat sheet"
+          - href: R_Toolkit/reading-code.qmd
+            text: "Reading R code"
+          - href: R_Toolkit/tidyverse.qmd
+            text: "Tidyverse verbs"
+          - href: R_Toolkit/missing-data.qmd
+            text: "Missing data"
+          - href: R_Toolkit/visualisation.qmd
+            text: "Visualisation cookbook"
+          - href: R_Toolkit/analyses.qmd
+            text: "Analysis cookbook"
+          - href: R_Toolkit/objects.qmd
+            text: "Objects and models"
+          - href: R_Toolkit/debugging.qmd
+            text: "Debugging R"
+          - href: R_Toolkit/reproducibility.qmd
+            text: "Reproducibility"
+          - href: R_Toolkit/reporting.qmd
+            text: "Writing results"
+          - href: R_Toolkit/sandbox.qmd
+            text: "Practice sandbox"
       - href: resources.qmd
         text: Resources
   page-footer:

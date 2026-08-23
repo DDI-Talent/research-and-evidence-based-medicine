@@ -58,6 +58,25 @@ Use it to move from a clinical uncertainty to a defensible conclusion—and to k
 Start at Topic 01 if the language is new. If you are revising a clinical paper or your laboratory book, enter at the relevant topic and use its **at-a-glance table**, **worked reasoning**, **common traps**, and **reporting template**.
 :::
 
+## R Toolkit · use it in every semester
+
+::: {.r-toolkit-banner}
+<div>
+<span class="eyebrow">CROSS-SEMESTER REFERENCE</span>
+<h3>From first pipe to reproducible clinical analysis</h3>
+<p>Use the standalone R Toolkit whenever you need to decode code, prepare data, choose a visualisation or analysis, debug an error, inspect a model, report a result, or check reproducibility.</p>
+<div class="hero-actions">
+  <a href="R_Toolkit/index.html">Open the R Toolkit</a>
+  <a class="secondary" href="R_Toolkit/cheat-sheet.html">Complete cheat sheet</a>
+  <a class="secondary" href="R_Toolkit/sandbox.html">Practice sandbox</a>
+</div>
+</div>
+<pre><code>analysis_data &lt;- patients |&gt;
+  select(...) |&gt;
+  filter(...) |&gt;
+  mutate(...)</code></pre>
+:::
+
 ::: {.semester-heading}
 ## Semester 2
 <span>How do we trust—or distrust—evidence?</span>

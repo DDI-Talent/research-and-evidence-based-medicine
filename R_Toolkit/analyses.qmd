@@ -1,0 +1,124 @@
+---
+title: "Statistical analysis cookbook"
+subtitle: "Map the clinical question and study design to a defensible R workflow."
+---
+
+::: {.callout-important}
+This is a starting map, not an automatic test selector. Independence, pairing, clustering, outcome distributions, causal aims, missingness and the estimand may require a different method.
+:::
+
+## Choose a starting method
+
+| Clinical question | Outcome/design | Function |
+|---|---|---|
+| Does one mean differ from a reference? | Continuous, one sample | `t.test(x, mu = reference)` |
+| Do two independent groups differ? | Continuous | `t.test(outcome ~ group, data = data)` |
+| Did the same patients change? | Paired continuous measurements | `t.test(after, before, paired = TRUE)` |
+| Do more than two groups differ? | Continuous | `aov(outcome ~ group, data = data)` |
+| Are two categorical variables associated? | Counts | `chisq.test(table(x, y))` |
+| Are two continuous variables associated? | Continuous pair | `cor.test(x, y)` |
+| How does a continuous outcome vary? | Continuous outcome | `lm()` |
+| How does event probability vary? | Binary outcome | `glm(..., family = binomial())` |
+
+## Two independent groups
+
+```r
+two_group_result <- t.test(
+  outcome_score ~ treatment,
+  data = analysis_data
+)
+
+tidy(two_group_result, conf.int = TRUE)
+```
+
+Report group summaries, the estimated difference, confidence interval, p-value, assumptions and clinical importance. Welch’s t-test is the default in R and does not assume equal group variances.
+
+## Paired measurements
+
+```r
+paired_result <- t.test(
+  analysis_data$followup_score,
+  analysis_data$baseline_score,
+  paired = TRUE
+)
+```
+
+Pairing requires correct row alignment: each baseline value must correspond to the same person’s follow-up value. The analysis concerns within-person differences.
+
+## More than two groups
+
+```r
+anova_model <- aov(outcome_score ~ treatment_group, data = analysis_data)
+summary(anova_model)
+TukeyHSD(anova_model)
+```
+
+The global ANOVA asks whether all population means are equal. Post-hoc or planned comparisons estimate which contrasts differ while accounting for multiplicity.
+
+## Categorical association
+
+```r
+outcome_table <- table(
+  analysis_data$treatment,
+  analysis_data$outcome
+)
+
+chi_result <- chisq.test(outcome_table)
+chi_result
+chi_result$expected
+```
+
+Inspect observed and expected counts and ensure observations are independent. Sparse expected cells may require an exact or alternative method.
+
+## Correlation
+
+```r
+correlation_result <- cor.test(
+  analysis_data$exposure,
+  analysis_data$outcome,
+  method = "pearson"
+)
+```
+
+Visualise the relationship first. Pearson estimates linear association; Spearman estimates monotonic ranked association. Neither establishes causation.
+
+## Linear regression
+
+```r
+linear_model <- lm(
+  outcome_score ~ treatment + age_years + baseline_score,
+  data = analysis_data
+)
+
+tidy(linear_model, conf.int = TRUE)
+plot(linear_model)
+```
+
+Interpret each coefficient using its units and reference group. Diagnostics concern linearity, residual patterns, influence, independence and the fitted model—not a ritual pass/fail checklist.
+
+## Logistic regression
+
+```r
+logistic_model <- glm(
+  adverse_event ~ treatment + age_years + baseline_severity,
+  data = analysis_data,
+  family = binomial()
+)
+
+tidy(logistic_model, conf.int = TRUE, exponentiate = TRUE)
+```
+
+With `exponentiate = TRUE`, coefficients are presented as odds ratios. Confirm which event is coded as 1 and retain “odds” in the interpretation.
+
+## A complete analysis sequence
+
+1. State the clinical question and estimand.
+2. Prepare and count the analysis population.
+3. Describe outcome and groups visually and numerically.
+4. Run the prespecified method and store its result.
+5. Examine assumptions and influential observations.
+6. Extract the effect estimate and uncertainty.
+7. Perform justified sensitivity analyses.
+8. Translate the result into clinical language.
+9. State limitations and what the analysis cannot show.
+

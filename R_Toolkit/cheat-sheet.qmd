@@ -1,0 +1,182 @@
+---
+title: "The complete REBM R cheat sheet"
+subtitle: "The core commands used across the Semester 1 code-alongs."
+---
+
+::: {.playbook-summary}
+### How to use this page
+
+Find the task, copy the structure—not necessarily the exact variable names—and read the code aloud before running it. Replace placeholders with fields from the data dictionary and inspect the result.
+:::
+
+## Start an analysis
+
+| Task | Code | Read it as |
+|---|---|---|
+| Load core packages | `library(tidyverse)` | Make tidyverse functions available |
+| Load model helpers | `library(broom)` | Make tidy model summaries available |
+| Import a CSV | `patients <- read_csv("data/patients.csv")` | Read this file and store it as `patients` |
+| Inspect structure | `glimpse(patients)` | Show variables, types and example values |
+| View first rows | `head(patients)` | Show the first six observations |
+| Count observations | `nrow(patients)` | Return the number of rows |
+| List variable names | `names(patients)` | Return the column names |
+
+```r
+#| eval: false
+
+library(tidyverse)
+library(broom)
+
+patients <- read_csv("data/patients.csv", show_col_types = FALSE)
+glimpse(patients)
+```
+
+## Prepare data
+
+| Question | Function | Example |
+|---|---|---|
+| Which variables? | `select()` | `select(patient_id, age, treatment, outcome)` |
+| Which observations? | `filter()` | `filter(age >= 18, !is.na(outcome))` |
+| Which new variables? | `mutate()` | `mutate(age_decade = age / 10)` |
+| Which order? | `arrange()` | `arrange(desc(outcome))` |
+| Which names? | `rename()` | `rename(age_years = age)` |
+| Which unique records? | `distinct()` | `distinct(patient_id, .keep_all = TRUE)` |
+
+```r
+#| eval: false
+
+analysis_data <- patients |>
+  select(patient_id, age, treatment, outcome) |>
+  filter(age >= 18, !is.na(outcome)) |>
+  mutate(
+    age_decade = age / 10,
+    older_adult = age >= 65
+  )
+```
+
+## Summarise data
+
+| Task | Example |
+|---|---|
+| Number of observations | `summarise(patients = n())` |
+| Mean | `mean(outcome, na.rm = TRUE)` |
+| Median | `median(outcome, na.rm = TRUE)` |
+| Standard deviation | `sd(outcome, na.rm = TRUE)` |
+| Interquartile range | `IQR(outcome, na.rm = TRUE)` |
+| Minimum and maximum | `range(outcome, na.rm = TRUE)` |
+| Count categories | `count(treatment)` |
+| Summarise within groups | `group_by(treatment) |> summarise(...)` |
+
+```r
+#| eval: false
+
+analysis_data |>
+  group_by(treatment) |>
+  summarise(
+    patients = n(),
+    mean_outcome = mean(outcome, na.rm = TRUE),
+    sd_outcome = sd(outcome, na.rm = TRUE),
+    median_outcome = median(outcome, na.rm = TRUE),
+    iqr_outcome = IQR(outcome, na.rm = TRUE),
+    .groups = "drop"
+  )
+```
+
+## Handle missing values
+
+| Task | Code |
+|---|---|
+| Is a value missing? | `is.na(outcome)` |
+| Is a value recorded? | `!is.na(outcome)` |
+| Count missing values | `sum(is.na(outcome))` |
+| Keep recorded outcomes | `filter(!is.na(outcome))` |
+| Ignore missing values in a summary | `mean(outcome, na.rm = TRUE)` |
+
+Never use `outcome == NA`; it cannot answer the question. Missingness should be counted and justified, not made invisible.
+
+## Create figures
+
+```r
+#| eval: false
+
+# Histogram
+analysis_data |>
+  ggplot(aes(x = outcome)) +
+  geom_histogram(bins = 30) +
+  labs(x = "Outcome (units)", y = "Patients") +
+  theme_minimal()
+
+# Group comparison
+analysis_data |>
+  ggplot(aes(x = treatment, y = outcome)) +
+  geom_boxplot() +
+  labs(x = NULL, y = "Outcome (units)") +
+  theme_minimal()
+
+# Relationship
+analysis_data |>
+  ggplot(aes(x = exposure, y = outcome)) +
+  geom_point(alpha = 0.6) +
+  geom_smooth(method = "lm", se = TRUE) +
+  theme_minimal()
+```
+
+## Run common analyses
+
+| Clinical question | Function structure |
+|---|---|
+| Compare two independent means | `t.test(outcome ~ group, data = analysis_data)` |
+| Compare paired measurements | `t.test(after, before, paired = TRUE)` |
+| Compare more than two means | `aov(outcome ~ group, data = analysis_data)` |
+| Compare categorical variables | `chisq.test(table(exposure, outcome))` |
+| Estimate correlation | `cor.test(x, y, method = "pearson")` |
+| Fit linear regression | `lm(outcome ~ exposure + age, data = analysis_data)` |
+| Fit logistic regression | `glm(event ~ exposure + age, data = analysis_data, family = binomial())` |
+
+## Work with results
+
+```r
+#| eval: false
+
+model <- lm(outcome ~ treatment + age, data = analysis_data)
+
+summary(model)
+coef(model)
+confint(model)
+fitted(model)
+residuals(model)
+
+model_table <- tidy(model, conf.int = TRUE)
+```
+
+## Predict and evaluate
+
+```r
+#| eval: false
+
+test_predictions <- test_data |>
+  mutate(
+    predicted_risk = predict(model, newdata = test_data, type = "response"),
+    predicted_positive = predicted_risk >= 0.20
+  )
+
+test_predictions |>
+  count(predicted_positive, observed_outcome)
+```
+
+## Export and preserve
+
+| Task | Code |
+|---|---|
+| Export a table | `write_csv(results, "results.csv")` |
+| Save an R object | `saveRDS(model, "model.rds")` |
+| Reopen an R object | `readRDS("model.rds")` |
+| Record software versions | `sessionInfo()` |
+| Make randomness reproducible | `set.seed(2026)` immediately before the random step |
+
+::: {.callout-warning}
+## Before trusting the output
+
+Check the number of rows, variable types, reference groups, outcome coding, missing observations, units, assumptions, and whether the result answers the original clinical question.
+:::
+

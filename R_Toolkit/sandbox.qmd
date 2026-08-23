@@ -1,0 +1,178 @@
+---
+title: "R practice sandbox"
+subtitle: "Predict, repair and interpret short examples before revealing the answers."
+---
+
+## 1. Read the pipeline
+
+```r
+analysis_data <- patients |>
+  select(age, treatment, outcome) |>
+  filter(age >= 18, !is.na(outcome))
+```
+
+What changes: rows, columns, or both?
+
+<details><summary>Show the answer</summary>
+
+Both. `select()` retains three columns, and `filter()` retains only adults with recorded outcomes.
+
+</details>
+
+## 2. Repair the missing-value filter
+
+```r
+complete_data <- patients |>
+  filter(outcome != NA)
+```
+
+<details><summary>Show the answer</summary>
+
+```r
+complete_data <- patients |>
+  filter(!is.na(outcome))
+```
+
+`NA` represents an unknown value and must be checked with `is.na()`.
+
+</details>
+
+## 3. Predict the summary shape
+
+```r
+patients |>
+  group_by(treatment) |>
+  summarise(
+    patients = n(),
+    mean_age = mean(age, na.rm = TRUE)
+  )
+```
+
+How many rows should the result contain?
+
+<details><summary>Show the answer</summary>
+
+One row per observed treatment category. `group_by()` changes the level at which `summarise()` calculates.
+
+</details>
+
+## 4. Spot the selection error
+
+```r
+adults <- patients |>
+  select(age >= 18)
+```
+
+<details><summary>Show the answer</summary>
+
+`select()` chooses columns, not observations. Use:
+
+```r
+adults <- patients |>
+  filter(age >= 18)
+```
+
+</details>
+
+## 5. Choose the plot
+
+You want to compare the distribution of recovery time across three treatment groups. Which is the best starting plot?
+
+A. Bar chart of recovery time  
+B. Boxplot or violin plot by treatment group  
+C. Pie chart  
+D. Scatterplot with patient ID on the x-axis
+
+<details><summary>Show the answer</summary>
+
+**B.** Recovery time is continuous and treatment is categorical. A boxplot provides compact group summaries; a violin plot or points can add distributional detail.
+
+</details>
+
+## 6. Interpret a coefficient
+
+```r
+model <- lm(systolic_bp ~ age_years, data = patients)
+```
+
+The age coefficient is 0.55. What does it mean?
+
+<details><summary>Show the answer</summary>
+
+In the fitted sample, each additional year of age is associated with an estimated 0.55 mmHg higher mean systolic blood pressure, assuming a linear relationship. It does not show that ageing alone caused the difference.
+
+</details>
+
+## 7. Interpret an odds ratio
+
+An adjusted logistic model reports an odds ratio of 0.70 for intervention versus usual care.
+
+<details><summary>Show the answer</summary>
+
+Holding the included covariates constant within the model, the estimated odds of the event in the intervention group were 0.70 times those with usual care—a 30% lower odds. It is not automatically a 30% lower risk.
+
+</details>
+
+## 8. Find the reproducibility problem
+
+```r
+training_rows <- sample(1:nrow(data), 800)
+```
+
+<details><summary>Show the answer</summary>
+
+The random split will change between runs unless a seed is set immediately beforehand:
+
+```r
+set.seed(2026)
+training_rows <- sample(seq_len(nrow(data)), 800)
+```
+
+The split proportion and rationale should also be recorded.
+
+</details>
+
+## 9. Improve the conclusion
+
+> “There was no association because p = 0.08.”
+
+<details><summary>Show the answer</summary>
+
+Report the effect and interval. For example: “The estimated association was [value] with a 95% CI from [lower] to [upper]. The interval includes no association and [any important effect], so the data are inconclusive rather than evidence of no association.”
+
+</details>
+
+## 10. Debug the model
+
+```r
+model <- glm(
+  outcome ~ age + treatment,
+  data = patients
+  family = binomial()
+)
+```
+
+<details><summary>Show the answer</summary>
+
+A comma is missing after `data = patients`:
+
+```r
+model <- glm(
+  outcome ~ age + treatment,
+  data = patients,
+  family = binomial()
+)
+```
+
+</details>
+
+## Build your own challenge
+
+Take one code-along pipeline and:
+
+1. explain every line in plain English;
+2. predict the dimensions of each intermediate object;
+3. deliberately introduce one syntax error and one reasoning error;
+4. diagnose and repair both;
+5. write a complete interpretation of the final output.
+

@@ -1,0 +1,158 @@
+---
+title: "Debugging R"
+subtitle: "Treat an error message as evidence about where the analysis stopped."
+---
+
+## The debugging sequence
+
+1. Read the complete error, including the function named.
+2. Identify the first line that failed—not the last line you can see.
+3. Check object and variable names exactly, including capitalisation.
+4. Check brackets, commas, quotation marks and operators.
+5. Inspect the object entering the failed step with `glimpse()` or `class()`.
+6. Run a long pipeline one step at a time.
+7. Reduce the problem to the smallest line that still fails.
+8. After fixing it, rerun from the beginning to confirm reproducibility.
+
+## Object not found
+
+```text
+Error: object 'analysis_data' not found
+```
+
+Likely causes:
+
+- the line creating the object was not run;
+- the name is misspelled or capitalised differently;
+- an earlier step failed;
+- the object was created in another session.
+
+Check `ls()`, run the creation code, and avoid “fixing” this by manually creating a substitute object in the console.
+
+## Could not find function
+
+```text
+could not find function "filter"
+```
+
+The required package may not be loaded. Run `library(tidyverse)` near the beginning of the analysis. Do not repeatedly install a package every time the document runs.
+
+## Variable not found
+
+```text
+object 'outcome_score' not found
+```
+
+Use `names(data)` or `glimpse(data)` to confirm the field name and whether the correct dataset was supplied to the function.
+
+## Unexpected symbol or incomplete expression
+
+Common causes are:
+
+- missing commas;
+- unpaired parentheses;
+- unpaired quotation marks;
+- using `=>` instead of `>=`;
+- placing ordinary text outside quotation marks.
+
+Format the code over several lines so the structure becomes visible.
+
+## Missing values and `NA`
+
+```text
+missing value where TRUE/FALSE needed
+```
+
+A logical condition may evaluate to `NA`. Use `is.na()` deliberately and decide what missingness should mean for the operation.
+
+```r
+filter(!is.na(outcome), outcome > 10)
+```
+
+## Incorrect data type
+
+```r
+mean(patients$treatment)
+```
+
+A function may receive text or a factor when it expects numbers. Check `class()`, `unique()` and `summary()` before converting. Never convert categories to numbers merely to silence an error.
+
+## File not found
+
+```text
+cannot open file 'data/patients.csv'
+```
+
+Check:
+
+- spelling and capitalisation;
+- the working project and relative path;
+- whether the file exists in the repository;
+- whether the document is being rendered from a different folder.
+
+Avoid absolute paths tied to one person’s computer.
+
+## A pipeline gives the wrong result
+
+No error does not mean no problem. Inspect intermediate steps:
+
+```r
+step_1 <- raw_data |>
+  select(age, treatment, outcome)
+
+glimpse(step_1)
+
+step_2 <- step_1 |>
+  filter(age >= 18)
+
+count(step_2, treatment)
+```
+
+Compare row counts and plausible values after every population-changing step.
+
+## Model fitting problems
+
+Warnings may indicate:
+
+- perfect or quasi-complete separation;
+- too few outcome events for the model complexity;
+- extreme or influential observations;
+- collinear predictors;
+- non-convergence;
+- missing values removing most observations.
+
+Do not simply suppress warnings. Inspect the data, cross-tabulate outcome and predictors, simplify only with a scientific rationale, and seek appropriate statistical support.
+
+## Asking for help well
+
+Include:
+
+1. what you expected;
+2. what happened;
+3. the complete error or warning;
+4. the smallest reproducible code example;
+5. `glimpse()` of the relevant non-identifiable data structure;
+6. what you have already checked.
+
+Never share identifiable clinical data in screenshots, copied console output or support forums.
+
+::: {.self-check}
+### Spot the likely problem
+
+```r
+patients |>
+  filter(treatment = "Intervention")
+```
+
+<details><summary>Show the answer</summary>
+
+Inside a logical test, equality uses `==`, not assignment with `=`:
+
+```r
+patients |>
+  filter(treatment == "Intervention")
+```
+
+</details>
+:::
+

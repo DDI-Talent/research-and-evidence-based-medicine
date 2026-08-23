@@ -1,0 +1,104 @@
+---
+title: "Missing data in R"
+subtitle: "Make missingness visible before deciding how to handle it."
+---
+
+## What `NA` means
+
+`NA` represents a missing or unknown value. It is not zero, an empty string, or the text “NA”. Because its value is unknown, ordinary comparisons involving `NA` usually return `NA` rather than `TRUE` or `FALSE`.
+
+```r
+# Incorrect
+filter(outcome != NA)
+
+# Correct
+filter(!is.na(outcome))
+```
+
+## Count missingness
+
+```r
+patients |>
+  summarise(
+    total = n(),
+    missing_outcome = sum(is.na(outcome)),
+    recorded_outcome = sum(!is.na(outcome)),
+    proportion_missing = mean(is.na(outcome))
+  )
+```
+
+To examine several variables:
+
+```r
+patients |>
+  summarise(
+    across(
+      c(age, treatment, baseline_score, outcome),
+      ~ sum(is.na(.x)),
+      .names = "missing_{.col}"
+    )
+  )
+```
+
+## Summaries with missing values
+
+```r
+mean(patients$outcome, na.rm = TRUE)
+```
+
+`na.rm = TRUE` removes missing values only for that calculation. It does not solve the missing-data problem or explain why observations were absent.
+
+## Create the analysis sample deliberately
+
+```r
+analysis_data <- patients |>
+  filter(
+    !is.na(treatment),
+    !is.na(outcome)
+  )
+```
+
+Record the starting sample, number excluded for each reason, and final analysis sample. If several model variables are required, complete-case analysis can exclude anyone missing any one of them.
+
+## Compare included and excluded observations
+
+```r
+missingness_check <- patients |>
+  mutate(included = !is.na(treatment) & !is.na(outcome)) |>
+  group_by(included) |>
+  summarise(
+    patients = n(),
+    mean_age = mean(age, na.rm = TRUE),
+    mean_baseline = mean(baseline_score, na.rm = TRUE),
+    .groups = "drop"
+  )
+```
+
+Differences do not prove bias, but they help identify whether complete cases represent a selective subgroup.
+
+## Three broad missingness mechanisms
+
+- **Missing completely at random:** missingness is unrelated to observed or unobserved values.
+- **Missing at random:** missingness can be explained by observed information, conditional on that information.
+- **Missing not at random:** missingness still depends on the unseen value after accounting for observed information.
+
+These are assumptions about the data-generating process, not labels that R can establish automatically.
+
+## Options
+
+Depending on the question and missingness:
+
+- complete-case analysis;
+- an explicit “missing” category for a genuinely categorical process, used cautiously;
+- multiple imputation;
+- inverse-probability methods;
+- sensitivity analyses under alternative assumptions.
+
+Simple mean imputation generally understates uncertainty and distorts relationships. Advanced handling should follow the study protocol and appropriate statistical guidance.
+
+::: {.interpretation-template}
+### Reporting missing data
+
+“Of **[starting N]** eligible observations, **[N (%)]** lacked **[variable]** and **[N (%)]** lacked **[variable]**. The primary analysis included **[final N]** complete observations. Included and excluded participants differed in **[features]**. The analysis assumes **[assumption]**, and **[sensitivity analysis]** was used to examine its effect.”
+:::
+

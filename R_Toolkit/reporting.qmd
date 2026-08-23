@@ -1,0 +1,81 @@
+---
+title: "Writing results from R"
+subtitle: "Translate output into clinical meaning without overstating what the analysis can show."
+---
+
+## The interpretation sequence
+
+1. Name the analysed population.
+2. State the outcome, exposure or comparison, and time horizon.
+3. Report the estimate with units or scale.
+4. Report uncertainty.
+5. Describe statistical evidence without binary labels.
+6. Interpret clinical magnitude.
+7. State assumptions, bias and applicability.
+
+## A two-group comparison
+
+Raw output might contain a test statistic, degrees of freedom, p-value, group means and confidence interval. The clinical sentence should prioritise the comparison:
+
+> “Among adults in the trial, mean recovery time was estimated to be 2.1 days shorter with treatment than usual care (95% CI 0.2 to 4.0 days; p = 0.03). The interval is compatible with effects ranging from a small to a clinically important reduction.”
+
+Avoid:
+
+> “The treatment worked because the result was significant.”
+
+## Correlation
+
+> “Age and systolic blood pressure showed a moderate positive linear association in this sample (r = 0.42, 95% CI 0.30 to 0.53). The observational relationship does not establish that increasing age itself caused the difference, and the scatterplot showed substantial variation between people of similar age.”
+
+## Linear regression
+
+> “After adjustment for age and baseline severity, the intervention group had a mean outcome score 3.4 points lower than usual care (95% CI 1.2 to 5.6 points lower). This conditional comparison assumes that the included covariates were measured and represented appropriately; unmeasured confounding may remain.”
+
+## Logistic regression
+
+> “After adjustment, the estimated odds of readmission were 0.72 times those with usual care (95% CI 0.51 to 1.01). The interval includes both a potentially meaningful reduction and little difference. This is an odds ratio, not a direct relative-risk estimate.”
+
+## Prediction performance
+
+> “In the external validation sample, discrimination was moderate (AUC 0.74) and predicted risks were systematically higher than observed risks. At the prespecified 20% threshold, sensitivity was 81% and specificity 59%. The resulting false-positive workload should be considered before clinical use.”
+
+## A clinical decision
+
+> “The patient’s predicted 30-day risk was 22%, with plausible values spanning the 20% follow-up threshold. The choice was therefore sensitive to uncertainty. After discussing lighter and intensive follow-up, likely burdens and the patient’s priority to avoid readmission, telephone follow-up was agreed.”
+
+## What usually belongs in a results table
+
+- population and analysis sample size;
+- reference groups and units;
+- effect estimates or performance measures;
+- confidence intervals;
+- p-values where relevant, not as the sole result;
+- model or analysis label;
+- footnotes defining coding, adjustment and missingness.
+
+## Common reporting failures
+
+- “There was no difference” when the estimate is imprecise.
+- “The null hypothesis was accepted.”
+- “There was a 95% chance the true value lay in the interval.”
+- “The odds were reduced by 40%, therefore risk fell by 40%.”
+- “The model was 90% accurate” without outcome prevalence or other performance measures.
+- “After controlling for everything…” when only measured model covariates were included.
+- Copying a software table without defining its terms or clinical meaning.
+
+::: {.interpretation-template}
+### General reporting template
+
+“In **[population and setting]**, **[comparison/exposure]** was associated with **[estimate and units/scale]** in **[outcome over time]** (95% CI **[lower to upper]**; p = **[if relevant]**). The magnitude is **[clinical interpretation]**. This result assumes **[key assumptions]** and may be affected by **[most important bias or limitation]**. It is most applicable to **[population]** and could inform **[decision]**.”
+:::
+
+## Final editing questions
+
+1. Could a clinician understand the comparison without seeing the code?
+2. Are estimate and uncertainty together?
+3. Is the outcome scale or unit explicit?
+4. Have odds, risks and probabilities been distinguished?
+5. Does the causal language match the design?
+6. Is the most important limitation specific rather than generic?
+7. Does the conclusion match the question actually analysed?
+

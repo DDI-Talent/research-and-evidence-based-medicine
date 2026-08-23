@@ -5,6 +5,12 @@ description: "Compact decision aids for analysis, interpretation, appraisal, and
 
 Use these tables to orient your reasoning, then return to the relevant topic page for explanation, assumptions, examples, and R code.
 
+::: {.callout-tip}
+## Need help with the code itself?
+
+Open the standalone [R Toolkit](R_Toolkit/index.qmd) for the complete cheat sheet, code-reading guide, tidyverse reference, visualisation and analysis cookbooks, debugging, reproducibility, reporting and practice exercises.
+:::
+
 ## Choose a descriptive summary
 
 | Data pattern | Centre | Spread | First visualisation |

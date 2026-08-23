@@ -1,0 +1,54 @@
+---
+title: "R Toolkit"
+subtitle: "A cross-semester reference for reading, writing, debugging, and reporting reproducible R analyses."
+page-layout: full
+toc: false
+---
+
+::: {.topic-banner}
+**The purpose**
+
+Use R to make your analytical reasoning visible. The goal is not to memorise every function; it is to understand the data flowing through the analysis and connect every output to a clinical question.
+:::
+
+## Start here
+
+::: {.toolkit-grid}
+<a class="toolkit-card featured" href="cheat-sheet.html"><span>CORE REFERENCE</span><strong>The complete R cheat sheet</strong><small>Import, inspect, transform, summarise, visualise, analyse, model, predict, and export.</small></a>
+<a class="toolkit-card" href="reading-code.html"><span>FOUNDATIONS</span><strong>Reading R code</strong><small>Decode objects, pipes, formulas, brackets, operators, and function calls.</small></a>
+<a class="toolkit-card" href="tidyverse.html"><span>DATA</span><strong>Tidyverse verbs</strong><small>Choose variables, observations, new fields, groups, summaries, and joins.</small></a>
+<a class="toolkit-card" href="missing-data.html"><span>DATA QUALITY</span><strong>Missing data</strong><small>Identify, count, handle, compare, and report missing observations deliberately.</small></a>
+<a class="toolkit-card" href="visualisation.html"><span>FIGURES</span><strong>Visualisation cookbook</strong><small>Build interpretable clinical plots with `ggplot2`.</small></a>
+<a class="toolkit-card" href="analyses.html"><span>STATISTICS</span><strong>Analysis cookbook</strong><small>Connect clinical questions and study designs to common R functions.</small></a>
+<a class="toolkit-card" href="objects.html"><span>RESULTS</span><strong>Objects and models</strong><small>Store, inspect, retrieve, tidy, and preserve analytical results.</small></a>
+<a class="toolkit-card" href="debugging.html"><span>HELP</span><strong>Debugging R</strong><small>Diagnose common errors systematically without starting again.</small></a>
+<a class="toolkit-card" href="reproducibility.html"><span>WORKFLOW</span><strong>Reproducibility</strong><small>Build an analysis another person—and your future self—can recreate.</small></a>
+<a class="toolkit-card" href="reporting.html"><span>COMMUNICATION</span><strong>Writing from R output</strong><small>Turn software output into complete, cautious clinical interpretations.</small></a>
+<a class="toolkit-card" href="sandbox.html"><span>PRACTICE</span><strong>R practice sandbox</strong><small>Predict, repair, interpret, and improve short pieces of code.</small></a>
+:::
+
+## The REBM R workflow
+
+::: {.code-flow}
+<div><span>1</span><strong>Question</strong><small>Define population, exposure, comparator, outcome and time.</small></div>
+<div><span>2</span><strong>Import</strong><small>Load packages and read unchanged source data.</small></div>
+<div><span>3</span><strong>Prepare</strong><small>Select, filter, recode and document missingness.</small></div>
+<div><span>4</span><strong>Describe</strong><small>Inspect counts, distributions and plausible values.</small></div>
+<div><span>5</span><strong>Analyse</strong><small>Estimate, visualise and check assumptions.</small></div>
+<div><span>6</span><strong>Interpret</strong><small>Translate magnitude, uncertainty and limitations.</small></div>
+<div><span>7</span><strong>Preserve</strong><small>Store decisions, results, versions and exports.</small></div>
+:::
+
+## Four rules that prevent most problems
+
+1. **Never modify the only copy of the source data.** Create a clearly named analysis object.
+2. **Inspect the result of every important transformation.** Code running without an error does not prove it did what you intended.
+3. **Save analytical results as objects.** Do not repeatedly copy numbers by hand.
+4. **Keep interpretation beside output.** A table or model object without clinical meaning is unfinished.
+
+::: {.callout-tip}
+## Make any page printable
+
+Use your browser’s **Print → Save as PDF** option. Toolkit pages include print-friendly styling so they can become personal one-page or multi-page references.
+:::
+

@@ -1,0 +1,126 @@
+---
+title: "Tidyverse verbs"
+subtitle: "Build a transparent analysis dataset one explicit decision at a time."
+---
+
+## The six questions
+
+| Question | Verb |
+|---|---|
+| Which variables do I need? | `select()` |
+| Which observations do I need? | `filter()` |
+| Which new variables do I need? | `mutate()` |
+| In which order? | `arrange()` |
+| Within which groups? | `group_by()` |
+| Which summary values? | `summarise()` |
+
+## `select()`: choose columns
+
+```r
+analysis_data <- patients |>
+  select(patient_id, age, treatment, outcome)
+```
+
+Useful helpers include `starts_with()`, `ends_with()`, `contains()`, and `everything()`. Explicit names are preferable when the analysis depends on a small prespecified set of variables.
+
+## `filter()`: choose rows
+
+```r
+adults <- patients |>
+  filter(
+    age >= 18,
+    treatment %in% c("Intervention", "Usual care"),
+    !is.na(outcome)
+  )
+```
+
+Comma-separated conditions inside `filter()` must all be true. Use `|` for “or” and `&` for “and” when writing compound expressions.
+
+## `mutate()`: create or change variables
+
+```r
+prepared_data <- adults |>
+  mutate(
+    age_decade = age / 10,
+    older_adult = age >= 65,
+    risk_group = case_when(
+      predicted_risk < 0.10 ~ "Lower",
+      predicted_risk < 0.20 ~ "Intermediate",
+      TRUE ~ "Higher"
+    )
+  )
+```
+
+`if_else()` is ideal for two values; `case_when()` handles several mutually exclusive conditions. Order conditions carefully: R uses the first one that evaluates to true.
+
+## `group_by()` and `summarise()`
+
+```r
+group_summary <- prepared_data |>
+  group_by(treatment) |>
+  summarise(
+    patients = n(),
+    mean_age = mean(age, na.rm = TRUE),
+    outcome_risk = mean(outcome == "Event", na.rm = TRUE),
+    .groups = "drop"
+  )
+```
+
+`group_by()` does not calculate anything by itself. It changes how later verbs behave. Use `.groups = "drop"` when the summary should no longer remain grouped.
+
+## `count()`: concise category counts
+
+```r
+patients |>
+  count(treatment, outcome, name = "patients")
+```
+
+This is equivalent to grouping by the listed variables and counting observations.
+
+## `arrange()`, `rename()` and `distinct()`
+
+```r
+patients |>
+  rename(age_years = age) |>
+  arrange(desc(outcome_score)) |>
+  distinct(patient_id, .keep_all = TRUE)
+```
+
+Only remove duplicates after identifying why they exist. Repeated rows may represent legitimate repeated measurements rather than data errors.
+
+## Joining datasets
+
+```r
+analysis_data <- patients |>
+  left_join(laboratory_results, by = "patient_id")
+```
+
+A `left_join()` keeps every row from the first dataset and adds matching values from the second. Before and after joining, check:
+
+- whether the key is unique in each dataset;
+- row counts;
+- unmatched keys;
+- whether one patient can legitimately have several matching records.
+
+Many-to-many joins can multiply rows and silently change the unit of analysis.
+
+## A complete preparation pipeline
+
+```r
+analysis_data <- raw_data |>
+  select(patient_id, age, treatment, baseline_score, outcome) |>
+  filter(age >= 18) |>
+  mutate(
+    treatment = factor(treatment, levels = c("Usual care", "Intervention")),
+    age_decade = age / 10
+  ) |>
+  filter(!is.na(outcome))
+
+glimpse(analysis_data)
+count(analysis_data, treatment)
+```
+
+::: {.callout-important}
+Every `filter()` changes the population represented by the analysis. Record how many observations were removed and why.
+:::
+

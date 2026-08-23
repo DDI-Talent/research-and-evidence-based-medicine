@@ -1,0 +1,135 @@
+---
+title: "Reading R code"
+subtitle: "Decode unfamiliar code by following the objects and operations in order."
+---
+
+## Read from the outside in—and from top to bottom
+
+```r
+#| eval: false
+
+analysis_data <- patients |>
+  select(patient_id, age, treatment, outcome) |>
+  filter(age >= 18, !is.na(outcome)) |>
+  mutate(age_decade = age / 10)
+```
+
+Read this as:
+
+1. Start with the object `patients`.
+2. Keep four variables.
+3. Retain adults with a recorded outcome.
+4. Create age in decades.
+5. Store the final result as `analysis_data`.
+
+## Essential symbols
+
+| Symbol | Meaning | Example |
+|---|---|---|
+| `<-` | Assign/store | `mean_age <- mean(age)` |
+| `|>` | Pass the result forward | `data |> filter(...)` |
+| `()` | Call a function | `mean(age)` |
+| `,` | Separate arguments | `mean(age, na.rm = TRUE)` |
+| `$` | Retrieve a named component or column | `model$coefficients` |
+| `~` | Describe a relationship | `outcome ~ treatment + age` |
+| `+` in a model | Include another predictor | `outcome ~ treatment + age` |
+| `+` in `ggplot2` | Add another graphical layer | `ggplot(...) + geom_point()` |
+| `==` | Is equal to? | `treatment == "Intervention"` |
+| `!=` | Is not equal to? | `status != "Withdrawn"` |
+| `%in%` | Is one of these values? | `group %in% c("A", "B")` |
+| `!` | Reverse a logical question | `!is.na(outcome)` |
+| `#` | Comment for humans | `# Prepare adult sample` |
+
+## Functions and arguments
+
+```r
+mean(outcome, na.rm = TRUE)
+```
+
+- Function: `mean`
+- Data supplied: `outcome`
+- Named option: `na.rm = TRUE`
+- Result: one mean calculated after ignoring missing values
+
+Named arguments are safer than relying on position when a function has many options.
+
+## Objects are nouns; functions are verbs
+
+```r
+model <- lm(outcome ~ treatment + age, data = analysis_data)
+```
+
+- `analysis_data` is the data object.
+- `lm()` is the action.
+- `outcome ~ treatment + age` is the model formula.
+- `model` is the stored result.
+
+Typing `model` prints a summary representation. Helper functions retrieve specific information without manually navigating every component.
+
+## Text, numbers and logical values
+
+```r
+filter(
+  age >= 18,
+  treatment == "Intervention",
+  consented == TRUE
+)
+```
+
+- Text requires quotation marks.
+- Numbers normally do not.
+- Logical values are `TRUE` and `FALSE`, without quotation marks.
+- Missing values are represented by `NA`.
+
+## Brackets and indentation
+
+Equivalent code can be written on one line or several. Indentation does not usually change the result, but it makes structure visible.
+
+```r
+model <- glm(
+  readmitted ~ age + severity + previous_admissions,
+  data = training_data,
+  family = binomial()
+)
+```
+
+When debugging, pair each opening `(` with a closing `)`, check commas between arguments, and confirm that quotation marks are paired.
+
+## Predict the type of result
+
+Before running a line, ask what it should return:
+
+| Code | Expected result |
+|---|---|
+| `mean(age)` | One number |
+| `age >= 65` | One logical value per observation |
+| `filter(data, age >= 65)` | A dataset with fewer or equal rows |
+| `select(data, age, outcome)` | A dataset with two columns |
+| `count(data, treatment)` | A small count table |
+| `lm(...)` | A model object |
+| `tidy(model)` | A table with one row per model term |
+
+::: {.self-check}
+### Check your understanding
+
+What is wrong with this code?
+
+```r
+adults <- patients |>
+  select(age treatment outcome) |>
+  filter(age => 18, outcome != NA)
+```
+
+<details><summary>Show the answer</summary>
+
+Variables inside `select()` need commas; greater than or equal is `>=`; and recorded values are selected with `!is.na(outcome)`. The corrected code is:
+
+```r
+adults <- patients |>
+  select(age, treatment, outcome) |>
+  filter(age >= 18, !is.na(outcome))
+```
+
+</details>
+:::
+
