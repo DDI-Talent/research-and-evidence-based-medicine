@@ -1,0 +1,160 @@
+---
+title: "Semester 1 analysis pathway"
+subtitle: "Choose a familiar synthetic dataset, make a defensible plan, and carry out your assessed work in Noteable."
+---
+
+::: {.topic-banner}
+**The purpose**
+
+Use this pathway to organise your thinking before and during the Semester 1 assessment. The playbook helps you choose and justify an analysis; **Noteable is where you should write, run, save, and submit your own work**.
+:::
+
+::: {.callout-important title="What this page does—and does not do"}
+This is a scaffold, not an analysis generator. It will help you inspect the available datasets, turn an idea into an answerable question, choose suitable summaries and methods, and check that your interpretation follows from your results. It will not select the question, make analytical decisions, or complete the assessment for you.
+:::
+
+## The assessment journey
+
+::: {.code-flow}
+<div><span>1</span><strong>Choose</strong><small>Select a dataset you understand.</small></div>
+<div><span>2</span><strong>Question</strong><small>Define one answerable research question.</small></div>
+<div><span>3</span><strong>Plan</strong><small>Specify variables, summaries, figure, and analysis.</small></div>
+<div><span>4</span><strong>Inspect</strong><small>Check structure, missingness, distributions, and plausibility.</small></div>
+<div><span>5</span><strong>Analyse</strong><small>Estimate the relationship and check assumptions.</small></div>
+<div><span>6</span><strong>Interpret</strong><small>Explain magnitude, uncertainty, and limitations.</small></div>
+<div><span>7</span><strong>Preserve</strong><small>Make the work reproducible in Noteable.</small></div>
+:::
+
+## 1 · Choose a dataset
+
+Choose a dataset because it can answer a question you understand—not because it appears to require the most complicated method. Revisit its topic page and data dictionary before committing to it.
+
+| Dataset | Theory to revisit | Useful starting questions | Dataset documentation |
+|---|---|---|---|
+| Topic 01 | Variables, summaries, distributions | Who is represented, and how is an important measurement distributed? | [Topic 01 dictionary](../S1_T01_DescribingData/DATA_DICTIONARY.md) |
+| Topic 02 | Samples, estimates, uncertainty | How precise is an estimate, and what could sampling variability explain? | [Topic 02 dictionary](../S1_T02_SignalVsNoise/DATA_DICTIONARY.md) |
+| Topic 03 | Two-group, multi-group, and categorical comparisons | How does an outcome differ between clinically meaningful groups? | [Topic 03 dictionary](../S1_T03_ComparingGroups/DATA_DICTIONARY.md) |
+| Topic 04 | Correlation, subgroups, causal structures | Are two measurements associated, and what prevents a causal interpretation? | [Topic 04 dictionary](../S1_T04_CorrelationCausation/DATA_DICTIONARY.md) |
+| Topic 05 | Absolute risk, relative risk, and odds | How common is an event, and how does its occurrence differ between groups? | [Topic 05 dictionary](../S1_T05_MeasureRisk/DATA_DICTIONARY.md) |
+| Topic 06 | Linear and logistic regression | Does an association persist after justified adjustment? | [Topic 06 dictionary](../S1_T06_Regression/DATA_DICTIONARY.md) |
+| Topic 07 | Estimation, prediction, and generalisation | How well does a model estimate or predict an outcome on relevant data? | [Topic 07 dictionary](../S1_T07_EstimationPrediction/DATA_DICTIONARY.md) |
+| Topic 08 | Thresholds, uncertainty, and decisions | How could an estimate inform a decision, and which trade-offs matter? | [Topic 08 dictionary](../S1_T08_ClinicalDecisionMaking/DATA_DICTIONARY.md) |
+
+Before choosing, be able to state:
+
+- the unit represented by one row;
+- the population represented by the data;
+- the important variables and how they were measured;
+- which outcomes are available;
+- what the dataset cannot establish.
+
+## 2 · Write an answerable question
+
+A useful question identifies the population, outcome, explanatory variable or comparison, and—where relevant—the time horizon. It must be answerable using variables that actually exist in the selected dataset.
+
+::: {.interpretation-template}
+### Question template
+
+“Among **[population represented in the dataset]**, how does **[outcome, with unit or event definition]** differ according to **[group, exposure, or explanatory variable]** over **[time horizon, if relevant]**?”
+:::
+
+Before analysing, classify the purpose:
+
+| Purpose | What the question asks | Main emphasis |
+|---|---|---|
+| Description | What is present in these data? | Distribution, frequency, centre, and spread |
+| Comparison | How do outcomes differ between groups? | Effect size and uncertainty |
+| Association or estimation | How are variables related? | Magnitude, uncertainty, and alternative explanations |
+| Prediction | How well can an outcome be predicted for new observations? | Performance on unseen, relevant data |
+
+Do not make a causal claim merely because a model contains several variables. The study design, timing, causal assumptions, measurement quality, and unmeasured confounding still matter.
+
+## 3 · Write the plan before the result
+
+Record a short analysis plan in your Noteable notebook before running the main analysis:
+
+1. **Population and exclusions:** Which observations will be included, and why?
+2. **Outcome:** What type of variable is it, and how is it coded?
+3. **Main explanatory variable:** What comparison or contrast will be made?
+4. **Potential confounders:** Which variables have a defensible causal role?
+5. **Descriptive summaries:** Which counts, percentages, means and SDs, or medians and IQRs are appropriate?
+6. **Figure:** Which visualisation reveals the relationship relevant to the question?
+7. **Main analysis:** Which estimate or model answers the question?
+8. **Assumptions:** What must be checked for the interpretation to be credible?
+9. **Missing data:** How will missingness be described and handled?
+10. **Sensitivity analysis:** Which reasonable alternative decision could materially change the conclusion?
+
+Use the [analysis cookbook](analyses.qmd) to connect the question and variable types to an approach. Use the [visualisation cookbook](visualisation.qmd) to choose a figure. These are decision aids, not substitutes for explaining why the choice fits your question.
+
+## 4 · Build the analysis in Noteable
+
+Organise the notebook so another student could follow the reasoning from top to bottom:
+
+1. title and research question;
+2. packages and global settings;
+3. data import;
+4. data dictionary or key variable definitions;
+5. preparation and exclusions;
+6. data-quality and missingness checks;
+7. descriptive summaries and figures;
+8. main analysis and assumption checks;
+9. sensitivity analysis, where justified;
+10. interpretation and limitations;
+11. session information.
+
+::: {.callout-tip title="Use the website beside Noteable"}
+Keep this pathway and the relevant Toolkit pages open while working in Noteable. Copy or adapt code only when you can explain what each line does, inspect the resulting object, and connect the output to your research question.
+:::
+
+## 5 · Interrogate the result
+
+An output is not yet a finding. Ask:
+
+- What is the estimated magnitude and direction of the relationship?
+- What values are compatible with the uncertainty interval?
+- Is the estimate clinically meaningful, regardless of statistical significance?
+- Were the important assumptions reasonably satisfied?
+- Could missingness, measurement, selection, confounding, or multiple testing explain the pattern?
+- Does the result apply beyond the observations analysed?
+- Does the design support association, prediction, or a causal interpretation?
+
+::: {.interpretation-template}
+### Results sentence template
+
+“Among **[analysed population]**, **[outcome]** was **[higher/lower/associated]** in relation to **[comparison or predictor]** by **[effect estimate and unit]** (95% CI **[lower to upper]**). This should be interpreted as **[description/association/prediction]**, because **[key design limitation]**.”
+:::
+
+## 6 · Make the notebook reproducible
+
+Before finishing, restart the Noteable session and run the notebook from the beginning. Confirm that:
+
+- the source dataset remains unchanged;
+- paths work in the assessment environment;
+- code runs in order without relying on hidden objects;
+- exclusions and derived variables are visible and justified;
+- every reported number agrees with the current output;
+- tables and figures have informative labels, units, and captions;
+- warnings have been investigated rather than hidden;
+- analytical decisions and deviations from the plan are recorded;
+- no identifiable or confidential information is included;
+- the notebook preserves the required evidence for the laboratory book.
+
+Use the [reproducibility guide](reproducibility.qmd), [debugging guide](debugging.qmd), and [writing from R output](reporting.qmd) pages for the final checks.
+
+## A final self-audit
+
+::: {.self-check}
+### Can you answer “yes” to each question?
+
+1. Can I explain why my dataset can answer my research question?
+2. Can I identify the unit of observation and variable type of every field used?
+3. Did I decide the main analysis before interpreting its result?
+4. Can I explain each important line of code in my own words?
+5. Did I report an effect size and uncertainty—not only a p-value?
+6. Did I distinguish statistical evidence from clinical importance?
+7. Did I state the most important limitations without overstating causality or generalisability?
+8. Will the notebook run from a clean Noteable session?
+
+If any answer is “no”, return to that stage before submission.
+:::
+

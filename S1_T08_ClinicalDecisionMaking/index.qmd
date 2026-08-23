@@ -17,7 +17,7 @@ At what point does the expected benefit of acting outweigh its harms and burdens
 - Explain thresholds and the consequences of false-positive and false-negative actions.
 - Use scenario analysis to identify decisions that are robust or sensitive to uncertainty.
 - Incorporate patient values and the value of further information.
-- Create a traceable evidence-to-decision record in R.
+- Explain what a traceable evidence-to-decision record should preserve.
 :::
 
 ::: {.playbook-summary}
@@ -33,6 +33,10 @@ At what point does the expected benefit of acting outweigh its harms and burdens
 | Traceability | Can we reconstruct how evidence became an agreed action? |
 
 **Core habit:** a model output is evidence for a decision—not the decision, the patient’s preference, or the agreed action.
+:::
+
+::: {.callout-tip title="Put the theory into practice"}
+R guidance is kept in the [R Toolkit](../R_Toolkit/index.qmd). Use the [Semester 1 analysis pathway](../R_Toolkit/assessment-analysis.qmd) to choose a synthetic dataset and plan your work, then complete and retain the analysis in Noteable.
 :::
 
 ## 8.1 From evidence to action
@@ -103,51 +107,6 @@ If all plausible values support the same action, the decision is **robust**, alt
 Further information is valuable when the choice is closely balanced, plausible scenarios support different actions, consequences are important, waiting is safe, and a feasible test or study could reduce relevant uncertainty. More information may add little when every plausible scenario supports the same action or delay would be harmful.
 
 Communicate the best estimate, plausible range, what remains uncertain, whether uncertainty changes the choice, and what each option means for the patient. Precision in a reported number does not imply certainty in the decision.
-
-## 8.4 Recording results and decisions in R
-
-Reproducibility recreates an analysis. **Traceability** also records how a result, threshold, assumptions, and patient priorities led to an agreed action. A model-generated suggestion must remain distinct from the shared clinical decision.
-
-```r
-#| eval: false
-
-library(tidyverse)
-
-predicted_risk <- 0.30
-risk_lower <- 0.22
-risk_upper <- 0.39
-decision_threshold <- 0.20
-agreed_action <- "Offer intensive follow-up"
-
-suggested_action <- if_else(
-  predicted_risk >= decision_threshold,
-  "Offer intensive follow-up",
-  "Continue usual care"
-)
-
-decision_record <- tibble(
-  patient_id = "S001",
-  population = "Adults eligible for discharge",
-  outcome = "Readmission",
-  time_horizon = "30 days",
-  comparator = "Usual care",
-  intervention = "Intensive follow-up",
-  predicted_risk = predicted_risk,
-  risk_lower = risk_lower,
-  risk_upper = risk_upper,
-  threshold = decision_threshold,
-  threshold_reason = "Locally agreed",
-  suggested_action = suggested_action,
-  agreed_action = agreed_action
-)
-
-write_csv(decision_record, "decision_summary.csv")
-saveRDS(decision_record, "decision_summary.rds")
-```
-
-Meaningful object names preserve the connection between result and action. A useful record retains the population, outcome, time horizon, comparison, uncertainty, threshold and rationale, suggested action, patient priorities, and agreed action. Select export columns deliberately and reopen saved files to verify them.
-
-Use non-identifiable study IDs and approved secure storage for real clinical data. A tidy decision table does not replace data governance, clinical documentation, or professional accountability.
 
 ## Bringing it together
 

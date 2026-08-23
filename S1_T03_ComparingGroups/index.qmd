@@ -16,7 +16,6 @@ How different are outcomes between clinically relevant groups, and is that diffe
 - Explain how ANOVA compares between-group with within-group variation.
 - Interpret a global ANOVA test and the role of post-hoc comparisons.
 - Assess association between categorical variables with a contingency table.
-- Prepare a reproducible analysis dataset and perform group comparisons in R.
 :::
 
 ::: {.playbook-summary}
@@ -30,6 +29,10 @@ How different are outcomes between clinically relevant groups, and is that diffe
 | Two categorical variables | Contingency table; chi-squared test | Variables independent |
 
 **Core habit:** choose the comparison from the outcome, design, and clinical estimand—not from the name of a familiar test.
+:::
+
+::: {.callout-tip title="Put the theory into practice"}
+R guidance is kept in the [R Toolkit](../R_Toolkit/index.qmd). Use the [Semester 1 analysis pathway](../R_Toolkit/assessment-analysis.qmd) to choose a synthetic dataset and plan your work, then complete and retain the analysis in Noteable.
 :::
 
 ## 3.1 Comparing two groups
@@ -99,43 +102,6 @@ Check that:
 - expected cell counts are sufficiently large for the approximation.
 
 If expected counts are sparse, combining clinically defensible categories or using an exact method may be more appropriate. A chi-squared result indicates evidence of association, not its magnitude or causal meaning.
-
-## 3.4 Exploring group differences in R
-
-A research question must first become an explicit analysis dataset. `select()` chooses variables, `filter()` chooses observations, and `!is.na()` makes the handling of missing observations visible.
-
-```r
-#| eval: false
-
-library(tidyverse)
-
-sleep_data <- nhanes |>
-  select(age, sleep_hours, work_status) |>
-  filter(
-    age >= 18,
-    age <= 65,
-    work_status %in% c("Full-time", "Part-time", "Not working"),
-    !is.na(sleep_hours),
-    !is.na(work_status)
-  )
-
-sleep_data |>
-  ggplot(aes(x = work_status, y = sleep_hours)) +
-  geom_boxplot() +
-  labs(x = NULL, y = "Sleep duration (hours)")
-
-# Two independent groups
-t.test(outcome ~ group, data = analysis_data)
-
-# More than two groups
-anova_model <- aov(sleep_hours ~ work_status, data = sleep_data)
-summary(anova_model)
-TukeyHSD(anova_model)
-
-# Two categorical variables
-counts <- table(analysis_data$exposure, analysis_data$outcome)
-chisq.test(counts)
-```
 
 ## Bringing it together
 

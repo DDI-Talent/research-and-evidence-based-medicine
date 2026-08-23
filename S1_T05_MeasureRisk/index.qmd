@@ -16,7 +16,6 @@ How likely is a clinical event, how does that likelihood differ between groups, 
 - Distinguish risk from odds and a risk ratio from an odds ratio.
 - Explain when odds ratios are used and why they may appear more extreme.
 - Communicate benefits and harms using balanced, comparable formats.
-- Transform individual patient records into grouped clinical counts in R.
 :::
 
 ::: {.playbook-summary}
@@ -31,6 +30,10 @@ How likely is a clinical event, how does that likelihood differ between groups, 
 | NNT or NNH | No single null | How many receive treatment for one additional benefit or harm |
 
 **Core habit:** never present a relative effect without the baseline risk, outcome, time horizon, and uncertainty needed to interpret it.
+:::
+
+::: {.callout-tip title="Put the theory into practice"}
+R guidance is kept in the [R Toolkit](../R_Toolkit/index.qmd). Use the [Semester 1 analysis pathway](../R_Toolkit/assessment-analysis.qmd) to choose a synthetic dataset and plan your work, then complete and retain the analysis in Noteable.
 :::
 
 ## 5.1 Measuring and comparing risk
@@ -90,43 +93,6 @@ Positive and negative framing can produce different impressions: “90 per 100 r
 ::: {.clinical-lens}
 **Patient-centred wording:** “Over one year, disease occurred in about 20 per 100 people with usual care and 10 per 100 with treatment—around 10 fewer cases per 100 treated. This is an estimate, and the benefit needs to be considered alongside treatment harms and burdens.”
 :::
-
-## 5.4 Transforming data in R
-
-Individual records can be transformed into the grouped counts needed for risk calculations. `mutate()` creates variables, `group_by()` changes the level at which summaries are calculated, and `count()` creates combinations of categorical outcomes.
-
-```r
-#| eval: false
-
-library(tidyverse)
-
-prepared_data <- patient_data |>
-  mutate(
-    older_adult = age >= 65,
-    age_group = if_else(age >= 65, "65 years and over", "Under 65 years")
-  )
-
-risk_counts <- prepared_data |>
-  count(treatment, disease, name = "patients")
-
-risk_table <- xtabs(
-  patients ~ treatment + disease,
-  data = risk_counts
-)
-
-risk_table
-
-library(epiR)
-
-risk_results <- epi.2by2(
-  dat = risk_table,
-  method = "cohort.count",
-  outcome = "as.columns",
-  units = 100
-)
-```
-
-Always inspect the row and column ordering before interpreting automated output. A reversed reference group or outcome coding can reverse the apparent direction of an effect.
 
 ## Bringing it together
 

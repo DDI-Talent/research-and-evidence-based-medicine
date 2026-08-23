@@ -17,7 +17,6 @@ Does an observed relationship persist after accounting for credible alternative 
 - Interpret coefficients, odds ratios, fitted values, and residuals clinically.
 - Assess the central assumptions of linear and logistic regression.
 - Explain multivariable adjustment and why it does not automatically remove bias.
-- Store, inspect, and tidy fitted model objects in R.
 :::
 
 ::: {.playbook-summary}
@@ -32,6 +31,10 @@ Does an observed relationship persist after accounting for credible alternative 
 | Central caution | Functional form and residual assumptions | Odds are not risks; check specification and information sufficiency |
 
 **Core habit:** define the estimand and causal role of every variable before reading coefficients from an adjusted model.
+:::
+
+::: {.callout-tip title="Put the theory into practice"}
+R guidance is kept in the [R Toolkit](../R_Toolkit/index.qmd). Use the [Semester 1 analysis pathway](../R_Toolkit/assessment-analysis.qmd) to choose a synthetic dataset and plan your work, then complete and retain the analysis in Noteable.
 :::
 
 ## 6.1 Univariable regression
@@ -98,43 +101,6 @@ However, adjustment can only address variables that were:
 - represented appropriately in the model.
 
 Unmeasured confounding, missing data, measurement error, selection bias, inappropriate adjustment for mediators or colliders, and model misspecification can remain. “Adjusted” does not mean “free from bias”, and adding every available variable is not a valid selection strategy.
-
-## 6.4 Working with objects in R
-
-Assignment stores the output of an instruction under a name. Fitted models are complex objects containing coefficients, fitted values, residuals, diagnostics, and metadata.
-
-```r
-#| eval: false
-
-unadjusted_model <- lm(
-  blood_pressure ~ treatment,
-  data = analysis_data
-)
-
-adjusted_model <- lm(
-  blood_pressure ~ treatment + age + bmi,
-  data = analysis_data
-)
-
-logistic_model <- glm(
-  disease ~ treatment + age,
-  data = analysis_data,
-  family = binomial()
-)
-
-summary(adjusted_model)
-coef(adjusted_model)
-confint(adjusted_model)
-fitted(adjusted_model)
-residuals(adjusted_model)
-
-model_results <- broom::tidy(
-  adjusted_model,
-  conf.int = TRUE
-)
-```
-
-In a model formula, `+` includes another explanatory variable; it does not add patient values together. `lm()` is used for a continuous outcome, while `glm(..., family = binomial())` fits logistic regression for a binary outcome.
 
 ## Bringing it together
 

@@ -16,7 +16,6 @@ Who is represented in these data, what was measured, and what does a typical—o
 - Choose and interpret appropriate measures of centre and spread.
 - Match frequency tables and plots to the variable and question.
 - Recognise normal, skewed, multimodal, and unusual distributions.
-- Explain why reproducible programming is valuable in health-data analysis.
 :::
 
 ::: {.playbook-summary}
@@ -27,9 +26,12 @@ Who is represented in these data, what was measured, and what does a typical—o
 | One variable at a time | What does it measure, and for whom? | A defensible summary and plot |
 | The observed distribution | Is it symmetric, skewed, multimodal, or affected by extremes? | Centre and spread that belong together |
 | The data-generating process | Could coding, missingness, or selection explain the shape? | A short clinical description, not just a table |
-| Reproducible code | Could someone recreate every number and figure? | Named objects and transparent analysis steps |
 
 **Core habit:** describe the data you actually have before applying a model to the data you hoped to have.
+:::
+
+::: {.callout-tip title="Put the theory into practice"}
+R guidance is kept in the [R Toolkit](../R_Toolkit/index.qmd). Use the [Semester 1 analysis pathway](../R_Toolkit/assessment-analysis.qmd) to choose a synthetic dataset and plan your work, then complete and retain the analysis in Noteable.
 :::
 
 ## 1.1 Variables, measures of centre and spread
@@ -86,34 +88,6 @@ Real clinical data do not have to be normal. Distributions may be:
 - affected by selection, missingness, or measurement error.
 
 The normal distribution remains important because many inferential methods concern the distribution of an estimate or of model residuals—not necessarily the raw clinical variable itself.
-
-## 1.4 R foundations and principles
-
-Modern health datasets are too large and complex to analyse reliably by hand. Code makes each analytical instruction visible, repeatable, and easier to check. **R** is the statistical programming language; **RStudio** is an interface for writing and running R code.
-
-Common data formats include `.csv`, `.tsv`, `.xlsx`, and R-specific files such as `.rds` or `.RData`. A reproducible analysis keeps the source data unchanged and stores each derived result under a meaningful object name.
-
-```r
-#| eval: false
-
-library(tidyverse)
-
-patient_data <- read_csv("patients.csv")
-
-patient_data |>
-  summarise(
-    patients = n(),
-    mean_pulse = mean(pulse, na.rm = TRUE),
-    sd_pulse = sd(pulse, na.rm = TRUE),
-    median_pulse = median(pulse, na.rm = TRUE),
-    iqr_pulse = IQR(pulse, na.rm = TRUE)
-  )
-
-patient_data |>
-  ggplot(aes(x = pulse)) +
-  geom_histogram(binwidth = 5) +
-  labs(x = "Pulse (beats per minute)", y = "Patients")
-```
 
 ## Bringing it together
 

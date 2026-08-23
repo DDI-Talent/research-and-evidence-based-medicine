@@ -16,7 +16,6 @@ Are we explaining or estimating a relationship, or predicting what may happen fo
 - Select performance measures for continuous predictions, probabilities, and classifications.
 - Interpret sensitivity, specificity, discrimination, and calibration.
 - Explain overfitting, train/validation/test data, dataset shift, and external validation.
-- Build a reproducible prediction workflow in R.
 :::
 
 ::: {.playbook-summary}
@@ -31,6 +30,10 @@ Are we explaining or estimating a relationship, or predicting what may happen fo
 | Is the model clinically useful? | Consequences, workflow, fairness, actionability, and comparison with current care |
 
 **Core habit:** evaluate a prediction model on patients it did not learn from, using measures aligned with the clinical action it is meant to support.
+:::
+
+::: {.callout-tip title="Put the theory into practice"}
+R guidance is kept in the [R Toolkit](../R_Toolkit/index.qmd). Use the [Semester 1 analysis pathway](../R_Toolkit/assessment-analysis.qmd) to choose a synthetic dataset and plan your work, then complete and retain the analysis in Noteable.
 :::
 
 ## 7.1 Explanation, estimation and prediction
@@ -92,48 +95,6 @@ Performance may change in a different hospital, patient group, time period, diag
 ::: {.callout-important}
 The best-fitting training model is not necessarily the best clinical prediction model. Generalisation—not memorisation—is the goal.
 :::
-
-## 7.4 Reproducibility in R
-
-A reproducible workflow preserves the analysis dataset, split, model, predictions, evaluation results, random seed, software environment, and analytical decisions.
-
-```r
-#| eval: false
-
-set.seed(2026)
-
-training_rows <- sample(
-  seq_len(nrow(analysis_data)),
-  size = 0.8 * nrow(analysis_data)
-)
-
-training_data <- analysis_data |> slice(training_rows)
-test_data <- analysis_data |> slice(-training_rows)
-
-readmission_model <- glm(
-  readmitted ~ age + disease_severity + previous_admissions,
-  data = training_data,
-  family = binomial()
-)
-
-test_predictions <- test_data |>
-  select(patient_id, readmitted) |>
-  mutate(
-    predicted_risk = predict(
-      readmission_model,
-      newdata = test_data,
-      type = "response"
-    ),
-    predicted_readmission = predicted_risk >= 0.30
-  )
-
-confusion_counts <- test_predictions |>
-  count(predicted_readmission, readmitted)
-
-sessionInfo()
-```
-
-The seed must be set immediately before the random operation. Test data must remain separate during model development. Preserve patient identifiers so predictions remain aligned with observed outcomes, and record why the chosen threshold is clinically appropriate.
 
 ## Bringing it together
 

@@ -17,7 +17,6 @@ Is the pattern we observed likely to reflect a population effect, or could sampl
 - Interpret p-values and confidence intervals without common overclaims.
 - Explain Type I error, Type II error, power, and the role of sample size.
 - Assess assumptions using graphical, statistical, and contextual evidence.
-- Recognise packages and functions as the building blocks of R analysis.
 :::
 
 ::: {.playbook-summary}
@@ -32,6 +31,10 @@ Is the pattern we observed likely to reflect a population effect, or could sampl
 | Power | Chance of detecting a prespecified effect if it exists | Was the study capable of answering the question? |
 
 **Core habit:** separate effect size, uncertainty, statistical evidence, bias, and clinical importance; none is a substitute for the others.
+:::
+
+::: {.callout-tip title="Put the theory into practice"}
+R guidance is kept in the [R Toolkit](../R_Toolkit/index.qmd). Use the [Semester 1 analysis pathway](../R_Toolkit/assessment-analysis.qmd) to choose a synthetic dataset and plan your work, then complete and retain the analysis in Noteable.
 :::
 
 ## 2.1 From samples to populations
@@ -102,28 +105,6 @@ Assess assumptions by combining:
 - subject knowledge and sensitivity analyses.
 
 With a large sample, a normality test may flag a trivial departure; with a small sample, it may miss an important one. No single diagnostic should replace judgement.
-
-## 2.4 Using packages and functions in R
-
-Functions are reusable instructions such as `mean()`, `summary()`, or `shapiro.test()`. Packages collect related functions. `library()` loads an installed package for the current session; package installation is normally managed separately.
-
-```r
-#| eval: false
-
-library(tidyverse)
-
-# Inspect the observed distribution
-analysis_data |>
-  ggplot(aes(x = outcome)) +
-  geom_histogram(bins = 30)
-
-# Inspect normality using a Q–Q plot
-qqnorm(analysis_data$outcome)
-qqline(analysis_data$outcome)
-
-# A formal diagnostic, interpreted alongside the plot and sample size
-shapiro.test(analysis_data$outcome)
-```
 
 ## Bringing it together
 

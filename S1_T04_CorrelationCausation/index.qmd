@@ -16,7 +16,6 @@ Do two measurements vary together—and what additional evidence would be needed
 - Interpret Pearson and Spearman correlation coefficients and their uncertainty.
 - Distinguish association from causation using causal structures.
 - Explain confounding, mediation, collider bias, and subgroup effects.
-- Build and annotate layered `ggplot2` visualisations reproducibly.
 :::
 
 ::: {.playbook-summary}
@@ -30,6 +29,10 @@ Do two measurements vary together—and what additional evidence would be needed
 | Express causal assumptions | Directed acyclic graph | The graph is an argument to defend, not a fact discovered by software |
 
 **Core habit:** draw the relationship, state the proposed causal structure, and only then decide what numerical summary or adjustment is meaningful.
+:::
+
+::: {.callout-tip title="Put the theory into practice"}
+R guidance is kept in the [R Toolkit](../R_Toolkit/index.qmd). Use the [Semester 1 analysis pathway](../R_Toolkit/assessment-analysis.qmd) to choose a synthetic dataset and plan your work, then complete and retain the analysis in Noteable.
 :::
 
 ## 4.1 Scatterplots and visualisation
@@ -85,41 +88,6 @@ Other reasons an association may mislead include:
 - reverse causation or unclear temporal ordering.
 
 Evidence supporting a causal claim may come from randomisation, natural experiments, clear temporality, appropriate adjustment, consistency, negative controls, sensitivity analyses, and biological knowledge. No single checklist item proves causation.
-
-## 4.4 Formalising visualisation skills in R
-
-`ggplot2` builds a visualisation from components: data, aesthetic mappings, geometries, statistical transformations, scales, facets, labels, and a theme.
-
-```r
-#| eval: false
-
-library(tidyverse)
-
-analysis_data |>
-  ggplot(aes(x = gdp, y = life_expectancy)) +
-  geom_point(alpha = 0.65) +
-  geom_smooth(method = "lm", se = TRUE) +
-  scale_x_log10() +
-  facet_wrap(~ development_status) +
-  labs(
-    x = "GDP per person (log scale)",
-    y = "Life expectancy (years)"
-  ) +
-  theme_minimal()
-
-correlation_result <- cor.test(
-  analysis_data$gdp,
-  analysis_data$life_expectancy,
-  method = "pearson"
-)
-
-caption_text <- paste(
-  "Pearson r =",
-  round(correlation_result$estimate, 2)
-)
-```
-
-Saving the result as an object allows the coefficient, interval, and p-value to be retrieved and used in reporting. A caption built from the saved object updates automatically if the data or analysis changes.
 
 ## Bringing it together
 

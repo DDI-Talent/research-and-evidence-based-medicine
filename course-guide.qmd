@@ -3,14 +3,14 @@ title: "How to use this course notebook"
 description: "The structure, learning outcomes, and a practical weekly workflow."
 ---
 
-This site is a **living REBM playbook**, not a replacement for discussion, code-alongs, or tutorial work. It is designed to help you organise your thinking before a session, interpret what you do during the week, and retain a concise but rigorous reference afterwards.
+This site is a **living REBM playbook**, not a replacement for discussion, code-alongs, or tutorial work. The topic pages are a theory reference; the separate R Toolkit supports practical analysis that you complete and retain in Noteable.
 
 ## Three ways to use the playbook
 
 | When | Use the page to | A useful action |
 |---|---|---|
 | Before teaching | Orient yourself to the clinical question and vocabulary | Read “at a glance” and the learning outcomes |
-| During the week | Connect theory, code, and the case study | Annotate the worked reasoning and R workflow |
+| During the week | Connect theory, the case study, and practical work | Annotate the worked reasoning, then use the R Toolkit beside Noteable |
 | After teaching | Consolidate and practise retrieval | Complete the self-check and lab-book prompts without looking back |
 | During assessment | Check principles and reporting structure | Use templates as prompts, then write in your own words for your own analysis |
 
@@ -18,7 +18,7 @@ This site is a **living REBM playbook**, not a replacement for discussion, code-
 
 1. **Meet the clinical decision.** Identify the patients, options, outcomes, and why the decision is difficult.
 2. **Build the conceptual tools.** Learn enough statistics and evidence-based medicine to reason about the problem.
-3. **Watch the analysis unfold.** Follow the code-along from loading data through to interpretation.
+3. **Apply the ideas in R.** Use the R Toolkit to support the code-along and your work in Noteable.
 4. **Practise and reflect.** Modify the analysis in the lab and write what the result means clinically.
 
 ## Course learning outcomes
@@ -51,13 +51,12 @@ Every result in your lab book should have a sentence beside it explaining the po
 1. **Clinical question:** the decision or uncertainty that gives the method a purpose.
 2. **Learning outcomes:** what you should be able to explain or do.
 3. **At a glance:** a compact map of concepts, outputs, and cautions.
-4. **Four-part notes:** the substantive teaching sequence from the topic slides.
-5. **R workflow:** code that makes the analytical reasoning visible and reproducible.
-6. **Worked reasoning:** a clinical example showing how to move from output to interpretation.
-7. **Reporting template:** a scaffold for complete sentences, not text to copy mechanically.
-8. **Common traps:** plausible but unsafe interpretations to recognise.
-9. **Self-check:** short retrieval questions with expandable answers.
-10. **Lab-book prompts and next connection:** reflection and the link to the wider course.
+4. **Theory notes:** the substantive conceptual sequence from the topic slides.
+5. **Worked reasoning:** a clinical example showing how to move from evidence to interpretation.
+6. **Reporting template:** a scaffold for complete sentences, not text to copy mechanically.
+7. **Common traps:** plausible but unsafe interpretations to recognise.
+8. **Self-check:** short retrieval questions with expandable answers.
+9. **Lab-book prompts and next connection:** reflection and the link to the wider course.
 
 ## The REBM reasoning loop
 
@@ -95,11 +94,11 @@ For each analysis, preserve five layers:
 A figure without a question, a p-value without an estimate, a model without diagnostics, or a prediction without a decision context is incomplete—even when the code runs perfectly.
 :::
 
-## About the R sections
+## Why theory and R are separated
 
-The R examples are deliberately short enough to reveal the analytical structure. They are not intended to replace the code-along or model solutions. Read a pipe as a sequence of decisions, inspect every object before trusting it, and keep interpretation beside output.
+The topic pages explain the statistical and clinical reasoning without interrupting it with software instructions. All practical guidance is gathered in the [R Toolkit](R_Toolkit/index.qmd), including a dedicated [Semester 1 analysis pathway](R_Toolkit/assessment-analysis.qmd). Use those pages beside Noteable, where you should write, run, save, and submit your own analysis.
 
-The repository also contains topic datasets, data dictionaries, data-generation scripts, code-along materials, and model solutions. The published playbook emphasises reasoning; the practical sessions provide the fuller analysis experience.
+The repository also contains topic datasets, data dictionaries, data-generation scripts, code-along materials, and model solutions. These support teaching and practice; they do not replace the requirement to understand and document your own analytical decisions.
 
 ## Using reporting templates responsibly
 

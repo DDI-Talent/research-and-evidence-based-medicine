@@ -3,7 +3,7 @@ title: "REBM quick-reference library"
 description: "Compact decision aids for analysis, interpretation, appraisal, and reporting."
 ---
 
-Use these tables to orient your reasoning, then return to the relevant topic page for explanation, assumptions, examples, and R code.
+Use these tables to orient your reasoning, then return to the relevant topic page for explanation, assumptions, and worked clinical examples. Practical R guidance is kept together in the R Toolkit.
 
 ::: {.callout-tip}
 ## Need help with the code itself?
@@ -114,34 +114,9 @@ Use **BRAN** to make options visible: benefits, risks, alternatives, and nothing
 - Decision that might change
 - Reproducible record of the analysis
 
-## Core R workflow
+## Put the reference into practice
 
-- Choosing a descriptive summary and visualisation
-- Interpreting confidence intervals and p-values
-- Choosing a test for a group comparison
-- Risk measure translation table
-- A grammar of graphics guide for `ggplot2`
-- A structured critical-appraisal checklist
-- Communicating uncertainty to patients
-
-## R workflow
-
-The Semester 1 code-alongs build one reproducible workflow:
-
-```r
-#| eval: false
-
-analysis_data <- patient_data |>
-  select(...) |>
-  filter(...) |>
-  mutate(...)
-
-analysis_data |>
-  group_by(...) |>
-  summarise(...)
-```
-
-The important habit is not memorising isolated functions. It is making every transformation answer a visible part of the clinical question and storing the outputs needed to reconstruct the final interpretation.
+For code-reading, data preparation, visualisation, analysis, debugging, and reproducibility, move to the [R Toolkit](R_Toolkit/index.qmd). If you are preparing the Semester 1 assessment, start with the [analysis pathway](R_Toolkit/assessment-analysis.qmd) and complete your own work in Noteable.
 
 ## Topic materials in the repository
 

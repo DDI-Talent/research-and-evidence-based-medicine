@@ -14,6 +14,7 @@ Use R to make your analytical reasoning visible. The goal is not to memorise eve
 ## Start here
 
 ::: {.toolkit-grid}
+<a class="toolkit-card featured" href="assessment-analysis.html"><span>SEMESTER 1 ASSESSMENT</span><strong>Analysis pathway</strong><small>Choose a familiar synthetic dataset, plan a defensible analysis, and complete the work in Noteable.</small></a>
 <a class="toolkit-card featured" href="cheat-sheet.html"><span>CORE REFERENCE</span><strong>The complete R cheat sheet</strong><small>Import, inspect, transform, summarise, visualise, analyse, model, predict, and export.</small></a>
 <a class="toolkit-card" href="reading-code.html"><span>FOUNDATIONS</span><strong>Reading R code</strong><small>Decode objects, pipes, formulas, brackets, operators, and function calls.</small></a>
 <a class="toolkit-card" href="tidyverse.html"><span>DATA</span><strong>Tidyverse verbs</strong><small>Choose variables, observations, new fields, groups, summaries, and joins.</small></a>
@@ -51,4 +52,3 @@ Use R to make your analytical reasoning visible. The goal is not to memorise eve
 
 Use your browser’s **Print → Save as PDF** option. Toolkit pages include print-friendly styling so they can become personal one-page or multi-page references.
 :::
-

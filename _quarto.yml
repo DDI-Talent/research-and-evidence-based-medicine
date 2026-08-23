@@ -6,6 +6,7 @@ project:
     - course-guide.qmd
     - resources.qmd
     - R_Toolkit/index.qmd
+    - R_Toolkit/assessment-analysis.qmd
     - R_Toolkit/cheat-sheet.qmd
     - R_Toolkit/reading-code.qmd
     - R_Toolkit/tidyverse.qmd
@@ -112,6 +113,8 @@ website:
         contents:
           - href: R_Toolkit/index.qmd
             text: "R Toolkit home"
+          - href: R_Toolkit/assessment-analysis.qmd
+            text: "Semester 1 analysis pathway"
           - href: R_Toolkit/cheat-sheet.qmd
             text: "Complete cheat sheet"
           - href: R_Toolkit/reading-code.qmd
