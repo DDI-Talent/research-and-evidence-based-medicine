@@ -38,7 +38,7 @@ website:
   title: "Research & Evidence-Based Medicine"
   description: "A living course notebook for the University of Edinburgh MBChB REBM course."
   site-url: "https://ddi-talent.github.io/research-and-evidence-based-medicine/"
-  favicon: assets/favicon.svg
+  favicon: assets/rebm-mark.svg
   page-navigation: true
   back-to-top-navigation: true
   repo-url: "https://github.com/DDI-Talent/research-and-evidence-based-medicine"
