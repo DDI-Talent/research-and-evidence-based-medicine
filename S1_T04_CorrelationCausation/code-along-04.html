@@ -1,0 +1,58 @@
+<div style="max-width:950px;margin:1.5em auto;background:linear-gradient(135deg,#5b21b6,#7c3aed);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.18);font-family:Arial,sans-serif;color:white;">
+  <div style="padding:30px 35px 20px;">
+    <div style="display:inline-block;background:rgba(255,255,255,.15);padding:7px 14px;border-radius:30px;font-size:13px;font-weight:bold;letter-spacing:.7px;">💻 CODE ALONG 4</div>
+    <h1 style="margin:18px 0 12px;font-size:36px;">Correlation and Visualisation in R</h1>
+    <p style="font-size:18px;line-height:1.7;margin-bottom:30px;">In this guided Code Along, you’ll investigate the relationship between age and baseline severity in a synthetic healthcare dataset. You’ll prepare a focused analysis dataset, build an informative scatterplot, calculate and test Pearson’s correlation, and create a figure caption that updates directly from the statistical results.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;margin-bottom:30px;">
+      <div style="background:rgba(255,255,255,.12);padding:18px;border-radius:12px;"><strong>⏱ Duration</strong><br>Approximately 45 minutes</div>
+      <div style="background:rgba(255,255,255,.12);padding:18px;border-radius:12px;"><strong>💻 Software</strong><br>R &amp; RStudio</div>
+      <div style="background:rgba(255,255,255,.12);padding:18px;border-radius:12px;"><strong>📊 Guided example</strong><br>Age &amp; baseline severity</div>
+      <div style="background:rgba(255,255,255,.12);padding:18px;border-radius:12px;"><strong>📁 Resources</strong><br>Script &amp; synthetic dataset</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-bottom:30px;">
+      <div style="background:rgba(255,255,255,.12);padding:22px;border-radius:14px;">
+        <h2 style="margin-top:0;">🎯 You’ll learn to</h2>
+        <ul style="line-height:1.9;padding-left:20px;margin-bottom:0;">
+          <li>Create an analysis dataset with <code>select()</code> and <code>filter()</code>.</li>
+          <li>Construct and interpret a scatterplot with <strong>ggplot2</strong>.</li>
+          <li>Add a fitted linear trend with <code>geom_smooth()</code>.</li>
+          <li>Calculate Pearson’s correlation coefficient.</li>
+          <li>Run and interpret <code>cor.test()</code>.</li>
+          <li>Extract estimates, confidence intervals, and p-values.</li>
+          <li>Create a dynamic statistical figure caption.</li>
+          <li>Distinguish association from causation.</li>
+        </ul>
+      </div>
+      <div style="background:rgba(255,255,255,.12);padding:22px;border-radius:14px;">
+        <h2 style="margin-top:0;">🚀 Before you begin</h2>
+        <div style="line-height:2;">☐ Download the <strong>Topic 04 R script</strong><br>☐ Download the <strong>synthetic dataset</strong><br>☐ Open <strong>RStudio</strong><br>☐ Load <strong>tidyverse</strong> and <strong>broom</strong><br>☐ Position RStudio beside the video<br>☐ Allow approximately <strong>45 minutes</strong></div>
+      </div>
+    </div>
+
+    <div style="background:white;color:#333;border-radius:16px;padding:28px;margin-bottom:30px;">
+      <h2 style="margin-top:0;color:#5b21b6;">▶ How to use this Code Along</h2>
+      <p style="font-size:16px;line-height:1.7;">Pause regularly and reproduce each step yourself. Examine the scatterplot before reading the correlation coefficient, and interpret the coefficient, confidence interval, and p-value together. The guided example is deliberately different from the Lab 04 question.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;margin-top:25px;">
+        <div style="background:#f3f0ff;padding:18px;border-radius:12px;text-align:center;"><div style="font-size:34px;">🧹</div><strong>Prepare</strong><p style="margin-bottom:0;">Select complete analysis variables.</p></div>
+        <div style="background:#f3f0ff;padding:18px;border-radius:12px;text-align:center;"><div style="font-size:34px;">📈</div><strong>Visualise</strong><p style="margin-bottom:0;">Inspect shape, direction, and unusual values.</p></div>
+        <div style="background:#f3f0ff;padding:18px;border-radius:12px;text-align:center;"><div style="font-size:34px;">🧪</div><strong>Quantify</strong><p style="margin-bottom:0;">Calculate and test Pearson’s correlation.</p></div>
+        <div style="background:#f3f0ff;padding:18px;border-radius:12px;text-align:center;"><div style="font-size:34px;">📝</div><strong>Communicate</strong><p style="margin-bottom:0;">Build results into the figure caption.</p></div>
+      </div>
+      <div style="margin-top:25px;padding:18px;background:#ede9fe;border-left:5px solid #7c3aed;border-radius:10px;"><strong>💡 Keep magnitude and evidence separate</strong><br><br>A large sample can provide strong evidence that a weak correlation differs from zero. Always report and interpret the coefficient itself—not only its p-value—and do not treat a fitted line or correlation as evidence of causation.</div>
+    </div>
+
+    <div style="background:rgba(255,255,255,.12);padding:25px;border-radius:14px;margin-bottom:30px;">
+      <h2 style="margin-top:0;">🔍 Guided workflow</h2>
+      <p style="line-height:1.7;">Age and baseline severity are used here. Lab 04 uses age and comorbidity count, adds a causal diagram, and requires independent analytical choices.</p>
+    </div>
+
+    <div style="background:#111827;margin:0 -35px;padding:30px 35px;">
+      <h2 style="margin-top:0;margin-bottom:18px;">🎥 Code Along Video</h2>
+      <div style="position:relative;padding-top:56.25%;border-radius:12px;overflow:hidden;background:black;">
+        <iframe src="PASTE_MEDIA_HOPPER_EMBED_LINK_HERE" title="REBM Y2 Code Along Topic 04" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="autoplay; fullscreen; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>

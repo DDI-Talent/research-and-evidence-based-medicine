@@ -3,7 +3,7 @@ title: "Topic 03 model solutions: Comparing islet-transplant groups"
 output: html_document
 ---
 
-The graft-function score and all records are fictional; this is not the BETA-2 score.
+These guided examples use different questions from Lab 03 so students can transfer the workflow independently. All records and results are fictional.
 
 ```{r setup, message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -12,50 +12,132 @@ theme_set(theme_minimal())
 islet <- read_csv("data/topic03_synthetic.csv", show_col_types = FALSE)
 ```
 
-## Describe the groups
+## 1. Inspect and prepare
 
-```{r describe}
-islet |>
-  ggplot(aes(transplant_strategy, graft_function_score)) +
+```{r inspect}
+glimpse(islet)
+islet |> count(transplant_strategy)
+```
+
+```{r prepare}
+code_along_data <- islet |>
+  select(
+    recipient_id, transplant_strategy, age_years,
+    hba1c_mmol_mol, daily_insulin_units,
+    insulin_independent_at_12_months
+  )
+
+code_along_data |>
+  summarise(across(everything(), ~ sum(is.na(.x))))
+```
+
+There are no missing values in these variables. Checking still matters because missing observations can reduce precision or bias a comparison.
+
+## 2. Guided example: two means
+
+```{r two-group-explore}
+code_along_data |>
+  ggplot(aes(insulin_independent_at_12_months, hba1c_mmol_mol)) +
   geom_boxplot() +
-  labs(x = NULL, y = "Fictional graft-function score") +
+  labs(x = "Insulin independent at 12 months", y = "HbA1c (mmol/mol)")
+
+hba1c_summaries <- code_along_data |>
+  group_by(insulin_independent_at_12_months) |>
+  summarise(
+    recipients = n(),
+    mean_hba1c = mean(hba1c_mmol_mol),
+    sd_hba1c = sd(hba1c_mmol_mol),
+    .groups = "drop"
+  )
+hba1c_summaries
+```
+
+```{r two-group-test}
+hba1c_test <- t.test(
+  hba1c_mmol_mol ~ insulin_independent_at_12_months,
+  data = code_along_data
+)
+hba1c_result <- tidy(hba1c_test, conf.int = TRUE)
+hba1c_result
+```
+
+R orders the groups alphabetically, so the estimate is **No minus Yes**. Interpret it with the group means and interval. The p-value does not measure clinical importance or prove causation.
+
+## 3. Guided example: three means
+
+```{r three-group-explore}
+code_along_data |>
+  ggplot(aes(transplant_strategy, daily_insulin_units)) +
+  geom_boxplot() +
+  labs(x = NULL, y = "Daily insulin use (units/day)") +
   theme(axis.text.x = element_text(angle = 15, hjust = 1))
 
-islet |>
+insulin_summaries <- code_along_data |>
   group_by(transplant_strategy) |>
   summarise(
     recipients = n(),
-    mean_score = mean(graft_function_score),
-    sd_score = sd(graft_function_score),
-    insulin_independent = mean(insulin_independent_at_12_months == "Yes")
+    mean_daily_units = mean(daily_insulin_units),
+    sd_daily_units = sd(daily_insulin_units),
+    .groups = "drop"
+  )
+insulin_summaries
+```
+
+```{r anova}
+insulin_anova <- aov(
+  daily_insulin_units ~ transplant_strategy,
+  data = code_along_data
+)
+tidy(insulin_anova)
+```
+
+The overall ANOVA tests whether all three population means are equal; it does not identify the differing pairs.
+
+```{r tukey}
+insulin_tukey <- TukeyHSD(insulin_anova)
+insulin_tukey
+```
+
+`diff` is the named mean difference, `lwr` and `upr` form the simultaneous interval, and `p adj` is multiplicity adjusted. Tukey adjustment controls the family-wise error rate.
+
+## 4. Guided example: categories
+
+```{r categorical-prepare}
+categorical_data <- code_along_data |>
+  mutate(
+    age_group = if_else(age_years < 45, "Under 45 years", "45 years or older"),
+    age_group = factor(age_group, levels = c("Under 45 years", "45 years or older"))
   )
 ```
 
-## Two-group comparison
+```{r categorical-explore}
+age_independence_table <- table(
+  categorical_data$age_group,
+  categorical_data$insulin_independent_at_12_months
+)
+age_independence_table
+prop.table(age_independence_table, margin = 1)
 
-```{r two-groups}
-two_groups <- islet |> filter(transplant_strategy != "Repeat transplant")
-tidy(t.test(graft_function_score ~ transplant_strategy, data = two_groups), conf.int = TRUE)
+categorical_data |>
+  ggplot(aes(age_group, fill = insulin_independent_at_12_months)) +
+  geom_bar(position = "fill") +
+  scale_y_continuous(labels = scales::percent) +
+  labs(
+    x = NULL, y = "Proportion of recipients",
+    fill = "Insulin independent\nat 12 months"
+  )
 ```
 
-## Three-group comparison
-
-```{r anova}
-fit_anova <- aov(graft_function_score ~ transplant_strategy, data = islet)
-tidy(fit_anova)
-TukeyHSD(fit_anova)
+```{r categorical-test}
+age_independence_test <- chisq.test(age_independence_table)
+age_independence_test
+age_independence_test$expected
 ```
 
-The ANOVA tests whether all three population means are equal. Tukey-adjusted comparisons indicate which pairs differ while controlling family-wise error.
+Check expected counts before relying on the approximation. Row proportions describe the pattern; the p-value tests independence. This observational association cannot establish causation.
 
-## Categorical outcome
+## 5. Connection to Lab 03
 
-```{r categorical}
-independence_table <- table(islet$transplant_strategy, islet$insulin_independent_at_12_months)
-independence_table
-prop.table(independence_table, margin = 1)
-chisq.test(independence_table)
-```
+The Lab independently compares graft-function scores between transplant strategies, adds assumption checks including Levene's test, and examines transplant strategy against insulin independence. The Code Along demonstrates the methods without supplying those analyses or conclusions.
 
-Statistical evidence should be accompanied by group-specific estimates, uncertainty, units and a clinical judgement about whether the fictional score difference matters.
-
+The Lab's `graft_function_score` is fictional and is not the BETA-2 score.

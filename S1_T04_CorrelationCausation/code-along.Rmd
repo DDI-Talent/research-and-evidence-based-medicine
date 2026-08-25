@@ -1,51 +1,112 @@
 ---
-title: "Topic 04 code-along: Association, confounding and causation"
+title: "Topic 04 code-along: Correlation and visualisation in R"
 output: html_document
 ---
 
-This fictional real-world treatment dataset was designed to contain confounding by indication. It does not establish the effect of any real treatment.
+This guided Code Along uses synthetic real-world healthcare data. All records and results are fictional.
+
+We will investigate the relationship between **age** and **baseline severity**. Lab 04 uses a different relationship from the same dataset so that you can apply the workflow independently.
 
 ```{r setup, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(broom)
 theme_set(theme_minimal())
+
 rwe <- read_csv("data/topic04_synthetic.csv", show_col_types = FALSE)
 ```
 
-## 1. Draw the assumed causal structure
+## 1. Define the question
 
-Before analysing, draw arrows among baseline severity, treatment and 90-day outcome. Where should age, comorbidity and healthcare access sit?
+**Research question:** In this synthetic sample, is age associated with baseline severity score?
 
-## 2. Crude association
+- Explanatory variable: `age_years`
+- Outcome variable: `baseline_severity_score`
+- Both variables are continuous.
 
-```{r crude}
-rwe |>
-  count(treatment_received, outcome_90_days) |>
-  group_by(treatment_received) |>
-  mutate(risk = n / sum(n))
+Correlation treats the variables symmetrically, but naming their roles helps us describe the healthcare question clearly. An association would not establish that age causes severity.
 
-# TODO: extract and compare mortality risks.
+## 2. Prepare the analysis dataset
+
+Use `select()` to retain `patient_id`, `age_years`, and `baseline_severity_score`. Use `filter()` to keep complete observations, and save the result as `correlation_data`.
+
+```{r prepare}
+# TODO: inspect rwe with glimpse().
+
+# TODO: use select() and filter() to create correlation_data.
+
+# TODO: compare nrow(rwe) and nrow(correlation_data).
 ```
 
-## 3. Inspect treatment selection
+Were any observations removed? Why should completeness be checked even when no values appear to be missing?
 
-```{r selection}
-# TODO: compare baseline_severity_score across treatment groups.
+## 3. Construct an informative scatterplot
+
+Create a scatterplot with age on the x-axis and baseline severity on the y-axis. Use transparency to reduce overplotting and add clear labels.
+
+```{r scatterplot}
+# TODO: create the scatterplot with ggplot() and geom_point().
 ```
 
-## 4. Stratify and adjust
+Describe the direction, strength, and shape of the relationship. Are there unusual observations? Does a straight-line summary appear reasonable?
 
-```{r adjusted}
-rwe <- rwe |>
-  mutate(severity_group = cut(baseline_severity_score,
-                              breaks = c(0, 35, 55, 100),
-                              labels = c("Lower", "Middle", "Higher")))
+## 4. Add a fitted line
 
-# TODO: calculate risks within severity_group.
-# TODO: fit crude and adjusted logistic models.
+Add a linear fitted line and confidence band using `geom_smooth(method = "lm")`.
+
+```{r fitted-line}
+# TODO: recreate the scatterplot and add geom_smooth(method = "lm").
 ```
 
-## 5. Causal interpretation
+The fitted line is a visual summary of the trend. It does not demonstrate a causal effect.
 
-Why can crude and adjusted associations point in different directions? Which assumptions are still needed for a causal claim?
+## 5. Calculate and test Pearson's correlation
 
+Use `cor()` to calculate Pearson's correlation coefficient. Then run `cor.test()` and save the full test object as `age_severity_test`.
+
+```{r correlation}
+# TODO: calculate Pearson's r with cor().
+
+# TODO: run cor.test(age_years, baseline_severity_score,
+#                    method = "pearson") and save the result.
+
+# TODO: print age_severity_test.
+```
+
+Interpret the sign and magnitude of (r). What do the confidence interval and p-value add? Does a small p-value imply a strong or important relationship?
+
+## 6. Extract results from the test object
+
+First extract values directly from the `cor.test()` object. Then use `broom::tidy()` to create a one-row results table.
+
+```{r extract}
+# TODO: extract age_severity_test$estimate,
+# age_severity_test$conf.int, and age_severity_test$p.value.
+
+# TODO: tidy age_severity_test and save it as correlation_result.
+```
+
+## 7. Add a dynamic figure caption
+
+Create a caption using the values in `correlation_result`. Round the coefficient and interval to two decimal places and format the p-value appropriately.
+
+```{r caption}
+# TODO: create correlation_caption with sprintf() or paste0().
+
+# TODO: add labs(caption = correlation_caption) to the scatterplot.
+```
+
+A dynamic caption updates automatically if the data or analysis changes, helping keep figures and statistical results consistent.
+
+## 8. Interpret in context
+
+Write a short conclusion that:
+
+1. describes the visible pattern;
+2. reports Pearson's (r), its 95% confidence interval, and p-value;
+3. distinguishes the strength of evidence from the strength of association;
+4. notes that the analysis is unadjusted;
+5. avoids claiming that age causes baseline severity.
+
+## 9. Prepare for Lab 04
+
+The Lab uses the same dataset but a different association: **age and comorbidity count**. You will independently choose and justify the analysis, draw a DAG, assess whether Pearson correlation is appropriate, and compare visual, numerical, and causal interpretations.

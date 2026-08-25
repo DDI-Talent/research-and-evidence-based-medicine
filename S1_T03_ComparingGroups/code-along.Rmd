@@ -3,7 +3,9 @@ title: "Topic 03 code-along: Comparing islet-transplant groups"
 output: html_document
 ---
 
-This fictional dataset is inspired by islet-transplant research. `graft_function_score` is an invented teaching measure, not the validated BETA-2 score.
+This guided Code Along uses a synthetic dataset inspired by islet-transplant research. All records and results are fictional.
+
+The examples deliberately use **different research questions from Lab 03**. Learn the workflow here, then apply it independently to new comparisons in the Lab.
 
 ```{r setup, message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -12,46 +14,111 @@ theme_set(theme_minimal())
 islet <- read_csv("data/topic03_synthetic.csv", show_col_types = FALSE)
 ```
 
-## 1. Visual comparison
+## The comparison workflow
 
-```{r visualise}
-# TODO: draw a boxplot of graft_function_score by transplant_strategy.
+For each example: **define** the question and variables, **prepare** the data, **explore** the groups, **compare** them, then **interpret** magnitude, uncertainty, and evidence.
+
+## 1. Inspect and prepare
+
+```{r inspect}
+# TODO: inspect islet with glimpse().
+# TODO: count recipients by transplant_strategy.
 ```
 
-## 2. Group summaries
+Create `code_along_data` containing `recipient_id`, `transplant_strategy`, `age_years`, `hba1c_mmol_mol`, `daily_insulin_units`, and `insulin_independent_at_12_months`. Then count missing values in every selected column.
 
-```{r summaries}
-islet |>
-  group_by(transplant_strategy) |>
-  summarise(
-    recipients = n(),
-    # TODO: add mean, SD and insulin-independence proportion.
-  )
+```{r prepare}
+# TODO: create code_along_data with select().
+# TODO: count missing values with summarise() and across().
 ```
 
-## 3. Two groups
+## 2. Guided example: two means
 
-```{r two-groups}
-two_groups <- islet |>
-  filter(transplant_strategy != "Repeat transplant")
+**Question:** Does mean HbA1c differ between recipients who are and are not insulin independent at 12 months?
 
-# TODO: estimate/test the difference in graft-function score.
+- Outcome: `hba1c_mmol_mol` (continuous)
+- Group: `insulin_independent_at_12_months` (two independent groups)
+
+Create a boxplot and calculate each group's number of recipients, mean HbA1c, and standard deviation.
+
+```{r two-group-explore}
+# TODO: boxplot hba1c_mmol_mol by insulin-independence status.
+# TODO: calculate n, mean HbA1c, and SD by group.
 ```
 
-## 4. Three groups
+Run a Welch independent-samples t-test and use `broom::tidy()` with `conf.int = TRUE`.
+
+```{r two-group-test}
+# TODO: run t.test(hba1c_mmol_mol ~
+#   insulin_independent_at_12_months, data = code_along_data).
+# TODO: tidy the result with a confidence interval.
+```
+
+Report group means and the estimated difference before the p-value. What does the interval say about precision? Why does this not establish clinical importance or causation?
+
+## 3. Guided example: three means
+
+**Question:** Does mean daily insulin use differ across the three transplant strategies?
+
+- Outcome: `daily_insulin_units` (continuous)
+- Group: `transplant_strategy` (three independent groups)
+
+```{r three-group-explore}
+# TODO: boxplot daily_insulin_units by transplant_strategy.
+# TODO: calculate n, mean, and SD for each strategy.
+```
+
+Fit a one-way ANOVA and inspect the overall test.
 
 ```{r anova}
-# TODO: fit a one-way ANOVA and inspect its overall test.
-# What additional comparisons would be needed afterwards?
+# TODO: fit daily_insulin_units ~ transplant_strategy with aov().
+# Save it as insulin_anova, then inspect it with tidy().
 ```
 
-## 5. Categorical outcome
+The overall test does not identify which pairs differ. Use Tukey-adjusted comparisons.
 
-```{r categorical}
-# TODO: construct a contingency table and run a chi-squared test.
+```{r tukey}
+# TODO: run TukeyHSD(insulin_anova).
 ```
 
-## Interpretation
+Interpret the pairwise estimates, simultaneous intervals, and adjusted p-values. Why are adjusted results preferable to several unadjusted t-tests?
 
-Separate the estimated magnitude, statistical evidence and clinical importance.
+## 4. Guided example: categories
 
+**Question:** In this synthetic dataset, is age group associated with insulin independence at 12 months?
+
+For teaching purposes, create **Under 45 years** and **45 years or older** groups. Categorising age discards information, so this derived variable is used only to demonstrate the workflow.
+
+```{r categorical-prepare}
+# TODO: use mutate() and if_else() to create age_group.
+# Store the result as categorical_data.
+```
+
+Construct a contingency table, calculate row proportions, and draw a proportional bar chart.
+
+```{r categorical-explore}
+# TODO: create age_independence_table with table().
+# TODO: display counts and row proportions.
+# TODO: draw a bar chart using position = "fill".
+```
+
+Run a chi-squared test and inspect expected cell counts.
+
+```{r categorical-test}
+# TODO: run chisq.test(age_independence_table) and save it.
+# TODO: print the result and inspect $expected.
+```
+
+Are expected counts adequate? Describe the proportions as well as the p-value. Why can association not establish that age causes insulin independence?
+
+## 5. Prepare for Lab 03
+
+The Lab transfers this workflow to **different questions** using the same data:
+
+- compare fictional graft-function scores between transplant-strategy groups;
+- justify assumption checks, including Levene's test;
+- examine transplant strategy and insulin independence;
+- choose the relevant visualisations;
+- distinguish effect size, statistical significance, and clinical significance.
+
+Keep this script as a method reference, but do not reuse its conclusions as Lab answers. `graft_function_score` is an invented teaching measure, not the validated BETA-2 score.

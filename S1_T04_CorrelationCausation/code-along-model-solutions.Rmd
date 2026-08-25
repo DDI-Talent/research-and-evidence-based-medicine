@@ -1,66 +1,122 @@
 ---
-title: "Topic 04 model solutions: Association, confounding and causation"
+title: "Topic 04 model solutions: Correlation and visualisation in R"
 output: html_document
 ---
 
-This is fictional real-world evidence designed to demonstrate confounding by indication.
+This guided Code Along uses synthetic real-world healthcare data. All records and results are fictional. The example differs from the independent Lab 04 question.
 
 ```{r setup, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(broom)
 theme_set(theme_minimal())
-rwe <- read_csv("data/topic04_synthetic.csv", show_col_types = FALSE) |>
-  mutate(died = outcome_90_days == "Died")
+
+rwe <- read_csv("data/topic04_synthetic.csv", show_col_types = FALSE)
 ```
 
-## Crude association
+## 1. Define and prepare
 
-```{r crude}
-crude_risks <- rwe |>
-  group_by(treatment_received) |>
-  summarise(patients = n(), deaths = sum(died), mortality_risk = mean(died))
-crude_risks
+The question asks whether age is associated with baseline severity. Both variables are continuous. An observed association would not establish causation.
+
+```{r prepare}
+glimpse(rwe)
+
+correlation_data <- rwe |>
+  select(patient_id, age_years, baseline_severity_score) |>
+  filter(!is.na(age_years), !is.na(baseline_severity_score))
+
+tibble(
+  stage = c("Original data", "Complete analysis data"),
+  observations = c(nrow(rwe), nrow(correlation_data))
+)
 ```
 
-The treated group has higher crude mortality. That observation alone does not tell us what would have happened to the same eligible patients under usual care.
+No observations are removed, but checking prevents missing values from being handled silently.
 
-## Treatment selection
+## 2. Construct the scatterplot
 
-```{r selection}
-rwe |>
-  group_by(treatment_received) |>
-  summarise(mean_severity = mean(baseline_severity_score), mean_age = mean(age_years), mean_comorbidity = mean(comorbidity_count))
+```{r scatterplot}
+age_severity_plot <- correlation_data |>
+  ggplot(aes(x = age_years, y = baseline_severity_score)) +
+  geom_point(alpha = 0.35, colour = "#5b21b6") +
+  labs(
+    x = "Age at eligibility (years)",
+    y = "Fictional baseline severity score"
+  )
 
-rwe |>
-  ggplot(aes(treatment_received, baseline_severity_score)) +
-  geom_boxplot() +
-  labs(x = NULL, y = "Baseline severity score")
+age_severity_plot
 ```
 
-## Stratified risks
+The plot suggests a weak positive, approximately linear association with considerable scatter. The large sample makes the overall pattern easier to see even though the relationship is weak.
 
-```{r stratified}
-rwe <- rwe |>
-  mutate(severity_group = cut(baseline_severity_score, c(0, 35, 55, 100), labels = c("Lower", "Middle", "Higher")))
+## 3. Add a fitted line
 
-rwe |>
-  group_by(severity_group, treatment_received) |>
-  summarise(n = n(), mortality_risk = mean(died), .groups = "drop")
+```{r fitted-line}
+age_severity_plot <- age_severity_plot +
+  geom_smooth(method = "lm", se = TRUE, colour = "#d97706")
+
+age_severity_plot
 ```
 
-## Crude and adjusted regression
+The line summarises the observed linear trend; it does not represent a causal effect.
 
-```{r models}
-crude_model <- glm(died ~ treatment_received, data = rwe, family = binomial())
-adjusted_model <- glm(died ~ treatment_received + baseline_severity_score + age_years + comorbidity_count + healthcare_access, data = rwe, family = binomial())
+## 4. Calculate and test Pearson's correlation
 
-bind_rows(
-  tidy(crude_model, exponentiate = TRUE, conf.int = TRUE) |> mutate(model = "Crude"),
-  tidy(adjusted_model, exponentiate = TRUE, conf.int = TRUE) |> mutate(model = "Adjusted")
-) |>
-  filter(str_detect(term, "treatment_received")) |>
-  select(model, term, estimate, conf.low, conf.high, p.value)
+```{r correlation}
+pearson_r <- cor(
+  correlation_data$age_years,
+  correlation_data$baseline_severity_score,
+  method = "pearson"
+)
+pearson_r
+
+age_severity_test <- cor.test(
+  correlation_data$age_years,
+  correlation_data$baseline_severity_score,
+  method = "pearson"
+)
+age_severity_test
 ```
 
-Severity affects both treatment selection and outcome, distorting the crude comparison. Even the adjusted estimate needs causal assumptions: correct time ordering and model form, adequate measurement, positivity, consistency and no important unmeasured confounding.
+Pearson's (r) is positive but small. With 2,500 observations, even a weak association can produce a small p-value. Statistical evidence against zero correlation is not the same as a strong or clinically important relationship.
 
+## 5. Extract the results
+
+```{r extract}
+age_severity_test$estimate
+age_severity_test$conf.int
+age_severity_test$p.value
+
+correlation_result <- tidy(age_severity_test)
+correlation_result
+```
+
+## 6. Add a dynamic caption
+
+```{r caption}
+correlation_caption <- with(
+  correlation_result,
+  sprintf(
+    "Pearson's r = %.2f (95%% CI %.2f to %.2f), p %s",
+    estimate,
+    conf.low,
+    conf.high,
+    if_else(p.value < 0.001, "< 0.001", paste0("= ", format.pval(p.value, digits = 3)))
+  )
+)
+
+final_plot <- age_severity_plot +
+  labs(caption = correlation_caption) +
+  theme(plot.caption = element_text(hjust = 0))
+
+final_plot
+```
+
+Because the caption is generated from the test result, it will update if the analysis changes.
+
+## 7. Interpretation
+
+There is a weak positive linear association between age and the fictional baseline severity score in this synthetic sample. Pearson's coefficient, confidence interval, and p-value should be reported from the output above. The narrow interval and small p-value reflect precision from the large sample, but the coefficient remains small. The analysis is unadjusted and cannot show that greater age causes higher severity; confounding, selection, measurement, and the data-generating process remain relevant.
+
+## 8. Connection to Lab 04
+
+Lab 04 independently examines age and comorbidity count, adds a DAG, and asks whether Pearson correlation is suitable for a discrete count variable. These model solutions therefore demonstrate the workflow without providing the Lab result or causal interpretation.
